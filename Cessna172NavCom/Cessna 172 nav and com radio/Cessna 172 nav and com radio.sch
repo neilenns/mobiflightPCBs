@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -58,7 +58,7 @@ U 1 1 5F5E4B96
 P 1700 1050
 F 0 "C2" H 1815 1096 50  0000 L CNN
 F 1 "0.1uF" H 1815 1005 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 1738 900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1738 900 50  0001 C CNN
 F 3 "~" H 1700 1050 50  0001 C CNN
 	1    1700 1050
 	1    0    0    -1  
@@ -69,7 +69,7 @@ U 1 1 5F5E5831
 P 2600 1050
 F 0 "C4" H 2715 1096 50  0000 L CNN
 F 1 "0.1uF" H 2715 1005 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2638 900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2638 900 50  0001 C CNN
 F 3 "~" H 2600 1050 50  0001 C CNN
 	1    2600 1050
 	1    0    0    -1  
@@ -80,28 +80,16 @@ U 1 1 5F5E5C8A
 P 3050 1050
 F 0 "C5" H 3165 1096 50  0000 L CNN
 F 1 "0.1uF" H 3165 1005 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 3088 900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3088 900 50  0001 C CNN
 F 3 "~" H 3050 1050 50  0001 C CNN
 	1    3050 1050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 900  3450 1050
-Wire Wire Line
-	3450 1050 3500 1050
 Connection ~ 3050 900 
-Wire Wire Line
-	3050 900  3200 900 
-Wire Wire Line
-	3450 1200 3450 1150
-Wire Wire Line
-	3450 1150 3500 1150
 Connection ~ 3050 1200
-Wire Wire Line
-	3050 1200 3200 1200
-Text GLabel 3500 1050 2    50   Output ~ 0
+Text GLabel 4100 900  2    50   Output ~ 0
 +5V
-Text GLabel 3500 1150 2    50   Output ~ 0
+Text GLabel 4100 1200 2    50   Output ~ 0
 GND
 $Comp
 L power:PWR_FLAG #FLG01
@@ -128,232 +116,147 @@ $EndComp
 Text Notes 600  600  0    50   ~ 0
 Power and board connection
 $Sheet
-S 1000 3400 1300 400 
+S 2100 3500 1300 500 
 U 5F60A880
 F0 "5 digit LCD display" 50
 F1 "5_digit_lcd_display.sch" 50
-F2 "DOUT" I R 2300 3600 50 
-F3 "LOAD" I L 1000 3500 50 
-F4 "CLK" I L 1000 3600 50 
-F5 "DIN" I L 1000 3700 50 
+F2 "DOUT" I R 3400 3800 50 
+F3 "LOAD" I L 2100 3600 50 
+F4 "CLK" I L 2100 3700 50 
+F5 "DIN" I L 2100 3800 50 
+F6 "ISET" I L 2100 3900 50 
 $EndSheet
-Text GLabel 900  3500 0    50   Input ~ 0
+Text GLabel 2000 3600 0    50   Input ~ 0
 LOAD
-Text GLabel 900  3600 0    50   Input ~ 0
+Text GLabel 2000 3700 0    50   Input ~ 0
 CLK
-Text GLabel 900  3700 0    50   Input ~ 0
+Text GLabel 2000 3800 0    50   Input ~ 0
 DIN
 Wire Wire Line
-	900  3500 1000 3500
+	2000 3600 2100 3600
 Wire Wire Line
-	900  3600 1000 3600
+	2000 3700 2100 3700
 Wire Wire Line
-	900  3700 1000 3700
-Text Notes 1000 3300 0    50   ~ 0
+	2000 3800 2100 3800
+Text Notes 2100 3400 0    50   ~ 0
 COMM active
-$Sheet
-S 2800 3400 1300 400 
-U 5F61163D
-F0 "sheet5F611637" 50
-F1 "5_digit_lcd_display.sch" 50
-F2 "DOUT" I R 4100 3600 50 
-F3 "LOAD" I L 2800 3500 50 
-F4 "CLK" I L 2800 3600 50 
-F5 "DIN" I L 2800 3700 50 
-$EndSheet
-Text GLabel 2700 3500 0    50   Input ~ 0
+Text GLabel 3800 3600 0    50   Input ~ 0
 LOAD
-Text GLabel 2700 3600 0    50   Input ~ 0
+Text GLabel 3800 3700 0    50   Input ~ 0
 CLK
 Wire Wire Line
-	2700 3500 2800 3500
+	3800 3600 3900 3600
 Wire Wire Line
-	2700 3600 2800 3600
-Text Notes 2800 3300 0    50   ~ 0
+	3800 3700 3900 3700
+Text Notes 3900 3400 0    50   ~ 0
 COMM standby
-Wire Wire Line
-	2300 3600 2400 3600
-Wire Wire Line
-	2400 3600 2400 3700
-Wire Wire Line
-	2400 3700 2800 3700
 $Sheet
-S 4550 3400 1300 400 
+S 5650 3500 1300 500 
 U 5F613967
 F0 "sheet5F613960" 50
 F1 "5_digit_lcd_display.sch" 50
-F2 "DOUT" I R 5850 3600 50 
-F3 "LOAD" I L 4550 3500 50 
-F4 "CLK" I L 4550 3600 50 
-F5 "DIN" I L 4550 3700 50 
+F2 "DOUT" I R 6950 3800 50 
+F3 "LOAD" I L 5650 3600 50 
+F4 "CLK" I L 5650 3700 50 
+F5 "DIN" I L 5650 3800 50 
+F6 "ISET" I L 5650 3900 50 
 $EndSheet
-Text GLabel 4450 3500 0    50   Input ~ 0
+Text GLabel 5550 3600 0    50   Input ~ 0
 LOAD
-Text GLabel 4450 3600 0    50   Input ~ 0
+Text GLabel 5550 3700 0    50   Input ~ 0
 CLK
 Wire Wire Line
-	4450 3500 4550 3500
+	5550 3600 5650 3600
 Wire Wire Line
-	4450 3600 4550 3600
-Text Notes 4550 3300 0    50   ~ 0
+	5550 3700 5650 3700
+Text Notes 5650 3400 0    50   ~ 0
 NAV active
 $Sheet
-S 6350 3400 1300 400 
+S 7450 3500 1300 500 
 U 5F613974
 F0 "sheet5F613961" 50
 F1 "5_digit_lcd_display.sch" 50
-F2 "DOUT" I R 7650 3600 50 
-F3 "LOAD" I L 6350 3500 50 
-F4 "CLK" I L 6350 3600 50 
-F5 "DIN" I L 6350 3700 50 
+F2 "DOUT" I R 8750 3800 50 
+F3 "LOAD" I L 7450 3600 50 
+F4 "CLK" I L 7450 3700 50 
+F5 "DIN" I L 7450 3800 50 
+F6 "ISET" I L 7450 3900 50 
 $EndSheet
-Text GLabel 6250 3500 0    50   Input ~ 0
+Text GLabel 7350 3600 0    50   Input ~ 0
 LOAD
-Text GLabel 6250 3600 0    50   Input ~ 0
+Text GLabel 7350 3700 0    50   Input ~ 0
 CLK
 Wire Wire Line
-	6250 3500 6350 3500
+	7350 3600 7450 3600
 Wire Wire Line
-	6250 3600 6350 3600
-Text Notes 6350 3300 0    50   ~ 0
+	7350 3700 7450 3700
+Text Notes 7450 3400 0    50   ~ 0
 NAV standby
+NoConn ~ 8900 3800
 Wire Wire Line
-	5850 3600 5950 3600
-Wire Wire Line
-	5950 3600 5950 3700
-Wire Wire Line
-	5950 3700 6350 3700
-Wire Wire Line
-	4100 3600 4200 3600
-Wire Wire Line
-	4200 3600 4200 3700
-Wire Wire Line
-	4200 3700 4550 3700
-NoConn ~ 7800 3600
-Wire Wire Line
-	7650 3600 7800 3600
+	8750 3800 8900 3800
 Wire Notes Line
-	600  2900 600  4300
-Wire Notes Line
-	600  4300 7900 4300
-Wire Notes Line
-	7900 4300 7900 2900
-Wire Notes Line
-	7900 2900 600  2900
-Text Notes 600  2850 0    50   ~ 0
+	600  3050 600  4450
+Text Notes 600  3000 0    50   ~ 0
 LCD displays
 Text GLabel 2400 1950 2    50   Input ~ 0
 COMM_LEFT
 Text GLabel 2400 2050 2    50   Input ~ 0
 COMM_RIGHT
-Text Notes 3900 800  0    50   ~ 0
+Text Notes 4500 800  0    50   ~ 0
 COMM
-Text GLabel 4850 1150 2    50   Output ~ 0
+Text GLabel 5450 1150 2    50   Output ~ 0
 COMM_LEFT
-Text GLabel 4850 1300 2    50   Output ~ 0
+Text GLabel 5450 1300 2    50   Output ~ 0
 COMM_RIGHT
-Text GLabel 4850 1450 2    50   Output ~ 0
+Text GLabel 5450 1450 2    50   Output ~ 0
 COMM_KHZ_SW
 Wire Wire Line
-	4750 1150 4850 1150
+	5350 1150 5450 1150
 Wire Wire Line
-	4750 1300 4850 1300
+	5350 1300 5450 1300
 Wire Wire Line
-	4750 1450 4850 1450
+	5350 1450 5450 1450
 $Sheet
-S 3900 900  850  800 
+S 4500 900  850  800 
 U 5F5D6B2B
 F0 "Tuning rotary encoder and switch" 50
 F1 "Tuning rotary encoder and switch.sch" 50
-F2 "LEFT" O R 4750 1150 50 
-F3 "RIGHT" O R 4750 1300 50 
-F4 "SW" O R 4750 1450 50 
+F2 "LEFT" O R 5350 1150 50 
+F3 "RIGHT" O R 5350 1300 50 
+F4 "SW" O R 5350 1450 50 
 $EndSheet
 Text GLabel 2400 2150 2    50   Input ~ 0
 COMM_KHZ_SW
-Text Notes 5900 800  0    50   ~ 0
+Text Notes 6250 800  0    50   ~ 0
 NAV
-Text GLabel 6850 1150 2    50   Output ~ 0
+Text GLabel 7200 1150 2    50   Output ~ 0
 NAV_LEFT
-Text GLabel 6850 1300 2    50   Output ~ 0
+Text GLabel 7200 1300 2    50   Output ~ 0
 NAV_RIGHT
-Text GLabel 6850 1450 2    50   Output ~ 0
+Text GLabel 7200 1450 2    50   Output ~ 0
 NAV_KHZ_SW
 Wire Wire Line
-	6750 1150 6850 1150
+	7100 1150 7200 1150
 Wire Wire Line
-	6750 1300 6850 1300
+	7100 1300 7200 1300
 $Sheet
-S 5900 900  850  800 
+S 6250 900  850  800 
 U 5F5DD336
 F0 "sheet5F5DD32A" 50
 F1 "Tuning rotary encoder and switch.sch" 50
-F2 "LEFT" O R 6750 1150 50 
-F3 "RIGHT" O R 6750 1300 50 
-F4 "SW" O R 6750 1450 50 
+F2 "LEFT" O R 7100 1150 50 
+F3 "RIGHT" O R 7100 1300 50 
+F4 "SW" O R 7100 1450 50 
 $EndSheet
 Text GLabel 1900 1850 0    50   Input ~ 0
 NAV_LEFT
 Text GLabel 1900 1950 0    50   Input ~ 0
 NAV_RIGHT
 Wire Notes Line
-	3800 650  3800 1850
-Wire Notes Line
-	3800 1850 7600 1850
-Wire Notes Line
-	7600 1850 7600 650 
-Wire Notes Line
-	3800 650  7600 650 
-Text Notes 3800 600  0    50   ~ 0
-Tuning knobs
-$Comp
-L Switch:SW_Push_LED SW1
-U 1 1 5F5E6414
-P 8150 1350
-F 0 "SW1" H 8150 1735 50  0000 C CNN
-F 1 "COMM transfer switch" H 8150 1644 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 8150 1650 50  0001 C CNN
-F 3 "~" H 8150 1650 50  0001 C CNN
-	1    8150 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push_LED SW2
-U 1 1 5F5E6AEB
-P 9500 1350
-F 0 "SW2" H 9500 1735 50  0000 C CNN
-F 1 "NAV transfer switch" H 9500 1644 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 9500 1650 50  0001 C CNN
-F 3 "~" H 9500 1650 50  0001 C CNN
-	1    9500 1350
-	1    0    0    -1  
-$EndComp
-Text GLabel 7900 1300 0    50   Input ~ 0
-GND
-Text GLabel 9250 1300 0    50   Input ~ 0
-GND
-Text GLabel 8350 1350 2    50   Input ~ 0
-COMM_TX_LED
-Text GLabel 9700 1350 2    50   Input ~ 0
-NAV_TX_LED
-Wire Wire Line
-	9300 1350 9300 1300
-Wire Wire Line
-	9250 1300 9300 1300
-Connection ~ 9300 1300
-Wire Wire Line
-	9300 1300 9300 1250
-Wire Wire Line
-	7900 1300 7950 1300
-Wire Wire Line
-	7950 1300 7950 1250
-Wire Wire Line
-	7950 1350 7950 1300
-Connection ~ 7950 1300
-Text GLabel 8350 1250 2    50   Output ~ 0
-COMM_TX_SW
-Text GLabel 9700 1250 2    50   Output ~ 0
-NAV_TX_SW
+	4400 650  4400 1850
+Text Notes 4400 600  0    50   ~ 0
+Knobs
 Text GLabel 2400 2250 2    50   Input ~ 0
 COMM_TX_SW
 Text GLabel 2400 2350 2    50   Output ~ 0
@@ -362,18 +265,8 @@ Text GLabel 1900 2150 0    50   Input ~ 0
 NAV_TX_SW
 Text GLabel 1900 2250 0    50   Output ~ 0
 NAV_TX_LED
-Wire Notes Line
-	7650 1850 10250 1850
-Wire Notes Line
-	10250 1850 10250 650 
-Wire Notes Line
-	10250 650  7650 650 
-Wire Notes Line
-	7650 650  7650 1850
-Text Notes 7650 600  0    50   ~ 0
-Transfer switches
 Wire Wire Line
-	6750 1450 6850 1450
+	7100 1450 7200 1450
 Text GLabel 1900 2050 0    50   Input ~ 0
 NAV_KHZ_SW
 $Comp
@@ -382,7 +275,7 @@ U 1 1 5F602FBC
 P 2150 1050
 F 0 "C3" H 2265 1096 50  0000 L CNN
 F 1 "0.1uF" H 2265 1005 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2188 900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2188 900 50  0001 C CNN
 F 3 "~" H 2150 1050 50  0001 C CNN
 	1    2150 1050
 	1    0    0    -1  
@@ -405,12 +298,6 @@ Connection ~ 2600 900
 Wire Wire Line
 	2600 1200 3050 1200
 Connection ~ 2600 1200
-Wire Wire Line
-	3200 900  3450 900 
-Connection ~ 3200 900 
-Wire Wire Line
-	3200 1200 3450 1200
-Connection ~ 3200 1200
 Wire Wire Line
 	1250 900  1700 900 
 Wire Wire Line
@@ -443,128 +330,283 @@ F 3 "" H 950 1200 50  0001 C CNN
 	1    950  1200
 	0    1    1    0   
 $EndComp
+$Comp
+L Switch:SW_Push_LED SW1
+U 1 1 5F5DAFBA
+P 1100 5400
+F 0 "SW1" H 1100 5785 50  0000 C CNN
+F 1 "COMM transfer switch" H 1100 5694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 1100 5700 50  0001 C CNN
+F 3 "~" H 1100 5700 50  0001 C CNN
+	1    1100 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW2
+U 1 1 5F5DAFC0
+P 2450 5400
+F 0 "SW2" H 2450 5785 50  0000 C CNN
+F 1 "NAV transfer switch" H 2450 5694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 2450 5700 50  0001 C CNN
+F 3 "~" H 2450 5700 50  0001 C CNN
+	1    2450 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 850  5350 0    50   Input ~ 0
+GND
+Text GLabel 2200 5350 0    50   Input ~ 0
+GND
+Text GLabel 1300 5400 2    50   Input ~ 0
+COMM_TX_LED
+Text GLabel 2650 5400 2    50   Input ~ 0
+NAV_TX_LED
+Wire Wire Line
+	2250 5400 2250 5350
+Wire Wire Line
+	2200 5350 2250 5350
+Connection ~ 2250 5350
+Wire Wire Line
+	2250 5350 2250 5300
+Wire Wire Line
+	850  5350 900  5350
+Wire Wire Line
+	900  5350 900  5300
+Wire Wire Line
+	900  5400 900  5350
+Connection ~ 900  5350
+Text GLabel 1300 5300 2    50   Output ~ 0
+COMM_TX_SW
+Text GLabel 2650 5300 2    50   Output ~ 0
+NAV_TX_SW
 Wire Notes Line
-	600  650  3750 650 
+	600  4700 600  5900
+Text Notes 600  4650 0    50   ~ 0
+Switches
+Text Notes 8000 800  0    50   ~ 0
+COMM volume
+Text GLabel 8950 1150 2    50   Output ~ 0
+COMM_VOL_LEFT
+Text GLabel 8950 1300 2    50   Output ~ 0
+COMM_VOL_RIGHT
+Text GLabel 8950 1450 2    50   Output ~ 0
+COMM_VOL_SW
+Wire Wire Line
+	8850 1150 8950 1150
+Wire Wire Line
+	8850 1300 8950 1300
+$Sheet
+S 8000 900  850  800 
+U 5F5E0D77
+F0 "sheet5F5E0D6C" 50
+F1 "Tuning rotary encoder and switch.sch" 50
+F2 "LEFT" O R 8850 1150 50 
+F3 "RIGHT" O R 8850 1300 50 
+F4 "SW" O R 8850 1450 50 
+$EndSheet
+Wire Wire Line
+	8850 1450 8950 1450
+Wire Notes Line
+	9700 650  9700 1850
+Wire Notes Line
+	4400 1850 9700 1850
+Wire Notes Line
+	4400 650  9700 650 
 $Comp
-L Switch:SW_Push SW5
-U 1 1 5F62D1D0
-P 8400 3600
-F 0 "SW5" H 8400 3885 50  0000 C CNN
-F 1 "TEST" H 8400 3794 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 8400 3800 50  0001 C CNN
-F 3 "~" H 8400 3800 50  0001 C CNN
-	1    8400 3600
+L Switch:SW_Push_LED SW5
+U 1 1 5F5E79B5
+P 3700 5400
+F 0 "SW5" H 3700 5785 50  0000 C CNN
+F 1 "Test switch" H 3700 5694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 3700 5700 50  0001 C CNN
+F 3 "~" H 3700 5700 50  0001 C CNN
+	1    3700 5400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push SW6
-U 1 1 5F62D585
-P 9550 3600
-F 0 "SW6" H 9550 3885 50  0000 C CNN
-F 1 "IDENT" H 9550 3794 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 9550 3800 50  0001 C CNN
-F 3 "~" H 9550 3800 50  0001 C CNN
-	1    9550 3600
-	1    0    0    -1  
-$EndComp
-Text GLabel 8200 3600 0    50   Input ~ 0
+Text GLabel 3450 5350 0    50   Input ~ 0
 GND
-Text GLabel 9350 3600 0    50   Input ~ 0
-GND
-Text GLabel 8600 3600 2    50   Output ~ 0
+Text GLabel 3900 5400 2    50   Input ~ 0
+TEST_LED
+Wire Wire Line
+	3500 5400 3500 5350
+Wire Wire Line
+	3450 5350 3500 5350
+Connection ~ 3500 5350
+Wire Wire Line
+	3500 5350 3500 5300
+Text GLabel 3900 5300 2    50   Output ~ 0
 TEST_SW
-Text GLabel 9750 3600 2    50   Output ~ 0
+$Comp
+L Switch:SW_Push_LED SW6
+U 1 1 5F5EB037
+P 4850 5400
+F 0 "SW6" H 4850 5785 50  0000 C CNN
+F 1 "Ident switch" H 4850 5694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 4850 5700 50  0001 C CNN
+F 3 "~" H 4850 5700 50  0001 C CNN
+	1    4850 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4600 5350 0    50   Input ~ 0
+GND
+Text GLabel 5050 5400 2    50   Input ~ 0
+IDENT_LED
+Wire Wire Line
+	4650 5400 4650 5350
+Wire Wire Line
+	4600 5350 4650 5350
+Connection ~ 4650 5350
+Wire Wire Line
+	4650 5350 4650 5300
+Text GLabel 5050 5300 2    50   Output ~ 0
 IDENT_SW
 Wire Notes Line
-	7950 4300 10200 4300
+	5550 4700 5550 5900
 Wire Notes Line
-	10200 4300 10200 2900
+	600  5900 5550 5900
 Wire Notes Line
-	10200 2900 7950 2900
-Wire Notes Line
-	7950 2900 7950 4300
-Text Notes 7950 2850 0    50   ~ 0
-Test and ident buttons
-$Comp
-L Connector_Generic:Conn_02x10_Counter_Clockwise J1
-U 1 1 5F63A33F
-P 2100 2050
-F 0 "J1" H 2150 2667 50  0000 C CNN
-F 1 "Conn_02x10_Counter_Clockwise" H 2150 2576 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Horizontal" H 2100 2050 50  0001 C CNN
-F 3 "~" H 2100 2050 50  0001 C CNN
-	1    2100 2050
-	1    0    0    -1  
-$EndComp
-Text GLabel 2400 2450 2    50   Input ~ 0
-TEST_SW
-Text GLabel 2400 2550 2    50   Input ~ 0
-IDENT_SW
-Wire Notes Line
-	600  2650 3750 2650
-Wire Notes Line
-	3750 650  3750 2650
-Wire Notes Line
-	600  650  600  2650
+	600  4700 5550 4700
 $Comp
 L Device:LED D1
-U 1 1 5F63FA86
-P 1000 4850
-F 0 "D1" H 993 5067 50  0000 C CNN
-F 1 "CHAN LED" H 993 4976 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 1000 4850 50  0001 C CNN
-F 3 "~" H 1000 4850 50  0001 C CNN
-	1    1000 4850
-	1    0    0    -1  
+U 1 1 5F5F30E5
+P 3650 900
+F 0 "D1" H 3750 1000 50  0000 C CNN
+F 1 "LED" H 3750 1100 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 900 50  0001 C CNN
+F 3 "~" H 3650 900 50  0001 C CNN
+	1    3650 900 
+	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D2
-U 1 1 5F6402D3
-P 2000 4850
-F 0 "D2" H 1993 5067 50  0000 C CNN
-F 1 "IDENT LED" H 1993 4976 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 2000 4850 50  0001 C CNN
-F 3 "~" H 2000 4850 50  0001 C CNN
-	1    2000 4850
+L Device:R R13
+U 1 1 5F5F4214
+P 3800 1050
+F 0 "R13" H 3870 1096 50  0000 L CNN
+F 1 "220" H 3870 1005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3730 1050 50  0001 C CNN
+F 3 "~" H 3800 1050 50  0001 C CNN
+	1    3800 1050
 	1    0    0    -1  
 $EndComp
+Connection ~ 3200 1200
+Connection ~ 3800 1200
+Wire Wire Line
+	3800 1200 4100 1200
+Connection ~ 3200 900 
+Wire Wire Line
+	3800 900  4100 900 
+Connection ~ 3800 900 
+Wire Wire Line
+	3200 1200 3800 1200
+Wire Wire Line
+	3200 900  3500 900 
+Wire Wire Line
+	3150 900  3200 900 
+Wire Wire Line
+	3150 1200 3200 1200
+Wire Wire Line
+	3050 900  3200 900 
+Wire Wire Line
+	3050 1200 3200 1200
+Text GLabel 2400 2450 2    50   Input ~ 0
+TEST_SW
+Text GLabel 2400 2550 2    50   Output ~ 0
+TEST_LED
+Text GLabel 1900 2350 0    50   Input ~ 0
+COMM_VOL_LEFT
+Text GLabel 1900 2450 0    50   Input ~ 0
+COMM_VOL_RIGHT
+Text GLabel 1900 2550 0    50   Input ~ 0
+COMM_VOL_SW
+Text GLabel 1900 2650 0    50   Input ~ 0
+IDENT_SW
+Text GLabel 1900 2750 0    50   Output ~ 0
+IDENT_LED
+NoConn ~ 2400 2650
+NoConn ~ 2400 2750
+Wire Notes Line
+	600  2850 4350 2850
+Wire Notes Line
+	4350 2850 4350 650 
+Wire Notes Line
+	600  650  4350 650 
+Wire Notes Line
+	600  650  600  2850
 $Comp
-L Device:LED D3
-U 1 1 5F64070F
-P 3000 4850
-F 0 "D3" H 2993 5067 50  0000 C CNN
-F 1 "MODE LED" H 2993 4976 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 3000 4850 50  0001 C CNN
-F 3 "~" H 3000 4850 50  0001 C CNN
-	1    3000 4850
+L Connector_Generic:Conn_02x12_Odd_Even J1
+U 1 1 5F626541
+P 2100 2150
+F 0 "J1" H 2150 2867 50  0000 C CNN
+F 1 "Conn_02x12_Odd_Even" H 2150 2776 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical" H 2100 2150 50  0001 C CNN
+F 3 "~" H 2100 2150 50  0001 C CNN
+	1    2100 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 850  4850 0    50   Input ~ 0
-GND
-Text GLabel 1850 4850 0    50   Input ~ 0
-GND
-Text GLabel 2850 4850 0    50   Input ~ 0
-GND
-Text GLabel 1150 4850 2    50   Input ~ 0
-LED_CHAN
-Text GLabel 2150 4850 2    50   Input ~ 0
-LED_IDENT
-Text GLabel 3150 4850 2    50   Input ~ 0
-LED_MODE
-Text GLabel 1900 2350 0    50   Output ~ 0
-LED_CHAN
-Text GLabel 1900 2450 0    50   Output ~ 0
-LED_IDENT
-Text GLabel 1900 2550 0    50   Output ~ 0
-LED_MODE
+$Sheet
+S 3900 3500 1300 500 
+U 5F61163D
+F0 "sheet5F611637" 50
+F1 "5_digit_lcd_display.sch" 50
+F2 "DOUT" I R 5200 3800 50 
+F3 "LOAD" I L 3900 3600 50 
+F4 "CLK" I L 3900 3700 50 
+F5 "DIN" I L 3900 3800 50 
+F6 "ISET" I L 3900 3900 50 
+$EndSheet
+Wire Wire Line
+	6950 3800 7450 3800
+Wire Wire Line
+	5200 3800 5650 3800
+Wire Wire Line
+	3400 3800 3900 3800
+$Comp
+L Device:R_POT RV1
+U 1 1 5F63B079
+P 1250 3950
+F 0 "RV1" H 1181 3996 50  0000 R CNN
+F 1 "100k" H 1181 3905 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-10-V10_Vertical_Hole" H 1250 3950 50  0001 C CNN
+F 3 "~" H 1250 3950 50  0001 C CNN
+	1    1250 3950
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 4100 3    50   Output ~ 0
+ISET
+Text GLabel 2000 3900 0    50   Input ~ 0
+ISET
+Text GLabel 3800 3900 0    50   Input ~ 0
+ISET
+Text GLabel 5550 3900 0    50   Input ~ 0
+ISET
+Text GLabel 7350 3900 0    50   Input ~ 0
+ISET
+Wire Wire Line
+	7350 3900 7450 3900
+Wire Wire Line
+	5550 3900 5650 3900
+Wire Wire Line
+	3800 3900 3900 3900
+Wire Wire Line
+	2000 3900 2100 3900
 Wire Notes Line
-	600  4550 600  5000
+	9000 3050 9000 4450
 Wire Notes Line
-	600  5000 3650 5000
+	600  4450 9000 4450
 Wire Notes Line
-	3650 5000 3650 4550
-Wire Notes Line
-	3650 4550 600  4550
-Text Notes 600  4500 0    50   ~ 0
-Status LEDs
+	600  3050 9000 3050
+$Comp
+L Device:R R1
+U 1 1 5F649AB0
+P 1250 3650
+F 0 "R1" H 1320 3696 50  0000 L CNN
+F 1 "220" H 1320 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1180 3650 50  0001 C CNN
+F 3 "~" H 1250 3650 50  0001 C CNN
+	1    1250 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 3500 1    50   Input ~ 0
++5V
+Text Notes 850  3250 0    50   ~ 0
+Display brightness control
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -22,28 +22,12 @@ AR Path="/5F60A880/5F60E2D2" Ref="U1"  Part="1"
 AR Path="/5F61163D/5F60E2D2" Ref="U2"  Part="1" 
 AR Path="/5F613967/5F60E2D2" Ref="U3"  Part="1" 
 AR Path="/5F613974/5F60E2D2" Ref="U4"  Part="1" 
-F 0 "U1" H 2500 5000 50  0000 C CNN
+F 0 "U2" H 2500 5000 50  0000 C CNN
 F 1 "MAX7219 COM standby" V 2350 4100 50  0000 C CNN
 F 2 "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm" H 2700 4100 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 2800 3900 50  0001 C CNN
 	1    2750 4050
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F60E2D8
-P 2200 3250
-AR Path="/5F60E2D8" Ref="R?"  Part="1" 
-AR Path="/5F60A880/5F60E2D8" Ref="R1"  Part="1" 
-AR Path="/5F61163D/5F60E2D8" Ref="R2"  Part="1" 
-AR Path="/5F613967/5F60E2D8" Ref="R3"  Part="1" 
-AR Path="/5F613974/5F60E2D8" Ref="R4"  Part="1" 
-F 0 "R1" V 1993 3250 50  0000 C CNN
-F 1 "27k" V 2084 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2130 3250 50  0001 C CNN
-F 3 "~" H 2200 3250 50  0001 C CNN
-	1    2200 3250
-	0    1    1    0   
 $EndComp
 $Comp
 L Display_Character:KCSC02-105 LED?
@@ -54,7 +38,7 @@ AR Path="/5F60A880/5F60E2DE" Ref="LED1"  Part="1"
 AR Path="/5F61163D/5F60E2DE" Ref="LED6"  Part="1" 
 AR Path="/5F613967/5F60E2DE" Ref="LED11"  Part="1" 
 AR Path="/5F613974/5F60E2DE" Ref="LED16"  Part="1" 
-F 0 "LED1" H 4350 2900 50  0000 C CNN
+F 0 "LED6" H 4350 2900 50  0000 C CNN
 F 1 "MobiFlight digit 5" H 4350 3000 50  0000 C CNN
 F 2 "Cessna 172 nav and com radio:KYX-5101AS" H 4350 2950 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 3850 4025 50  0001 L CNN
@@ -64,10 +48,8 @@ $EndComp
 NoConn ~ 3150 4550
 NoConn ~ 3150 4650
 NoConn ~ 3150 4750
-Text GLabel 2050 3250 0    50   Input ~ 0
-+5V
 Text GLabel 2750 3050 1    50   Input ~ 0
-GND
++5V
 Text GLabel 2750 5050 3    50   Input ~ 0
 GND
 NoConn ~ 4650 3850
@@ -168,7 +150,7 @@ AR Path="/5F60A880/5F60E317" Ref="LED2"  Part="1"
 AR Path="/5F61163D/5F60E317" Ref="LED7"  Part="1" 
 AR Path="/5F613967/5F60E317" Ref="LED12"  Part="1" 
 AR Path="/5F613974/5F60E317" Ref="LED17"  Part="1" 
-F 0 "LED2" H 5600 2900 50  0000 C CNN
+F 0 "LED7" H 5600 2900 50  0000 C CNN
 F 1 "MobiFlight digit 4" H 5600 3000 50  0000 C CNN
 F 2 "Cessna 172 nav and com radio:KYX-5101AS" H 5600 2950 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 5100 4025 50  0001 L CNN
@@ -221,7 +203,7 @@ AR Path="/5F60A880/5F60E330" Ref="LED3"  Part="1"
 AR Path="/5F61163D/5F60E330" Ref="LED8"  Part="1" 
 AR Path="/5F613967/5F60E330" Ref="LED13"  Part="1" 
 AR Path="/5F613974/5F60E330" Ref="LED18"  Part="1" 
-F 0 "LED3" H 6850 2900 50  0000 C CNN
+F 0 "LED8" H 6850 2900 50  0000 C CNN
 F 1 "MobiFlight digit 2" H 6850 3000 50  0000 C CNN
 F 2 "Cessna 172 nav and com radio:KYX-5101AS" H 6850 2950 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 6350 4025 50  0001 L CNN
@@ -274,7 +256,7 @@ AR Path="/5F60A880/5F60E349" Ref="LED4"  Part="1"
 AR Path="/5F61163D/5F60E349" Ref="LED9"  Part="1" 
 AR Path="/5F613967/5F60E349" Ref="LED14"  Part="1" 
 AR Path="/5F613974/5F60E349" Ref="LED19"  Part="1" 
-F 0 "LED4" H 8100 2900 50  0000 C CNN
+F 0 "LED9" H 8100 2900 50  0000 C CNN
 F 1 "MobiFlight digit 1" H 8100 3000 50  0000 C CNN
 F 2 "Cessna 172 nav and com radio:KYX-5101AS" H 8100 2950 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 7600 4025 50  0001 L CNN
@@ -327,7 +309,7 @@ AR Path="/5F60A880/5F60E362" Ref="LED5"  Part="1"
 AR Path="/5F61163D/5F60E362" Ref="LED10"  Part="1" 
 AR Path="/5F613967/5F60E362" Ref="LED15"  Part="1" 
 AR Path="/5F613974/5F60E362" Ref="LED20"  Part="1" 
-F 0 "LED5" H 9350 2900 50  0000 C CNN
+F 0 "LED10" H 9350 2900 50  0000 C CNN
 F 1 "Mobiflight digit 0" H 9350 3000 50  0000 C CNN
 F 2 "Cessna 172 nav and com radio:KYX-5101AS" H 9350 2950 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 8850 4025 50  0001 L CNN
@@ -379,4 +361,6 @@ Text HLabel 2350 4750 0    50   Input ~ 0
 CLK
 Text HLabel 2350 4850 0    50   Input ~ 0
 DIN
+Text HLabel 2350 3250 0    50   Input ~ 0
+ISET
 $EndSCHEMATC
