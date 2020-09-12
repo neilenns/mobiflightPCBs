@@ -13,11 +13,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1400 1750 2    50   Input ~ 0
+Text GLabel 1400 1750 2    50   Output ~ 0
 LOAD
-Text GLabel 1400 1850 2    50   Input ~ 0
+Text GLabel 1400 1850 2    50   Output ~ 0
 CLK
-Text GLabel 1400 1950 2    50   Input ~ 0
+Text GLabel 1400 1950 2    50   Output ~ 0
 DIN
 $Comp
 L power:+5V #PWR01
@@ -125,9 +125,9 @@ Wire Wire Line
 Connection ~ 2200 1200
 Wire Wire Line
 	2200 1200 2350 1200
-Text GLabel 2550 1050 2    50   Input ~ 0
+Text GLabel 2550 1050 2    50   Output ~ 0
 +5V
-Text GLabel 2550 1150 2    50   Input ~ 0
+Text GLabel 2550 1150 2    50   Output ~ 0
 GND
 $Comp
 L power:PWR_FLAG #FLG01
@@ -157,21 +157,7 @@ $EndComp
 Connection ~ 2350 1200
 Wire Wire Line
 	2350 1200 2500 1200
-$Comp
-L Connector_Generic:Conn_02x03_Counter_Clockwise J1
-U 1 1 5F5EC70C
-P 1100 1850
-F 0 "J1" H 1150 2167 50  0000 C CNN
-F 1 "Board connector" H 1150 2076 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1100 1850 50  0001 C CNN
-F 3 "~" H 1100 1850 50  0001 C CNN
-	1    1100 1850
-	1    0    0    -1  
-$EndComp
-Connection ~ 900  1750
 NoConn ~ 900  1950
-Wire Notes Line
-	550  2050 2800 2050
 Wire Notes Line
 	2800 2050 2800 650 
 Wire Notes Line
@@ -295,4 +281,163 @@ Wire Notes Line
 	10500 650  3200 650 
 Text Notes 3200 600  0    50   ~ 0
 LCD displays
+$Comp
+L Device:Rotary_Encoder_Switch SW1
+U 1 1 5F5CDBEE
+P 4500 3550
+F 0 "SW1" H 4750 3250 50  0000 L CNN
+F 1 "Tuning encoder" H 4750 3350 50  0000 L CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 4350 3710 50  0001 C CNN
+F 3 "~" H 4500 3810 50  0001 C CNN
+	1    4500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5F5CE24C
+P 3750 3450
+F 0 "R6" V 3543 3450 50  0000 C CNN
+F 1 "10k" V 3634 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3680 3450 50  0001 C CNN
+F 3 "~" H 3750 3450 50  0001 C CNN
+	1    3750 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5F5CFF7A
+P 3750 3650
+F 0 "R7" V 3850 3650 50  0000 C CNN
+F 1 "10k" V 3950 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3680 3650 50  0001 C CNN
+F 3 "~" H 3750 3650 50  0001 C CNN
+	1    3750 3650
+	0    1    1    0   
+$EndComp
+Text GLabel 4200 3550 0    50   Input ~ 0
+GND
+Text GLabel 4800 3650 2    50   Input ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_02x08_Counter_Clockwise J1
+U 1 1 5F5D3853
+P 1100 2050
+F 0 "J1" H 1150 2567 50  0000 C CNN
+F 1 "Conn_02x08_Counter_Clockwise" H 1150 2476 50  0000 C CNN
+F 2 "" H 1100 2050 50  0001 C CNN
+F 3 "~" H 1100 2050 50  0001 C CNN
+	1    1100 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 900  1750
+Text GLabel 1400 2050 2    50   Input ~ 0
+SW
+Text GLabel 4800 3450 2    50   Output ~ 0
+SW
+$Comp
+L Device:C C6
+U 1 1 5F5D5010
+P 4500 4000
+F 0 "C6" V 4650 4000 50  0000 C CNN
+F 1 "0.1uf" V 4350 4000 50  0000 C CNN
+F 2 "" H 4538 3850 50  0001 C CNN
+F 3 "~" H 4500 4000 50  0001 C CNN
+	1    4500 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5F5D5C2E
+P 4500 3100
+F 0 "C5" V 4350 3050 50  0000 L CNN
+F 1 "0.1uf" V 4650 3000 50  0000 L CNN
+F 2 "" H 4538 2950 50  0001 C CNN
+F 3 "~" H 4500 3100 50  0001 C CNN
+	1    4500 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 4650 4000 2    50   Input ~ 0
+GND
+Text GLabel 4650 3100 2    50   Input ~ 0
+GND
+Wire Wire Line
+	3900 3450 4100 3450
+Text GLabel 3450 3550 0    50   Input ~ 0
++5V
+Wire Wire Line
+	3600 3450 3600 3550
+Wire Wire Line
+	3450 3550 3600 3550
+Connection ~ 3600 3550
+Wire Wire Line
+	3600 3550 3600 3650
+Wire Wire Line
+	3900 3650 4100 3650
+$Comp
+L Device:R R8
+U 1 1 5F5DE2B1
+P 4100 4250
+F 0 "R8" H 4170 4296 50  0000 L CNN
+F 1 "10k" H 4170 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 4250 50  0001 C CNN
+F 3 "~" H 4100 4250 50  0001 C CNN
+	1    4100 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4100 4100 4000
+Connection ~ 4100 3650
+Wire Wire Line
+	4100 3650 4200 3650
+Wire Wire Line
+	4350 4000 4100 4000
+Connection ~ 4100 4000
+Wire Wire Line
+	4100 4000 4100 3650
+Text GLabel 4100 4400 3    50   Output ~ 0
+R_LEFT
+Wire Wire Line
+	4100 3450 4100 3100
+Wire Wire Line
+	4100 3100 4350 3100
+Connection ~ 4100 3450
+Wire Wire Line
+	4100 3450 4200 3450
+$Comp
+L Device:R R5
+U 1 1 5F5E3E59
+P 4100 2850
+F 0 "R5" H 4170 2896 50  0000 L CNN
+F 1 "10k" H 4170 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 2850 50  0001 C CNN
+F 3 "~" H 4100 2850 50  0001 C CNN
+	1    4100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3000 4100 3100
+Connection ~ 4100 3100
+Text GLabel 4100 2700 1    50   Output ~ 0
+R_RIGHT
+Text GLabel 1400 2150 2    50   Input ~ 0
+R_LEFT
+Text GLabel 1400 2250 2    50   Input ~ 0
+R_RIGHT
+NoConn ~ 900  2050
+NoConn ~ 900  2150
+NoConn ~ 900  2250
+NoConn ~ 900  2350
+NoConn ~ 900  2450
+NoConn ~ 1400 2450
+NoConn ~ 1400 2350
+Wire Notes Line
+	5450 2300 5450 4750
+Wire Notes Line
+	5450 4750 3200 4750
+Wire Notes Line
+	3200 4750 3200 2300
+Wire Notes Line
+	3200 2300 5450 2300
+Text Notes 3200 2250 0    50   ~ 0
+Tuning rotary encoder and switch
 $EndSCHEMATC

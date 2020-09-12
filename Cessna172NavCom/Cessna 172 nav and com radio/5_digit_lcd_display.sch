@@ -24,7 +24,7 @@ AR Path="/5F613967/5F60E2D2" Ref="U3"  Part="1"
 AR Path="/5F613974/5F60E2D2" Ref="U4"  Part="1" 
 F 0 "U1" H 2500 5000 50  0000 C CNN
 F 1 "MAX7219 COM standby" V 2350 4100 50  0000 C CNN
-F 2 "Package_DIP:DIP-24_W7.62mm" H 2700 4100 50  0001 C CNN
+F 2 "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm" H 2700 4100 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 2800 3900 50  0001 C CNN
 	1    2750 4050
 	1    0    0    -1  
@@ -56,7 +56,7 @@ AR Path="/5F613967/5F60E2DE" Ref="LED11"  Part="1"
 AR Path="/5F613974/5F60E2DE" Ref="LED16"  Part="1" 
 F 0 "LED1" H 4350 2900 50  0000 C CNN
 F 1 "MobiFlight digit 5" H 4350 3000 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 4350 2950 50  0001 C CNN
+F 2 "Cessna 172 nav and com radio:KYX-5101AS" H 4350 2950 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 3850 4025 50  0001 L CNN
 	1    4350 3550
 	1    0    0    -1  
@@ -170,7 +170,7 @@ AR Path="/5F613967/5F60E317" Ref="LED12"  Part="1"
 AR Path="/5F613974/5F60E317" Ref="LED17"  Part="1" 
 F 0 "LED2" H 5600 2900 50  0000 C CNN
 F 1 "MobiFlight digit 4" H 5600 3000 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 5600 2950 50  0001 C CNN
+F 2 "Cessna 172 nav and com radio:KYX-5101AS" H 5600 2950 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 5100 4025 50  0001 L CNN
 	1    5600 3550
 	1    0    0    -1  
@@ -223,7 +223,7 @@ AR Path="/5F613967/5F60E330" Ref="LED13"  Part="1"
 AR Path="/5F613974/5F60E330" Ref="LED18"  Part="1" 
 F 0 "LED3" H 6850 2900 50  0000 C CNN
 F 1 "MobiFlight digit 2" H 6850 3000 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 6850 2950 50  0001 C CNN
+F 2 "Cessna 172 nav and com radio:KYX-5101AS" H 6850 2950 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 6350 4025 50  0001 L CNN
 	1    6850 3550
 	1    0    0    -1  
@@ -276,7 +276,7 @@ AR Path="/5F613967/5F60E349" Ref="LED14"  Part="1"
 AR Path="/5F613974/5F60E349" Ref="LED19"  Part="1" 
 F 0 "LED4" H 8100 2900 50  0000 C CNN
 F 1 "MobiFlight digit 1" H 8100 3000 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 8100 2950 50  0001 C CNN
+F 2 "Cessna 172 nav and com radio:KYX-5101AS" H 8100 2950 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 7600 4025 50  0001 L CNN
 	1    8100 3550
 	1    0    0    -1  
@@ -329,7 +329,7 @@ AR Path="/5F613967/5F60E362" Ref="LED15"  Part="1"
 AR Path="/5F613974/5F60E362" Ref="LED20"  Part="1" 
 F 0 "LED5" H 9350 2900 50  0000 C CNN
 F 1 "Mobiflight digit 0" H 9350 3000 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 9350 2950 50  0001 C CNN
+F 2 "Cessna 172 nav and com radio:KYX-5101AS" H 9350 2950 50  0001 C CNN
 F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 8850 4025 50  0001 L CNN
 	1    9350 3550
 	1    0    0    -1  
