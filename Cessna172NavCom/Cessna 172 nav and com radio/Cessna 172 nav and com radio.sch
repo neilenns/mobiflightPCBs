@@ -330,53 +330,13 @@ F 3 "" H 950 1200 50  0001 C CNN
 	1    950  1200
 	0    1    1    0   
 $EndComp
-$Comp
-L Switch:SW_Push_LED SW1
-U 1 1 5F5DAFBA
-P 1100 5400
-F 0 "SW1" H 1100 5785 50  0000 C CNN
-F 1 "COMM transfer switch" H 1100 5694 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 1100 5700 50  0001 C CNN
-F 3 "~" H 1100 5700 50  0001 C CNN
-	1    1100 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push_LED SW2
-U 1 1 5F5DAFC0
-P 2450 5400
-F 0 "SW2" H 2450 5785 50  0000 C CNN
-F 1 "NAV transfer switch" H 2450 5694 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 2450 5700 50  0001 C CNN
-F 3 "~" H 2450 5700 50  0001 C CNN
-	1    2450 5400
-	1    0    0    -1  
-$EndComp
-Text GLabel 850  5350 0    50   Input ~ 0
-GND
-Text GLabel 2200 5350 0    50   Input ~ 0
-GND
-Text GLabel 1300 5400 2    50   Input ~ 0
+Text GLabel 1300 5550 2    50   Input ~ 0
 COMM_TX_LED
-Text GLabel 2650 5400 2    50   Input ~ 0
+Text GLabel 2650 5550 2    50   Input ~ 0
 NAV_TX_LED
-Wire Wire Line
-	2250 5400 2250 5350
-Wire Wire Line
-	2200 5350 2250 5350
-Connection ~ 2250 5350
-Wire Wire Line
-	2250 5350 2250 5300
-Wire Wire Line
-	850  5350 900  5350
-Wire Wire Line
-	900  5350 900  5300
-Wire Wire Line
-	900  5400 900  5350
-Connection ~ 900  5350
-Text GLabel 1300 5300 2    50   Output ~ 0
+Text GLabel 1300 5350 2    50   Output ~ 0
 COMM_TX_SW
-Text GLabel 2650 5300 2    50   Output ~ 0
+Text GLabel 2650 5350 2    50   Output ~ 0
 NAV_TX_SW
 Wire Notes Line
 	600  4700 600  5900
@@ -411,58 +371,10 @@ Wire Notes Line
 	4400 1850 9700 1850
 Wire Notes Line
 	4400 650  9700 650 
-$Comp
-L Switch:SW_Push_LED SW5
-U 1 1 5F5E79B5
-P 3700 5400
-F 0 "SW5" H 3700 5785 50  0000 C CNN
-F 1 "Test switch" H 3700 5694 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 3700 5700 50  0001 C CNN
-F 3 "~" H 3700 5700 50  0001 C CNN
-	1    3700 5400
-	1    0    0    -1  
-$EndComp
-Text GLabel 3450 5350 0    50   Input ~ 0
-GND
-Text GLabel 3900 5400 2    50   Input ~ 0
+Text GLabel 3900 5550 2    50   Input ~ 0
 TEST_LED
-Wire Wire Line
-	3500 5400 3500 5350
-Wire Wire Line
-	3450 5350 3500 5350
-Connection ~ 3500 5350
-Wire Wire Line
-	3500 5350 3500 5300
-Text GLabel 3900 5300 2    50   Output ~ 0
+Text GLabel 3900 5350 2    50   Output ~ 0
 TEST_SW
-$Comp
-L Switch:SW_Push_LED SW6
-U 1 1 5F5EB037
-P 4850 5400
-F 0 "SW6" H 4850 5785 50  0000 C CNN
-F 1 "Ident switch" H 4850 5694 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 4850 5700 50  0001 C CNN
-F 3 "~" H 4850 5700 50  0001 C CNN
-	1    4850 5400
-	1    0    0    -1  
-$EndComp
-Text GLabel 4600 5350 0    50   Input ~ 0
-GND
-Text GLabel 5050 5400 2    50   Input ~ 0
-IDENT_LED
-Wire Wire Line
-	4650 5400 4650 5350
-Wire Wire Line
-	4600 5350 4650 5350
-Connection ~ 4650 5350
-Wire Wire Line
-	4650 5350 4650 5300
-Text GLabel 5050 5300 2    50   Output ~ 0
-IDENT_SW
-Wire Notes Line
-	5550 4700 5550 5900
-Wire Notes Line
-	600  5900 5550 5900
 Wire Notes Line
 	600  4700 5550 4700
 $Comp
@@ -609,4 +521,101 @@ Text GLabel 1250 3500 1    50   Input ~ 0
 +5V
 Text Notes 850  3250 0    50   ~ 0
 Display brightness control
+Text GLabel 850  5450 0    50   Input ~ 0
+GND
+Wire Wire Line
+	900  5350 900  5450
+Wire Wire Line
+	900  5450 850  5450
+Connection ~ 900  5450
+Wire Wire Line
+	900  5450 900  5550
+NoConn ~ 1300 5150
+NoConn ~ 900  5150
+Text GLabel 2200 5450 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2250 5350 2250 5450
+Wire Wire Line
+	2250 5450 2200 5450
+Connection ~ 2250 5450
+Wire Wire Line
+	2250 5450 2250 5550
+NoConn ~ 2650 5150
+NoConn ~ 2250 5150
+Text GLabel 3450 5450 0    50   Input ~ 0
+GND
+Wire Wire Line
+	3500 5350 3500 5450
+Wire Wire Line
+	3500 5450 3450 5450
+Connection ~ 3500 5450
+Wire Wire Line
+	3500 5450 3500 5550
+NoConn ~ 3900 5150
+NoConn ~ 3500 5150
+NoConn ~ 4650 5150
+NoConn ~ 5050 5150
+Wire Wire Line
+	4650 5450 4650 5550
+Connection ~ 4650 5450
+Wire Wire Line
+	4650 5450 4600 5450
+Wire Wire Line
+	4650 5350 4650 5450
+Text GLabel 4600 5450 0    50   Input ~ 0
+GND
+Wire Notes Line
+	600  5900 5550 5900
+Text GLabel 5050 5350 2    50   Output ~ 0
+IDENT_SW
+Text GLabel 5050 5550 2    50   Input ~ 0
+IDENT_LED
+Wire Notes Line
+	5550 5900 5550 4700
+$Comp
+L Cessna~172~nav~and~com~radio:B3W-9000-xxx SW1
+U 1 1 5F605163
+P 1100 5300
+F 0 "SW1" H 1100 5735 50  0000 C CNN
+F 1 "COMM toggle" H 1100 5644 50  0000 C CNN
+F 2 "Cessna 172 nav and com radio:B3W-9000-xxx" H 1100 5300 50  0001 C CNN
+F 3 "" H 1100 5300 50  0001 C CNN
+	1    1100 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Cessna~172~nav~and~com~radio:B3W-9000-xxx SW2
+U 1 1 5F6062D0
+P 2450 5300
+F 0 "SW2" H 2450 5735 50  0000 C CNN
+F 1 "NAV toggle" H 2450 5644 50  0000 C CNN
+F 2 "Cessna 172 nav and com radio:B3W-9000-xxx" H 2450 5300 50  0001 C CNN
+F 3 "" H 2450 5300 50  0001 C CNN
+	1    2450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Cessna~172~nav~and~com~radio:B3W-9000-xxx SW5
+U 1 1 5F607045
+P 3700 5300
+F 0 "SW5" H 3700 5735 50  0000 C CNN
+F 1 "Test switch" H 3700 5644 50  0000 C CNN
+F 2 "Cessna 172 nav and com radio:B3W-9000-xxx" H 3700 5300 50  0001 C CNN
+F 3 "" H 3700 5300 50  0001 C CNN
+	1    3700 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Cessna~172~nav~and~com~radio:B3W-9000-xxx SW6
+U 1 1 5F6074D3
+P 4850 5300
+F 0 "SW6" H 4850 5735 50  0000 C CNN
+F 1 "Ident switch" H 4850 5644 50  0000 C CNN
+F 2 "Cessna 172 nav and com radio:B3W-9000-xxx" H 4850 5300 50  0001 C CNN
+F 3 "" H 4850 5300 50  0001 C CNN
+	1    4850 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1400 3950
 $EndSCHEMATC
