@@ -183,453 +183,500 @@ Power and board connection
 $Comp
 L Driver_LED:MAX7219 U1
 U 1 1 5F5C1D23
-P 3800 1900
-F 0 "U1" H 4250 3000 50  0000 C CNN
-F 1 "MAX7219 COM standby" H 4300 2900 50  0000 C CNN
-F 2 "" H 3750 1950 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 3850 1750 50  0001 C CNN
-	1    3800 1900
+P 1500 3500
+F 0 "U1" H 1250 4450 50  0000 C CNN
+F 1 "MAX7219 COM standby" V 1100 3550 50  0000 C CNN
+F 2 "" H 1450 3550 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 1550 3350 50  0001 C CNN
+	1    1500 3500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5F5C3524
-P 3250 1100
-F 0 "R1" V 3043 1100 50  0000 C CNN
-F 1 "27k" V 3134 1100 50  0000 C CNN
-F 2 "" V 3180 1100 50  0001 C CNN
-F 3 "~" H 3250 1100 50  0001 C CNN
-	1    3250 1100
+P 950 2700
+F 0 "R1" V 743 2700 50  0000 C CNN
+F 1 "27k" V 834 2700 50  0000 C CNN
+F 2 "" V 880 2700 50  0001 C CNN
+F 3 "~" H 950 2700 50  0001 C CNN
+	1    950  2700
 	0    1    1    0   
 $EndComp
 $Comp
-L Display_Character:KCSC02-105 U2
+L Display_Character:KCSC02-105 LED1
 U 1 1 5F5C3FEB
-P 5350 1850
-F 0 "U2" H 5350 2517 50  0000 C CNN
-F 1 "COM active 4" H 5350 2426 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 5350 1250 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 4850 2325 50  0001 L CNN
-	1    5350 1850
+P 3100 3000
+F 0 "LED1" H 3100 2350 50  0000 C CNN
+F 1 "Mobiflight digit 5" H 3100 2450 50  0000 C CNN
+F 2 "Display_7Segment:KCSC02-105" H 3100 2400 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 2600 3475 50  0001 L CNN
+	1    3100 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4200 1100 2    50   Input ~ 0
-COMA_A
-Text GLabel 4200 1200 2    50   Input ~ 0
-COMA_B
-Text GLabel 4200 1300 2    50   Input ~ 0
-COMA_C
-Text GLabel 4200 1400 2    50   Input ~ 0
-COMA_D
-Text GLabel 4200 1500 2    50   Input ~ 0
-COMA_E
-Text GLabel 4200 1600 2    50   Input ~ 0
-COMA_F
-Text GLabel 4200 1700 2    50   Input ~ 0
-COMA_G
-Text GLabel 4200 1800 2    50   Input ~ 0
-COMA_DP
-Text GLabel 4200 1900 2    50   Input ~ 0
-COMA_0
-Text GLabel 4200 2000 2    50   Input ~ 0
-COMA_1
-Text GLabel 4200 2100 2    50   Input ~ 0
-COMA_2
-Text GLabel 4200 2200 2    50   Input ~ 0
-COMA_3
-Text GLabel 4200 2300 2    50   Input ~ 0
-COMA_4
-NoConn ~ 4200 2400
-NoConn ~ 4200 2500
-NoConn ~ 4200 2600
-Text GLabel 5050 1550 0    50   Input ~ 0
-COMA_A
-Text GLabel 5050 1650 0    50   Input ~ 0
-COMA_B
-Text GLabel 5050 1750 0    50   Input ~ 0
-COMA_C
-Text GLabel 5050 1850 0    50   Input ~ 0
-COMA_D
-Text GLabel 5050 1950 0    50   Input ~ 0
-COMA_E
-Text GLabel 5050 2050 0    50   Input ~ 0
-COMA_F
-Text GLabel 5050 2150 0    50   Input ~ 0
-COMA_G
-Text GLabel 5050 2250 0    50   Input ~ 0
-COMA_DP
-NoConn ~ 5650 2250
-Text GLabel 5650 2150 1    50   Input ~ 0
-COMA_4
-$Comp
-L Display_Character:KCSC02-105 U3
-U 1 1 5F5CE7CF
-P 6500 1850
-F 0 "U3" H 6500 2517 50  0000 C CNN
-F 1 "COM active 4" H 6500 2426 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 6500 1250 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 6000 2325 50  0001 L CNN
-	1    6500 1850
-	1    0    0    -1  
-$EndComp
-Text GLabel 6200 1550 0    50   Input ~ 0
-COMA_A
-Text GLabel 6200 1650 0    50   Input ~ 0
-COMA_B
-Text GLabel 6200 1750 0    50   Input ~ 0
-COMA_C
-Text GLabel 6200 1850 0    50   Input ~ 0
-COMA_D
-Text GLabel 6200 1950 0    50   Input ~ 0
-COMA_E
-Text GLabel 6200 2050 0    50   Input ~ 0
-COMA_F
-Text GLabel 6200 2150 0    50   Input ~ 0
-COMA_G
-Text GLabel 6200 2250 0    50   Input ~ 0
-COMA_DP
-NoConn ~ 6800 2250
-Text GLabel 6800 2150 1    50   Input ~ 0
-COMA_3
-$Comp
-L Display_Character:KCSC02-105 U4
-U 1 1 5F5CF21B
-P 7650 1850
-F 0 "U4" H 7650 2517 50  0000 C CNN
-F 1 "COM active 4" H 7650 2426 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 7650 1250 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 7150 2325 50  0001 L CNN
-	1    7650 1850
-	1    0    0    -1  
-$EndComp
-Text GLabel 7350 1550 0    50   Input ~ 0
-COMA_A
-Text GLabel 7350 1650 0    50   Input ~ 0
-COMA_B
-Text GLabel 7350 1750 0    50   Input ~ 0
-COMA_C
-Text GLabel 7350 1850 0    50   Input ~ 0
-COMA_D
-Text GLabel 7350 1950 0    50   Input ~ 0
-COMA_E
-Text GLabel 7350 2050 0    50   Input ~ 0
-COMA_F
-Text GLabel 7350 2150 0    50   Input ~ 0
-COMA_G
-Text GLabel 7350 2250 0    50   Input ~ 0
-COMA_DP
-NoConn ~ 7950 2250
-Text GLabel 7950 2150 1    50   Input ~ 0
-COMA_2
-$Comp
-L Display_Character:KCSC02-105 U5
-U 1 1 5F5CFB68
-P 8800 1850
-F 0 "U5" H 8800 2517 50  0000 C CNN
-F 1 "COM active 4" H 8800 2426 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 8800 1250 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 8300 2325 50  0001 L CNN
-	1    8800 1850
-	1    0    0    -1  
-$EndComp
-Text GLabel 8500 1550 0    50   Input ~ 0
-COMA_A
-Text GLabel 8500 1650 0    50   Input ~ 0
-COMA_B
-Text GLabel 8500 1750 0    50   Input ~ 0
-COMA_C
-Text GLabel 8500 1850 0    50   Input ~ 0
-COMA_D
-Text GLabel 8500 1950 0    50   Input ~ 0
-COMA_E
-Text GLabel 8500 2050 0    50   Input ~ 0
-COMA_F
-Text GLabel 8500 2150 0    50   Input ~ 0
-COMA_G
-Text GLabel 8500 2250 0    50   Input ~ 0
-COMA_DP
-NoConn ~ 9100 2250
-Text GLabel 9100 2150 1    50   Input ~ 0
-COMA_1
-$Comp
-L Display_Character:KCSC02-105 U6
-U 1 1 5F5D0F3B
-P 9950 1850
-F 0 "U6" H 9950 2517 50  0000 C CNN
-F 1 "COM active 4" H 9950 2426 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 9950 1250 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 9450 2325 50  0001 L CNN
-	1    9950 1850
-	1    0    0    -1  
-$EndComp
-Text GLabel 9650 1550 0    50   Input ~ 0
-COMA_A
-Text GLabel 9650 1650 0    50   Input ~ 0
-COMA_B
-Text GLabel 9650 1750 0    50   Input ~ 0
-COMA_C
-Text GLabel 9650 1850 0    50   Input ~ 0
-COMA_D
-Text GLabel 9650 1950 0    50   Input ~ 0
-COMA_E
-Text GLabel 9650 2050 0    50   Input ~ 0
-COMA_F
-Text GLabel 9650 2150 0    50   Input ~ 0
-COMA_G
-Text GLabel 9650 2250 0    50   Input ~ 0
-COMA_DP
-NoConn ~ 10250 2250
-Text GLabel 10250 2150 1    50   Input ~ 0
-COMA_0
-Text GLabel 3400 2500 0    50   Input ~ 0
-LOAD
-Text GLabel 3400 2600 0    50   Input ~ 0
-CLK
-Text GLabel 3400 2700 0    50   Input ~ 0
-DIN
-Text GLabel 3100 1100 0    50   Input ~ 0
+NoConn ~ 1900 4000
+NoConn ~ 1900 4100
+NoConn ~ 1900 4200
+Text GLabel 800  2700 0    50   Input ~ 0
 +5V
-Text GLabel 3800 900  1    50   Input ~ 0
+Text GLabel 1500 2500 1    50   Input ~ 0
 GND
-Text GLabel 3800 2900 3    50   Input ~ 0
-GND
-Wire Notes Line
-	2850 3150 10350 3150
-Wire Notes Line
-	10350 3150 10350 650 
-Wire Notes Line
-	10350 650  2850 650 
-Wire Notes Line
-	2850 650  2850 3150
-Text Notes 2850 600  0    50   ~ 0
-COM1 active frequency display
-$Comp
-L Driver_LED:MAX7219 U?
-U 1 1 5F616D8E
-P 3800 4650
-F 0 "U?" H 4250 5750 50  0000 C CNN
-F 1 "MAX7219 COM standby" H 4300 5650 50  0000 C CNN
-F 2 "" H 3750 4700 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 3850 4500 50  0001 C CNN
-	1    3800 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F616D94
-P 3250 3850
-F 0 "R?" V 3043 3850 50  0000 C CNN
-F 1 "27k" V 3134 3850 50  0000 C CNN
-F 2 "" V 3180 3850 50  0001 C CNN
-F 3 "~" H 3250 3850 50  0001 C CNN
-	1    3250 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L Display_Character:KCSC02-105 U?
-U 1 1 5F616D9A
-P 5350 4600
-F 0 "U?" H 5350 5267 50  0000 C CNN
-F 1 "COM standby 4" H 5350 5176 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 5350 4000 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 4850 5075 50  0001 L CNN
-	1    5350 4600
-	1    0    0    -1  
-$EndComp
-Text GLabel 4200 3850 2    50   Input ~ 0
-COMS_A
-Text GLabel 4200 3950 2    50   Input ~ 0
-COMS_B
-Text GLabel 4200 4050 2    50   Input ~ 0
-COMS_C
-Text GLabel 4200 4150 2    50   Input ~ 0
-COMS_D
-Text GLabel 4200 4250 2    50   Input ~ 0
-COMS_E
-Text GLabel 4200 4350 2    50   Input ~ 0
-COMS_F
-Text GLabel 4200 4450 2    50   Input ~ 0
-COMS_G
-Text GLabel 4200 4550 2    50   Input ~ 0
-COMS_DP
-Text GLabel 4200 4650 2    50   Input ~ 0
-COMS_0
-Text GLabel 4200 4750 2    50   Input ~ 0
-COMS_1
-Text GLabel 4200 4850 2    50   Input ~ 0
-COMS_2
-Text GLabel 4200 4950 2    50   Input ~ 0
-COMS_3
-Text GLabel 4200 5050 2    50   Input ~ 0
-COMS_4
-NoConn ~ 4200 5150
-NoConn ~ 4200 5250
-NoConn ~ 4200 5350
-Text GLabel 5050 4300 0    50   Input ~ 0
-COMS_A
-Text GLabel 5050 4400 0    50   Input ~ 0
-COMS_B
-Text GLabel 5050 4500 0    50   Input ~ 0
-COMS_C
-Text GLabel 5050 4600 0    50   Input ~ 0
-COMS_D
-Text GLabel 5050 4700 0    50   Input ~ 0
-COMS_E
-Text GLabel 5050 4800 0    50   Input ~ 0
-COMS_F
-Text GLabel 5050 4900 0    50   Input ~ 0
-COMS_G
-Text GLabel 5050 5000 0    50   Input ~ 0
-COMS_DP
-NoConn ~ 5650 5000
-Text GLabel 5650 4900 1    50   Input ~ 0
-COMS_4
-Text GLabel 3400 5250 0    50   Input ~ 0
-LOAD
-Text GLabel 3400 5350 0    50   Input ~ 0
-CLK
-Text GLabel 3100 3850 0    50   Input ~ 0
-+5V
-Text GLabel 3800 3650 1    50   Input ~ 0
-GND
-Text GLabel 3800 5650 3    50   Input ~ 0
+Text GLabel 1500 4500 3    50   Input ~ 0
 GND
 Wire Notes Line
-	2850 5900 10350 5900
+	8050 2250 550  2250
+Text Notes 550  2200 0    50   ~ 0
+5 segment display
 Wire Notes Line
-	10350 5900 10350 3400
+	550  2250 550  4750
 Wire Notes Line
-	10350 3400 2850 3400
-Wire Notes Line
-	2850 3400 2850 5900
-Text Notes 2850 3350 0    50   ~ 0
-COM1 standby frequency display
+	550  4750 8050 4750
+Text Label 2000 2700 0    50   ~ 0
+MAX0
+Text Label 2000 2800 0    50   ~ 0
+MAX1
+Text Label 2000 2900 0    50   ~ 0
+MAX2
+Text Label 2000 3000 0    50   ~ 0
+MAX3
+Text Label 2000 3100 0    50   ~ 0
+MAX4
+Text Label 2000 3200 0    50   ~ 0
+MAX5
+Text Label 2000 3300 0    50   ~ 0
+MAX6
+Text Label 2000 3400 0    50   ~ 0
+MAX7
 Wire Wire Line
-	4200 2700 4200 3200
+	1900 2700 2250 2700
 Wire Wire Line
-	4200 3200 2750 3200
+	1900 2800 2250 2800
 Wire Wire Line
-	2750 3200 2750 5450
+	1900 2900 2250 2900
 Wire Wire Line
-	2750 5450 3400 5450
+	1900 3000 2250 3000
+Wire Wire Line
+	1900 3100 2250 3100
+Wire Wire Line
+	1900 3200 2250 3200
+Wire Wire Line
+	1900 3300 2250 3300
+Wire Wire Line
+	1900 3400 2250 3400
+Entry Wire Line
+	2250 2700 2350 2800
+Entry Wire Line
+	2250 2800 2350 2900
+Entry Wire Line
+	2250 2900 2350 3000
+Entry Wire Line
+	2250 3000 2350 3100
+Entry Wire Line
+	2250 3100 2350 3200
+Entry Wire Line
+	2250 3200 2350 3300
+Entry Wire Line
+	2250 3300 2350 3400
+Entry Wire Line
+	2250 3400 2350 3500
+Entry Wire Line
+	2500 2700 2400 2800
+Entry Wire Line
+	2500 2800 2400 2900
+Entry Wire Line
+	2500 2900 2400 3000
+Entry Wire Line
+	2500 3000 2400 3100
+Entry Wire Line
+	2500 3100 2400 3200
+Entry Wire Line
+	2500 3200 2400 3300
+Entry Wire Line
+	2500 3300 2400 3400
+Entry Wire Line
+	2500 3400 2400 3500
+Text Label 2000 3500 0    50   ~ 0
+MAX9
+Text Label 2000 3600 0    50   ~ 0
+MAX10
+Text Label 2000 3700 0    50   ~ 0
+MAX11
+Text Label 2000 3800 0    50   ~ 0
+MAX12
+Text Label 2000 3900 0    50   ~ 0
+MAX13
+Wire Wire Line
+	1900 3500 2250 3500
+Wire Wire Line
+	1900 3600 2250 3600
+Wire Wire Line
+	1900 3700 2250 3700
+Wire Wire Line
+	1900 3800 2250 3800
+Wire Wire Line
+	1900 3900 2250 3900
+Entry Wire Line
+	2250 3500 2350 3600
+Entry Wire Line
+	2250 3600 2350 3700
+Entry Wire Line
+	2250 3700 2350 3800
+Entry Wire Line
+	2250 3800 2350 3900
+NoConn ~ 3400 3300
+Text Label 3550 3400 1    50   ~ 0
+MAX13
+Entry Wire Line
+	2250 3900 2350 4000
+Wire Bus Line
+	2350 2400 2400 2400
+Connection ~ 2400 2400
+Wire Bus Line
+	2400 2400 3700 2400
+Wire Wire Line
+	3400 3400 3550 3400
+Wire Wire Line
+	2500 3400 2800 3400
+Wire Wire Line
+	2500 3300 2800 3300
+Wire Wire Line
+	2500 3200 2800 3200
+Wire Wire Line
+	2500 3100 2800 3100
+Wire Wire Line
+	2500 3000 2800 3000
+Wire Wire Line
+	2500 2900 2800 2900
+Wire Wire Line
+	2800 2800 2500 2800
+Wire Wire Line
+	2800 2700 2500 2700
+Text Label 2550 3400 0    50   ~ 0
+MAX7
+Text Label 2550 3300 0    50   ~ 0
+MAX6
+Text Label 2550 3200 0    50   ~ 0
+MAX5
+Text Label 2550 3100 0    50   ~ 0
+MAX4
+Text Label 2550 3000 0    50   ~ 0
+MAX3
+Text Label 2550 2900 0    50   ~ 0
+MAX2
+Text Label 2550 2800 0    50   ~ 0
+MAX1
+Text Label 2550 2700 0    50   ~ 0
+MAX0
+Entry Wire Line
+	3550 3400 3650 3500
 $Comp
-L Display_Character:KCSC02-105 U?
-U 1 1 5F61A3E5
-P 6500 4600
-F 0 "U?" H 6500 5267 50  0000 C CNN
-F 1 "COM standby 3" H 6500 5176 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 6500 4000 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 6000 5075 50  0001 L CNN
-	1    6500 4600
+L Display_Character:KCSC02-105 LED2
+U 1 1 5F659624
+P 4400 3000
+F 0 "LED2" H 4400 2350 50  0000 C CNN
+F 1 "Mobiflight digit 5" H 4400 2450 50  0000 C CNN
+F 2 "Display_7Segment:KCSC02-105" H 4400 2400 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 3900 3475 50  0001 L CNN
+	1    4400 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 6200 4300 0    50   Input ~ 0
-COMS_A
-Text GLabel 6200 4400 0    50   Input ~ 0
-COMS_B
-Text GLabel 6200 4500 0    50   Input ~ 0
-COMS_C
-Text GLabel 6200 4600 0    50   Input ~ 0
-COMS_D
-Text GLabel 6200 4700 0    50   Input ~ 0
-COMS_E
-Text GLabel 6200 4800 0    50   Input ~ 0
-COMS_F
-Text GLabel 6200 4900 0    50   Input ~ 0
-COMS_G
-Text GLabel 6200 5000 0    50   Input ~ 0
-COMS_DP
-NoConn ~ 6800 5000
-Text GLabel 6800 4900 1    50   Input ~ 0
-COMS_4
+Entry Wire Line
+	3800 2700 3700 2800
+Entry Wire Line
+	3800 2800 3700 2900
+Entry Wire Line
+	3800 2900 3700 3000
+Entry Wire Line
+	3800 3000 3700 3100
+Entry Wire Line
+	3800 3100 3700 3200
+Entry Wire Line
+	3800 3200 3700 3300
+Entry Wire Line
+	3800 3300 3700 3400
+Entry Wire Line
+	3800 3400 3700 3500
+NoConn ~ 4700 3300
+Text Label 4850 3400 1    50   ~ 0
+MAX12
+Wire Wire Line
+	4700 3400 4850 3400
+Wire Wire Line
+	3800 3400 4100 3400
+Wire Wire Line
+	3800 3300 4100 3300
+Wire Wire Line
+	3800 3200 4100 3200
+Wire Wire Line
+	3800 3100 4100 3100
+Wire Wire Line
+	3800 3000 4100 3000
+Wire Wire Line
+	3800 2900 4100 2900
+Wire Wire Line
+	4100 2800 3800 2800
+Wire Wire Line
+	4100 2700 3800 2700
+Text Label 3850 3400 0    50   ~ 0
+MAX7
+Text Label 3850 3300 0    50   ~ 0
+MAX6
+Text Label 3850 3200 0    50   ~ 0
+MAX5
+Text Label 3850 3100 0    50   ~ 0
+MAX4
+Text Label 3850 3000 0    50   ~ 0
+MAX3
+Text Label 3850 2900 0    50   ~ 0
+MAX2
+Text Label 3850 2800 0    50   ~ 0
+MAX1
+Text Label 3850 2700 0    50   ~ 0
+MAX0
+Entry Wire Line
+	4850 3400 4950 3500
 $Comp
-L Display_Character:KCSC02-105 U?
-U 1 1 5F61AEE9
-P 7650 4600
-F 0 "U?" H 7650 5267 50  0000 C CNN
-F 1 "COM standby 2" H 7650 5176 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 7650 4000 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 7150 5075 50  0001 L CNN
-	1    7650 4600
+L Display_Character:KCSC02-105 LED3
+U 1 1 5F65BA95
+P 5700 3000
+F 0 "LED3" H 5700 2350 50  0000 C CNN
+F 1 "Mobiflight digit 5" H 5700 2450 50  0000 C CNN
+F 2 "Display_7Segment:KCSC02-105" H 5700 2400 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 5200 3475 50  0001 L CNN
+	1    5700 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 7350 4300 0    50   Input ~ 0
-COMS_A
-Text GLabel 7350 4400 0    50   Input ~ 0
-COMS_B
-Text GLabel 7350 4500 0    50   Input ~ 0
-COMS_C
-Text GLabel 7350 4600 0    50   Input ~ 0
-COMS_D
-Text GLabel 7350 4700 0    50   Input ~ 0
-COMS_E
-Text GLabel 7350 4800 0    50   Input ~ 0
-COMS_F
-Text GLabel 7350 4900 0    50   Input ~ 0
-COMS_G
-Text GLabel 7350 5000 0    50   Input ~ 0
-COMS_DP
-NoConn ~ 7950 5000
-Text GLabel 7950 4900 1    50   Input ~ 0
-COMS_4
+Entry Wire Line
+	5100 2700 5000 2800
+Entry Wire Line
+	5100 2800 5000 2900
+Entry Wire Line
+	5100 2900 5000 3000
+Entry Wire Line
+	5100 3000 5000 3100
+Entry Wire Line
+	5100 3100 5000 3200
+Entry Wire Line
+	5100 3200 5000 3300
+Entry Wire Line
+	5100 3300 5000 3400
+Entry Wire Line
+	5100 3400 5000 3500
+NoConn ~ 6000 3300
+Text Label 6150 3400 1    50   ~ 0
+MAX11
+Wire Wire Line
+	6000 3400 6150 3400
+Wire Wire Line
+	5100 3400 5400 3400
+Wire Wire Line
+	5100 3300 5400 3300
+Wire Wire Line
+	5100 3200 5400 3200
+Wire Wire Line
+	5100 3100 5400 3100
+Wire Wire Line
+	5100 3000 5400 3000
+Wire Wire Line
+	5100 2900 5400 2900
+Wire Wire Line
+	5400 2800 5100 2800
+Wire Wire Line
+	5400 2700 5100 2700
+Text Label 5150 3400 0    50   ~ 0
+MAX7
+Text Label 5150 3300 0    50   ~ 0
+MAX6
+Text Label 5150 3200 0    50   ~ 0
+MAX5
+Text Label 5150 3100 0    50   ~ 0
+MAX4
+Text Label 5150 3000 0    50   ~ 0
+MAX3
+Text Label 5150 2900 0    50   ~ 0
+MAX2
+Text Label 5150 2800 0    50   ~ 0
+MAX1
+Text Label 5150 2700 0    50   ~ 0
+MAX0
+Entry Wire Line
+	6150 3400 6250 3500
 $Comp
-L Display_Character:KCSC02-105 U?
-U 1 1 5F61BA89
-P 8800 4600
-F 0 "U?" H 8800 5267 50  0000 C CNN
-F 1 "COM standby 1" H 8800 5176 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 8800 4000 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 8300 5075 50  0001 L CNN
-	1    8800 4600
+L Display_Character:KCSC02-105 LED4
+U 1 1 5F65DC6C
+P 7000 3000
+F 0 "LED4" H 7000 2350 50  0000 C CNN
+F 1 "Mobiflight digit 5" H 7000 2450 50  0000 C CNN
+F 2 "Display_7Segment:KCSC02-105" H 7000 2400 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 6500 3475 50  0001 L CNN
+	1    7000 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 8500 4300 0    50   Input ~ 0
-COMS_A
-Text GLabel 8500 4400 0    50   Input ~ 0
-COMS_B
-Text GLabel 8500 4500 0    50   Input ~ 0
-COMS_C
-Text GLabel 8500 4600 0    50   Input ~ 0
-COMS_D
-Text GLabel 8500 4700 0    50   Input ~ 0
-COMS_E
-Text GLabel 8500 4800 0    50   Input ~ 0
-COMS_F
-Text GLabel 8500 4900 0    50   Input ~ 0
-COMS_G
-Text GLabel 8500 5000 0    50   Input ~ 0
-COMS_DP
-NoConn ~ 9100 5000
-Text GLabel 9100 4900 1    50   Input ~ 0
-COMS_4
+Entry Wire Line
+	6400 2700 6300 2800
+Entry Wire Line
+	6400 2800 6300 2900
+Entry Wire Line
+	6400 2900 6300 3000
+Entry Wire Line
+	6400 3000 6300 3100
+Entry Wire Line
+	6400 3100 6300 3200
+Entry Wire Line
+	6400 3200 6300 3300
+Entry Wire Line
+	6400 3300 6300 3400
+Entry Wire Line
+	6400 3400 6300 3500
+NoConn ~ 7300 3300
+Text Label 7450 3400 1    50   ~ 0
+MAX10
+Wire Wire Line
+	7300 3400 7450 3400
+Wire Wire Line
+	6400 3400 6700 3400
+Wire Wire Line
+	6400 3300 6700 3300
+Wire Wire Line
+	6400 3200 6700 3200
+Wire Wire Line
+	6400 3100 6700 3100
+Wire Wire Line
+	6400 3000 6700 3000
+Wire Wire Line
+	6400 2900 6700 2900
+Wire Wire Line
+	6700 2800 6400 2800
+Wire Wire Line
+	6700 2700 6400 2700
+Text Label 6450 3400 0    50   ~ 0
+MAX7
+Text Label 6450 3300 0    50   ~ 0
+MAX6
+Text Label 6450 3200 0    50   ~ 0
+MAX5
+Text Label 6450 3100 0    50   ~ 0
+MAX4
+Text Label 6450 3000 0    50   ~ 0
+MAX3
+Text Label 6450 2900 0    50   ~ 0
+MAX2
+Text Label 6450 2800 0    50   ~ 0
+MAX1
+Text Label 6450 2700 0    50   ~ 0
+MAX0
+Entry Wire Line
+	7450 3400 7550 3500
 $Comp
-L Display_Character:KCSC02-105 U?
-U 1 1 5F61CD43
-P 9950 4600
-F 0 "U?" H 9950 5267 50  0000 C CNN
-F 1 "COM standby 0" H 9950 5176 50  0000 C CNN
-F 2 "Display_7Segment:KCSC02-105" H 9950 4000 50  0001 C CNN
-F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 9450 5075 50  0001 L CNN
-	1    9950 4600
+L Display_Character:KCSC02-105 LED5
+U 1 1 5F676B4F
+P 8300 3000
+F 0 "LED5" H 8300 2350 50  0000 C CNN
+F 1 "Mobiflight digit 5" H 8300 2450 50  0000 C CNN
+F 2 "Display_7Segment:KCSC02-105" H 8300 2400 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf" H 7800 3475 50  0001 L CNN
+	1    8300 3000
 	1    0    0    -1  
 $EndComp
-Text GLabel 9650 4300 0    50   Input ~ 0
-COMS_A
-Text GLabel 9650 4400 0    50   Input ~ 0
-COMS_B
-Text GLabel 9650 4500 0    50   Input ~ 0
-COMS_C
-Text GLabel 9650 4600 0    50   Input ~ 0
-COMS_D
-Text GLabel 9650 4700 0    50   Input ~ 0
-COMS_E
-Text GLabel 9650 4800 0    50   Input ~ 0
-COMS_F
-Text GLabel 9650 4900 0    50   Input ~ 0
-COMS_G
-Text GLabel 9650 5000 0    50   Input ~ 0
-COMS_DP
-NoConn ~ 10250 5000
-Text GLabel 10250 4900 1    50   Input ~ 0
-COMS_4
+Entry Wire Line
+	7700 2700 7600 2800
+Entry Wire Line
+	7700 2800 7600 2900
+Entry Wire Line
+	7700 2900 7600 3000
+Entry Wire Line
+	7700 3000 7600 3100
+Entry Wire Line
+	7700 3100 7600 3200
+Entry Wire Line
+	7700 3200 7600 3300
+Entry Wire Line
+	7700 3300 7600 3400
+Entry Wire Line
+	7700 3400 7600 3500
+NoConn ~ 8600 3300
+Text Label 8750 3400 1    50   ~ 0
+MAX9
+Wire Wire Line
+	8600 3400 8750 3400
+Wire Wire Line
+	7700 3400 8000 3400
+Wire Wire Line
+	7700 3300 8000 3300
+Wire Wire Line
+	7700 3200 8000 3200
+Wire Wire Line
+	7700 3100 8000 3100
+Wire Wire Line
+	7700 3000 8000 3000
+Wire Wire Line
+	7700 2900 8000 2900
+Wire Wire Line
+	8000 2800 7700 2800
+Wire Wire Line
+	8000 2700 7700 2700
+Text Label 7750 3400 0    50   ~ 0
+MAX7
+Text Label 7750 3300 0    50   ~ 0
+MAX6
+Text Label 7750 3200 0    50   ~ 0
+MAX5
+Text Label 7750 3100 0    50   ~ 0
+MAX4
+Text Label 7750 3000 0    50   ~ 0
+MAX3
+Text Label 7750 2900 0    50   ~ 0
+MAX2
+Text Label 7750 2800 0    50   ~ 0
+MAX1
+Text Label 7750 2700 0    50   ~ 0
+MAX0
+Entry Wire Line
+	8750 3400 8850 3500
+Connection ~ 3700 2400
+Wire Bus Line
+	3700 2400 5000 2400
+Connection ~ 5000 2400
+Wire Bus Line
+	5000 2400 6300 2400
+Connection ~ 6300 2400
+Wire Bus Line
+	6300 2400 7600 2400
+Wire Bus Line
+	8850 3500 8850 4350
+Wire Bus Line
+	3650 4350 3650 3500
+Wire Bus Line
+	2350 4350 3650 4350
+Connection ~ 3650 4350
+Wire Bus Line
+	4950 3500 4950 4350
+Wire Bus Line
+	3650 4350 4950 4350
+Connection ~ 4950 4350
+Wire Bus Line
+	4950 4350 6250 4350
+Wire Bus Line
+	6250 3500 6250 4350
+Connection ~ 6250 4350
+Wire Bus Line
+	6250 4350 7550 4350
+Wire Bus Line
+	7550 3500 7550 4350
+Wire Bus Line
+	2350 3600 2350 4350
+Wire Bus Line
+	2400 2400 2400 3500
+Wire Bus Line
+	2350 2400 2350 3500
+Wire Bus Line
+	3700 2400 3700 3500
+Wire Bus Line
+	5000 2400 5000 3500
+Wire Bus Line
+	6300 2400 6300 3500
+Wire Bus Line
+	7600 2400 7600 3500
+Connection ~ 7550 4350
+Wire Bus Line
+	7550 4350 8850 4350
 $EndSCHEMATC
