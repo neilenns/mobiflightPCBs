@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name "Cessna 172 nav and com radio")(type KiCad)(uri "C:/Users/neile/git/mobiflightPCBs/Cessna172NavCom/lib_fp.pretty/Cessna 172 nav and com radio.pretty")(options "")(descr ""))
+  (lib (name "Cessna 172 nav and com radio")(type KiCad)(uri "D:/git/mobiflightPCBs/Cessna172NavCom/lib_fp.pretty/Cessna 172 nav and com radio.pretty")(options "")(descr ""))
 )
