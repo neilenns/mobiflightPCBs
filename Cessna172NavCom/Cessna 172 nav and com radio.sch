@@ -574,7 +574,7 @@ IDENT_LED
 Wire Notes Line
 	5550 5900 5550 4700
 $Comp
-L Cessna~172~nav~and~com~radio:B3W-9000-xxx SW1
+L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW1
 U 1 1 5F605163
 P 1100 5300
 F 0 "SW1" H 1100 5735 50  0000 C CNN
@@ -585,7 +585,7 @@ F 3 "" H 1100 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Cessna~172~nav~and~com~radio:B3W-9000-xxx SW2
+L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW2
 U 1 1 5F6062D0
 P 2450 5300
 F 0 "SW2" H 2450 5735 50  0000 C CNN
@@ -596,7 +596,7 @@ F 3 "" H 2450 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Cessna~172~nav~and~com~radio:B3W-9000-xxx SW5
+L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW5
 U 1 1 5F607045
 P 3700 5300
 F 0 "SW5" H 3700 5735 50  0000 C CNN
@@ -607,7 +607,7 @@ F 3 "" H 3700 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Cessna~172~nav~and~com~radio:B3W-9000-xxx SW6
+L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW6
 U 1 1 5F6074D3
 P 4850 5300
 F 0 "SW6" H 4850 5735 50  0000 C CNN

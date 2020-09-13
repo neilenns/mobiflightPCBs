@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SW_Push__Dual_LED
-D Push button switch with LED, generic
-K switch normally-open pushbutton push-button LED
-F ~
-$ENDCMP
-#
-#End Doc Library
