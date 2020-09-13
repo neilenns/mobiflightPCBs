@@ -192,7 +192,6 @@ Wire Wire Line
 	7350 3700 7450 3700
 Text Notes 7450 3400 0    50   ~ 0
 NAV standby
-NoConn ~ 8900 3800
 Wire Wire Line
 	8750 3800 8900 3800
 Wire Notes Line
@@ -371,42 +370,8 @@ Wire Notes Line
 	4400 1850 9700 1850
 Wire Notes Line
 	4400 650  9700 650 
-Wire Notes Line
-	600  4700 5550 4700
-$Comp
-L Device:LED D1
-U 1 1 5F5F30E5
-P 3650 900
-F 0 "D1" H 3750 1000 50  0000 C CNN
-F 1 "LED" H 3750 1100 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 900 50  0001 C CNN
-F 3 "~" H 3650 900 50  0001 C CNN
-	1    3650 900 
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R13
-U 1 1 5F5F4214
-P 3800 1050
-F 0 "R13" H 3870 1096 50  0000 L CNN
-F 1 "220" H 3870 1005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3730 1050 50  0001 C CNN
-F 3 "~" H 3800 1050 50  0001 C CNN
-	1    3800 1050
-	1    0    0    -1  
-$EndComp
 Connection ~ 3200 1200
-Connection ~ 3800 1200
-Wire Wire Line
-	3800 1200 4100 1200
 Connection ~ 3200 900 
-Wire Wire Line
-	3800 900  4100 900 
-Connection ~ 3800 900 
-Wire Wire Line
-	3200 1200 3800 1200
-Wire Wire Line
-	3200 900  3500 900 
 Wire Wire Line
 	3150 900  3200 900 
 Wire Wire Line
@@ -494,18 +459,12 @@ Wire Wire Line
 	3800 3900 3900 3900
 Wire Wire Line
 	2000 3900 2100 3900
-Wire Notes Line
-	9000 3050 9000 4450
-Wire Notes Line
-	600  4450 9000 4450
-Wire Notes Line
-	600  3050 9000 3050
 $Comp
 L Device:R R1
 U 1 1 5F649AB0
 P 1250 3650
 F 0 "R1" H 1320 3696 50  0000 L CNN
-F 1 "220" H 1320 3605 50  0000 L CNN
+F 1 "220k" H 1320 3605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1180 3650 50  0001 C CNN
 F 3 "~" H 1250 3650 50  0001 C CNN
 	1    1250 3650
@@ -537,25 +496,21 @@ Wire Wire Line
 	2250 5450 2250 5550
 NoConn ~ 2650 5150
 NoConn ~ 2250 5150
-NoConn ~ 4650 5150
-NoConn ~ 5050 5150
+NoConn ~ 3500 5150
+NoConn ~ 3900 5150
 Wire Wire Line
-	4650 5450 4650 5550
-Connection ~ 4650 5450
+	3500 5450 3500 5550
+Connection ~ 3500 5450
 Wire Wire Line
-	4650 5450 4600 5450
+	3500 5450 3450 5450
 Wire Wire Line
-	4650 5350 4650 5450
-Text GLabel 4600 5450 0    50   Input ~ 0
+	3500 5350 3500 5450
+Text GLabel 3450 5450 0    50   Input ~ 0
 GND
-Wire Notes Line
-	600  5900 5550 5900
-Text GLabel 5050 5350 2    50   Output ~ 0
+Text GLabel 3900 5350 2    50   Output ~ 0
 IDENT_SW
-Text GLabel 5050 5550 2    50   Input ~ 0
+Text GLabel 3900 5550 2    50   Input ~ 0
 IDENT_LED
-Wire Notes Line
-	5550 5900 5550 4700
 $Comp
 L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW1
 U 1 1 5F605163
@@ -581,14 +536,135 @@ $EndComp
 $Comp
 L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW6
 U 1 1 5F6074D3
-P 4850 5300
-F 0 "SW6" H 4850 5735 50  0000 C CNN
-F 1 "Ident switch" H 4850 5644 50  0000 C CNN
-F 2 "Cessna 172 nav and com radio:B3W-9000-xxx" H 4850 5300 50  0001 C CNN
-F 3 "" H 4850 5300 50  0001 C CNN
-	1    4850 5300
+P 3700 5300
+F 0 "SW6" H 3700 5735 50  0000 C CNN
+F 1 "Ident switch" H 3700 5644 50  0000 C CNN
+F 2 "Cessna 172 nav and com radio:B3W-9000-xxx" H 3700 5300 50  0001 C CNN
+F 3 "" H 3700 5300 50  0001 C CNN
+	1    3700 5300
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1400 3950
 NoConn ~ 1900 2750
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5F5E75F2
+P 3750 1850
+F 0 "J2" H 3700 2250 50  0000 L CNN
+F 1 "Conn_01x05" H 3500 2150 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3750 1850 50  0001 C CNN
+F 3 "~" H 3750 1850 50  0001 C CNN
+	1    3750 1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 1650 0    50   Output ~ 0
++5V
+Text GLabel 3550 1750 0    50   Output ~ 0
+GND
+Text GLabel 3550 1850 0    50   Output ~ 0
+LOAD
+Text GLabel 3550 1950 0    50   Output ~ 0
+CLK
+Text GLabel 3550 2050 0    50   Output ~ 0
+DOUT
+Text GLabel 8900 3800 2    50   Output ~ 0
+DOUT
+Wire Notes Line
+	9200 4450 9200 3050
+Wire Notes Line
+	600  4450 9200 4450
+Wire Notes Line
+	600  3050 9200 3050
+Wire Notes Line
+	600  4700 4400 4700
+Wire Notes Line
+	600  5900 4400 5900
+Wire Notes Line
+	4400 4700 4400 5900
+$Comp
+L Connector:Barrel_Jack_MountingPin J3
+U 1 1 5F5F8100
+P 3600 2500
+F 0 "J3" H 3657 2817 50  0000 C CNN
+F 1 "Barrel_Jack_MountingPin" H 3657 2726 50  0000 C CNN
+F 2 "Cessna 172 nav and com radio:BarrelJack_Horizontal" H 3650 2460 50  0001 C CNN
+F 3 "~" H 3650 2460 50  0001 C CNN
+	1    3600 2500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3600 2800
+Text GLabel 3900 2400 2    50   Input ~ 0
++5V
+Text GLabel 3900 2600 2    50   Input ~ 0
+GND
+$Comp
+L Device:LED D1
+U 1 1 5F5FCD17
+P 4950 5400
+F 0 "D1" H 4943 5616 50  0000 C CNN
+F 1 "LED" H 4943 5525 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4950 5400 50  0001 C CNN
+F 3 "~" H 4950 5400 50  0001 C CNN
+	1    4950 5400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4950 5550 3    50   Input ~ 0
+GND
+Text GLabel 4600 5250 1    50   Input ~ 0
+TEST_LED
+Wire Notes Line
+	4450 4700 4450 5900
+Wire Notes Line
+	4450 5900 8150 5900
+Wire Notes Line
+	8150 5900 8150 4700
+Wire Notes Line
+	8150 4700 4450 4700
+Text Notes 4450 4650 0    50   ~ 0
+Status LEDs
+$Comp
+L Device:R R2
+U 1 1 5F608695
+P 4800 5250
+F 0 "R2" V 4593 5250 50  0000 C CNN
+F 1 "220k" V 4684 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4730 5250 50  0001 C CNN
+F 3 "~" H 4800 5250 50  0001 C CNN
+	1    4800 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 5250 4650 5250
+$Comp
+L Device:LED D2
+U 1 1 5F60E071
+P 5550 5400
+F 0 "D2" H 5543 5616 50  0000 C CNN
+F 1 "LED" H 5543 5525 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5550 5400 50  0001 C CNN
+F 3 "~" H 5550 5400 50  0001 C CNN
+	1    5550 5400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5550 5550 3    50   Input ~ 0
+GND
+Text GLabel 5200 5250 1    50   Input ~ 0
++5V
+$Comp
+L Device:R R3
+U 1 1 5F60E079
+P 5400 5250
+F 0 "R3" V 5193 5250 50  0000 C CNN
+F 1 "220k" V 5284 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5330 5250 50  0001 C CNN
+F 3 "~" H 5400 5250 50  0001 C CNN
+	1    5400 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 5250 5250 5250
+Wire Wire Line
+	3200 1200 4100 1200
+Wire Wire Line
+	3200 900  4100 900 
 $EndSCHEMATC
