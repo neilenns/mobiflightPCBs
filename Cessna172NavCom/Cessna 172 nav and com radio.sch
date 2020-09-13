@@ -349,7 +349,7 @@ COMM_VOL_LEFT
 Text GLabel 8950 1300 2    50   Output ~ 0
 COMM_VOL_RIGHT
 Text GLabel 8950 1450 2    50   Output ~ 0
-COMM_VOL_SW
+TEST_SW
 Wire Wire Line
 	8850 1150 8950 1150
 Wire Wire Line
@@ -371,10 +371,6 @@ Wire Notes Line
 	4400 1850 9700 1850
 Wire Notes Line
 	4400 650  9700 650 
-Text GLabel 3900 5550 2    50   Input ~ 0
-TEST_LED
-Text GLabel 3900 5350 2    50   Output ~ 0
-TEST_SW
 Wire Notes Line
 	600  4700 5550 4700
 $Comp
@@ -428,10 +424,8 @@ COMM_VOL_LEFT
 Text GLabel 1900 2450 0    50   Input ~ 0
 COMM_VOL_RIGHT
 Text GLabel 1900 2550 0    50   Input ~ 0
-COMM_VOL_SW
-Text GLabel 1900 2650 0    50   Input ~ 0
 IDENT_SW
-Text GLabel 1900 2750 0    50   Output ~ 0
+Text GLabel 1900 2650 0    50   Output ~ 0
 IDENT_LED
 NoConn ~ 2400 2650
 NoConn ~ 2400 2750
@@ -543,17 +537,6 @@ Wire Wire Line
 	2250 5450 2250 5550
 NoConn ~ 2650 5150
 NoConn ~ 2250 5150
-Text GLabel 3450 5450 0    50   Input ~ 0
-GND
-Wire Wire Line
-	3500 5350 3500 5450
-Wire Wire Line
-	3500 5450 3450 5450
-Connection ~ 3500 5450
-Wire Wire Line
-	3500 5450 3500 5550
-NoConn ~ 3900 5150
-NoConn ~ 3500 5150
 NoConn ~ 4650 5150
 NoConn ~ 5050 5150
 Wire Wire Line
@@ -596,17 +579,6 @@ F 3 "" H 2450 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW5
-U 1 1 5F607045
-P 3700 5300
-F 0 "SW5" H 3700 5735 50  0000 C CNN
-F 1 "Test switch" H 3700 5644 50  0000 C CNN
-F 2 "Cessna 172 nav and com radio:B3W-9000-xxx" H 3700 5300 50  0001 C CNN
-F 3 "" H 3700 5300 50  0001 C CNN
-	1    3700 5300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW6
 U 1 1 5F6074D3
 P 4850 5300
@@ -618,4 +590,5 @@ F 3 "" H 4850 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1400 3950
+NoConn ~ 1900 2750
 $EndSCHEMATC
