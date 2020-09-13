@@ -20,10 +20,10 @@ CLK
 Text GLabel 2400 1850 2    50   Output ~ 0
 DIN
 $Comp
-L power:+5V #PWR01
+L power:+5V #PWR03
 U 1 1 5F5E2FDE
 P 1900 1650
-F 0 "#PWR01" H 1900 1500 50  0001 C CNN
+F 0 "#PWR03" H 1900 1500 50  0001 C CNN
 F 1 "+5V" V 1915 1778 50  0000 L CNN
 F 2 "" H 1900 1650 50  0001 C CNN
 F 3 "" H 1900 1650 50  0001 C CNN
@@ -31,10 +31,10 @@ F 3 "" H 1900 1650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR02
+L power:GND #PWR04
 U 1 1 5F5E3807
 P 1900 1750
-F 0 "#PWR02" H 1900 1500 50  0001 C CNN
+F 0 "#PWR04" H 1900 1500 50  0001 C CNN
 F 1 "GND" V 1905 1622 50  0000 R CNN
 F 2 "" H 1900 1750 50  0001 C CNN
 F 3 "" H 1900 1750 50  0001 C CNN
@@ -258,12 +258,8 @@ Text Notes 4400 600  0    50   ~ 0
 Knobs
 Text GLabel 2400 2250 2    50   Input ~ 0
 COMM_TX_SW
-Text GLabel 2400 2350 2    50   Output ~ 0
-COMM_TX_LED
 Text GLabel 1900 2150 0    50   Input ~ 0
 NAV_TX_SW
-Text GLabel 1900 2250 0    50   Output ~ 0
-NAV_TX_LED
 Wire Wire Line
 	7100 1450 7200 1450
 Text GLabel 1900 2050 0    50   Input ~ 0
@@ -308,10 +304,10 @@ Wire Wire Line
 	1250 900  950  900 
 Connection ~ 1250 900 
 $Comp
-L power:+5V #PWR0101
+L power:+5V #PWR01
 U 1 1 5F616FD8
 P 950 900
-F 0 "#PWR0101" H 950 750 50  0001 C CNN
+F 0 "#PWR01" H 950 750 50  0001 C CNN
 F 1 "+5V" V 965 1028 50  0000 L CNN
 F 2 "" H 950 900 50  0001 C CNN
 F 3 "" H 950 900 50  0001 C CNN
@@ -319,26 +315,20 @@ F 3 "" H 950 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0102
+L power:GND #PWR02
 U 1 1 5F6175A7
 P 950 1200
-F 0 "#PWR0102" H 950 950 50  0001 C CNN
+F 0 "#PWR02" H 950 950 50  0001 C CNN
 F 1 "GND" V 955 1072 50  0000 R CNN
 F 2 "" H 950 1200 50  0001 C CNN
 F 3 "" H 950 1200 50  0001 C CNN
 	1    950  1200
 	0    1    1    0   
 $EndComp
-Text GLabel 1300 5550 2    50   Input ~ 0
-COMM_TX_LED
-Text GLabel 2650 5550 2    50   Input ~ 0
-NAV_TX_LED
-Text GLabel 1300 5350 2    50   Output ~ 0
+Text GLabel 1300 5100 2    50   Output ~ 0
 COMM_TX_SW
-Text GLabel 2650 5350 2    50   Output ~ 0
+Text GLabel 1300 5550 2    50   Output ~ 0
 NAV_TX_SW
-Wire Notes Line
-	600  4700 600  5900
 Text Notes 600  4650 0    50   ~ 0
 Switches
 Text Notes 8000 800  0    50   ~ 0
@@ -380,17 +370,17 @@ Wire Wire Line
 	3050 900  3200 900 
 Wire Wire Line
 	3050 1200 3200 1200
-Text GLabel 2400 2450 2    50   Input ~ 0
+Text GLabel 2400 2350 2    50   Input ~ 0
 TEST_SW
-Text GLabel 2400 2550 2    50   Output ~ 0
+Text GLabel 2400 2450 2    50   Output ~ 0
 TEST_LED
-Text GLabel 1900 2350 0    50   Input ~ 0
+Text GLabel 1900 2250 0    50   Input ~ 0
 COMM_VOL_LEFT
-Text GLabel 1900 2450 0    50   Input ~ 0
+Text GLabel 1900 2350 0    50   Input ~ 0
 COMM_VOL_RIGHT
-Text GLabel 1900 2550 0    50   Input ~ 0
+Text GLabel 1900 2450 0    50   Input ~ 0
 IDENT_SW
-Text GLabel 1900 2650 0    50   Output ~ 0
+Text GLabel 1900 2550 0    50   Output ~ 0
 IDENT_LED
 NoConn ~ 2400 2650
 NoConn ~ 2400 2750
@@ -474,83 +464,15 @@ Text GLabel 1250 3500 1    50   Input ~ 0
 +5V
 Text Notes 850  3250 0    50   ~ 0
 Display brightness control
-Text GLabel 850  5450 0    50   Input ~ 0
-GND
-Wire Wire Line
-	900  5350 900  5450
-Wire Wire Line
-	900  5450 850  5450
-Connection ~ 900  5450
-Wire Wire Line
-	900  5450 900  5550
-NoConn ~ 1300 5150
-NoConn ~ 900  5150
-Text GLabel 2200 5450 0    50   Input ~ 0
-GND
-Wire Wire Line
-	2250 5350 2250 5450
-Wire Wire Line
-	2250 5450 2200 5450
-Connection ~ 2250 5450
-Wire Wire Line
-	2250 5450 2250 5550
-NoConn ~ 2650 5150
-NoConn ~ 2250 5150
-NoConn ~ 3500 5150
-NoConn ~ 3900 5150
-Wire Wire Line
-	3500 5450 3500 5550
-Connection ~ 3500 5450
-Wire Wire Line
-	3500 5450 3450 5450
-Wire Wire Line
-	3500 5350 3500 5450
-Text GLabel 3450 5450 0    50   Input ~ 0
-GND
-Text GLabel 3900 5350 2    50   Output ~ 0
+Text GLabel 2600 5100 2    50   Output ~ 0
 IDENT_SW
-Text GLabel 3900 5550 2    50   Input ~ 0
-IDENT_LED
-$Comp
-L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW1
-U 1 1 5F605163
-P 1100 5300
-F 0 "SW1" H 1100 5735 50  0000 C CNN
-F 1 "COMM toggle" H 1100 5644 50  0000 C CNN
-F 2 "Cessna 172 nav and com radio:B3W-9000-xxx" H 1100 5300 50  0001 C CNN
-F 3 "" H 1100 5300 50  0001 C CNN
-	1    1100 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW2
-U 1 1 5F6062D0
-P 2450 5300
-F 0 "SW2" H 2450 5735 50  0000 C CNN
-F 1 "NAV toggle" H 2450 5644 50  0000 C CNN
-F 2 "Cessna 172 nav and com radio:B3W-9000-xxx" H 2450 5300 50  0001 C CNN
-F 3 "" H 2450 5300 50  0001 C CNN
-	1    2450 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Cessna_172_nav_and_com_radio:B3W-9000-xxx SW6
-U 1 1 5F6074D3
-P 3700 5300
-F 0 "SW6" H 3700 5735 50  0000 C CNN
-F 1 "Ident switch" H 3700 5644 50  0000 C CNN
-F 2 "Cessna 172 nav and com radio:B3W-9000-xxx" H 3700 5300 50  0001 C CNN
-F 3 "" H 3700 5300 50  0001 C CNN
-	1    3700 5300
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1400 3950
 NoConn ~ 1900 2750
 $Comp
-L Connector_Generic:Conn_01x05 J2
+L Connector_Generic:Conn_01x05 J3
 U 1 1 5F5E75F2
 P 3750 1850
-F 0 "J2" H 3700 2250 50  0000 L CNN
+F 0 "J3" H 3700 2250 50  0000 L CNN
 F 1 "Conn_01x05" H 3500 2150 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3750 1850 50  0001 C CNN
 F 3 "~" H 3750 1850 50  0001 C CNN
@@ -575,17 +497,11 @@ Wire Notes Line
 	600  4450 9200 4450
 Wire Notes Line
 	600  3050 9200 3050
-Wire Notes Line
-	600  4700 4400 4700
-Wire Notes Line
-	600  5900 4400 5900
-Wire Notes Line
-	4400 4700 4400 5900
 $Comp
-L Connector:Barrel_Jack_MountingPin J3
+L Connector:Barrel_Jack_MountingPin J2
 U 1 1 5F5F8100
 P 3600 2500
-F 0 "J3" H 3657 2817 50  0000 C CNN
+F 0 "J2" H 3657 2817 50  0000 C CNN
 F 1 "Barrel_Jack_MountingPin" H 3657 2726 50  0000 C CNN
 F 2 "Cessna 172 nav and com radio:BarrelJack_Horizontal" H 3650 2460 50  0001 C CNN
 F 3 "~" H 3650 2460 50  0001 C CNN
@@ -598,73 +514,152 @@ Text GLabel 3900 2400 2    50   Input ~ 0
 Text GLabel 3900 2600 2    50   Input ~ 0
 GND
 $Comp
-L Device:LED D1
+L Device:LED D2
 U 1 1 5F5FCD17
-P 4950 5400
-F 0 "D1" H 4943 5616 50  0000 C CNN
-F 1 "LED" H 4943 5525 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 4950 5400 50  0001 C CNN
-F 3 "~" H 4950 5400 50  0001 C CNN
-	1    4950 5400
+P 4250 5400
+F 0 "D2" H 4243 5616 50  0000 C CNN
+F 1 "LED" H 4243 5525 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4250 5400 50  0001 C CNN
+F 3 "~" H 4250 5400 50  0001 C CNN
+	1    4250 5400
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4950 5550 3    50   Input ~ 0
+Text GLabel 4250 5550 3    50   Input ~ 0
 GND
-Text GLabel 4600 5250 1    50   Input ~ 0
+Text GLabel 3900 5250 1    50   Input ~ 0
 TEST_LED
 Wire Notes Line
-	4450 4700 4450 5900
+	3200 4700 3200 5900
 Wire Notes Line
-	4450 5900 8150 5900
+	3200 5900 6900 5900
 Wire Notes Line
-	8150 5900 8150 4700
-Wire Notes Line
-	8150 4700 4450 4700
-Text Notes 4450 4650 0    50   ~ 0
+	6900 5900 6900 4700
+Text Notes 3200 4650 0    50   ~ 0
 Status LEDs
 $Comp
-L Device:R R2
+L Device:R R3
 U 1 1 5F608695
-P 4800 5250
-F 0 "R2" V 4593 5250 50  0000 C CNN
-F 1 "220k" V 4684 5250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4730 5250 50  0001 C CNN
-F 3 "~" H 4800 5250 50  0001 C CNN
-	1    4800 5250
+P 4100 5250
+F 0 "R3" V 3893 5250 50  0000 C CNN
+F 1 "220k" V 3984 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 5250 50  0001 C CNN
+F 3 "~" H 4100 5250 50  0001 C CNN
+	1    4100 5250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4600 5250 4650 5250
+	3900 5250 3950 5250
 $Comp
-L Device:LED D2
+L Device:LED D1
 U 1 1 5F60E071
-P 5550 5400
-F 0 "D2" H 5543 5616 50  0000 C CNN
-F 1 "LED" H 5543 5525 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5550 5400 50  0001 C CNN
-F 3 "~" H 5550 5400 50  0001 C CNN
-	1    5550 5400
+P 3700 5400
+F 0 "D1" H 3693 5616 50  0000 C CNN
+F 1 "LED" H 3693 5525 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3700 5400 50  0001 C CNN
+F 3 "~" H 3700 5400 50  0001 C CNN
+	1    3700 5400
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5550 5550 3    50   Input ~ 0
+Text GLabel 3700 5550 3    50   Input ~ 0
 GND
-Text GLabel 5200 5250 1    50   Input ~ 0
+Text GLabel 3350 5250 1    50   Input ~ 0
 +5V
 $Comp
-L Device:R R3
+L Device:R R2
 U 1 1 5F60E079
-P 5400 5250
-F 0 "R3" V 5193 5250 50  0000 C CNN
-F 1 "220k" V 5284 5250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5330 5250 50  0001 C CNN
-F 3 "~" H 5400 5250 50  0001 C CNN
-	1    5400 5250
+P 3550 5250
+F 0 "R2" V 3343 5250 50  0000 C CNN
+F 1 "220k" V 3434 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 5250 50  0001 C CNN
+F 3 "~" H 3550 5250 50  0001 C CNN
+	1    3550 5250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5200 5250 5250 5250
+	3350 5250 3400 5250
 Wire Wire Line
 	3200 1200 4100 1200
 Wire Wire Line
 	3200 900  4100 900 
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F608DA0
+P 1100 5100
+F 0 "SW1" H 1100 5385 50  0000 C CNN
+F 1 "SW_Push" H 1100 5294 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 1100 5300 50  0001 C CNN
+F 3 "~" H 1100 5300 50  0001 C CNN
+	1    1100 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 900  5100 0    50   Input ~ 0
+GND
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5F60DA70
+P 1100 5550
+F 0 "SW2" H 1100 5835 50  0000 C CNN
+F 1 "SW_Push" H 1100 5744 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 1100 5750 50  0001 C CNN
+F 3 "~" H 1100 5750 50  0001 C CNN
+	1    1100 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 900  5550 0    50   Input ~ 0
+GND
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5F60EA99
+P 2400 5100
+F 0 "SW3" H 2400 5385 50  0000 C CNN
+F 1 "SW_Push" H 2400 5294 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 2400 5300 50  0001 C CNN
+F 3 "~" H 2400 5300 50  0001 C CNN
+	1    2400 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 5100 0    50   Input ~ 0
+GND
+$Comp
+L Device:LED D3
+U 1 1 5F61685B
+P 4800 5400
+F 0 "D3" H 4793 5616 50  0000 C CNN
+F 1 "LED" H 4793 5525 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4800 5400 50  0001 C CNN
+F 3 "~" H 4800 5400 50  0001 C CNN
+	1    4800 5400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4800 5550 3    50   Input ~ 0
+GND
+Text GLabel 4450 5250 1    50   Input ~ 0
+IDENT_LED
+$Comp
+L Device:R R4
+U 1 1 5F616863
+P 4650 5250
+F 0 "R4" V 4443 5250 50  0000 C CNN
+F 1 "220k" V 4534 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4580 5250 50  0001 C CNN
+F 3 "~" H 4650 5250 50  0001 C CNN
+	1    4650 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 5250 4500 5250
+NoConn ~ 1900 2650
+NoConn ~ 2400 2550
+Wire Notes Line
+	600  4700 600  5700
+Wire Notes Line
+	600  5700 3100 5700
+Wire Notes Line
+	3100 5700 3100 4700
+Wire Notes Line
+	600  4700 3100 4700
+Wire Notes Line
+	6900 4700 3200 4700
+Text Notes 2150 5600 0    50   ~ 0
+Test switch is on\nCOMM volume\nrotary encoder
 $EndSCHEMATC
