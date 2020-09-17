@@ -13,106 +13,62 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 2400 1650 2    50   Output ~ 0
+Text GLabel 2950 1700 2    50   Output ~ 0
 LOAD
-Text GLabel 2400 1750 2    50   Output ~ 0
+Text GLabel 2950 1800 2    50   Output ~ 0
 CLK
-Text GLabel 2400 1850 2    50   Output ~ 0
+Text GLabel 2950 1900 2    50   Output ~ 0
 DIN
-$Comp
-L power:+5V #PWR03
-U 1 1 5F5E2FDE
-P 1900 1650
-F 0 "#PWR03" H 1900 1500 50  0001 C CNN
-F 1 "+5V" V 1915 1778 50  0000 L CNN
-F 2 "" H 1900 1650 50  0001 C CNN
-F 3 "" H 1900 1650 50  0001 C CNN
-	1    1900 1650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5F5E3807
-P 1900 1750
-F 0 "#PWR04" H 1900 1500 50  0001 C CNN
-F 1 "GND" V 1905 1622 50  0000 R CNN
-F 2 "" H 1900 1750 50  0001 C CNN
-F 3 "" H 1900 1750 50  0001 C CNN
-	1    1900 1750
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:C C1
 U 1 1 5F5E40FA
-P 1250 1050
-F 0 "C1" H 1365 1096 50  0000 L CNN
-F 1 "10uF" H 1365 1005 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1288 900 50  0001 C CNN
-F 3 "~" H 1250 1050 50  0001 C CNN
-	1    1250 1050
+P 1850 1050
+F 0 "C1" H 1965 1096 50  0000 L CNN
+F 1 "10uF" H 1965 1005 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1888 900 50  0001 C CNN
+F 3 "~" H 1850 1050 50  0001 C CNN
+	1    1850 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
 U 1 1 5F5E4B96
-P 1700 1050
-F 0 "C2" H 1815 1096 50  0000 L CNN
-F 1 "0.1uF" H 1815 1005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1738 900 50  0001 C CNN
-F 3 "~" H 1700 1050 50  0001 C CNN
-	1    1700 1050
+P 2300 1050
+F 0 "C2" H 2415 1096 50  0000 L CNN
+F 1 "0.1uF" H 2415 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2338 900 50  0001 C CNN
+F 3 "~" H 2300 1050 50  0001 C CNN
+	1    2300 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C4
 U 1 1 5F5E5831
-P 2600 1050
-F 0 "C4" H 2715 1096 50  0000 L CNN
-F 1 "0.1uF" H 2715 1005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2638 900 50  0001 C CNN
-F 3 "~" H 2600 1050 50  0001 C CNN
-	1    2600 1050
+P 3200 1050
+F 0 "C4" H 3315 1096 50  0000 L CNN
+F 1 "0.1uF" H 3315 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3238 900 50  0001 C CNN
+F 3 "~" H 3200 1050 50  0001 C CNN
+	1    3200 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C5
 U 1 1 5F5E5C8A
-P 3050 1050
-F 0 "C5" H 3165 1096 50  0000 L CNN
-F 1 "0.1uF" H 3165 1005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3088 900 50  0001 C CNN
-F 3 "~" H 3050 1050 50  0001 C CNN
-	1    3050 1050
+P 3650 1050
+F 0 "C5" H 3765 1096 50  0000 L CNN
+F 1 "0.1uF" H 3765 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3688 900 50  0001 C CNN
+F 3 "~" H 3650 1050 50  0001 C CNN
+	1    3650 1050
 	1    0    0    -1  
 $EndComp
-Connection ~ 3050 900 
-Connection ~ 3050 1200
-Text GLabel 4100 900  2    50   Output ~ 0
+Connection ~ 3650 900 
+Connection ~ 3650 1200
+Text GLabel 3950 900  2    50   Output ~ 0
 +5V
-Text GLabel 4100 1200 2    50   Output ~ 0
+Text GLabel 3950 1200 2    50   Output ~ 0
 GND
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5F5E7952
-P 3200 900
-F 0 "#FLG01" H 3200 975 50  0001 C CNN
-F 1 "PWR_FLAG" H 3200 1073 50  0000 C CNN
-F 2 "" H 3200 900 50  0001 C CNN
-F 3 "~" H 3200 900 50  0001 C CNN
-	1    3200 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5F5E7F50
-P 3200 1200
-F 0 "#FLG02" H 3200 1275 50  0001 C CNN
-F 1 "PWR_FLAG" H 3200 1373 50  0000 C CNN
-F 2 "" H 3200 1200 50  0001 C CNN
-F 3 "~" H 3200 1200 50  0001 C CNN
-	1    3200 1200
-	-1   0    0    1   
-$EndComp
 Text Notes 600  600  0    50   ~ 0
 Power and board connection
 $Sheet
@@ -198,9 +154,9 @@ Wire Notes Line
 	600  3050 600  4450
 Text Notes 600  3000 0    50   ~ 0
 LCD displays
-Text GLabel 2400 1950 2    50   Input ~ 0
+Text GLabel 2950 2000 2    50   Input ~ 0
 COMM_LEFT
-Text GLabel 2400 2050 2    50   Input ~ 0
+Text GLabel 2950 2100 2    50   Input ~ 0
 COMM_RIGHT
 Text Notes 4500 800  0    50   ~ 0
 COMM
@@ -225,7 +181,7 @@ F2 "LEFT" O R 5350 1150 50
 F3 "RIGHT" O R 5350 1300 50 
 F4 "SW" O R 5350 1450 50 
 $EndSheet
-Text GLabel 2400 2150 2    50   Input ~ 0
+Text GLabel 2950 2200 2    50   Input ~ 0
 COMM_KHZ_SW
 Text Notes 6250 800  0    50   ~ 0
 NAV
@@ -248,83 +204,57 @@ F2 "LEFT" O R 7100 1150 50
 F3 "RIGHT" O R 7100 1300 50 
 F4 "SW" O R 7100 1450 50 
 $EndSheet
-Text GLabel 1900 1850 0    50   Input ~ 0
+Text GLabel 2450 1800 0    50   Input ~ 0
 NAV_LEFT
-Text GLabel 1900 1950 0    50   Input ~ 0
+Text GLabel 2450 1900 0    50   Input ~ 0
 NAV_RIGHT
 Wire Notes Line
 	4400 650  4400 1850
 Text Notes 4400 600  0    50   ~ 0
 Knobs
-Text GLabel 2400 2250 2    50   Input ~ 0
+Text GLabel 2950 2300 2    50   Input ~ 0
 COMM_TX_SW
-Text GLabel 1900 2150 0    50   Input ~ 0
+Text GLabel 2450 2100 0    50   Input ~ 0
 NAV_TX_SW
 Wire Wire Line
 	7100 1450 7200 1450
-Text GLabel 1900 2050 0    50   Input ~ 0
+Text GLabel 2450 2000 0    50   Input ~ 0
 NAV_KHZ_SW
 $Comp
 L Device:C C3
 U 1 1 5F602FBC
-P 2150 1050
-F 0 "C3" H 2265 1096 50  0000 L CNN
-F 1 "0.1uF" H 2265 1005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2188 900 50  0001 C CNN
-F 3 "~" H 2150 1050 50  0001 C CNN
-	1    2150 1050
+P 2750 1050
+F 0 "C3" H 2865 1096 50  0000 L CNN
+F 1 "0.1uF" H 2865 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2788 900 50  0001 C CNN
+F 3 "~" H 2750 1050 50  0001 C CNN
+	1    2750 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 900  2150 900 
-Connection ~ 1700 900 
-Connection ~ 2150 900 
+	2300 900  2750 900 
+Connection ~ 2300 900 
+Connection ~ 2750 900 
 Wire Wire Line
-	2150 900  2600 900 
+	2750 900  3200 900 
 Wire Wire Line
-	1700 1200 2150 1200
-Connection ~ 1700 1200
-Connection ~ 2150 1200
+	2300 1200 2750 1200
+Connection ~ 2300 1200
+Connection ~ 2750 1200
 Wire Wire Line
-	2150 1200 2600 1200
+	2750 1200 3200 1200
 Wire Wire Line
-	2600 900  3050 900 
-Connection ~ 2600 900 
+	3200 900  3650 900 
+Connection ~ 3200 900 
 Wire Wire Line
-	2600 1200 3050 1200
-Connection ~ 2600 1200
+	3200 1200 3650 1200
+Connection ~ 3200 1200
 Wire Wire Line
-	1250 900  1700 900 
+	1850 900  2300 900 
+Connection ~ 1850 1200
 Wire Wire Line
-	950  1200 1250 1200
-Connection ~ 1250 1200
-Wire Wire Line
-	1250 1200 1700 1200
-Wire Wire Line
-	1250 900  950  900 
-Connection ~ 1250 900 
-$Comp
-L power:+5V #PWR01
-U 1 1 5F616FD8
-P 950 900
-F 0 "#PWR01" H 950 750 50  0001 C CNN
-F 1 "+5V" V 965 1028 50  0000 L CNN
-F 2 "" H 950 900 50  0001 C CNN
-F 3 "" H 950 900 50  0001 C CNN
-	1    950  900 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5F6175A7
-P 950 1200
-F 0 "#PWR02" H 950 950 50  0001 C CNN
-F 1 "GND" V 955 1072 50  0000 R CNN
-F 2 "" H 950 1200 50  0001 C CNN
-F 3 "" H 950 1200 50  0001 C CNN
-	1    950  1200
-	0    1    1    0   
-$EndComp
+	1850 1200 2300 1200
+Connection ~ 1850 900 
 Text GLabel 1300 5100 2    50   Output ~ 0
 COMM_TX_SW
 Text GLabel 1300 5550 2    50   Output ~ 0
@@ -360,30 +290,18 @@ Wire Notes Line
 	4400 1850 9700 1850
 Wire Notes Line
 	4400 650  9700 650 
-Connection ~ 3200 1200
-Connection ~ 3200 900 
-Wire Wire Line
-	3150 900  3200 900 
-Wire Wire Line
-	3150 1200 3200 1200
-Wire Wire Line
-	3050 900  3200 900 
-Wire Wire Line
-	3050 1200 3200 1200
-Text GLabel 2400 2350 2    50   Input ~ 0
+Text GLabel 2950 2400 2    50   Input ~ 0
 TEST_SW
-Text GLabel 2400 2450 2    50   Output ~ 0
+Text GLabel 2950 2500 2    50   Output ~ 0
 TEST_LED
-Text GLabel 1900 2250 0    50   Input ~ 0
+Text GLabel 2450 2200 0    50   Input ~ 0
 COMM_VOL_LEFT
-Text GLabel 1900 2350 0    50   Input ~ 0
+Text GLabel 2450 2300 0    50   Input ~ 0
 COMM_VOL_RIGHT
-Text GLabel 1900 2450 0    50   Input ~ 0
+Text GLabel 2450 2400 0    50   Input ~ 0
 IDENT_SW
-Text GLabel 1900 2550 0    50   Output ~ 0
+Text GLabel 2450 2500 0    50   Output ~ 0
 IDENT_LED
-NoConn ~ 2400 2650
-NoConn ~ 2400 2750
 Wire Notes Line
 	600  2850 4350 2850
 Wire Notes Line
@@ -392,17 +310,6 @@ Wire Notes Line
 	600  650  4350 650 
 Wire Notes Line
 	600  650  600  2850
-$Comp
-L Connector_Generic:Conn_02x12_Odd_Even J1
-U 1 1 5F626541
-P 2100 2150
-F 0 "J1" H 2150 2867 50  0000 C CNN
-F 1 "Conn_02x12_Odd_Even" H 2150 2776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical" H 2100 2150 50  0001 C CNN
-F 3 "~" H 2100 2150 50  0001 C CNN
-	1    2100 2150
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 3900 3500 1300 500 
 U 5F61163D
@@ -467,52 +374,12 @@ Display brightness control
 Text GLabel 2600 5100 2    50   Output ~ 0
 IDENT_SW
 NoConn ~ 1400 3950
-NoConn ~ 1900 2750
-$Comp
-L Connector_Generic:Conn_01x05 J3
-U 1 1 5F5E75F2
-P 3750 1850
-F 0 "J3" H 3700 2250 50  0000 L CNN
-F 1 "Conn_01x05" H 3500 2150 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3750 1850 50  0001 C CNN
-F 3 "~" H 3750 1850 50  0001 C CNN
-	1    3750 1850
-	1    0    0    -1  
-$EndComp
-Text GLabel 3550 1650 0    50   Output ~ 0
-+5V
-Text GLabel 3550 1750 0    50   Output ~ 0
-GND
-Text GLabel 3550 1850 0    50   Output ~ 0
-LOAD
-Text GLabel 3550 1950 0    50   Output ~ 0
-CLK
-Text GLabel 3550 2050 0    50   Output ~ 0
-DOUT
-Text GLabel 8900 3800 2    50   Output ~ 0
-DOUT
 Wire Notes Line
 	9200 4450 9200 3050
 Wire Notes Line
 	600  4450 9200 4450
 Wire Notes Line
 	600  3050 9200 3050
-$Comp
-L Connector:Barrel_Jack_MountingPin J2
-U 1 1 5F5F8100
-P 3600 2500
-F 0 "J2" H 3657 2817 50  0000 C CNN
-F 1 "Barrel_Jack_MountingPin" H 3657 2726 50  0000 C CNN
-F 2 "Cessna 172 nav and com radio:BarrelJack_Horizontal" H 3650 2460 50  0001 C CNN
-F 3 "~" H 3650 2460 50  0001 C CNN
-	1    3600 2500
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3600 2800
-Text GLabel 3900 2400 2    50   Input ~ 0
-+5V
-Text GLabel 3900 2600 2    50   Input ~ 0
-GND
 $Comp
 L Device:LED D2
 U 1 1 5F5FCD17
@@ -577,10 +444,6 @@ F 3 "~" H 3550 5250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 5250 3400 5250
-Wire Wire Line
-	3200 1200 4100 1200
-Wire Wire Line
-	3200 900  4100 900 
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5F608DA0
@@ -648,8 +511,6 @@ F 3 "~" H 4650 5250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 5250 4500 5250
-NoConn ~ 1900 2650
-NoConn ~ 2400 2550
 Wire Notes Line
 	600  4700 600  5700
 Wire Notes Line
@@ -662,4 +523,45 @@ Wire Notes Line
 	6900 4700 3200 4700
 Text Notes 2150 5600 0    50   ~ 0
 Test switch is on\nCOMM volume\nrotary encoder
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5F634FEE
+P 1050 1100
+F 0 "J2" H 1050 500 50  0000 C CNN
+F 1 "USB_B_Micro" H 1050 600 50  0000 C CNN
+F 2 "" H 1200 1050 50  0001 C CNN
+F 3 "~" H 1200 1050 50  0001 C CNN
+	1    1050 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 900  1850 900 
+Wire Wire Line
+	1050 1500 1450 1500
+Wire Wire Line
+	1450 1500 1450 1200
+Wire Wire Line
+	1450 1200 1850 1200
+NoConn ~ 1350 1100
+NoConn ~ 1350 1200
+NoConn ~ 1350 1300
+NoConn ~ 950  1500
+Wire Wire Line
+	3650 900  3950 900 
+Wire Wire Line
+	3650 1200 3950 1200
+$Comp
+L Connector_Generic:Conn_02x09_Odd_Even J1
+U 1 1 5F645ECE
+P 2650 2100
+F 0 "J1" H 2700 2717 50  0000 C CNN
+F 1 "Conn_02x09_Odd_Even" H 2700 2626 50  0000 C CNN
+F 2 "" H 2650 2100 50  0001 C CNN
+F 3 "~" H 2650 2100 50  0001 C CNN
+	1    2650 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 1700 0    50   Input ~ 0
+GND
+NoConn ~ 8900 3800
 $EndSCHEMATC
