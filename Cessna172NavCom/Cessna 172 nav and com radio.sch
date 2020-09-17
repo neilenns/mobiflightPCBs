@@ -13,11 +13,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 2950 1700 2    50   Output ~ 0
+Text GLabel 2450 1700 0    50   Output ~ 0
 LOAD
-Text GLabel 2950 1800 2    50   Output ~ 0
+Text GLabel 2450 1800 0    50   Output ~ 0
 CLK
-Text GLabel 2950 1900 2    50   Output ~ 0
+Text GLabel 2450 1900 0    50   Output ~ 0
 DIN
 $Comp
 L Device:C C1
@@ -154,9 +154,9 @@ Wire Notes Line
 	600  3050 600  4450
 Text Notes 600  3000 0    50   ~ 0
 LCD displays
-Text GLabel 2950 2000 2    50   Input ~ 0
+Text GLabel 2450 2000 0    50   Input ~ 0
 COMM_LEFT
-Text GLabel 2950 2100 2    50   Input ~ 0
+Text GLabel 2450 2100 0    50   Input ~ 0
 COMM_RIGHT
 Text Notes 4500 800  0    50   ~ 0
 COMM
@@ -181,7 +181,7 @@ F2 "LEFT" O R 5350 1150 50
 F3 "RIGHT" O R 5350 1300 50 
 F4 "SW" O R 5350 1450 50 
 $EndSheet
-Text GLabel 2950 2200 2    50   Input ~ 0
+Text GLabel 2450 2200 0    50   Input ~ 0
 COMM_KHZ_SW
 Text Notes 6250 800  0    50   ~ 0
 NAV
@@ -204,21 +204,21 @@ F2 "LEFT" O R 7100 1150 50
 F3 "RIGHT" O R 7100 1300 50 
 F4 "SW" O R 7100 1450 50 
 $EndSheet
-Text GLabel 2450 1800 0    50   Input ~ 0
+Text GLabel 2950 2400 2    50   Input ~ 0
 NAV_LEFT
-Text GLabel 2450 1900 0    50   Input ~ 0
+Text GLabel 2950 2500 2    50   Input ~ 0
 NAV_RIGHT
 Wire Notes Line
 	4400 650  4400 1850
 Text Notes 4400 600  0    50   ~ 0
 Knobs
-Text GLabel 2950 2300 2    50   Input ~ 0
+Text GLabel 2450 2500 0    50   Input ~ 0
 COMM_TX_SW
-Text GLabel 2450 2100 0    50   Input ~ 0
+Text GLabel 2450 2600 0    50   Input ~ 0
 NAV_TX_SW
 Wire Wire Line
 	7100 1450 7200 1450
-Text GLabel 2450 2000 0    50   Input ~ 0
+Text GLabel 2950 2600 2    50   Input ~ 0
 NAV_KHZ_SW
 $Comp
 L Device:C C3
@@ -290,17 +290,17 @@ Wire Notes Line
 	4400 1850 9700 1850
 Wire Notes Line
 	4400 650  9700 650 
-Text GLabel 2950 2400 2    50   Input ~ 0
+Text GLabel 2950 1900 2    50   Input ~ 0
 TEST_SW
-Text GLabel 2950 2500 2    50   Output ~ 0
+Text GLabel 2950 2000 2    50   Output ~ 0
 TEST_LED
-Text GLabel 2450 2200 0    50   Input ~ 0
+Text GLabel 2950 1700 2    50   Input ~ 0
 COMM_VOL_LEFT
-Text GLabel 2450 2300 0    50   Input ~ 0
+Text GLabel 2950 1800 2    50   Input ~ 0
 COMM_VOL_RIGHT
-Text GLabel 2450 2400 0    50   Input ~ 0
+Text GLabel 2950 2200 2    50   Input ~ 0
 IDENT_SW
-Text GLabel 2450 2500 0    50   Output ~ 0
+Text GLabel 2950 2300 2    50   Output ~ 0
 IDENT_LED
 Wire Notes Line
 	600  2850 4350 2850
@@ -333,7 +333,7 @@ U 1 1 5F63B079
 P 1250 3950
 F 0 "RV1" H 1181 3996 50  0000 R CNN
 F 1 "100k" H 1181 3905 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PT-10-V10_Vertical_Hole" H 1250 3950 50  0001 C CNN
+F 2 "Cessna 172 nav and com radio:A-2506 trimpot resistor" H 1250 3950 50  0001 C CNN
 F 3 "~" H 1250 3950 50  0001 C CNN
 	1    1250 3950
 	1    0    0    -1  
@@ -550,9 +550,8 @@ Wire Wire Line
 	3650 900  3950 900 
 Wire Wire Line
 	3650 1200 3950 1200
-Text GLabel 2450 1700 0    50   Input ~ 0
+Text GLabel 2450 2300 0    50   Input ~ 0
 GND
-NoConn ~ 8900 3800
 $Comp
 L Device:LED D4
 U 1 1 5F679E44
@@ -592,7 +591,31 @@ F 3 "~" H 2650 2100 50  0001 C CNN
 	1    2650 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 2950 2600 2    50   Output ~ 0
+Text GLabel 2950 2100 2    50   Output ~ 0
 CHAN_LED
-NoConn ~ 2450 2600
+Text GLabel 2450 2400 0    50   Input ~ 0
+GND
+Text GLabel 1100 1950 0    50   Output ~ 0
+LOAD
+Text GLabel 1100 2050 0    50   Output ~ 0
+CLK
+Text GLabel 1100 2150 0    50   Output ~ 0
+DOUT
+Text GLabel 8900 3800 2    50   Output ~ 0
+DOUT
+$Comp
+L Connector_Generic:Conn_01x05 J6
+U 1 1 5F64CCD1
+P 1300 2150
+F 0 "J6" H 1380 2192 50  0000 L CNN
+F 1 "Conn_01x05" H 1380 2101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1300 2150 50  0001 C CNN
+F 3 "~" H 1300 2150 50  0001 C CNN
+	1    1300 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 2250 0    50   Output ~ 0
++5V
+Text GLabel 1100 2350 0    50   Output ~ 0
+GND
 $EndSCHEMATC
