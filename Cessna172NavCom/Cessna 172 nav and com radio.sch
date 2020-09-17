@@ -529,7 +529,7 @@ U 1 1 5F634FEE
 P 1050 1100
 F 0 "J2" H 1050 500 50  0000 C CNN
 F 1 "USB_B_Micro" H 1050 600 50  0000 C CNN
-F 2 "" H 1200 1050 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1200 1050 50  0001 C CNN
 F 3 "~" H 1200 1050 50  0001 C CNN
 	1    1050 1100
 	1    0    0    -1  
@@ -550,18 +550,49 @@ Wire Wire Line
 	3650 900  3950 900 
 Wire Wire Line
 	3650 1200 3950 1200
+Text GLabel 2450 1700 0    50   Input ~ 0
+GND
+NoConn ~ 8900 3800
 $Comp
-L Connector_Generic:Conn_02x09_Odd_Even J1
-U 1 1 5F645ECE
+L Device:LED D4
+U 1 1 5F679E44
+P 5350 5400
+F 0 "D4" H 5343 5616 50  0000 C CNN
+F 1 "LED" H 5343 5525 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 5350 5400 50  0001 C CNN
+F 3 "~" H 5350 5400 50  0001 C CNN
+	1    5350 5400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5350 5550 3    50   Input ~ 0
+GND
+Text GLabel 5000 5250 1    50   Input ~ 0
+CHAN_LED
+$Comp
+L Device:R R17
+U 1 1 5F679E4C
+P 5200 5250
+F 0 "R17" V 4993 5250 50  0000 C CNN
+F 1 "220k" V 5084 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 5250 50  0001 C CNN
+F 3 "~" H 5200 5250 50  0001 C CNN
+	1    5200 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 5250 5050 5250
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J1
+U 1 1 5F67B4E3
 P 2650 2100
 F 0 "J1" H 2700 2717 50  0000 C CNN
-F 1 "Conn_02x09_Odd_Even" H 2700 2626 50  0000 C CNN
-F 2 "" H 2650 2100 50  0001 C CNN
+F 1 "Conn_02x10_Odd_Even" H 2700 2626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 2650 2100 50  0001 C CNN
 F 3 "~" H 2650 2100 50  0001 C CNN
 	1    2650 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 2450 1700 0    50   Input ~ 0
-GND
-NoConn ~ 8900 3800
+Text GLabel 2950 2600 2    50   Output ~ 0
+CHAN_LED
+NoConn ~ 2450 2600
 $EndSCHEMATC
