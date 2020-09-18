@@ -303,8 +303,6 @@ F 3 "~" H 1150 3850 50  0001 C CNN
 	1    1150 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 1150 3700 1    50   Input ~ 0
-+5V
 Text Notes 650  3400 0    50   ~ 0
 Display brightness control
 Text GLabel 1250 7250 2    50   Output ~ 0
@@ -321,8 +319,6 @@ F 3 "~" H 4800 6250 50  0001 C CNN
 	1    4800 6250
 	-1   0    0    1   
 $EndComp
-Text GLabel 4950 6250 2    50   Input ~ 0
-GND
 Text Notes 3200 5900 0    50   ~ 0
 Status LEDs
 Wire Wire Line
@@ -338,8 +334,6 @@ F 3 "~" H 3500 6850 50  0001 C CNN
 	1    3500 6850
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3500 7000 3    50   Input ~ 0
-GND
 $Comp
 L Device:R R2
 U 1 1 5F60E079
@@ -362,8 +356,6 @@ F 3 "~" H 1050 6550 50  0001 C CNN
 	1    1050 6350
 	1    0    0    -1  
 $EndComp
-Text GLabel 850  6350 0    50   Input ~ 0
-GND
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5F60DA70
@@ -375,8 +367,6 @@ F 3 "~" H 1050 7000 50  0001 C CNN
 	1    1050 6800
 	1    0    0    -1  
 $EndComp
-Text GLabel 850  6800 0    50   Input ~ 0
-GND
 $Comp
 L Switch:SW_Push SW3
 U 1 1 5F60EA99
@@ -388,8 +378,6 @@ F 3 "~" H 1050 7450 50  0001 C CNN
 	1    1050 7250
 	1    0    0    -1  
 $EndComp
-Text GLabel 850  7250 0    50   Input ~ 0
-GND
 $Comp
 L Device:LED D3
 U 1 1 5F61685B
@@ -401,8 +389,6 @@ F 3 "~" H 4800 6650 50  0001 C CNN
 	1    4800 6650
 	-1   0    0    1   
 $EndComp
-Text GLabel 4950 6650 2    50   Input ~ 0
-GND
 Text GLabel 4300 6650 0    50   Input ~ 0
 IDENT1_LED
 $Comp
@@ -450,8 +436,6 @@ F 3 "~" H 4800 7100 50  0001 C CNN
 	1    4800 7100
 	-1   0    0    1   
 $EndComp
-Text GLabel 4950 7100 2    50   Input ~ 0
-GND
 Text GLabel 4300 7100 0    50   Input ~ 0
 CHAN1_LED
 $Comp
@@ -539,28 +523,6 @@ Connection ~ 2250 3500
 Wire Wire Line
 	2050 3800 2250 3800
 Connection ~ 2250 3800
-$Comp
-L power:GND #PWR0103
-U 1 1 5F67354C
-P 10300 5150
-F 0 "#PWR0103" H 10300 4900 50  0001 C CNN
-F 1 "GND" V 10305 5022 50  0000 R CNN
-F 2 "" H 10300 5150 50  0001 C CNN
-F 3 "" H 10300 5150 50  0001 C CNN
-	1    10300 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR0104
-U 1 1 5F673A9D
-P 10300 4850
-F 0 "#PWR0104" H 10300 4700 50  0001 C CNN
-F 1 "+5V" V 10315 4978 50  0000 L CNN
-F 2 "" H 10300 4850 50  0001 C CNN
-F 3 "" H 10300 4850 50  0001 C CNN
-	1    10300 4850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	10300 4850 9950 4850
 Wire Wire Line
@@ -698,8 +660,6 @@ F 3 "~" H 2300 6550 50  0001 C CNN
 	1    2300 6350
 	1    0    0    -1  
 $EndComp
-Text GLabel 2100 6350 0    50   Input ~ 0
-GND
 $Comp
 L Switch:SW_Push SW5
 U 1 1 5F6B790C
@@ -711,8 +671,6 @@ F 3 "~" H 2300 7000 50  0001 C CNN
 	1    2300 6800
 	1    0    0    -1  
 $EndComp
-Text GLabel 2100 6800 0    50   Input ~ 0
-GND
 $Comp
 L Switch:SW_Push SW6
 U 1 1 5F6B7913
@@ -724,8 +682,6 @@ F 3 "~" H 2300 7450 50  0001 C CNN
 	1    2300 7250
 	1    0    0    -1  
 $EndComp
-Text GLabel 2100 7250 0    50   Input ~ 0
-GND
 Text Notes 2050 7600 0    50   ~ 0
 Test switch is on\nCOMM2 volume\nrotary encoder
 $Comp
@@ -752,8 +708,6 @@ F 3 "~" H 6200 6250 50  0001 C CNN
 	1    6200 6250
 	-1   0    0    1   
 $EndComp
-Text GLabel 6350 6250 2    50   Input ~ 0
-GND
 Wire Wire Line
 	5700 6250 5750 6250
 $Comp
@@ -767,8 +721,6 @@ F 3 "~" H 6200 6650 50  0001 C CNN
 	1    6200 6650
 	-1   0    0    1   
 $EndComp
-Text GLabel 6350 6650 2    50   Input ~ 0
-GND
 Text GLabel 5700 6650 0    50   Input ~ 0
 IDENT2_LED
 $Comp
@@ -795,8 +747,6 @@ F 3 "~" H 6200 7100 50  0001 C CNN
 	1    6200 7100
 	-1   0    0    1   
 $EndComp
-Text GLabel 6350 7100 2    50   Input ~ 0
-GND
 Text GLabel 5700 7100 0    50   Input ~ 0
 CHAN2_LED
 $Comp
@@ -975,12 +925,273 @@ F 3 "~" H 8250 1800 50  0001 C CNN
 	1    8250 1800
 	0    -1   -1   0   
 $EndComp
-Text GLabel 10250 5150 3    50   Input ~ 0
-GND
-Text GLabel 10250 4850 1    50   Input ~ 0
-+5V
-Text GLabel 2050 3800 0    50   Input ~ 0
-GND
-Text GLabel 2050 3500 0    50   Input ~ 0
-+5V
+Text GLabel 7350 2000 3    50   Output ~ 0
+LOAD
+Text GLabel 7450 2000 3    50   Output ~ 0
+CLK
+Text GLabel 7550 2000 3    50   Output ~ 0
+DIN
+Text GLabel 7650 2000 3    50   Input ~ 0
+COMM1_LEFT
+Text GLabel 7750 2000 3    50   Input ~ 0
+COMM1_RIGHT
+Text GLabel 7850 2000 3    50   Input ~ 0
+COMM1_KHZ_SW
+Text GLabel 8050 2000 3    50   Input ~ 0
+NAV1_LEFT
+Text GLabel 8150 2000 3    50   Input ~ 0
+NAV1_RIGHT
+Text GLabel 8250 2000 3    50   Input ~ 0
+NAV1_KHZ_SW
+Text GLabel 8450 2000 3    50   Input ~ 0
+COMM1_VOL_LEFT
+Text GLabel 8550 2000 3    50   Input ~ 0
+COMM1_VOL_RIGHT
+Text GLabel 8650 2000 3    50   Input ~ 0
+TEST1_SW
+Text GLabel 7950 2000 3    50   Input ~ 0
+COMM1_TX_SW
+Text GLabel 8350 2000 3    50   Input ~ 0
+NAV1_TX_SW
+Text GLabel 8850 2000 3    50   Input ~ 0
+IDENT1_SW
+Text GLabel 8750 2000 3    50   Input ~ 0
+TEST1_LED
+Text GLabel 8950 2000 3    50   Output ~ 0
+IDENT1_LED
+Text GLabel 9050 2000 3    50   Output ~ 0
+CHAN1_LED
+Text GLabel 7650 1500 1    50   Input ~ 0
+COMM2_LEFT
+Text GLabel 7750 1500 1    50   Input ~ 0
+COMM2_RIGHT
+Text GLabel 7850 1500 1    50   Input ~ 0
+COMM2_KHZ_SW
+Text GLabel 7950 1500 1    50   Input ~ 0
+COMM2_TX_SW
+Text GLabel 8050 1500 1    50   Input ~ 0
+NAV2_LEFT
+Text GLabel 8150 1500 1    50   Input ~ 0
+NAV2_RIGHT
+Text GLabel 8250 1500 1    50   Input ~ 0
+NAV2_KHZ_SW
+Text GLabel 8350 1500 1    50   Input ~ 0
+NAV2_TX_SW
+Text GLabel 8450 1500 1    50   Input ~ 0
+COMM2_VOL_LEFT
+Text GLabel 8550 1500 1    50   Input ~ 0
+COMM2_VOL_RIGHT
+Text GLabel 8650 1500 1    50   Input ~ 0
+TEST2_SW
+Text GLabel 8750 1500 1    50   Output ~ 0
+TEST2_LED
+Text GLabel 8950 1500 1    50   Output ~ 0
+IDENT2_LED
+Text GLabel 9050 1500 1    50   Output ~ 0
+CHAN2_LED
+Text GLabel 8850 1500 1    50   Input ~ 0
+IDENT2_SW
+NoConn ~ 9150 2000
+NoConn ~ 9250 2000
+NoConn ~ 9250 1500
+NoConn ~ 9150 1500
+NoConn ~ 7550 1500
+$Comp
+L power:GND #PWR0103
+U 1 1 5F68D035
+P 7450 1500
+F 0 "#PWR0103" H 7450 1250 50  0001 C CNN
+F 1 "GND" H 7455 1327 50  0000 C CNN
+F 2 "" H 7450 1500 50  0001 C CNN
+F 3 "" H 7450 1500 50  0001 C CNN
+	1    7450 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5F68DA0A
+P 7350 1500
+F 0 "#PWR0104" H 7350 1350 50  0001 C CNN
+F 1 "+5V" V 7365 1628 50  0000 L CNN
+F 2 "" H 7350 1500 50  0001 C CNN
+F 3 "" H 7350 1500 50  0001 C CNN
+	1    7350 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5F68DFEF
+P 1150 3700
+F 0 "#PWR0106" H 1150 3550 50  0001 C CNN
+F 1 "+5V" H 1165 3873 50  0000 C CNN
+F 2 "" H 1150 3700 50  0001 C CNN
+F 3 "" H 1150 3700 50  0001 C CNN
+	1    1150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5F68E7C2
+P 10300 4850
+F 0 "#PWR0107" H 10300 4700 50  0001 C CNN
+F 1 "+5V" V 10315 4978 50  0000 L CNN
+F 2 "" H 10300 4850 50  0001 C CNN
+F 3 "" H 10300 4850 50  0001 C CNN
+	1    10300 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F68EEBB
+P 10300 5150
+F 0 "#PWR0108" H 10300 4900 50  0001 C CNN
+F 1 "GND" V 10305 5022 50  0000 R CNN
+F 2 "" H 10300 5150 50  0001 C CNN
+F 3 "" H 10300 5150 50  0001 C CNN
+	1    10300 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5F68F800
+P 850 6350
+F 0 "#PWR0109" H 850 6100 50  0001 C CNN
+F 1 "GND" V 855 6222 50  0000 R CNN
+F 2 "" H 850 6350 50  0001 C CNN
+F 3 "" H 850 6350 50  0001 C CNN
+	1    850  6350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F690023
+P 850 6800
+F 0 "#PWR0110" H 850 6550 50  0001 C CNN
+F 1 "GND" V 855 6672 50  0000 R CNN
+F 2 "" H 850 6800 50  0001 C CNN
+F 3 "" H 850 6800 50  0001 C CNN
+	1    850  6800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5F6904A1
+P 850 7250
+F 0 "#PWR0111" H 850 7000 50  0001 C CNN
+F 1 "GND" V 855 7122 50  0000 R CNN
+F 2 "" H 850 7250 50  0001 C CNN
+F 3 "" H 850 7250 50  0001 C CNN
+	1    850  7250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5F690926
+P 2100 6350
+F 0 "#PWR0112" H 2100 6100 50  0001 C CNN
+F 1 "GND" V 2105 6222 50  0000 R CNN
+F 2 "" H 2100 6350 50  0001 C CNN
+F 3 "" H 2100 6350 50  0001 C CNN
+	1    2100 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5F69103B
+P 2100 6800
+F 0 "#PWR0113" H 2100 6550 50  0001 C CNN
+F 1 "GND" V 2105 6672 50  0000 R CNN
+F 2 "" H 2100 6800 50  0001 C CNN
+F 3 "" H 2100 6800 50  0001 C CNN
+	1    2100 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5F6914D8
+P 2100 7250
+F 0 "#PWR0114" H 2100 7000 50  0001 C CNN
+F 1 "GND" V 2105 7122 50  0000 R CNN
+F 2 "" H 2100 7250 50  0001 C CNN
+F 3 "" H 2100 7250 50  0001 C CNN
+	1    2100 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5F6919B7
+P 4950 6250
+F 0 "#PWR0115" H 4950 6000 50  0001 C CNN
+F 1 "GND" V 4955 6122 50  0000 R CNN
+F 2 "" H 4950 6250 50  0001 C CNN
+F 3 "" H 4950 6250 50  0001 C CNN
+	1    4950 6250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5F691E9F
+P 4950 6650
+F 0 "#PWR0116" H 4950 6400 50  0001 C CNN
+F 1 "GND" V 4955 6522 50  0000 R CNN
+F 2 "" H 4950 6650 50  0001 C CNN
+F 3 "" H 4950 6650 50  0001 C CNN
+	1    4950 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5F692387
+P 4950 7100
+F 0 "#PWR0117" H 4950 6850 50  0001 C CNN
+F 1 "GND" V 4955 6972 50  0000 R CNN
+F 2 "" H 4950 7100 50  0001 C CNN
+F 3 "" H 4950 7100 50  0001 C CNN
+	1    4950 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5F692887
+P 6350 6250
+F 0 "#PWR0118" H 6350 6000 50  0001 C CNN
+F 1 "GND" V 6355 6122 50  0000 R CNN
+F 2 "" H 6350 6250 50  0001 C CNN
+F 3 "" H 6350 6250 50  0001 C CNN
+	1    6350 6250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5F692D8E
+P 6350 6650
+F 0 "#PWR0119" H 6350 6400 50  0001 C CNN
+F 1 "GND" V 6355 6522 50  0000 R CNN
+F 2 "" H 6350 6650 50  0001 C CNN
+F 3 "" H 6350 6650 50  0001 C CNN
+	1    6350 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5F6932A6
+P 6350 7100
+F 0 "#PWR0120" H 6350 6850 50  0001 C CNN
+F 1 "GND" V 6355 6972 50  0000 R CNN
+F 2 "" H 6350 7100 50  0001 C CNN
+F 3 "" H 6350 7100 50  0001 C CNN
+	1    6350 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0167
+U 1 1 5F69619D
+P 3500 7000
+F 0 "#PWR0167" H 3500 6750 50  0001 C CNN
+F 1 "GND" H 3505 6827 50  0000 C CNN
+F 2 "" H 3500 7000 50  0001 C CNN
+F 3 "" H 3500 7000 50  0001 C CNN
+	1    3500 7000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
