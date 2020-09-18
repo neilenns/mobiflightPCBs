@@ -468,28 +468,6 @@ $EndComp
 Wire Wire Line
 	4300 7100 4350 7100
 $Comp
-L power:+5V #PWR0101
-U 1 1 5F65C5FC
-P 2050 3500
-F 0 "#PWR0101" H 2050 3350 50  0001 C CNN
-F 1 "+5V" V 2065 3628 50  0000 L CNN
-F 2 "" H 2050 3500 50  0001 C CNN
-F 3 "" H 2050 3500 50  0001 C CNN
-	1    2050 3500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5F65CDCA
-P 2050 3800
-F 0 "#PWR0102" H 2050 3550 50  0001 C CNN
-F 1 "GND" V 2055 3672 50  0000 R CNN
-F 2 "" H 2050 3800 50  0001 C CNN
-F 3 "" H 2050 3800 50  0001 C CNN
-	1    2050 3800
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C12
 U 1 1 5F667E43
 P 4050 3650
@@ -522,8 +500,6 @@ F 3 "~" H 5400 3650 50  0001 C CNN
 	1    5400 3650
 	1    0    0    -1  
 $EndComp
-Connection ~ 5400 3500
-Connection ~ 5400 3800
 $Comp
 L Device:C C13
 U 1 1 5F667E57
@@ -549,12 +525,6 @@ Connection ~ 4950 3500
 Wire Wire Line
 	4950 3800 5400 3800
 Connection ~ 4950 3800
-Wire Wire Line
-	5750 3500 5750 3800
-Wire Wire Line
-	5400 3800 5750 3800
-Wire Wire Line
-	5400 3500 5750 3500
 Wire Wire Line
 	3600 3500 4050 3500
 Connection ~ 4050 3500
@@ -1008,5 +978,9 @@ $EndComp
 Text GLabel 10250 5150 3    50   Input ~ 0
 GND
 Text GLabel 10250 4850 1    50   Input ~ 0
++5V
+Text GLabel 2050 3800 0    50   Input ~ 0
+GND
+Text GLabel 2050 3500 0    50   Input ~ 0
 +5V
 $EndSCHEMATC
