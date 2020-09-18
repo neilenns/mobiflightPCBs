@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6463)
+    (start_pass_no 6348)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -65,6 +65,7 @@
     GND "Via[0-1]_800:400_um-GND"
   )
   (class default
+    "@:no_net_0" "@:no_net_1"
     (clearance_class default)
     (via_rule default)
     (rule
@@ -87,8 +88,8 @@
     ISET "Net-(RV1-Pad2)" /sheet5F611637/DIN "Net-(U1-Pad10)" "Net-(U1-Pad8)" "Net-(U1-Pad5)" /sheet5F613960/DIN "Net-(U3-Pad5)"
     "Net-(U3-Pad8)" "Net-(U3-Pad10)" /sheet5F613961/DIN "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(U5-Pad10)" "Net-(U5-Pad8)"
     "Net-(U5-Pad5)" "Net-(U7-Pad5)" "Net-(U7-Pad8)" "Net-(U7-Pad10)" "Net-(J2-Pad6)" "Net-(J2-Pad2)" "Net-(J2-Pad4)" "Net-(J2-Pad3)"
-    /sheet5F613961/DOUT "/Tuning rotary encoder and switch/A1" "/Tuning rotary encoder and switch/B1" /sheet5F5DD32A/A1 /sheet5F5DD32A/B1 /sheet5F5E0D6C/A1 /sheet5F5E0D6C/B1 "Net-(J3-PadMH1)"
-    "Net-(J3-PadMH2)" "Net-(J4-PadMH1)" "Net-(J4-PadMH2)" "Net-(J5-PadMH2)" "Net-(J5-PadMH1)" "Net-(D4-Pad2)" "Net-(J1-Pad19)" "CHAN_LED"
+    "/Tuning rotary encoder and switch/A1" "/Tuning rotary encoder and switch/B1" /sheet5F5DD32A/A1 /sheet5F5DD32A/B1 /sheet5F5E0D6C/A1 /sheet5F5E0D6C/B1 "Net-(J3-PadMH1)" "Net-(J3-PadMH2)"
+    "Net-(J4-PadMH1)" "Net-(J4-PadMH2)" "Net-(J5-PadMH2)" "Net-(J5-PadMH1)" "Net-(D4-Pad2)" "CHAN_LED" DOUT
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
