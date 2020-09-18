@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 4 15
 Title ""
 Date ""
 Rev ""
@@ -22,7 +22,11 @@ AR Path="/5F60A880/5F60E2D2" Ref="U1"  Part="1"
 AR Path="/5F61163D/5F60E2D2" Ref="U3"  Part="1" 
 AR Path="/5F613967/5F60E2D2" Ref="U5"  Part="1" 
 AR Path="/5F613974/5F60E2D2" Ref="U7"  Part="1" 
-F 0 "U7" H 2500 5000 50  0000 C CNN
+AR Path="/5F68A9CC/5F60E2D2" Ref="U9"  Part="1" 
+AR Path="/5F68A9DF/5F60E2D2" Ref="U11"  Part="1" 
+AR Path="/5F68A9EB/5F60E2D2" Ref="U13"  Part="1" 
+AR Path="/5F68A9F8/5F60E2D2" Ref="U15"  Part="1" 
+F 0 "U15" H 2500 5000 50  0000 C CNN
 F 1 "MAX7219 COM standby" V 2350 4100 50  0000 C CNN
 F 2 "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm" H 2700 4100 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 2800 3900 50  0001 C CNN
@@ -80,7 +84,11 @@ AR Path="/5F60A880/5F5F5D43" Ref="U2"  Part="1"
 AR Path="/5F613967/5F5F5D43" Ref="U6"  Part="1" 
 AR Path="/5F613974/5F5F5D43" Ref="U8"  Part="1" 
 AR Path="/5F61163D/5F5F5D43" Ref="U4"  Part="1" 
-F 0 "U8" H 5150 4217 50  0000 C CNN
+AR Path="/5F68A9CC/5F5F5D43" Ref="U10"  Part="1" 
+AR Path="/5F68A9DF/5F5F5D43" Ref="U12"  Part="1" 
+AR Path="/5F68A9EB/5F5F5D43" Ref="U14"  Part="1" 
+AR Path="/5F68A9F8/5F5F5D43" Ref="U16"  Part="1" 
+F 0 "U16" H 5150 4217 50  0000 C CNN
 F 1 "3651A" H 5150 4126 50  0000 C CNN
 F 2 "Cessna 172 nav and com radio:3651A" H 4950 3550 50  0001 C CNN
 F 3 "" H 4950 3550 50  0001 C CNN
