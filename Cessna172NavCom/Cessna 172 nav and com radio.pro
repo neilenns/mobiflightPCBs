@@ -1,4 +1,4 @@
-update=9/13/2020 4:24:45 PM
+update=9/18/2020 6:47:28 AM
 version=1
 last_client=kicad
 [general]
@@ -250,7 +250,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=+5V
 Clearance=0.2
-TrackWidth=1.016
+TrackWidth=0.4
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -261,7 +261,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=GND
 Clearance=0.2
-TrackWidth=1.016
+TrackWidth=0.4
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
