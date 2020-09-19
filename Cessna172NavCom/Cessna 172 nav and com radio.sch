@@ -947,19 +947,19 @@ Text GLabel 8450 2000 3    50   Input ~ 0
 COMM1_VOL_LEFT
 Text GLabel 8550 2000 3    50   Input ~ 0
 COMM1_VOL_RIGHT
-Text GLabel 8650 2000 3    50   Input ~ 0
+Text GLabel 8850 2000 3    50   Input ~ 0
 TEST1_SW
 Text GLabel 7950 2000 3    50   Input ~ 0
 COMM1_TX_SW
 Text GLabel 8350 2000 3    50   Input ~ 0
 NAV1_TX_SW
-Text GLabel 8850 2000 3    50   Input ~ 0
+Text GLabel 9050 2000 3    50   Input ~ 0
 IDENT1_SW
-Text GLabel 8750 2000 3    50   Input ~ 0
+Text GLabel 8950 2000 3    50   Input ~ 0
 TEST1_LED
-Text GLabel 8950 2000 3    50   Output ~ 0
+Text GLabel 9150 2000 3    50   Output ~ 0
 IDENT1_LED
-Text GLabel 9050 2000 3    50   Output ~ 0
+Text GLabel 9250 2000 3    50   Output ~ 0
 CHAN1_LED
 Text GLabel 7650 1500 1    50   Input ~ 0
 COMM2_LEFT
@@ -981,20 +981,16 @@ Text GLabel 8450 1500 1    50   Input ~ 0
 COMM2_VOL_LEFT
 Text GLabel 8550 1500 1    50   Input ~ 0
 COMM2_VOL_RIGHT
-Text GLabel 8650 1500 1    50   Input ~ 0
-TEST2_SW
-Text GLabel 8750 1500 1    50   Output ~ 0
-TEST2_LED
-Text GLabel 8950 1500 1    50   Output ~ 0
-IDENT2_LED
-Text GLabel 9050 1500 1    50   Output ~ 0
-CHAN2_LED
 Text GLabel 8850 1500 1    50   Input ~ 0
+TEST2_SW
+Text GLabel 8950 1500 1    50   Output ~ 0
+TEST2_LED
+Text GLabel 9150 1500 1    50   Output ~ 0
+IDENT2_LED
+Text GLabel 9250 1500 1    50   Output ~ 0
+CHAN2_LED
+Text GLabel 9050 1500 1    50   Input ~ 0
 IDENT2_SW
-NoConn ~ 9150 2000
-NoConn ~ 9250 2000
-NoConn ~ 9250 1500
-NoConn ~ 9150 1500
 NoConn ~ 7550 1500
 $Comp
 L power:GND #PWR0103
@@ -1194,4 +1190,8 @@ F 3 "" H 3500 7000 50  0001 C CNN
 	1    3500 7000
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8650 1500
+NoConn ~ 8750 1500
+NoConn ~ 8750 2000
+NoConn ~ 8650 2000
 $EndSCHEMATC
