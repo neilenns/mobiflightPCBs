@@ -115,7 +115,7 @@
       </settings>
     </config>
     <config guid="6bcf1d70-689b-4ff1-a96b-da1392eadc69">
-      <active>false</active>
+      <active>true</active>
       <description>COMM2 standby current precision</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="FSUIPC" offset="0x66C2" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
@@ -172,7 +172,7 @@
       </settings>
     </config>
     <config guid="c2dc8c3d-9e3f-4a63-a29c-b076e138f32b">
-      <active>false</active>
+      <active>true</active>
       <description>NAV2 standby current precision</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="FSUIPC" offset="0x66C3" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
@@ -224,6 +224,19 @@
         <preconditions />
       </settings>
     </config>
+    <config guid="37f9ca3b-6d12-4c9b-a459-f8d00f3949a2">
+      <active>true</active>
+      <description>COMM2 standby toggle precision</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="COMM2_KHZ" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66C2" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="if($=1,0,1)" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
     <config guid="09029078-a3c6-4155-90b0-f8577ef65750">
       <active>true</active>
       <description>COMM1 standby MHz</description>
@@ -240,6 +253,25 @@
         </encoder>
         <preconditions>
           <precondition type="config" active="true" ref="0794def2-2cc3-4e73-9474-2b44e4f36e3d" operand="=" value="0" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
+    <config guid="b621c3b5-78d8-42b5-9414-a261ce92fe1b">
+      <active>true</active>
+      <description>COMM2 standby MHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="COMM2Encoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311C" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;1900,$-100,$+1800)" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311C" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;3697,$+100,$-1800)" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6bcf1d70-689b-4ff1-a96b-da1392eadc69" operand="=" value="0" logic="and" />
         </preconditions>
       </settings>
     </config>
@@ -262,6 +294,25 @@
         </preconditions>
       </settings>
     </config>
+    <config guid="4e08beaf-8bb3-45ce-ab6e-70a3ee43faad">
+      <active>true</active>
+      <description>COMM2 standby KHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="COMM2Encoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311C" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;3697,if($%5==0,$+2,$+3),1800)" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311C" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;=1800,if($%5==0,$-3,$-2),3697)" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6bcf1d70-689b-4ff1-a96b-da1392eadc69" operand="=" value="1" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
     <config guid="76b06310-83e2-4c43-9e28-fd1097eddc61">
       <active>true</active>
       <description>NAV1 standby toggle precision</description>
@@ -269,6 +320,19 @@
         <button>
           <onPress type="FsuipcOffsetInputAction">
             <source type="FSUIPC" offset="0x66C1" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="if($=1,0,1)" />
+          </onPress>
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="d6fe1854-3863-4289-abdd-4d44178b0900">
+      <active>true</active>
+      <description>NAV2 standby toggle precision</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="NAV2_KHZ" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x66C3" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" inputValue="if($=1,0,1)" />
           </onPress>
           <onRelease />
         </button>
@@ -294,6 +358,25 @@
         </preconditions>
       </settings>
     </config>
+    <config guid="d8be2993-358e-4dde-9ba3-481f591b2905">
+      <active>true</active>
+      <description>NAV2 standby MHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="NAV2Encoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;=900,$-100,$+900)" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;1700,$+100,$-900)" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="c2dc8c3d-9e3f-4a63-a29c-b076e138f32b" operand="=" value="0" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
     <config guid="c3460540-f90c-48a1-917f-5c1d08460592">
       <active>true</active>
       <description>NAV1 standby KHz</description>
@@ -304,13 +387,87 @@
           </onLeft>
           <onLeftFast />
           <onRight type="FsuipcOffsetInputAction">
-            <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;1795,$+5,800)" />
+            <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;1795,$+5,800)" />
           </onRight>
           <onRightFast />
         </encoder>
         <preconditions>
           <precondition type="config" active="true" ref="607313d9-e297-4b5f-bbba-3e70cbb6d900" operand="=" value="1" logic="and" />
         </preconditions>
+      </settings>
+    </config>
+    <config guid="7de35b2a-e0f6-47e7-8985-677358df6283">
+      <active>true</active>
+      <description>NAV2 standby KHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="NAV2Encoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&gt;=800,$-5,1795)" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x311E" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" inputValue="if($&lt;1795,$+5,800)" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="c2dc8c3d-9e3f-4a63-a29c-b076e138f32b" operand="=" value="1" logic="and" />
+        </preconditions>
+      </settings>
+    </config>
+    <config guid="b341aa24-2cc2-4b3c-8734-d9a6cc73be72">
+      <active>false</active>
+      <description>NAV1 ident</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="Test1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="EventIdInputAction" eventId="65837" param="0" />
+          <onRelease type="EventIdInputAction" eventId="65832" param="0" />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="716fb62c-eed8-42bc-ba36-f4013b60394c">
+      <active>true</active>
+      <description>COMM1 swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="COMM1_XFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="EventIdInputAction" eventId="66372" param="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="2f0e25f9-f46e-432d-9175-6b9f77a4cadd">
+      <active>true</active>
+      <description>COMM2 swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="COMM2_XFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="EventIdInputAction" eventId="66444" param="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="1832e028-b4ed-4319-85e3-6bc2917b6de4">
+      <active>true</active>
+      <description>NAV1 swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="NAV1_XFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="EventIdInputAction" eventId="66448" param="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="ed4839de-1942-45a8-9832-c3aba4ef1d2a">
+      <active>true</active>
+      <description>NAV2 swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="NAV2_XFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="EventIdInputAction" eventId="66452" param="0" />
+          <onRelease />
+        </button>
+        <preconditions />
       </settings>
     </config>
   </inputs>

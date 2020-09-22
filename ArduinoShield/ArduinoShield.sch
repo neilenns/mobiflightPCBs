@@ -132,16 +132,102 @@ Text GLabel 4700 3450 2    50   Input ~ 0
 COMM1_LEFT
 Text GLabel 4700 3650 2    50   Input ~ 0
 COMM1_RIGHT
-Text GLabel 7450 3350 0    50   Output ~ 0
-NAV1_LEFT
 Text GLabel 7450 3450 0    50   Output ~ 0
-NAV1_RIGHT
-Text GLabel 7450 3550 0    50   Output ~ 0
-NAV1_KHZ_SW
-Text GLabel 4700 4050 2    50   Input ~ 0
 NAV1_LEFT
-Text GLabel 4700 4250 2    50   Input ~ 0
+Text GLabel 7450 3550 0    50   Output ~ 0
 NAV1_RIGHT
-Text GLabel 4700 4450 2    50   Input ~ 0
+Text GLabel 7450 3650 0    50   Output ~ 0
 NAV1_KHZ_SW
+Text GLabel 4700 4250 2    50   Input ~ 0
+NAV1_LEFT
+Text GLabel 4700 4450 2    50   Input ~ 0
+NAV1_RIGHT
+Text GLabel 4700 4650 2    50   Input ~ 0
+NAV1_KHZ_SW
+Text GLabel 4700 4950 2    50   Input ~ 0
+COMM1_VOL_LEFT
+Text GLabel 4700 5150 2    50   Input ~ 0
+COMM1_VOL_RIGHT
+Text GLabel 7450 3850 0    50   Output ~ 0
+COMM1_VOL_LEFT
+Text GLabel 7450 3950 0    50   Output ~ 0
+COMM1_VOL_RIGHT
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A5DCE
+P 7450 4050
+F 0 "#PWR?" H 7450 3800 50  0001 C CNN
+F 1 "GND" V 7455 3922 50  0000 R CNN
+F 2 "" H 7450 4050 50  0001 C CNN
+F 3 "" H 7450 4050 50  0001 C CNN
+	1    7450 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A618F
+P 7450 4150
+F 0 "#PWR?" H 7450 3900 50  0001 C CNN
+F 1 "GND" V 7455 4022 50  0000 R CNN
+F 2 "" H 7450 4150 50  0001 C CNN
+F 3 "" H 7450 4150 50  0001 C CNN
+	1    7450 4150
+	0    1    1    0   
+$EndComp
+Text GLabel 7450 4250 0    50   Output ~ 0
+TEST1_SW
+Text GLabel 4700 5350 2    50   Input ~ 0
+TEST1_SW
+Text GLabel 7950 3050 2    50   Output ~ 0
+COMM2_LEFT
+Text GLabel 7950 3150 2    50   Output ~ 0
+COMM2_RIGHT
+Text GLabel 7950 3250 2    50   Output ~ 0
+COMM2_KHZ_SW
+Text GLabel 4700 3350 2    50   Input ~ 0
+COMM2_LEFT
+Text GLabel 4700 3550 2    50   Input ~ 0
+COMM2_RIGHT
+Text GLabel 4700 3750 2    50   Input ~ 0
+COMM2_KHZ_SW
+$Comp
+L power:GND #PWR?
+U 1 1 5F6A881F
+P 7950 2850
+F 0 "#PWR?" H 7950 2600 50  0001 C CNN
+F 1 "GND" V 7955 2722 50  0000 R CNN
+F 2 "" H 7950 2850 50  0001 C CNN
+F 3 "" H 7950 2850 50  0001 C CNN
+	1    7950 2850
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 7950 2950
+Text GLabel 7950 3350 2    50   Output ~ 0
+COMM2_XFR
+Text GLabel 7450 3350 0    50   Output ~ 0
+COMM1_XFR
+Text GLabel 7450 3750 0    50   Output ~ 0
+NAV1_XFR
+Text GLabel 4700 4150 2    50   Input ~ 0
+NAV2_LEFT
+Text GLabel 4700 4350 2    50   Input ~ 0
+NAV2_RIGHT
+Text GLabel 4700 4550 2    50   Input ~ 0
+NAV2_KHZ_SW
+Text GLabel 4700 3950 2    50   Input ~ 0
+COMM2_XFR
+Text GLabel 4700 4050 2    50   Input ~ 0
+COMM1_XFR
+Text GLabel 7950 3450 2    50   Output ~ 0
+NAV2_LEFT
+Text GLabel 7950 3550 2    50   Output ~ 0
+NAV2_RIGHT
+Text GLabel 7950 3650 2    50   Output ~ 0
+NAV2_KHZ_SW
+Text GLabel 7950 3750 2    50   Output ~ 0
+NAV2_XFR
+Text GLabel 4700 4750 2    50   Input ~ 0
+NAV2_XFR
+Text GLabel 4700 4850 2    50   Input ~ 0
+NAV1_XFR
 $EndSCHEMATC

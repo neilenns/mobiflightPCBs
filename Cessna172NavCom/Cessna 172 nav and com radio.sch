@@ -218,9 +218,9 @@ Wire Wire Line
 	3150 3800 3600 3800
 Connection ~ 3150 3800
 Text GLabel 1250 6350 2    50   Output ~ 0
-COMM1_TX_SW
+COMM1_XFR
 Text GLabel 1250 6800 2    50   Output ~ 0
-NAV1_TX_SW
+NAV1_XFR
 Text Notes 4150 800  0    50   ~ 0
 COMM1 volume
 Text GLabel 5100 1150 2    50   Output ~ 0
@@ -644,9 +644,9 @@ Wire Wire Line
 Wire Wire Line
 	1600 5400 2050 5400
 Text GLabel 2500 6350 2    50   Output ~ 0
-COMM2_TX_SW
+COMM2_XFR
 Text GLabel 2500 6800 2    50   Output ~ 0
-NAV2_TX_SW
+NAV2_XFR
 Text GLabel 2500 7250 2    50   Output ~ 0
 IDENT2_SW
 $Comp
@@ -950,9 +950,9 @@ COMM1_VOL_RIGHT
 Text GLabel 8850 2000 3    50   Input ~ 0
 TEST1_SW
 Text GLabel 7950 2000 3    50   Input ~ 0
-COMM1_TX_SW
+COMM1_XFR
 Text GLabel 8350 2000 3    50   Input ~ 0
-NAV1_TX_SW
+NAV1_XFR
 Text GLabel 9050 2000 3    50   Input ~ 0
 IDENT1_SW
 Text GLabel 8950 2000 3    50   Input ~ 0
@@ -968,7 +968,7 @@ COMM2_RIGHT
 Text GLabel 7850 1500 1    50   Input ~ 0
 COMM2_KHZ_SW
 Text GLabel 7950 1500 1    50   Input ~ 0
-COMM2_TX_SW
+COMM2_XFR
 Text GLabel 8050 1500 1    50   Input ~ 0
 NAV2_LEFT
 Text GLabel 8150 1500 1    50   Input ~ 0
@@ -976,7 +976,7 @@ NAV2_RIGHT
 Text GLabel 8250 1500 1    50   Input ~ 0
 NAV2_KHZ_SW
 Text GLabel 8350 1500 1    50   Input ~ 0
-NAV2_TX_SW
+NAV2_XFR
 Text GLabel 8450 1500 1    50   Input ~ 0
 COMM2_VOL_LEFT
 Text GLabel 8550 1500 1    50   Input ~ 0
