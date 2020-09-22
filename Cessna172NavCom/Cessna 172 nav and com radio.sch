@@ -926,7 +926,7 @@ F 3 "~" H 8250 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 7350 2000 3    50   Output ~ 0
-LOAD
+CS_LOAD
 Text GLabel 7450 2000 3    50   Output ~ 0
 CLK
 Text GLabel 7550 2000 3    50   Output ~ 0

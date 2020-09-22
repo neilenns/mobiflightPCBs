@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName />
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="LedModule" DinPin="27" ClsPin="25" ClkPin="23" Brightness="15" NumModules="8" />
+  <Encoder Name="COMM1Encoder" PinLeft="29" PinRight="31" EncoderType="0" />
+  <Button Name="COMM1_KHZ" Pin="33" />
+  <Encoder Name="NAV1Encoder" PinLeft="35" PinRight="37" EncoderType="0" />
+  <Button Name="NAV1_KHZ" Pin="39" />
+</Config>
