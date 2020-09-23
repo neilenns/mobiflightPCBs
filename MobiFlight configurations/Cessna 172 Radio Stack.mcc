@@ -415,17 +415,6 @@
         </preconditions>
       </settings>
     </config>
-    <config guid="b341aa24-2cc2-4b3c-8734-d9a6cc73be72">
-      <active>false</active>
-      <description>NAV1 ident</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="Test1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="EventIdInputAction" eventId="65837" param="0" />
-          <onRelease type="EventIdInputAction" eventId="65832" param="0" />
-        </button>
-        <preconditions />
-      </settings>
-    </config>
     <config guid="716fb62c-eed8-42bc-ba36-f4013b60394c">
       <active>true</active>
       <description>COMM1 swap</description>

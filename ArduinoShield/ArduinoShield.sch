@@ -144,9 +144,9 @@ Text GLabel 4700 4450 2    50   Input ~ 0
 NAV1_RIGHT
 Text GLabel 4700 4650 2    50   Input ~ 0
 NAV1_KHZ_SW
-Text GLabel 4700 4950 2    50   Input ~ 0
+Text GLabel 4700 5050 2    50   Input ~ 0
 COMM1_VOL_LEFT
-Text GLabel 4700 5150 2    50   Input ~ 0
+Text GLabel 4700 5250 2    50   Input ~ 0
 COMM1_VOL_RIGHT
 Text GLabel 7450 3850 0    50   Output ~ 0
 COMM1_VOL_LEFT
@@ -176,7 +176,7 @@ F 3 "" H 7450 4150 50  0001 C CNN
 $EndComp
 Text GLabel 7450 4250 0    50   Output ~ 0
 TEST1_SW
-Text GLabel 4700 5350 2    50   Input ~ 0
+Text GLabel 4700 5450 2    50   Input ~ 0
 TEST1_SW
 Text GLabel 7950 3050 2    50   Output ~ 0
 COMM2_LEFT
@@ -230,4 +230,20 @@ Text GLabel 4700 4750 2    50   Input ~ 0
 NAV2_XFR
 Text GLabel 4700 4850 2    50   Input ~ 0
 NAV1_XFR
+Text GLabel 4700 5350 2    50   Input ~ 0
+TEST2_SW
+Text GLabel 7950 4250 2    50   Output ~ 0
+TEST2_SW
+Text GLabel 7950 4450 2    50   Output ~ 0
+IDENT2_SW
+Text GLabel 4700 5650 2    50   Input ~ 0
+IDENT1_SW
+Text GLabel 4700 5550 2    50   Input ~ 0
+IDENT2_SW
+Text GLabel 7450 4450 0    50   Output ~ 0
+IDENT1_SW
+Text GLabel 4700 4950 2    50   Input ~ 0
+COMM2_VOL_LEFT
+Text GLabel 4700 5150 2    50   Input ~ 0
+COMM2_VOL_RIGHT
 $EndSCHEMATC

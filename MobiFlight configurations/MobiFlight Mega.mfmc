@@ -17,6 +17,8 @@
   <Button Name="COMM2_XFR" Pin="34" />
   <Button Name="NAV1_XFR" Pin="43" />
   <Button Name="NAV2_XFR" Pin="42" />
+  <Output Name="COMM1TestLED" Pin="51" />
   <Button Name="COMM2Test" Pin="48" />
+  <Output Name="COMM2TestLED" Pin="50" />
   <Button Name="IDENT1" Pin="53" />
 </Config>
