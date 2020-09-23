@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 15
+Sheet 1 13
 Title ""
 Date ""
 Rev ""
@@ -73,7 +73,7 @@ F5 "DIN" I L 2050 4450 50
 F6 "ISET" I L 2050 4550 50 
 $EndSheet
 Text GLabel 1950 4250 0    50   Input ~ 0
-LOAD
+CS_LOAD
 Text GLabel 1950 4350 0    50   Input ~ 0
 CLK
 Text GLabel 1950 4450 0    50   Input ~ 0
@@ -87,7 +87,7 @@ Wire Wire Line
 Text Notes 2050 4050 0    50   ~ 0
 COMM1 active
 Text GLabel 3750 4250 0    50   Input ~ 0
-LOAD
+CS_LOAD
 Text GLabel 3750 4350 0    50   Input ~ 0
 CLK
 Wire Wire Line
@@ -108,7 +108,7 @@ F5 "DIN" I L 5600 4450 50
 F6 "ISET" I L 5600 4550 50 
 $EndSheet
 Text GLabel 5500 4250 0    50   Input ~ 0
-LOAD
+CS_LOAD
 Text GLabel 5500 4350 0    50   Input ~ 0
 CLK
 Wire Wire Line
@@ -129,7 +129,7 @@ F5 "DIN" I L 7400 4450 50
 F6 "ISET" I L 7400 4550 50 
 $EndSheet
 Text GLabel 7300 4250 0    50   Input ~ 0
-LOAD
+CS_LOAD
 Text GLabel 7300 4350 0    50   Input ~ 0
 CLK
 Wire Wire Line
@@ -221,29 +221,6 @@ Text GLabel 1250 6350 2    50   Output ~ 0
 COMM1_XFR
 Text GLabel 1250 6800 2    50   Output ~ 0
 NAV1_XFR
-Text Notes 4150 800  0    50   ~ 0
-COMM1 volume
-Text GLabel 5100 1150 2    50   Output ~ 0
-COMM1_VOL_LEFT
-Text GLabel 5100 1300 2    50   Output ~ 0
-COMM1_VOL_RIGHT
-Text GLabel 5100 1450 2    50   Output ~ 0
-TEST1_SW
-Wire Wire Line
-	5000 1150 5100 1150
-Wire Wire Line
-	5000 1300 5100 1300
-$Sheet
-S 4150 900  850  800 
-U 5F5E0D77
-F0 "sheet5F5E0D6C" 50
-F1 "Tuning rotary encoder and switch.sch" 50
-F2 "LEFT" O R 5000 1150 50 
-F3 "RIGHT" O R 5000 1300 50 
-F4 "SW" O R 5000 1450 50 
-$EndSheet
-Wire Wire Line
-	5000 1450 5100 1450
 Wire Notes Line
 	600  650  5900 650 
 $Sheet
@@ -308,21 +285,8 @@ Display brightness control
 Text GLabel 1250 7250 2    50   Output ~ 0
 IDENT1_SW
 NoConn ~ 1300 4150
-$Comp
-L Device:LED D2
-U 1 1 5F5FCD17
-P 4800 6250
-F 0 "D2" H 4793 6466 50  0000 C CNN
-F 1 "LED" H 4793 6375 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 4800 6250 50  0001 C CNN
-F 3 "~" H 4800 6250 50  0001 C CNN
-	1    4800 6250
-	-1   0    0    1   
-$EndComp
 Text Notes 3200 5900 0    50   ~ 0
 Status LEDs
-Wire Wire Line
-	4300 6250 4350 6250
 $Comp
 L Device:LED D1
 U 1 1 5F60E071
@@ -381,31 +345,29 @@ $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5F61685B
-P 4800 6650
-F 0 "D3" H 4793 6866 50  0000 C CNN
-F 1 "LED" H 4793 6775 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 4800 6650 50  0001 C CNN
-F 3 "~" H 4800 6650 50  0001 C CNN
-	1    4800 6650
+P 4800 6450
+F 0 "D3" H 4793 6666 50  0000 C CNN
+F 1 "LED" H 4793 6575 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4800 6450 50  0001 C CNN
+F 3 "~" H 4800 6450 50  0001 C CNN
+	1    4800 6450
 	-1   0    0    1   
 $EndComp
-Text GLabel 4300 6650 0    50   Input ~ 0
-IDENT1_LED
+Text GLabel 4300 6450 0    50   Input ~ 0
+RADIO1_LED
 $Comp
 L Device:R R4
 U 1 1 5F616863
-P 4500 6650
-F 0 "R4" V 4293 6650 50  0000 C CNN
-F 1 "220k" V 4384 6650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 6650 50  0001 C CNN
-F 3 "~" H 4500 6650 50  0001 C CNN
-	1    4500 6650
+P 4500 6450
+F 0 "R4" V 4293 6450 50  0000 C CNN
+F 1 "220k" V 4384 6450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 6450 50  0001 C CNN
+F 3 "~" H 4500 6450 50  0001 C CNN
+	1    4500 6450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4300 6650 4350 6650
-Text Notes 800  7600 0    50   ~ 0
-Test switch is on\nCOMM1 volume\nrotary encoder
+	4300 6450 4350 6450
 $Comp
 L Connector:USB_B_Micro J2
 U 1 1 5F634FEE
@@ -425,32 +387,6 @@ NoConn ~ 9800 5050
 NoConn ~ 9800 5150
 NoConn ~ 9800 5250
 NoConn ~ 9400 5450
-$Comp
-L Device:LED D4
-U 1 1 5F679E44
-P 4800 7100
-F 0 "D4" H 4793 7316 50  0000 C CNN
-F 1 "LED" H 4793 7225 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 4800 7100 50  0001 C CNN
-F 3 "~" H 4800 7100 50  0001 C CNN
-	1    4800 7100
-	-1   0    0    1   
-$EndComp
-Text GLabel 4300 7100 0    50   Input ~ 0
-CHAN1_LED
-$Comp
-L Device:R R17
-U 1 1 5F679E4C
-P 4500 7100
-F 0 "R17" V 4293 7100 50  0000 C CNN
-F 1 "220k" V 4384 7100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 7100 50  0001 C CNN
-F 3 "~" H 4500 7100 50  0001 C CNN
-	1    4500 7100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4300 7100 4350 7100
 $Comp
 L Device:C C12
 U 1 1 5F667E43
@@ -541,7 +477,7 @@ F5 "DIN" I L 2050 5400 50
 F6 "ISET" I L 2050 5500 50 
 $EndSheet
 Text GLabel 1950 5200 0    50   Input ~ 0
-LOAD
+CS_LOAD
 Text GLabel 1950 5300 0    50   Input ~ 0
 CLK
 Wire Wire Line
@@ -551,7 +487,7 @@ Wire Wire Line
 Text Notes 2050 5000 0    50   ~ 0
 COMM2 active
 Text GLabel 3750 5200 0    50   Input ~ 0
-LOAD
+CS_LOAD
 Text GLabel 3750 5300 0    50   Input ~ 0
 CLK
 Wire Wire Line
@@ -572,7 +508,7 @@ F5 "DIN" I L 5600 5400 50
 F6 "ISET" I L 5600 5500 50 
 $EndSheet
 Text GLabel 5500 5200 0    50   Input ~ 0
-LOAD
+CS_LOAD
 Text GLabel 5500 5300 0    50   Input ~ 0
 CLK
 Wire Wire Line
@@ -593,7 +529,7 @@ F5 "DIN" I L 7400 5400 50
 F6 "ISET" I L 7400 5500 50 
 $EndSheet
 Text GLabel 7300 5200 0    50   Input ~ 0
-LOAD
+CS_LOAD
 Text GLabel 7300 5300 0    50   Input ~ 0
 CLK
 Wire Wire Line
@@ -682,99 +618,32 @@ F 3 "~" H 2300 7450 50  0001 C CNN
 	1    2300 7250
 	1    0    0    -1  
 $EndComp
-Text Notes 2050 7600 0    50   ~ 0
-Test switch is on\nCOMM2 volume\nrotary encoder
-$Comp
-L Device:R R3
-U 1 1 5F608695
-P 4500 6250
-F 0 "R3" V 4293 6250 50  0000 C CNN
-F 1 "220k" V 4384 6250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 6250 50  0001 C CNN
-F 3 "~" H 4500 6250 50  0001 C CNN
-	1    4500 6250
-	0    1    1    0   
-$EndComp
-Text GLabel 4300 6250 0    50   Input ~ 0
-TEST1_LED
-$Comp
-L Device:LED D5
-U 1 1 5F6E58B1
-P 6200 6250
-F 0 "D5" H 6193 6466 50  0000 C CNN
-F 1 "LED" H 6193 6375 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 6200 6250 50  0001 C CNN
-F 3 "~" H 6200 6250 50  0001 C CNN
-	1    6200 6250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5700 6250 5750 6250
 $Comp
 L Device:LED D6
 U 1 1 5F6E58B9
-P 6200 6650
-F 0 "D6" H 6193 6866 50  0000 C CNN
-F 1 "LED" H 6193 6775 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 6200 6650 50  0001 C CNN
-F 3 "~" H 6200 6650 50  0001 C CNN
-	1    6200 6650
+P 4800 6950
+F 0 "D6" H 4793 7166 50  0000 C CNN
+F 1 "LED" H 4793 7075 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4800 6950 50  0001 C CNN
+F 3 "~" H 4800 6950 50  0001 C CNN
+	1    4800 6950
 	-1   0    0    1   
 $EndComp
-Text GLabel 5700 6650 0    50   Input ~ 0
-IDENT2_LED
+Text GLabel 4300 6950 0    50   Input ~ 0
+RADIO2_LED
 $Comp
 L Device:R R19
 U 1 1 5F6E58C1
-P 5900 6650
-F 0 "R19" V 5693 6650 50  0000 C CNN
-F 1 "220k" V 5784 6650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5830 6650 50  0001 C CNN
-F 3 "~" H 5900 6650 50  0001 C CNN
-	1    5900 6650
+P 4500 6950
+F 0 "R19" V 4293 6950 50  0000 C CNN
+F 1 "220k" V 4384 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 6950 50  0001 C CNN
+F 3 "~" H 4500 6950 50  0001 C CNN
+	1    4500 6950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5700 6650 5750 6650
-$Comp
-L Device:LED D7
-U 1 1 5F6E58C8
-P 6200 7100
-F 0 "D7" H 6193 7316 50  0000 C CNN
-F 1 "LED" H 6193 7225 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 6200 7100 50  0001 C CNN
-F 3 "~" H 6200 7100 50  0001 C CNN
-	1    6200 7100
-	-1   0    0    1   
-$EndComp
-Text GLabel 5700 7100 0    50   Input ~ 0
-CHAN2_LED
-$Comp
-L Device:R R20
-U 1 1 5F6E58D0
-P 5900 7100
-F 0 "R20" V 5693 7100 50  0000 C CNN
-F 1 "220k" V 5784 7100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5830 7100 50  0001 C CNN
-F 3 "~" H 5900 7100 50  0001 C CNN
-	1    5900 7100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5700 7100 5750 7100
-$Comp
-L Device:R R18
-U 1 1 5F6E58D7
-P 5900 6250
-F 0 "R18" V 5693 6250 50  0000 C CNN
-F 1 "220k" V 5784 6250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5830 6250 50  0001 C CNN
-F 3 "~" H 5900 6250 50  0001 C CNN
-	1    5900 6250
-	0    1    1    0   
-$EndComp
-Text GLabel 5700 6250 0    50   Input ~ 0
-TEST2_LED
+	4300 6950 4350 6950
 $Comp
 L power:+5V #PWR0105
 U 1 1 5F6F3527
@@ -786,8 +655,6 @@ F 3 "" H 3500 6400 50  0001 C CNN
 	1    3500 6400
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	3200 7400 6600 7400
 Wire Notes Line
 	6600 7400 6600 5950
 Wire Notes Line
@@ -850,29 +717,6 @@ F4 "SW" O R 3250 2600 50
 $EndSheet
 Wire Wire Line
 	3250 2600 3350 2600
-Text Notes 4150 1950 0    50   ~ 0
-COMM2 volume
-Text GLabel 5100 2300 2    50   Output ~ 0
-COMM2_VOL_LEFT
-Text GLabel 5100 2450 2    50   Output ~ 0
-COMM2_VOL_RIGHT
-Text GLabel 5100 2600 2    50   Output ~ 0
-TEST2_SW
-Wire Wire Line
-	5000 2300 5100 2300
-Wire Wire Line
-	5000 2450 5100 2450
-$Sheet
-S 4150 2050 850  800 
-U 5F71BCF7
-F0 "sheet5F71BCD4" 50
-F1 "Tuning rotary encoder and switch.sch" 50
-F2 "LEFT" O R 5000 2300 50 
-F3 "RIGHT" O R 5000 2450 50 
-F4 "SW" O R 5000 2600 50 
-$EndSheet
-Wire Wire Line
-	5000 2600 5100 2600
 Wire Notes Line
 	600  3000 5900 3000
 Wire Notes Line
@@ -912,19 +756,6 @@ Wire Notes Line
 	6050 3000 10150 3000
 Wire Notes Line
 	10150 3000 10150 650 
-Wire Notes Line
-	10150 650  6050 650 
-$Comp
-L Connector_Generic:Conn_02x20_Odd_Even J8
-U 1 1 5F6748DE
-P 8250 1800
-F 0 "J8" V 8346 2779 50  0000 L CNN
-F 1 "Conn_02x20_Odd_Even" V 8255 2779 50  0000 L CNN
-F 2 "SamacSys_Parts:SAMTEC-TST-120-01-X-D" H 8250 1800 50  0001 C CNN
-F 3 "~" H 8250 1800 50  0001 C CNN
-	1    8250 1800
-	0    -1   -1   0   
-$EndComp
 Text GLabel 7350 2000 3    50   Output ~ 0
 CS_LOAD
 Text GLabel 7450 2000 3    50   Output ~ 0
@@ -944,23 +775,15 @@ NAV1_RIGHT
 Text GLabel 8250 2000 3    50   Input ~ 0
 NAV1_KHZ_SW
 Text GLabel 8450 2000 3    50   Input ~ 0
-COMM1_VOL_LEFT
-Text GLabel 8550 2000 3    50   Input ~ 0
-COMM1_VOL_RIGHT
-Text GLabel 8850 2000 3    50   Input ~ 0
-TEST1_SW
+RADIO1_SW
 Text GLabel 7950 2000 3    50   Input ~ 0
 COMM1_XFR
 Text GLabel 8350 2000 3    50   Input ~ 0
 NAV1_XFR
-Text GLabel 9050 2000 3    50   Input ~ 0
+Text GLabel 8650 2000 3    50   Input ~ 0
 IDENT1_SW
-Text GLabel 8950 2000 3    50   Input ~ 0
-TEST1_LED
-Text GLabel 9150 2000 3    50   Output ~ 0
-IDENT1_LED
-Text GLabel 9250 2000 3    50   Output ~ 0
-CHAN1_LED
+Text GLabel 8550 2000 3    50   Output ~ 0
+RADIO1_LED
 Text GLabel 7650 1500 1    50   Input ~ 0
 COMM2_LEFT
 Text GLabel 7750 1500 1    50   Input ~ 0
@@ -978,18 +801,10 @@ NAV2_KHZ_SW
 Text GLabel 8350 1500 1    50   Input ~ 0
 NAV2_XFR
 Text GLabel 8450 1500 1    50   Input ~ 0
-COMM2_VOL_LEFT
-Text GLabel 8550 1500 1    50   Input ~ 0
-COMM2_VOL_RIGHT
-Text GLabel 8850 1500 1    50   Input ~ 0
-TEST2_SW
-Text GLabel 8950 1500 1    50   Output ~ 0
-TEST2_LED
-Text GLabel 9150 1500 1    50   Output ~ 0
-IDENT2_LED
-Text GLabel 9250 1500 1    50   Output ~ 0
-CHAN2_LED
-Text GLabel 9050 1500 1    50   Input ~ 0
+RADIO2_SW
+Text GLabel 8550 1500 1    50   Output ~ 0
+RADIO2_LED
+Text GLabel 8650 1500 1    50   Input ~ 0
 IDENT2_SW
 NoConn ~ 7550 1500
 $Comp
@@ -1114,69 +929,25 @@ F 3 "" H 2100 7250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0115
-U 1 1 5F6919B7
-P 4950 6250
-F 0 "#PWR0115" H 4950 6000 50  0001 C CNN
-F 1 "GND" V 4955 6122 50  0000 R CNN
-F 2 "" H 4950 6250 50  0001 C CNN
-F 3 "" H 4950 6250 50  0001 C CNN
-	1    4950 6250
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0116
 U 1 1 5F691E9F
-P 4950 6650
-F 0 "#PWR0116" H 4950 6400 50  0001 C CNN
-F 1 "GND" V 4955 6522 50  0000 R CNN
-F 2 "" H 4950 6650 50  0001 C CNN
-F 3 "" H 4950 6650 50  0001 C CNN
-	1    4950 6650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 5F692387
-P 4950 7100
-F 0 "#PWR0117" H 4950 6850 50  0001 C CNN
-F 1 "GND" V 4955 6972 50  0000 R CNN
-F 2 "" H 4950 7100 50  0001 C CNN
-F 3 "" H 4950 7100 50  0001 C CNN
-	1    4950 7100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 5F692887
-P 6350 6250
-F 0 "#PWR0118" H 6350 6000 50  0001 C CNN
-F 1 "GND" V 6355 6122 50  0000 R CNN
-F 2 "" H 6350 6250 50  0001 C CNN
-F 3 "" H 6350 6250 50  0001 C CNN
-	1    6350 6250
+P 4950 6450
+F 0 "#PWR0116" H 4950 6200 50  0001 C CNN
+F 1 "GND" V 4955 6322 50  0000 R CNN
+F 2 "" H 4950 6450 50  0001 C CNN
+F 3 "" H 4950 6450 50  0001 C CNN
+	1    4950 6450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0119
 U 1 1 5F692D8E
-P 6350 6650
-F 0 "#PWR0119" H 6350 6400 50  0001 C CNN
-F 1 "GND" V 6355 6522 50  0000 R CNN
-F 2 "" H 6350 6650 50  0001 C CNN
-F 3 "" H 6350 6650 50  0001 C CNN
-	1    6350 6650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0120
-U 1 1 5F6932A6
-P 6350 7100
-F 0 "#PWR0120" H 6350 6850 50  0001 C CNN
-F 1 "GND" V 6355 6972 50  0000 R CNN
-F 2 "" H 6350 7100 50  0001 C CNN
-F 3 "" H 6350 7100 50  0001 C CNN
-	1    6350 7100
+P 4950 6950
+F 0 "#PWR0119" H 4950 6700 50  0001 C CNN
+F 1 "GND" V 4955 6822 50  0000 R CNN
+F 2 "" H 4950 6950 50  0001 C CNN
+F 3 "" H 4950 6950 50  0001 C CNN
+	1    4950 6950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1212,52 +983,65 @@ F 3 "" H 2050 3800 50  0001 C CNN
 	1    2050 3800
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F67D432
-P 8650 1500
-F 0 "#PWR?" H 8650 1250 50  0001 C CNN
-F 1 "GND" H 8655 1327 50  0000 C CNN
-F 2 "" H 8650 1500 50  0001 C CNN
-F 3 "" H 8650 1500 50  0001 C CNN
-	1    8650 1500
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F67D9D0
-P 8750 1450
-F 0 "#PWR?" H 8750 1200 50  0001 C CNN
-F 1 "GND" H 8755 1277 50  0000 C CNN
-F 2 "" H 8750 1450 50  0001 C CNN
-F 3 "" H 8750 1450 50  0001 C CNN
-	1    8750 1450
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F67E0C2
-P 8650 2000
-F 0 "#PWR?" H 8650 1750 50  0001 C CNN
-F 1 "GND" H 8655 1827 50  0000 C CNN
-F 2 "" H 8650 2000 50  0001 C CNN
-F 3 "" H 8650 2000 50  0001 C CNN
-	1    8650 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F67E6E9
-P 8750 2050
-F 0 "#PWR?" H 8750 1800 50  0001 C CNN
-F 1 "GND" H 8755 1877 50  0000 C CNN
-F 2 "" H 8750 2050 50  0001 C CNN
-F 3 "" H 8750 2050 50  0001 C CNN
-	1    8750 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 2050 8750 2000
 Wire Wire Line
 	8750 1450 8750 1500
+Text GLabel 1250 7700 2    50   Output ~ 0
+RADIO1_SW
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5F6E2B57
+P 1050 7700
+F 0 "SW7" H 1050 7985 50  0000 C CNN
+F 1 "SW_Push" H 1050 7894 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H8mm" H 1050 7900 50  0001 C CNN
+F 3 "~" H 1050 7900 50  0001 C CNN
+	1    1050 7700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 7700 2    50   Output ~ 0
+RADIO2_SW
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5F6E2B5E
+P 2300 7700
+F 0 "SW8" H 2300 7985 50  0000 C CNN
+F 1 "SW_Push" H 2300 7894 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H8mm" H 2300 7900 50  0001 C CNN
+F 3 "~" H 2300 7900 50  0001 C CNN
+	1    2300 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5F6E2B64
+P 850 7700
+F 0 "#PWR01" H 850 7450 50  0001 C CNN
+F 1 "GND" V 855 7572 50  0000 R CNN
+F 2 "" H 850 7700 50  0001 C CNN
+F 3 "" H 850 7700 50  0001 C CNN
+	1    850  7700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F6E2B6A
+P 2100 7700
+F 0 "#PWR02" H 2100 7450 50  0001 C CNN
+F 1 "GND" V 2105 7572 50  0000 R CNN
+F 2 "" H 2100 7700 50  0001 C CNN
+F 3 "" H 2100 7700 50  0001 C CNN
+	1    2100 7700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x14_Odd_Even J5
+U 1 1 5F6E8F05
+P 7950 1800
+F 0 "J5" V 8046 1012 50  0000 R CNN
+F 1 "Conn_02x14_Odd_Even" V 7955 1012 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x14_P2.54mm_Vertical" H 7950 1800 50  0001 C CNN
+F 3 "~" H 7950 1800 50  0001 C CNN
+	1    7950 1800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
