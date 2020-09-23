@@ -1034,14 +1034,36 @@ F 3 "" H 2100 7700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x14_Odd_Even J5
-U 1 1 5F6E8F05
-P 7950 1800
-F 0 "J5" V 8046 1012 50  0000 R CNN
-F 1 "Conn_02x14_Odd_Even" V 7955 1012 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x14_P2.54mm_Vertical" H 7950 1800 50  0001 C CNN
-F 3 "~" H 7950 1800 50  0001 C CNN
-	1    7950 1800
+L Connector_Generic:Conn_02x15_Odd_Even J?
+U 1 1 5F701A0C
+P 8050 1800
+F 0 "J?" V 8146 1012 50  0000 R CNN
+F 1 "Conn_02x15_Odd_Even" V 8055 1012 50  0000 R CNN
+F 2 "" H 8050 1800 50  0001 C CNN
+F 3 "~" H 8050 1800 50  0001 C CNN
+	1    8050 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F705AED
+P 8750 2000
+F 0 "#PWR?" H 8750 1750 50  0001 C CNN
+F 1 "GND" V 8755 1872 50  0000 R CNN
+F 2 "" H 8750 2000 50  0001 C CNN
+F 3 "" H 8750 2000 50  0001 C CNN
+	1    8750 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F705602
+P 8750 1450
+F 0 "#PWR?" H 8750 1200 50  0001 C CNN
+F 1 "GND" H 8755 1277 50  0000 C CNN
+F 2 "" H 8750 1450 50  0001 C CNN
+F 3 "" H 8750 1450 50  0001 C CNN
+	1    8750 1450
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
