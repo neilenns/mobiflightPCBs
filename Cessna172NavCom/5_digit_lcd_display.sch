@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 4 15
 Title ""
 Date ""
 Rev ""
@@ -22,6 +22,10 @@ AR Path="/5F60A880/5F60E2D2" Ref="U1"  Part="1"
 AR Path="/5F61163D/5F60E2D2" Ref="U3"  Part="1" 
 AR Path="/5F613967/5F60E2D2" Ref="U5"  Part="1" 
 AR Path="/5F613974/5F60E2D2" Ref="U7"  Part="1" 
+AR Path="/5F68A9CC/5F60E2D2" Ref="U9"  Part="1" 
+AR Path="/5F68A9DF/5F60E2D2" Ref="U11"  Part="1" 
+AR Path="/5F68A9EB/5F60E2D2" Ref="U13"  Part="1" 
+AR Path="/5F68A9F8/5F60E2D2" Ref="U15"  Part="1" 
 F 0 "U7" H 2500 5000 50  0000 C CNN
 F 1 "MAX7219 COM standby" V 2350 4100 50  0000 C CNN
 F 2 "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm" H 2700 4100 50  0001 C CNN
@@ -32,10 +36,6 @@ $EndComp
 NoConn ~ 3150 4550
 NoConn ~ 3150 4650
 NoConn ~ 3150 4750
-Text GLabel 2750 3050 1    50   Input ~ 0
-+5V
-Text GLabel 2750 5050 3    50   Input ~ 0
-GND
 Text Label 3150 3250 0    50   ~ 0
 SEG_A
 Text Label 3150 3350 0    50   ~ 0
@@ -80,6 +80,10 @@ AR Path="/5F60A880/5F5F5D43" Ref="U2"  Part="1"
 AR Path="/5F613967/5F5F5D43" Ref="U6"  Part="1" 
 AR Path="/5F613974/5F5F5D43" Ref="U8"  Part="1" 
 AR Path="/5F61163D/5F5F5D43" Ref="U4"  Part="1" 
+AR Path="/5F68A9CC/5F5F5D43" Ref="U10"  Part="1" 
+AR Path="/5F68A9DF/5F5F5D43" Ref="U12"  Part="1" 
+AR Path="/5F68A9EB/5F5F5D43" Ref="U14"  Part="1" 
+AR Path="/5F68A9F8/5F5F5D43" Ref="U16"  Part="1" 
 F 0 "U8" H 5150 4217 50  0000 C CNN
 F 1 "3651A" H 5150 4126 50  0000 C CNN
 F 2 "Cessna 172 nav and com radio:3651A" H 4950 3550 50  0001 C CNN
@@ -135,4 +139,42 @@ Wire Wire Line
 	6450 3600 6850 3600
 Wire Wire Line
 	6850 3600 6850 4100
+$Comp
+L power:+5V #PWR0121
+U 1 1 5F693DF9
+P 2750 3050
+AR Path="/5F60A880/5F693DF9" Ref="#PWR0121"  Part="1" 
+AR Path="/5F613967/5F693DF9" Ref="#PWR0123"  Part="1" 
+AR Path="/5F613974/5F693DF9" Ref="#PWR0125"  Part="1" 
+AR Path="/5F61163D/5F693DF9" Ref="#PWR0142"  Part="1" 
+AR Path="/5F68A9CC/5F693DF9" Ref="#PWR0144"  Part="1" 
+AR Path="/5F68A9DF/5F693DF9" Ref="#PWR0146"  Part="1" 
+AR Path="/5F68A9EB/5F693DF9" Ref="#PWR0148"  Part="1" 
+AR Path="/5F68A9F8/5F693DF9" Ref="#PWR0150"  Part="1" 
+F 0 "#PWR0150" H 2750 2900 50  0001 C CNN
+F 1 "+5V" H 2765 3223 50  0000 C CNN
+F 2 "" H 2750 3050 50  0001 C CNN
+F 3 "" H 2750 3050 50  0001 C CNN
+	1    2750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5F693FE6
+P 2750 5050
+AR Path="/5F60A880/5F693FE6" Ref="#PWR0122"  Part="1" 
+AR Path="/5F613967/5F693FE6" Ref="#PWR0124"  Part="1" 
+AR Path="/5F613974/5F693FE6" Ref="#PWR0126"  Part="1" 
+AR Path="/5F61163D/5F693FE6" Ref="#PWR0143"  Part="1" 
+AR Path="/5F68A9CC/5F693FE6" Ref="#PWR0145"  Part="1" 
+AR Path="/5F68A9DF/5F693FE6" Ref="#PWR0147"  Part="1" 
+AR Path="/5F68A9EB/5F693FE6" Ref="#PWR0149"  Part="1" 
+AR Path="/5F68A9F8/5F693FE6" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 2750 4800 50  0001 C CNN
+F 1 "GND" H 2755 4877 50  0000 C CNN
+F 2 "" H 2750 5050 50  0001 C CNN
+F 3 "" H 2750 5050 50  0001 C CNN
+	1    2750 5050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName />
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="LedModule" DinPin="27" ClsPin="25" ClkPin="23" Brightness="15" NumModules="8" />
+  <Encoder Name="COMM1Encoder" PinLeft="29" PinRight="31" EncoderType="0" />
+  <Button Name="COMM1_KHZ" Pin="33" />
+  <Encoder Name="NAV1Encoder" PinLeft="37" PinRight="39" EncoderType="0" />
+  <Button Name="NAV1_KHZ" Pin="41" />
+  <Encoder Name="COMM1VolEncoder" PinLeft="44" PinRight="46" EncoderType="0" />
+  <Button Name="COMM1Test" Pin="49" />
+  <Encoder Name="COMM2Encoder" PinLeft="28" PinRight="30" EncoderType="0" />
+  <Button Name="COMM2_KHZ" Pin="32" />
+  <Encoder Name="NAV2Encoder" PinLeft="36" PinRight="38" EncoderType="0" />
+  <Button Name="NAV2_KHZ" Pin="40" />
+  <Button Name="COMM1_XFR" Pin="35" />
+  <Button Name="COMM2_XFR" Pin="34" />
+  <Button Name="NAV1_XFR" Pin="43" />
+  <Button Name="NAV2_XFR" Pin="42" />
+  <Button Name="COMM2Test" Pin="48" />
+  <Button Name="IDENT1" Pin="53" />
+</Config>
