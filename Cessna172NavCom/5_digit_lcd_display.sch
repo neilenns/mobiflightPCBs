@@ -30,6 +30,7 @@ F 0 "U15" H 2500 5000 50  0000 C CNN
 F 1 "MAX7219 COM standby" V 2350 4100 50  0000 C CNN
 F 2 "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm" H 2700 4100 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 2800 3900 50  0001 C CNN
+F 4 "C9964" H 2750 4050 50  0001 C CNN "LCSC"
 	1    2750 4050
 	1    0    0    -1  
 $EndComp
