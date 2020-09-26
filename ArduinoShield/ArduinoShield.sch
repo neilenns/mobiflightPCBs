@@ -97,11 +97,11 @@ NoConn ~ 2100 5650
 NoConn ~ 2100 5750
 NoConn ~ 2100 4650
 NoConn ~ 2100 4750
-Text GLabel 4700 3250 2    50   Output ~ 0
+Text GLabel 4700 5250 2    50   Output ~ 0
 DIN
-Text GLabel 4700 3050 2    50   Output ~ 0
+Text GLabel 4700 5650 2    50   Output ~ 0
 CS_LOAD
-Text GLabel 4700 2850 2    50   Output ~ 0
+Text GLabel 4700 5450 2    50   Output ~ 0
 CLK
 Text GLabel 7450 2950 0    50   Input ~ 0
 DIN
@@ -111,15 +111,15 @@ Text GLabel 7450 2750 0    50   Input ~ 0
 CS_LOAD
 Text GLabel 7450 3250 0    50   Output ~ 0
 COMM1_KHZ_SW
-Text GLabel 4700 3850 2    50   Input ~ 0
+Text GLabel 4700 4650 2    50   Input ~ 0
 COMM1_KHZ_SW
 Text GLabel 7450 3050 0    50   Output ~ 0
 COMM1_LEFT
 Text GLabel 7450 3150 0    50   Output ~ 0
 COMM1_RIGHT
-Text GLabel 4700 3450 2    50   Input ~ 0
+Text GLabel 4700 5050 2    50   Input ~ 0
 COMM1_LEFT
-Text GLabel 4700 3650 2    50   Input ~ 0
+Text GLabel 4700 4850 2    50   Input ~ 0
 COMM1_RIGHT
 Text GLabel 7450 3450 0    50   Output ~ 0
 NAV1_LEFT
@@ -129,13 +129,13 @@ Text GLabel 7450 3650 0    50   Output ~ 0
 NAV1_KHZ_SW
 Text GLabel 4700 4250 2    50   Input ~ 0
 NAV1_LEFT
-Text GLabel 4700 4450 2    50   Input ~ 0
+Text GLabel 4700 4050 2    50   Input ~ 0
 NAV1_RIGHT
-Text GLabel 4700 4650 2    50   Input ~ 0
+Text GLabel 4700 3850 2    50   Input ~ 0
 NAV1_KHZ_SW
 Text GLabel 7450 3850 0    50   Output ~ 0
 RADIO1_SW
-Text GLabel 4700 5050 2    50   Input ~ 0
+Text GLabel 4700 3450 2    50   Input ~ 0
 RADIO1_SW
 Text GLabel 7950 3050 2    50   Output ~ 0
 COMM2_LEFT
@@ -143,11 +143,11 @@ Text GLabel 7950 3150 2    50   Output ~ 0
 COMM2_RIGHT
 Text GLabel 7950 3250 2    50   Output ~ 0
 COMM2_KHZ_SW
-Text GLabel 4700 3350 2    50   Input ~ 0
+Text GLabel 4700 4950 2    50   Input ~ 0
 COMM2_LEFT
-Text GLabel 4700 3550 2    50   Input ~ 0
+Text GLabel 4700 4750 2    50   Input ~ 0
 COMM2_RIGHT
-Text GLabel 4700 3750 2    50   Input ~ 0
+Text GLabel 4700 4550 2    50   Input ~ 0
 COMM2_KHZ_SW
 $Comp
 L power:GND #PWR08
@@ -169,13 +169,13 @@ Text GLabel 7450 3750 0    50   Output ~ 0
 NAV1_XFR
 Text GLabel 4700 4150 2    50   Input ~ 0
 NAV2_LEFT
-Text GLabel 4700 4350 2    50   Input ~ 0
-NAV2_RIGHT
-Text GLabel 4700 4550 2    50   Input ~ 0
-NAV2_KHZ_SW
 Text GLabel 4700 3950 2    50   Input ~ 0
+NAV2_RIGHT
+Text GLabel 4700 3750 2    50   Input ~ 0
+NAV2_KHZ_SW
+Text GLabel 4700 4350 2    50   Input ~ 0
 COMM2_XFR
-Text GLabel 4700 4050 2    50   Input ~ 0
+Text GLabel 4700 4450 2    50   Input ~ 0
 COMM1_XFR
 Text GLabel 7950 3450 2    50   Output ~ 0
 NAV2_LEFT
@@ -185,19 +185,19 @@ Text GLabel 7950 3650 2    50   Output ~ 0
 NAV2_KHZ_SW
 Text GLabel 7950 3750 2    50   Output ~ 0
 NAV2_XFR
-Text GLabel 4700 4750 2    50   Input ~ 0
+Text GLabel 4700 3550 2    50   Input ~ 0
 NAV2_XFR
-Text GLabel 4700 4850 2    50   Input ~ 0
+Text GLabel 4700 3650 2    50   Input ~ 0
 NAV1_XFR
-Text GLabel 4700 4950 2    50   Input ~ 0
+Text GLabel 4700 3350 2    50   Input ~ 0
 RADIO2_SW
 Text GLabel 7950 3850 2    50   Output ~ 0
 RADIO2_SW
 Text GLabel 7950 4050 2    50   Output ~ 0
 IDENT2_SW
-Text GLabel 4700 5450 2    50   Input ~ 0
+Text GLabel 4700 3050 2    50   Input ~ 0
 IDENT1_SW
-Text GLabel 4700 5350 2    50   Input ~ 0
+Text GLabel 4700 2950 2    50   Input ~ 0
 IDENT2_SW
 Text GLabel 7450 4050 0    50   Output ~ 0
 IDENT1_SW
@@ -205,9 +205,9 @@ Text GLabel 7450 3950 0    50   Input ~ 0
 RADIO1_LED
 Text GLabel 7950 3950 2    50   Input ~ 0
 RADIO2_LED
-Text GLabel 4700 5150 2    50   Output ~ 0
+Text GLabel 4700 3150 2    50   Output ~ 0
 RADIO2_LED
-Text GLabel 4700 5250 2    50   Output ~ 0
+Text GLabel 4700 3250 2    50   Output ~ 0
 RADIO1_LED
 $Comp
 L Connector_Generic:Conn_01x04 J2
@@ -296,8 +296,6 @@ NoConn ~ 4700 2450
 NoConn ~ 4700 2550
 NoConn ~ 4700 2650
 NoConn ~ 4700 2750
-NoConn ~ 4700 2950
-NoConn ~ 4700 3150
 $Comp
 L Connector_Generic:Conn_02x15_Odd_Even J1
 U 1 1 5F6C8193
@@ -309,8 +307,6 @@ F 3 "~" H 7650 3450 50  0001 C CNN
 	1    7650 3450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4700 5550
-NoConn ~ 4700 5650
 NoConn ~ 4700 5750
 NoConn ~ 4700 5850
 $Comp
@@ -357,4 +353,8 @@ F 3 "" H 10000 2800 50  0001 C CNN
 	1    10000 2800
 	1    0    0    -1  
 $EndComp
+NoConn ~ 4700 5150
+NoConn ~ 4700 5350
+NoConn ~ 4700 2850
+NoConn ~ 4700 5550
 $EndSCHEMATC
