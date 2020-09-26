@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name Arduino)(type KiCad)(uri ${KIPRJMOD}/lib_fp.pretty/Arduino.pretty)(options "")(descr ""))
+  (lib (name "Arduino Shield")(type KiCad)(uri "${KIPRJMOD}/lib_fp.pretty/Arduino Shield.pretty")(options "")(descr ""))
 )
