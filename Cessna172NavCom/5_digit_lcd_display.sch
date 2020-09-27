@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 13
+Sheet 11 13
 Title ""
 Date ""
 Rev ""
@@ -28,7 +28,7 @@ AR Path="/5F68A9EB/5F60E2D2" Ref="U13"  Part="1"
 AR Path="/5F68A9F8/5F60E2D2" Ref="U15"  Part="1" 
 F 0 "U15" H 2500 5000 50  0000 C CNN
 F 1 "MAX7219 COM standby" V 2350 4100 50  0000 C CNN
-F 2 "Package_SO:SSOP-24_3.9x8.7mm_P0.635mm" H 2700 4100 50  0001 C CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 2700 4100 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf" H 2800 3900 50  0001 C CNN
 F 4 "C9964" H 2750 4050 50  0001 C CNN "LCSC"
 	1    2750 4050

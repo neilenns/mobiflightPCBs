@@ -11,9 +11,21 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 14070)
+    (start_pass_no 11740)
     (layer_rule F.Cu
       (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+    (layer_rule PWR
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+    (layer_rule GND
+      (active off)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
       (against_preferred_direction_trace_costs 2.8)
@@ -31,9 +43,15 @@
     (clear 125.0 (type smd_to_turn_gap))
     (clear 50.0 (type smd_smd))
   )
-  (padstack "Via[0-1]_800:400_um"
+  (padstack "Via[0-3]_800:400_um"
     (shape
       (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle PWR 800.0 0.0 0.0)
+    )
+    (shape
+      (circle GND 800.0 0.0 0.0)
     )
     (shape
       (circle B.Cu 800.0 0.0 0.0)
@@ -41,31 +59,30 @@
     (attach off)
   )
   (via 
-    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
   )
   (via 
-    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_800:400_um-+5V" "Via[0-1]_800:400_um" +5V
+    "Via[0-3]_800:400_um-+5V" "Via[0-3]_800:400_um" +5V
   )
   (via 
-    "Via[0-1]_800:400_um-GND" "Via[0-1]_800:400_um" GND
+    "Via[0-3]_800:400_um-GND" "Via[0-3]_800:400_um" GND
   )
   (via_rule
-    default "Via[0-1]_800:400_um"
+    default "Via[0-3]_800:400_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
   )
   (via_rule
-    +5V "Via[0-1]_800:400_um-+5V"
+    +5V "Via[0-3]_800:400_um-+5V"
   )
   (via_rule
-    GND "Via[0-1]_800:400_um-GND"
+    GND "Via[0-3]_800:400_um-GND"
   )
   (class default
-    "@:no_net_0" "@:no_net_1"
     (clearance_class default)
     (via_rule default)
     (rule
