@@ -243,15 +243,74 @@
         </configrefs>
       </settings>
     </config>
-    <config guid="011d316f-364c-4ed1-917c-f3efcd2e87a5">
+    <config guid="3c235bca-920f-4778-880d-bd8207bf8b03">
       <active>true</active>
-      <description>Auto pilot active</description>
+      <description>XPDR value</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="FSUIPC" offset="0x07BC" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" />
+        <source type="FSUIPC" offset="0x0354" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="True" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        <display type="Pin" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" pin="RADIO2_LED" pinBrightness="255" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="4c4510d7-d111-4a7d-a51b-90005c16f9b2" placeholder="B" />
+          <configref active="False" ref="607313d9-e297-4b5f-bbba-3e70cbb6d900" placeholder="A" />
+          <configref active="False" ref="a888f750-ad4d-40a6-993d-72741a885414" placeholder="@" />
+          <configref active="False" ref="a81172b6-4890-46ab-aa05-7459c9b9e75d" placeholder="?" />
+          <configref active="False" ref="0794def2-2cc3-4e73-9474-2b44e4f36e3d" placeholder="§" />
+          <configref active="False" ref="f13bc1b1-aecd-4ec4-9276-2d8d01f6a5c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4dd968dd-c13f-4b06-8864-59661a03e500">
+      <active>true</active>
+      <description>HDG value</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x07CC" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" />
+        <comparison active="True" value="0" operand="&lt;" ifValue="360+$" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="True" expression="Round(($*360)/65536,0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="4c4510d7-d111-4a7d-a51b-90005c16f9b2" placeholder="B" />
+          <configref active="False" ref="607313d9-e297-4b5f-bbba-3e70cbb6d900" placeholder="A" />
+          <configref active="False" ref="a888f750-ad4d-40a6-993d-72741a885414" placeholder="@" />
+          <configref active="False" ref="a81172b6-4890-46ab-aa05-7459c9b9e75d" placeholder="?" />
+          <configref active="False" ref="0794def2-2cc3-4e73-9474-2b44e4f36e3d" placeholder="§" />
+          <configref active="False" ref="f13bc1b1-aecd-4ec4-9276-2d8d01f6a5c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="bef7b30b-0ae5-4059-8bec-ab1277c9ac13">
+      <active>true</active>
+      <description>LCD display</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0000" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="LcdDisplay" serial="MobiFlight Mega/ SN-9c3-c7d" trigger="normal" address="LcdDisplay">
+          <line>XPDR: #### HDG: §§§§</line>
+        </display>
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="4c4510d7-d111-4a7d-a51b-90005c16f9b2" placeholder="B" />
+          <configref active="False" ref="607313d9-e297-4b5f-bbba-3e70cbb6d900" placeholder="A" />
+          <configref active="False" ref="a888f750-ad4d-40a6-993d-72741a885414" placeholder="@" />
+          <configref active="False" ref="a81172b6-4890-46ab-aa05-7459c9b9e75d" placeholder="?" />
+          <configref active="True" ref="4dd968dd-c13f-4b06-8864-59661a03e500" placeholder="§" />
+          <configref active="True" ref="3c235bca-920f-4778-880d-bd8207bf8b03" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f51b7567-bfc4-4784-8650-1463cf8e9ae9">
+      <active>true</active>
+      <description>AP altitude</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x07D4" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="True" expression="$*3.28084/65536" substrStart="0" substrEnd="7" />
         <configrefs>
           <configref active="False" ref="4c4510d7-d111-4a7d-a51b-90005c16f9b2" placeholder="B" />
           <configref active="False" ref="607313d9-e297-4b5f-bbba-3e70cbb6d900" placeholder="A" />
@@ -563,6 +622,143 @@
           <onPress type="EventIdInputAction" eventId="65571" param="0" />
           <onRelease />
         </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="1486ba9a-c56c-483d-8570-8141d49e1d15">
+      <active>true</active>
+      <description>AP - HDG hold</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="Button2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="EventIdInputAction" eventId="65798" param="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="f586edba-affb-4571-ba24-746d176c7e33">
+      <active>false</active>
+      <description>AP - APR hold</description>
+    </config>
+    <config guid="5d5dd1c5-a82c-4510-a796-9428ef09bb5d">
+      <active>false</active>
+      <description>AP - NAV hold</description>
+    </config>
+    <config guid="70827dbc-d20b-4928-ad6d-9f544125576b">
+      <active>false</active>
+      <description>AP - FD toggle</description>
+    </config>
+    <config guid="5991b17f-de08-4aea-8276-8d517f5a8610">
+      <active>false</active>
+      <description>AP - VS hold</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="Button4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="EventIdInputAction" eventId="65890" param="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="d48b0676-2a0c-4384-bd9b-d900ca5a1aa1">
+      <active>false</active>
+      <description>AP - FLC hold</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="Button5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="EventIdInputAction" eventId="66037" param="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="2ac53505-89a8-44a8-bd8e-a6306507812c">
+      <active>false</active>
+      <description>AP - YD toggle</description>
+    </config>
+    <config guid="3e5c845c-1924-4367-8d0c-c973206b817a">
+      <active>false</active>
+      <description>AP - Master toggle</description>
+    </config>
+    <config guid="c21b02b1-2032-44ab-8ce8-ccb26434949c">
+      <active>true</active>
+      <description>AP - HDG set</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="Encoder2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="EventIdInputAction" eventId="65880" param="0" />
+          <onLeftFast />
+          <onRight type="EventIdInputAction" eventId="65879" param="0" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="0e51cd2a-1c1d-4d8e-ad2d-907c92b1ba63">
+      <active>true</active>
+      <description>AP - ALT set</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="Encoder3" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x07D4" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" inputValue="$-1997537" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x07D4" offsetType="Integer" size="4" mask="0xFFFFFFFF" bcdMode="False" inputValue="$+1997537" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="549d887d-f93f-4b02-b1e0-2d1641e6d67a">
+      <active>true</active>
+      <description>AP - VS SET</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="Encoder4" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x07F2" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" inputValue="$-100" />
+          </onLeft>
+          <onLeftFast />
+          <onRight type="FsuipcOffsetInputAction">
+            <source type="FSUIPC" offset="0x07F2" offsetType="Integer" size="2" mask="0xFFFF" bcdMode="False" inputValue="$+100" />
+          </onRight>
+          <onRightFast />
+        </encoder>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="b87a97c2-617f-457d-a450-c981e4e12a35">
+      <active>true</active>
+      <description>BARO set</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="Encoder1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="EventIdInputAction" eventId="65884" param="0" />
+          <onLeftFast />
+          <onRight type="EventIdInputAction" eventId="65883" param="0" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="350545a0-4700-44e7-9512-a0de5340787e">
+      <active>true</active>
+      <description>AP - ALT hold</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="Button3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="EventIdInputAction" eventId="65726" param="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+      </settings>
+    </config>
+    <config guid="5d678c62-7363-4bb9-837d-31deb2c41a89">
+      <active>true</active>
+      <description>AP - FLC set</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=7.10.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="Encoder5" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="EventIdInputAction" eventId="65897" param="0" />
+          <onLeftFast />
+          <onRight type="EventIdInputAction" eventId="65896" param="0" />
+          <onRightFast />
+        </encoder>
         <preconditions />
       </settings>
     </config>
