@@ -1,0 +1,448 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5F806860
+P 1150 1750
+F 0 "J?" H 1207 2217 50  0000 C CNN
+F 1 "USB_B_Micro" H 1207 2126 50  0000 C CNN
+F 2 "" H 1300 1700 50  0001 C CNN
+F 3 "~" H 1300 1700 50  0001 C CNN
+	1    1150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5F808213
+P 1800 1700
+F 0 "C?" H 1918 1746 50  0000 L CNN
+F 1 "10uF" H 1918 1655 50  0000 L CNN
+F 2 "" H 1838 1550 50  0001 C CNN
+F 3 "~" H 1800 1700 50  0001 C CNN
+	1    1800 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1550 1450 1550
+Wire Wire Line
+	1150 2150 1550 2150
+Wire Wire Line
+	1550 2150 1550 1850
+Wire Wire Line
+	1550 1850 1800 1850
+NoConn ~ 1450 1950
+NoConn ~ 1450 1850
+NoConn ~ 1450 1750
+NoConn ~ 1050 2150
+$Comp
+L power:+5V #PWR?
+U 1 1 5F8092A9
+P 2150 1550
+F 0 "#PWR?" H 2150 1400 50  0001 C CNN
+F 1 "+5V" H 2165 1723 50  0000 C CNN
+F 2 "" H 2150 1550 50  0001 C CNN
+F 3 "" H 2150 1550 50  0001 C CNN
+	1    2150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8093E4
+P 2150 1850
+F 0 "#PWR?" H 2150 1600 50  0001 C CNN
+F 1 "GND" H 2155 1677 50  0000 C CNN
+F 2 "" H 2150 1850 50  0001 C CNN
+F 3 "" H 2150 1850 50  0001 C CNN
+	1    2150 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1550 2150 1550
+Connection ~ 1800 1550
+Wire Wire Line
+	1800 1850 2150 1850
+Connection ~ 1800 1850
+$Sheet
+S 2800 1350 550  500 
+U 5F80EAAB
+F0 "Sheet5F80EAAA" 50
+F1 "rotary encoder.sch" 50
+F2 "SW" O R 3350 1500 50 
+F3 "LEFT" O R 3350 1600 50 
+F4 "RIGHT" O R 3350 1700 50 
+$EndSheet
+$Sheet
+S 3950 1350 550  500 
+U 5F811885
+F0 "sheet5F811880" 50
+F1 "rotary encoder.sch" 50
+F2 "SW" O R 4500 1500 50 
+F3 "LEFT" O R 4500 1600 50 
+F4 "RIGHT" O R 4500 1700 50 
+$EndSheet
+$Sheet
+S 5100 1350 550  500 
+U 5F811982
+F0 "sheet5F81197D" 50
+F1 "rotary encoder.sch" 50
+F2 "SW" O R 5650 1500 50 
+F3 "LEFT" O R 5650 1600 50 
+F4 "RIGHT" O R 5650 1700 50 
+$EndSheet
+$Sheet
+S 6250 1350 550  500 
+U 5F811ACB
+F0 "sheet5F811AC6" 50
+F1 "rotary encoder.sch" 50
+F2 "SW" O R 6800 1500 50 
+F3 "LEFT" O R 6800 1600 50 
+F4 "RIGHT" O R 6800 1700 50 
+$EndSheet
+$Sheet
+S 7400 1350 550  500 
+U 5F811C24
+F0 "sheet5F811C1F" 50
+F1 "rotary encoder.sch" 50
+F2 "SW" O R 7950 1500 50 
+F3 "LEFT" O R 7950 1600 50 
+F4 "RIGHT" O R 7950 1700 50 
+$EndSheet
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F811DA4
+P 3100 2400
+F 0 "SW?" H 3100 2685 50  0000 C CNN
+F 1 "SW_Push" H 3100 2594 50  0000 C CNN
+F 2 "" H 3100 2600 50  0001 C CNN
+F 3 "~" H 3100 2600 50  0001 C CNN
+	1    3100 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F8128A9
+P 4200 2350
+F 0 "SW?" H 4200 2635 50  0000 C CNN
+F 1 "SW_Push" H 4200 2544 50  0000 C CNN
+F 2 "" H 4200 2550 50  0001 C CNN
+F 3 "~" H 4200 2550 50  0001 C CNN
+	1    4200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F812B42
+P 5250 2350
+F 0 "SW?" H 5250 2635 50  0000 C CNN
+F 1 "SW_Push" H 5250 2544 50  0000 C CNN
+F 2 "" H 5250 2550 50  0001 C CNN
+F 3 "~" H 5250 2550 50  0001 C CNN
+	1    5250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F813560
+P 6300 2350
+F 0 "SW?" H 6300 2635 50  0000 C CNN
+F 1 "SW_Push" H 6300 2544 50  0000 C CNN
+F 2 "" H 6300 2550 50  0001 C CNN
+F 3 "~" H 6300 2550 50  0001 C CNN
+	1    6300 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F8136C7
+P 7300 2350
+F 0 "SW?" H 7300 2635 50  0000 C CNN
+F 1 "SW_Push" H 7300 2544 50  0000 C CNN
+F 2 "" H 7300 2550 50  0001 C CNN
+F 3 "~" H 7300 2550 50  0001 C CNN
+	1    7300 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F8139C2
+P 3000 3450
+F 0 "D?" V 3039 3332 50  0000 R CNN
+F 1 "LED" V 2948 3332 50  0000 R CNN
+F 2 "" H 3000 3450 50  0001 C CNN
+F 3 "~" H 3000 3450 50  0001 C CNN
+	1    3000 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F813C24
+P 4100 3450
+F 0 "D?" V 4139 3332 50  0000 R CNN
+F 1 "LED" V 4048 3332 50  0000 R CNN
+F 2 "" H 4100 3450 50  0001 C CNN
+F 3 "~" H 4100 3450 50  0001 C CNN
+	1    4100 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F813DBA
+P 5150 3450
+F 0 "D?" V 5189 3332 50  0000 R CNN
+F 1 "LED" V 5098 3332 50  0000 R CNN
+F 2 "" H 5150 3450 50  0001 C CNN
+F 3 "~" H 5150 3450 50  0001 C CNN
+	1    5150 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F813F6D
+P 6200 3450
+F 0 "D?" V 6239 3332 50  0000 R CNN
+F 1 "LED" V 6148 3332 50  0000 R CNN
+F 2 "" H 6200 3450 50  0001 C CNN
+F 3 "~" H 6200 3450 50  0001 C CNN
+	1    6200 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5F815042
+P 7200 3450
+F 0 "D?" V 7239 3332 50  0000 R CNN
+F 1 "LED" V 7148 3332 50  0000 R CNN
+F 2 "" H 7200 3450 50  0001 C CNN
+F 3 "~" H 7200 3450 50  0001 C CNN
+	1    7200 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F816EF5
+P 3000 3600
+F 0 "#PWR?" H 3000 3350 50  0001 C CNN
+F 1 "GND" H 3005 3427 50  0000 C CNN
+F 2 "" H 3000 3600 50  0001 C CNN
+F 3 "" H 3000 3600 50  0001 C CNN
+	1    3000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8170E7
+P 4100 3600
+F 0 "#PWR?" H 4100 3350 50  0001 C CNN
+F 1 "GND" H 4105 3427 50  0000 C CNN
+F 2 "" H 4100 3600 50  0001 C CNN
+F 3 "" H 4100 3600 50  0001 C CNN
+	1    4100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F817572
+P 5150 3600
+F 0 "#PWR?" H 5150 3350 50  0001 C CNN
+F 1 "GND" H 5155 3427 50  0000 C CNN
+F 2 "" H 5150 3600 50  0001 C CNN
+F 3 "" H 5150 3600 50  0001 C CNN
+	1    5150 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F81777C
+P 6200 3600
+F 0 "#PWR?" H 6200 3350 50  0001 C CNN
+F 1 "GND" H 6205 3427 50  0000 C CNN
+F 2 "" H 6200 3600 50  0001 C CNN
+F 3 "" H 6200 3600 50  0001 C CNN
+	1    6200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F81798D
+P 7200 3600
+F 0 "#PWR?" H 7200 3350 50  0001 C CNN
+F 1 "GND" H 7205 3427 50  0000 C CNN
+F 2 "" H 7200 3600 50  0001 C CNN
+F 3 "" H 7200 3600 50  0001 C CNN
+	1    7200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F817BBB
+P 2900 2400
+F 0 "#PWR?" H 2900 2150 50  0001 C CNN
+F 1 "GND" V 2905 2272 50  0000 R CNN
+F 2 "" H 2900 2400 50  0001 C CNN
+F 3 "" H 2900 2400 50  0001 C CNN
+	1    2900 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F817DFD
+P 4000 2350
+F 0 "#PWR?" H 4000 2100 50  0001 C CNN
+F 1 "GND" V 4005 2222 50  0000 R CNN
+F 2 "" H 4000 2350 50  0001 C CNN
+F 3 "" H 4000 2350 50  0001 C CNN
+	1    4000 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F81811D
+P 5050 2350
+F 0 "#PWR?" H 5050 2100 50  0001 C CNN
+F 1 "GND" V 5055 2222 50  0000 R CNN
+F 2 "" H 5050 2350 50  0001 C CNN
+F 3 "" H 5050 2350 50  0001 C CNN
+	1    5050 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F818372
+P 6100 2350
+F 0 "#PWR?" H 6100 2100 50  0001 C CNN
+F 1 "GND" V 6105 2222 50  0000 R CNN
+F 2 "" H 6100 2350 50  0001 C CNN
+F 3 "" H 6100 2350 50  0001 C CNN
+	1    6100 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8185D8
+P 7100 2350
+F 0 "#PWR?" H 7100 2100 50  0001 C CNN
+F 1 "GND" V 7105 2222 50  0000 R CNN
+F 2 "" H 7100 2350 50  0001 C CNN
+F 3 "" H 7100 2350 50  0001 C CNN
+	1    7100 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F818A98
+P 3000 3150
+F 0 "R?" H 3070 3196 50  0000 L CNN
+F 1 "R" H 3070 3105 50  0000 L CNN
+F 2 "" V 2930 3150 50  0001 C CNN
+F 3 "~" H 3000 3150 50  0001 C CNN
+	1    3000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F81903B
+P 4100 3150
+F 0 "R?" H 4170 3196 50  0000 L CNN
+F 1 "R" H 4170 3105 50  0000 L CNN
+F 2 "" V 4030 3150 50  0001 C CNN
+F 3 "~" H 4100 3150 50  0001 C CNN
+	1    4100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F8192C5
+P 5150 3150
+F 0 "R?" H 5220 3196 50  0000 L CNN
+F 1 "R" H 5220 3105 50  0000 L CNN
+F 2 "" V 5080 3150 50  0001 C CNN
+F 3 "~" H 5150 3150 50  0001 C CNN
+	1    5150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F8195C1
+P 6200 3150
+F 0 "R?" H 6270 3196 50  0000 L CNN
+F 1 "R" H 6270 3105 50  0000 L CNN
+F 2 "" V 6130 3150 50  0001 C CNN
+F 3 "~" H 6200 3150 50  0001 C CNN
+	1    6200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F8199CA
+P 7200 3150
+F 0 "R?" H 7270 3196 50  0000 L CNN
+F 1 "R" H 7270 3105 50  0000 L CNN
+F 2 "" V 7130 3150 50  0001 C CNN
+F 3 "~" H 7200 3150 50  0001 C CNN
+	1    7200 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 3000 1    50   Input ~ 0
+LED1
+Text GLabel 4100 3000 1    50   Input ~ 0
+LED2
+Text GLabel 5150 3000 1    50   Input ~ 0
+LED3
+Text GLabel 6200 3000 1    50   Input ~ 0
+LED4
+Text GLabel 7200 3000 1    50   Input ~ 0
+LED5
+Text GLabel 3300 2400 2    50   Output ~ 0
+SW1
+Text GLabel 4400 2350 2    50   Output ~ 0
+SW2
+Text GLabel 5450 2350 2    50   Output ~ 0
+SW3
+Text GLabel 6500 2350 2    50   Output ~ 0
+SW4
+Text GLabel 7500 2350 2    50   Output ~ 0
+SW5
+Text GLabel 3400 1500 2    50   Output ~ 0
+ENC1_SW
+Text GLabel 4550 1500 2    50   Output ~ 0
+ENC2_SW
+Text GLabel 5700 1500 2    50   Output ~ 0
+ENC3_SW
+Text GLabel 6850 1500 2    50   Output ~ 0
+ENC4_SW
+Text GLabel 8000 1500 2    50   Output ~ 0
+ENC5_SW
+Text GLabel 3400 1600 2    50   Output ~ 0
+ENC1_LEFT
+Text GLabel 3400 1700 2    50   Output ~ 0
+ENC1_RIGHT
+Text GLabel 4550 1600 2    50   Output ~ 0
+ENC2_LEFT
+Text GLabel 4550 1700 2    50   Output ~ 0
+ENC2_RIGHT
+Text GLabel 5700 1600 2    50   Output ~ 0
+ENC3_LEFT
+Text GLabel 5700 1700 2    50   Output ~ 0
+ENC3_RIGHT
+Text GLabel 6850 1600 2    50   Output ~ 0
+ENC4_LEFT
+Text GLabel 6850 1700 2    50   Output ~ 0
+ENC4_RIGHT
+Text GLabel 8000 1600 2    50   Output ~ 0
+ENC5_LEFT
+Text GLabel 8000 1700 2    50   Output ~ 0
+ENC5_RIGHT
+$EndSCHEMATC
