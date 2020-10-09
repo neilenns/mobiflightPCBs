@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -14,17 +14,17 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L SamacSys_Parts:EN11-HSM1BF20 J?
+L SamacSys_Parts:EN11-HSM1BF20 J3
 U 1 1 5F810CE8
 P 5700 2650
-AR Path="/5F80EAAB/5F810CE8" Ref="J?"  Part="1" 
-AR Path="/5F811885/5F810CE8" Ref="J?"  Part="1" 
-AR Path="/5F811982/5F810CE8" Ref="J?"  Part="1" 
-AR Path="/5F811ACB/5F810CE8" Ref="J?"  Part="1" 
-AR Path="/5F811C24/5F810CE8" Ref="J?"  Part="1" 
-F 0 "J?" V 5519 2650 50  0000 C CNN
+AR Path="/5F80EAAB/5F810CE8" Ref="J3"  Part="1" 
+AR Path="/5F811885/5F810CE8" Ref="J4"  Part="1" 
+AR Path="/5F811982/5F810CE8" Ref="J5"  Part="1" 
+AR Path="/5F811ACB/5F810CE8" Ref="J6"  Part="1" 
+AR Path="/5F811C24/5F810CE8" Ref="J7"  Part="1" 
+F 0 "J7" V 5519 2650 50  0000 C CNN
 F 1 "EN11-HSM1BF20" V 5610 2650 50  0000 C CNN
-F 2 "EN11HSM1BF20" H 6550 2950 50  0001 L CNN
+F 2 "SamacSys_Parts:EN11HSM1BF20" H 6550 2950 50  0001 L CNN
 F 3 "" H 6550 2850 50  0001 L CNN
 F 4 "Mechanical Encoder Rotary Incremental Flat 0.018N.m Straight Gray Digital Square Wave 20PPR Through Hole PC Pin" H 6550 2750 50  0001 L CNN "Description"
 F 5 "26.2" H 6550 2650 50  0001 L CNN "Height"
@@ -36,15 +36,15 @@ F 9 "EN11-HSM1BF20" H 6550 2250 50  0001 L CNN "Manufacturer_Part_Number"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR020
 U 1 1 5F810CEE
 P 5200 3150
-AR Path="/5F80EAAB/5F810CEE" Ref="#PWR?"  Part="1" 
-AR Path="/5F811885/5F810CEE" Ref="#PWR?"  Part="1" 
-AR Path="/5F811982/5F810CEE" Ref="#PWR?"  Part="1" 
-AR Path="/5F811ACB/5F810CEE" Ref="#PWR?"  Part="1" 
-AR Path="/5F811C24/5F810CEE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5200 2900 50  0001 C CNN
+AR Path="/5F80EAAB/5F810CEE" Ref="#PWR020"  Part="1" 
+AR Path="/5F811885/5F810CEE" Ref="#PWR025"  Part="1" 
+AR Path="/5F811982/5F810CEE" Ref="#PWR030"  Part="1" 
+AR Path="/5F811ACB/5F810CEE" Ref="#PWR035"  Part="1" 
+AR Path="/5F811C24/5F810CEE" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 5200 2900 50  0001 C CNN
 F 1 "GND" V 5205 3022 50  0000 R CNN
 F 2 "" H 5200 3150 50  0001 C CNN
 F 3 "" H 5200 3150 50  0001 C CNN
@@ -52,15 +52,15 @@ F 3 "" H 5200 3150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR023
 U 1 1 5F810CF4
 P 6200 3150
-AR Path="/5F80EAAB/5F810CF4" Ref="#PWR?"  Part="1" 
-AR Path="/5F811885/5F810CF4" Ref="#PWR?"  Part="1" 
-AR Path="/5F811982/5F810CF4" Ref="#PWR?"  Part="1" 
-AR Path="/5F811ACB/5F810CF4" Ref="#PWR?"  Part="1" 
-AR Path="/5F811C24/5F810CF4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6200 2900 50  0001 C CNN
+AR Path="/5F80EAAB/5F810CF4" Ref="#PWR023"  Part="1" 
+AR Path="/5F811885/5F810CF4" Ref="#PWR028"  Part="1" 
+AR Path="/5F811982/5F810CF4" Ref="#PWR033"  Part="1" 
+AR Path="/5F811ACB/5F810CF4" Ref="#PWR038"  Part="1" 
+AR Path="/5F811C24/5F810CF4" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 6200 2900 50  0001 C CNN
 F 1 "GND" V 6205 3022 50  0000 R CNN
 F 2 "" H 6200 3150 50  0001 C CNN
 F 3 "" H 6200 3150 50  0001 C CNN
@@ -70,36 +70,38 @@ $EndComp
 NoConn ~ 5700 2650
 NoConn ~ 5700 3650
 $Comp
-L Device:R R?
+L Device:R R6
 U 1 1 5F810CFC
 P 4800 3050
-AR Path="/5F80EAAB/5F810CFC" Ref="R?"  Part="1" 
-AR Path="/5F811885/5F810CFC" Ref="R?"  Part="1" 
-AR Path="/5F811982/5F810CFC" Ref="R?"  Part="1" 
-AR Path="/5F811ACB/5F810CFC" Ref="R?"  Part="1" 
-AR Path="/5F811C24/5F810CFC" Ref="R?"  Part="1" 
-F 0 "R?" V 4593 3050 50  0000 C CNN
+AR Path="/5F80EAAB/5F810CFC" Ref="R6"  Part="1" 
+AR Path="/5F811885/5F810CFC" Ref="R10"  Part="1" 
+AR Path="/5F811982/5F810CFC" Ref="R14"  Part="1" 
+AR Path="/5F811ACB/5F810CFC" Ref="R18"  Part="1" 
+AR Path="/5F811C24/5F810CFC" Ref="R22"  Part="1" 
+F 0 "R22" V 4593 3050 50  0000 C CNN
 F 1 "10k" V 4684 3050 50  0000 C CNN
-F 2 "" V 4730 3050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4730 3050 50  0001 C CNN
 F 3 "~" H 4800 3050 50  0001 C CNN
+F 4 "C17414" H 4800 3050 50  0001 C CNN "LCSC"
 	1    4800 3050
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 5F810D02
 P 4800 3250
-AR Path="/5F80EAAB/5F810D02" Ref="R?"  Part="1" 
-AR Path="/5F811885/5F810D02" Ref="R?"  Part="1" 
-AR Path="/5F811982/5F810D02" Ref="R?"  Part="1" 
-AR Path="/5F811ACB/5F810D02" Ref="R?"  Part="1" 
-AR Path="/5F811C24/5F810D02" Ref="R?"  Part="1" 
-F 0 "R?" V 4900 3250 50  0000 C CNN
+AR Path="/5F80EAAB/5F810D02" Ref="R7"  Part="1" 
+AR Path="/5F811885/5F810D02" Ref="R11"  Part="1" 
+AR Path="/5F811982/5F810D02" Ref="R15"  Part="1" 
+AR Path="/5F811ACB/5F810D02" Ref="R19"  Part="1" 
+AR Path="/5F811C24/5F810D02" Ref="R23"  Part="1" 
+F 0 "R23" V 4900 3250 50  0000 C CNN
 F 1 "10k" V 5000 3250 50  0000 C CNN
-F 2 "" V 4730 3250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4730 3250 50  0001 C CNN
 F 3 "~" H 4800 3250 50  0001 C CNN
+F 4 "C17414" H 4800 3250 50  0001 C CNN "LCSC"
 	1    4800 3250
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5200 3050 5100 3050
@@ -108,15 +110,15 @@ Wire Wire Line
 Wire Wire Line
 	4650 3050 4650 3150
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR019
 U 1 1 5F810D0B
 P 4650 3150
-AR Path="/5F80EAAB/5F810D0B" Ref="#PWR?"  Part="1" 
-AR Path="/5F811885/5F810D0B" Ref="#PWR?"  Part="1" 
-AR Path="/5F811982/5F810D0B" Ref="#PWR?"  Part="1" 
-AR Path="/5F811ACB/5F810D0B" Ref="#PWR?"  Part="1" 
-AR Path="/5F811C24/5F810D0B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4650 3000 50  0001 C CNN
+AR Path="/5F80EAAB/5F810D0B" Ref="#PWR019"  Part="1" 
+AR Path="/5F811885/5F810D0B" Ref="#PWR024"  Part="1" 
+AR Path="/5F811982/5F810D0B" Ref="#PWR029"  Part="1" 
+AR Path="/5F811ACB/5F810D0B" Ref="#PWR034"  Part="1" 
+AR Path="/5F811C24/5F810D0B" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 4650 3000 50  0001 C CNN
 F 1 "+5V" V 4665 3278 50  0000 L CNN
 F 2 "" H 4650 3150 50  0001 C CNN
 F 3 "" H 4650 3150 50  0001 C CNN
@@ -127,34 +129,36 @@ Connection ~ 4650 3150
 Wire Wire Line
 	4650 3150 4650 3250
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 5F810D13
 P 5550 3950
-AR Path="/5F80EAAB/5F810D13" Ref="C?"  Part="1" 
-AR Path="/5F811885/5F810D13" Ref="C?"  Part="1" 
-AR Path="/5F811982/5F810D13" Ref="C?"  Part="1" 
-AR Path="/5F811ACB/5F810D13" Ref="C?"  Part="1" 
-AR Path="/5F811C24/5F810D13" Ref="C?"  Part="1" 
-F 0 "C?" V 5298 3950 50  0000 C CNN
+AR Path="/5F80EAAB/5F810D13" Ref="C3"  Part="1" 
+AR Path="/5F811885/5F810D13" Ref="C5"  Part="1" 
+AR Path="/5F811982/5F810D13" Ref="C7"  Part="1" 
+AR Path="/5F811ACB/5F810D13" Ref="C9"  Part="1" 
+AR Path="/5F811C24/5F810D13" Ref="C11"  Part="1" 
+F 0 "C11" V 5298 3950 50  0000 C CNN
 F 1 "0.01uf" V 5389 3950 50  0000 C CNN
-F 2 "" H 5588 3800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5588 3800 50  0001 C CNN
 F 3 "~" H 5550 3950 50  0001 C CNN
+F 4 " C1710" H 5550 3950 50  0001 C CNN "LCSC"
 	1    5550 3950
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 5F810D19
 P 5550 2300
-AR Path="/5F80EAAB/5F810D19" Ref="C?"  Part="1" 
-AR Path="/5F811885/5F810D19" Ref="C?"  Part="1" 
-AR Path="/5F811982/5F810D19" Ref="C?"  Part="1" 
-AR Path="/5F811ACB/5F810D19" Ref="C?"  Part="1" 
-AR Path="/5F811C24/5F810D19" Ref="C?"  Part="1" 
-F 0 "C?" V 5298 2300 50  0000 C CNN
+AR Path="/5F80EAAB/5F810D19" Ref="C2"  Part="1" 
+AR Path="/5F811885/5F810D19" Ref="C4"  Part="1" 
+AR Path="/5F811982/5F810D19" Ref="C6"  Part="1" 
+AR Path="/5F811ACB/5F810D19" Ref="C8"  Part="1" 
+AR Path="/5F811C24/5F810D19" Ref="C10"  Part="1" 
+F 0 "C10" V 5298 2300 50  0000 C CNN
 F 1 "0.01uF" V 5389 2300 50  0000 C CNN
-F 2 "" H 5588 2150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5588 2150 50  0001 C CNN
 F 3 "~" H 5550 2300 50  0001 C CNN
+F 4 " C1710" H 5550 2300 50  0001 C CNN "LCSC"
 	1    5550 2300
 	0    1    1    0   
 $EndComp
@@ -173,15 +177,15 @@ Connection ~ 5100 3250
 Wire Wire Line
 	5100 3250 4950 3250
 $Comp
-L power:GND #PWR?
+L power:GND #PWR022
 U 1 1 5F810D27
 P 5700 3950
-AR Path="/5F80EAAB/5F810D27" Ref="#PWR?"  Part="1" 
-AR Path="/5F811885/5F810D27" Ref="#PWR?"  Part="1" 
-AR Path="/5F811982/5F810D27" Ref="#PWR?"  Part="1" 
-AR Path="/5F811ACB/5F810D27" Ref="#PWR?"  Part="1" 
-AR Path="/5F811C24/5F810D27" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5700 3700 50  0001 C CNN
+AR Path="/5F80EAAB/5F810D27" Ref="#PWR022"  Part="1" 
+AR Path="/5F811885/5F810D27" Ref="#PWR027"  Part="1" 
+AR Path="/5F811982/5F810D27" Ref="#PWR032"  Part="1" 
+AR Path="/5F811ACB/5F810D27" Ref="#PWR037"  Part="1" 
+AR Path="/5F811C24/5F810D27" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 5700 3700 50  0001 C CNN
 F 1 "GND" V 5705 3822 50  0000 R CNN
 F 2 "" H 5700 3950 50  0001 C CNN
 F 3 "" H 5700 3950 50  0001 C CNN
@@ -189,15 +193,15 @@ F 3 "" H 5700 3950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR021
 U 1 1 5F810D2D
 P 5700 2300
-AR Path="/5F80EAAB/5F810D2D" Ref="#PWR?"  Part="1" 
-AR Path="/5F811885/5F810D2D" Ref="#PWR?"  Part="1" 
-AR Path="/5F811982/5F810D2D" Ref="#PWR?"  Part="1" 
-AR Path="/5F811ACB/5F810D2D" Ref="#PWR?"  Part="1" 
-AR Path="/5F811C24/5F810D2D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5700 2050 50  0001 C CNN
+AR Path="/5F80EAAB/5F810D2D" Ref="#PWR021"  Part="1" 
+AR Path="/5F811885/5F810D2D" Ref="#PWR026"  Part="1" 
+AR Path="/5F811982/5F810D2D" Ref="#PWR031"  Part="1" 
+AR Path="/5F811ACB/5F810D2D" Ref="#PWR036"  Part="1" 
+AR Path="/5F811C24/5F810D2D" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 5700 2050 50  0001 C CNN
 F 1 "GND" V 5705 2172 50  0000 R CNN
 F 2 "" H 5700 2300 50  0001 C CNN
 F 3 "" H 5700 2300 50  0001 C CNN
@@ -205,35 +209,36 @@ F 3 "" H 5700 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R9
 U 1 1 5F810D33
 P 5100 4100
-AR Path="/5F80EAAB/5F810D33" Ref="R?"  Part="1" 
-AR Path="/5F811885/5F810D33" Ref="R?"  Part="1" 
-AR Path="/5F811982/5F810D33" Ref="R?"  Part="1" 
-AR Path="/5F811ACB/5F810D33" Ref="R?"  Part="1" 
-AR Path="/5F811C24/5F810D33" Ref="R?"  Part="1" 
-F 0 "R?" H 5170 4146 50  0000 L CNN
-F 1 "R" H 5170 4055 50  0000 L CNN
-F 2 "" V 5030 4100 50  0001 C CNN
+AR Path="/5F80EAAB/5F810D33" Ref="R9"  Part="1" 
+AR Path="/5F811885/5F810D33" Ref="R13"  Part="1" 
+AR Path="/5F811982/5F810D33" Ref="R17"  Part="1" 
+AR Path="/5F811ACB/5F810D33" Ref="R21"  Part="1" 
+AR Path="/5F811C24/5F810D33" Ref="R25"  Part="1" 
+F 0 "R25" H 5170 4146 50  0000 L CNN
+F 1 "10k" H 5170 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 4100 50  0001 C CNN
 F 3 "~" H 5100 4100 50  0001 C CNN
+F 4 "C17414" H 5100 4100 50  0001 C CNN "LCSC"
 	1    5100 4100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
-Connection ~ 5100 3950
 $Comp
-L Device:R R?
+L Device:R R8
 U 1 1 5F810D3A
 P 5100 2150
-AR Path="/5F80EAAB/5F810D3A" Ref="R?"  Part="1" 
-AR Path="/5F811885/5F810D3A" Ref="R?"  Part="1" 
-AR Path="/5F811982/5F810D3A" Ref="R?"  Part="1" 
-AR Path="/5F811ACB/5F810D3A" Ref="R?"  Part="1" 
-AR Path="/5F811C24/5F810D3A" Ref="R?"  Part="1" 
-F 0 "R?" H 5170 2196 50  0000 L CNN
-F 1 "R" H 5170 2105 50  0000 L CNN
-F 2 "" V 5030 2150 50  0001 C CNN
+AR Path="/5F80EAAB/5F810D3A" Ref="R8"  Part="1" 
+AR Path="/5F811885/5F810D3A" Ref="R12"  Part="1" 
+AR Path="/5F811982/5F810D3A" Ref="R16"  Part="1" 
+AR Path="/5F811ACB/5F810D3A" Ref="R20"  Part="1" 
+AR Path="/5F811C24/5F810D3A" Ref="R24"  Part="1" 
+F 0 "R24" H 5170 2196 50  0000 L CNN
+F 1 "10k" H 5170 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 2150 50  0001 C CNN
 F 3 "~" H 5100 2150 50  0001 C CNN
+F 4 "C17414" H 5100 2150 50  0001 C CNN "LCSC"
 	1    5100 2150
 	1    0    0    -1  
 $EndComp
@@ -244,4 +249,9 @@ Text HLabel 5100 2000 1    50   Output ~ 0
 LEFT
 Text HLabel 5100 4250 3    50   Output ~ 0
 RIGHT
+Text Label 5200 2300 0    50   ~ 0
+A1
+Text Label 5200 3950 0    50   ~ 0
+B1
+Connection ~ 5100 3950
 $EndSCHEMATC

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Cessna 172 nav and com radio")(type KiCad)(uri "${KIPRJMOD}/lib_fp.pretty/Cessna 172 nav and com radio.pretty")(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type KiCad)(uri ${KIPRJMOD}/SamacSys_Parts.pretty)(options "")(descr ""))
+)
