@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName />
+  <PowerSavingTime>600</PowerSavingTime>
+  <LcdDisplay Name="LcdDisplay" Address="39" Cols="20" Lines="4" />
+  <Encoder Name="Encoder1" PinLeft="47" PinRight="49" EncoderType="1" />
+  <Button Name="Button1" Pin="51" />
+  <Encoder Name="Encoder2" PinLeft="41" PinRight="43" EncoderType="1" />
+  <Button Name="Button2" Pin="45" />
+  <Encoder Name="Encoder3" PinLeft="35" PinRight="37" EncoderType="1" />
+  <Button Name="Button3" Pin="39" />
+  <Encoder Name="Encoder4" PinLeft="29" PinRight="31" EncoderType="1" />
+  <Button Name="Button4" Pin="33" />
+  <Encoder Name="Encoder5" PinLeft="23" PinRight="25" EncoderType="1" />
+  <Button Name="Button5" Pin="27" />
+  <Button Name="Button6" Pin="2" />
+  <Button Name="Button7" Pin="3" />
+  <Output Name="LED1" Pin="4" />
+  <Output Name="LED2" Pin="5" />
+</Config>
