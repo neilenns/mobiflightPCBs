@@ -172,113 +172,14 @@ F 3 "~" H 7300 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D1
-U 1 1 5F8139C2
-P 3000 3450
-F 0 "D1" V 3039 3332 50  0000 R CNN
-F 1 "LED" V 2948 3332 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 3000 3450 50  0001 C CNN
-F 3 "~" H 3000 3450 50  0001 C CNN
-	1    3000 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5F813C24
-P 4100 3450
-F 0 "D2" V 4139 3332 50  0000 R CNN
-F 1 "LED" V 4048 3332 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 4100 3450 50  0001 C CNN
-F 3 "~" H 4100 3450 50  0001 C CNN
-	1    4100 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D3
-U 1 1 5F813DBA
-P 5150 3450
-F 0 "D3" V 5189 3332 50  0000 R CNN
-F 1 "LED" V 5098 3332 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 5150 3450 50  0001 C CNN
-F 3 "~" H 5150 3450 50  0001 C CNN
-	1    5150 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D4
-U 1 1 5F813F6D
-P 6200 3450
-F 0 "D4" V 6239 3332 50  0000 R CNN
-F 1 "LED" V 6148 3332 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 6200 3450 50  0001 C CNN
-F 3 "~" H 6200 3450 50  0001 C CNN
-	1    6200 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:LED D5
-U 1 1 5F815042
-P 7200 3450
-F 0 "D5" V 7239 3332 50  0000 R CNN
-F 1 "LED" V 7148 3332 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm" H 7200 3450 50  0001 C CNN
-F 3 "~" H 7200 3450 50  0001 C CNN
-	1    7200 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR04
 U 1 1 5F816EF5
-P 3000 3600
-F 0 "#PWR04" H 3000 3350 50  0001 C CNN
-F 1 "GND" H 3005 3427 50  0000 C CNN
-F 2 "" H 3000 3600 50  0001 C CNN
-F 3 "" H 3000 3600 50  0001 C CNN
-	1    3000 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 5F8170E7
-P 4100 3600
-F 0 "#PWR06" H 4100 3350 50  0001 C CNN
-F 1 "GND" H 4105 3427 50  0000 C CNN
-F 2 "" H 4100 3600 50  0001 C CNN
-F 3 "" H 4100 3600 50  0001 C CNN
-	1    4100 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 5F817572
-P 5150 3600
-F 0 "#PWR08" H 5150 3350 50  0001 C CNN
-F 1 "GND" H 5155 3427 50  0000 C CNN
-F 2 "" H 5150 3600 50  0001 C CNN
-F 3 "" H 5150 3600 50  0001 C CNN
-	1    5150 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR010
-U 1 1 5F81777C
-P 6200 3600
-F 0 "#PWR010" H 6200 3350 50  0001 C CNN
-F 1 "GND" H 6205 3427 50  0000 C CNN
-F 2 "" H 6200 3600 50  0001 C CNN
-F 3 "" H 6200 3600 50  0001 C CNN
-	1    6200 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR012
-U 1 1 5F81798D
-P 7200 3600
-F 0 "#PWR012" H 7200 3350 50  0001 C CNN
-F 1 "GND" H 7205 3427 50  0000 C CNN
-F 2 "" H 7200 3600 50  0001 C CNN
-F 3 "" H 7200 3600 50  0001 C CNN
-	1    7200 3600
+P 3000 3750
+F 0 "#PWR04" H 3000 3500 50  0001 C CNN
+F 1 "GND" H 3005 3577 50  0000 C CNN
+F 2 "" H 3000 3750 50  0001 C CNN
+F 3 "" H 3000 3750 50  0001 C CNN
+	1    3000 3750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -339,73 +240,17 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 5F818A98
-P 3000 3150
-F 0 "R1" H 3070 3196 50  0000 L CNN
-F 1 "220" H 3070 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2930 3150 50  0001 C CNN
-F 3 "~" H 3000 3150 50  0001 C CNN
-F 4 " C17557" H 3000 3150 50  0001 C CNN "LCSC"
-	1    3000 3150
+P 3000 3600
+F 0 "R1" H 3070 3646 50  0000 L CNN
+F 1 "220" H 3070 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2930 3600 50  0001 C CNN
+F 3 "~" H 3000 3600 50  0001 C CNN
+F 4 " C17557" H 3000 3600 50  0001 C CNN "LCSC"
+	1    3000 3600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R2
-U 1 1 5F81903B
-P 4100 3150
-F 0 "R2" H 4170 3196 50  0000 L CNN
-F 1 "220" H 4170 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 3150 50  0001 C CNN
-F 3 "~" H 4100 3150 50  0001 C CNN
-F 4 " C17557" H 4100 3150 50  0001 C CNN "LCSC"
-	1    4100 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5F8192C5
-P 5150 3150
-F 0 "R3" H 5220 3196 50  0000 L CNN
-F 1 "220" H 5220 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5080 3150 50  0001 C CNN
-F 3 "~" H 5150 3150 50  0001 C CNN
-F 4 " C17557" H 5150 3150 50  0001 C CNN "LCSC"
-	1    5150 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5F8195C1
-P 6200 3150
-F 0 "R4" H 6270 3196 50  0000 L CNN
-F 1 "220" H 6270 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 3150 50  0001 C CNN
-F 3 "~" H 6200 3150 50  0001 C CNN
-F 4 " C17557" H 6200 3150 50  0001 C CNN "LCSC"
-	1    6200 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5F8199CA
-P 7200 3150
-F 0 "R5" H 7270 3196 50  0000 L CNN
-F 1 "220" H 7270 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7130 3150 50  0001 C CNN
-F 3 "~" H 7200 3150 50  0001 C CNN
-F 4 " C17557" H 7200 3150 50  0001 C CNN "LCSC"
-	1    7200 3150
-	1    0    0    -1  
-$EndComp
-Text GLabel 3000 3000 1    50   Input ~ 0
-LED1
-Text GLabel 4100 3000 1    50   Input ~ 0
-LED2
-Text GLabel 5150 3000 1    50   Input ~ 0
-LED3
-Text GLabel 6200 3000 1    50   Input ~ 0
-LED4
-Text GLabel 7200 3000 1    50   Input ~ 0
-LED5
+Text GLabel 2800 3050 1    50   Input ~ 0
+LED1_R
 Text GLabel 3300 2400 2    50   Output ~ 0
 SW1
 Text GLabel 4400 2350 2    50   Output ~ 0
@@ -447,17 +292,6 @@ ENC5_LEFT
 Text GLabel 8000 1700 2    50   Output ~ 0
 ENC5_RIGHT
 $Comp
-L Connector_Generic:Conn_02x15_Odd_Even J2
-U 1 1 5F820D1B
-P 9700 2350
-F 0 "J2" H 9750 3267 50  0000 C CNN
-F 1 "Conn_02x15_Odd_Even" H 9750 3176 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x15_P2.54mm_Vertical" H 9700 2350 50  0001 C CNN
-F 3 "~" H 9700 2350 50  0001 C CNN
-	1    9700 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR015
 U 1 1 5F823850
 P 10000 1650
@@ -479,87 +313,50 @@ F 3 "" H 10000 1750 50  0001 C CNN
 	1    10000 1750
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9500 1650 0    50   Input ~ 0
-LED1
-Text GLabel 9500 1750 0    50   Input ~ 0
-LED2
-Text GLabel 9500 1850 0    50   Input ~ 0
-LED3
-Text GLabel 9500 1950 0    50   Input ~ 0
-LED4
-Text GLabel 9500 2050 0    50   Input ~ 0
-LED5
-Text GLabel 9500 2150 0    50   Output ~ 0
+Text GLabel 10000 3900 2    50   Input ~ 0
+LED1_R
+Text GLabel 10000 4000 2    50   Input ~ 0
+LED1_G
+Text GLabel 10000 4100 2    50   Input ~ 0
+LED1_B
+Text GLabel 10000 4200 2    50   Input ~ 0
+LED2_R
+Text GLabel 10000 4300 2    50   Input ~ 0
+LED2_G
+Text GLabel 9500 3900 0    50   Output ~ 0
 SW1
-Text GLabel 9500 2250 0    50   Output ~ 0
+Text GLabel 9500 4300 0    50   Output ~ 0
 SW2
-Text GLabel 9500 2350 0    50   Output ~ 0
+Text GLabel 9500 4600 0    50   Output ~ 0
 SW3
-Text GLabel 9500 2450 0    50   Output ~ 0
+Text GLabel 9500 4900 0    50   Output ~ 0
 SW4
-Text GLabel 9500 2550 0    50   Output ~ 0
+Text GLabel 9500 5300 0    50   Output ~ 0
 SW5
-Text GLabel 10000 1850 2    50   Output ~ 0
-ENC1_SW
-Text GLabel 10000 1950 2    50   Output ~ 0
-ENC1_LEFT
-Text GLabel 10000 2050 2    50   Output ~ 0
+Text GLabel 9500 1850 0    50   Output ~ 0
 ENC1_RIGHT
-Text GLabel 10000 2150 2    50   Output ~ 0
+Text GLabel 9500 1950 0    50   Output ~ 0
 ENC2_SW
-Text GLabel 10000 2250 2    50   Output ~ 0
+Text GLabel 9500 2050 0    50   Output ~ 0
 ENC2_LEFT
-Text GLabel 10000 2350 2    50   Output ~ 0
+Text GLabel 9500 2150 0    50   Output ~ 0
 ENC2_RIGHT
-Text GLabel 10000 2450 2    50   Output ~ 0
+Text GLabel 9500 2250 0    50   Output ~ 0
 ENC3_SW
-Text GLabel 10000 2550 2    50   Output ~ 0
+Text GLabel 9500 2350 0    50   Output ~ 0
 ENC3_LEFT
-Text GLabel 10000 2750 2    50   Output ~ 0
+Text GLabel 9500 2550 0    50   Output ~ 0
 ENC4_SW
-Text GLabel 10000 2850 2    50   Output ~ 0
-ENC4_LEFT
-Text GLabel 10000 2950 2    50   Output ~ 0
-ENC4_RIGHT
 Text GLabel 9500 2650 0    50   Output ~ 0
-ENC5_SW
+ENC4_LEFT
 Text GLabel 9500 2750 0    50   Output ~ 0
+ENC4_RIGHT
+Text GLabel 9500 3050 0    50   Output ~ 0
+ENC5_SW
+Text GLabel 9500 2950 0    50   Output ~ 0
 ENC5_LEFT
 Text GLabel 9500 2850 0    50   Output ~ 0
 ENC5_RIGHT
-$Comp
-L power:GND #PWR013
-U 1 1 5F827789
-P 9500 2950
-F 0 "#PWR013" H 9500 2700 50  0001 C CNN
-F 1 "GND" V 9505 2822 50  0000 R CNN
-F 2 "" H 9500 2950 50  0001 C CNN
-F 3 "" H 9500 2950 50  0001 C CNN
-	1    9500 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR014
-U 1 1 5F827B60
-P 9500 3050
-F 0 "#PWR014" H 9500 2800 50  0001 C CNN
-F 1 "GND" V 9505 2922 50  0000 R CNN
-F 2 "" H 9500 3050 50  0001 C CNN
-F 3 "" H 9500 3050 50  0001 C CNN
-	1    9500 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 5F82835C
-P 10000 3050
-F 0 "#PWR018" H 10000 2800 50  0001 C CNN
-F 1 "GND" V 10005 2922 50  0000 R CNN
-F 2 "" H 10000 3050 50  0001 C CNN
-F 3 "" H 10000 3050 50  0001 C CNN
-	1    10000 3050
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3350 1500 3400 1500
 Wire Wire Line
@@ -590,7 +387,7 @@ Wire Wire Line
 	7950 1600 8000 1600
 Wire Wire Line
 	7950 1700 8000 1700
-Text GLabel 10000 2650 2    50   Output ~ 0
+Text GLabel 9500 2450 0    50   Output ~ 0
 ENC3_RIGHT
 $Comp
 L Device:R R26
@@ -627,4 +424,248 @@ Connection ~ 2200 2150
 Wire Wire Line
 	1800 1550 2200 1550
 Connection ~ 2200 1550
+$Comp
+L Device:LED_RCBG D1
+U 1 1 5F834120
+P 3000 3250
+F 0 "D1" V 3046 2920 50  0000 R CNN
+F 1 "LED_RCBG" V 2955 2920 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 3000 3200 50  0001 C CNN
+F 3 "~" H 3000 3200 50  0001 C CNN
+	1    3000 3250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3000 3050 1    50   Input ~ 0
+LED1_G
+Text GLabel 3200 3050 1    50   Input ~ 0
+LED1_B
+$Comp
+L power:GND #PWR06
+U 1 1 5F83BF82
+P 4100 3750
+F 0 "#PWR06" H 4100 3500 50  0001 C CNN
+F 1 "GND" H 4105 3577 50  0000 C CNN
+F 2 "" H 4100 3750 50  0001 C CNN
+F 3 "" H 4100 3750 50  0001 C CNN
+	1    4100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F83BF89
+P 4100 3600
+F 0 "R2" H 4170 3646 50  0000 L CNN
+F 1 "220" H 4170 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 3600 50  0001 C CNN
+F 3 "~" H 4100 3600 50  0001 C CNN
+F 4 " C17557" H 4100 3600 50  0001 C CNN "LCSC"
+	1    4100 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 3050 1    50   Input ~ 0
+LED2_R
+$Comp
+L Device:LED_RCBG D2
+U 1 1 5F83BF90
+P 4100 3250
+F 0 "D2" V 4146 2920 50  0000 R CNN
+F 1 "LED_RCBG" V 4055 2920 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 4100 3200 50  0001 C CNN
+F 3 "~" H 4100 3200 50  0001 C CNN
+	1    4100 3250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4100 3050 1    50   Input ~ 0
+LED2_G
+Text GLabel 4300 3050 1    50   Input ~ 0
+LED2_B
+$Comp
+L power:GND #PWR08
+U 1 1 5F83DC33
+P 5200 3750
+F 0 "#PWR08" H 5200 3500 50  0001 C CNN
+F 1 "GND" H 5205 3577 50  0000 C CNN
+F 2 "" H 5200 3750 50  0001 C CNN
+F 3 "" H 5200 3750 50  0001 C CNN
+	1    5200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F83DC3A
+P 5200 3600
+F 0 "R3" H 5270 3646 50  0000 L CNN
+F 1 "220" H 5270 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 3600 50  0001 C CNN
+F 3 "~" H 5200 3600 50  0001 C CNN
+F 4 " C17557" H 5200 3600 50  0001 C CNN "LCSC"
+	1    5200 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 5000 3050 1    50   Input ~ 0
+LED3_R
+$Comp
+L Device:LED_RCBG D3
+U 1 1 5F83DC41
+P 5200 3250
+F 0 "D3" V 5246 2920 50  0000 R CNN
+F 1 "LED_RCBG" V 5155 2920 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 5200 3200 50  0001 C CNN
+F 3 "~" H 5200 3200 50  0001 C CNN
+	1    5200 3250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5200 3050 1    50   Input ~ 0
+LED3_G
+Text GLabel 5400 3050 1    50   Input ~ 0
+LED3_B
+$Comp
+L power:GND #PWR010
+U 1 1 5F83EF83
+P 6300 3750
+F 0 "#PWR010" H 6300 3500 50  0001 C CNN
+F 1 "GND" H 6305 3577 50  0000 C CNN
+F 2 "" H 6300 3750 50  0001 C CNN
+F 3 "" H 6300 3750 50  0001 C CNN
+	1    6300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F83EF8A
+P 6300 3600
+F 0 "R4" H 6370 3646 50  0000 L CNN
+F 1 "220" H 6370 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6230 3600 50  0001 C CNN
+F 3 "~" H 6300 3600 50  0001 C CNN
+F 4 " C17557" H 6300 3600 50  0001 C CNN "LCSC"
+	1    6300 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 6100 3050 1    50   Input ~ 0
+LED4_R
+$Comp
+L Device:LED_RCBG D4
+U 1 1 5F83EF91
+P 6300 3250
+F 0 "D4" V 6346 2920 50  0000 R CNN
+F 1 "LED_RCBG" V 6255 2920 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 6300 3200 50  0001 C CNN
+F 3 "~" H 6300 3200 50  0001 C CNN
+	1    6300 3250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6300 3050 1    50   Input ~ 0
+LED4_G
+Text GLabel 6500 3050 1    50   Input ~ 0
+LED4_B
+$Comp
+L power:GND #PWR012
+U 1 1 5F840D70
+P 7400 3750
+F 0 "#PWR012" H 7400 3500 50  0001 C CNN
+F 1 "GND" H 7405 3577 50  0000 C CNN
+F 2 "" H 7400 3750 50  0001 C CNN
+F 3 "" H 7400 3750 50  0001 C CNN
+	1    7400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5F840D77
+P 7400 3600
+F 0 "R5" H 7470 3646 50  0000 L CNN
+F 1 "220" H 7470 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7330 3600 50  0001 C CNN
+F 3 "~" H 7400 3600 50  0001 C CNN
+F 4 " C17557" H 7400 3600 50  0001 C CNN "LCSC"
+	1    7400 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 3050 1    50   Input ~ 0
+LED5_R
+$Comp
+L Device:LED_RCBG D5
+U 1 1 5F840D7E
+P 7400 3250
+F 0 "D5" V 7446 2920 50  0000 R CNN
+F 1 "LED_RCBG" V 7355 2920 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 7400 3200 50  0001 C CNN
+F 3 "~" H 7400 3200 50  0001 C CNN
+	1    7400 3250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7400 3050 1    50   Input ~ 0
+LED5_G
+Text GLabel 7600 3050 1    50   Input ~ 0
+LED5_B
+Text GLabel 10000 4400 2    50   Input ~ 0
+LED2_B
+Text GLabel 10000 4500 2    50   Input ~ 0
+LED3_R
+Text GLabel 10000 4600 2    50   Input ~ 0
+LED3_G
+Text GLabel 10000 4700 2    50   Input ~ 0
+LED3_B
+Text GLabel 10000 4800 2    50   Input ~ 0
+LED4_R
+Text GLabel 10000 4900 2    50   Input ~ 0
+LED4_G
+Text GLabel 10000 5000 2    50   Input ~ 0
+LED4_B
+Text GLabel 10000 5100 2    50   Input ~ 0
+LED5_R
+Text GLabel 10000 5200 2    50   Input ~ 0
+LED5_G
+Text GLabel 10000 5300 2    50   Input ~ 0
+LED5_B
+Text GLabel 9500 1750 0    50   Output ~ 0
+ENC1_LEFT
+Text GLabel 9500 1650 0    50   Output ~ 0
+ENC1_SW
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J2
+U 1 1 5F86034F
+P 9700 2350
+F 0 "J2" H 9750 3267 50  0000 C CNN
+F 1 "Conn_02x15_Odd_Even" H 9750 3176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 9700 2350 50  0001 C CNN
+F 3 "~" H 9700 2350 50  0001 C CNN
+	1    9700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J8
+U 1 1 5F85969B
+P 9700 4600
+F 0 "J8" H 9750 5517 50  0000 C CNN
+F 1 "Conn_02x15_Odd_Even" H 9750 5426 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 9700 4600 50  0001 C CNN
+F 3 "~" H 9700 4600 50  0001 C CNN
+	1    9700 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10000 1850
+NoConn ~ 10000 1950
+NoConn ~ 10000 2050
+NoConn ~ 10000 2150
+NoConn ~ 10000 2250
+NoConn ~ 10000 2350
+NoConn ~ 10000 2450
+NoConn ~ 10000 2550
+NoConn ~ 10000 2650
+NoConn ~ 10000 2750
+NoConn ~ 10000 2850
+NoConn ~ 10000 2950
+NoConn ~ 10000 3050
+NoConn ~ 9500 4000
+NoConn ~ 9500 4100
+NoConn ~ 9500 4200
+NoConn ~ 9500 4400
+NoConn ~ 9500 4500
+NoConn ~ 9500 4700
+NoConn ~ 9500 4800
+NoConn ~ 9500 5000
+NoConn ~ 9500 5100
+NoConn ~ 9500 5200
 $EndSCHEMATC
