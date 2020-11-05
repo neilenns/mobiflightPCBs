@@ -3,18 +3,36 @@
   <ModuleName />
   <PowerSavingTime>600</PowerSavingTime>
   <LcdDisplay Name="LcdDisplay" Address="39" Cols="20" Lines="4" />
-  <Encoder Name="Encoder1" PinLeft="47" PinRight="49" EncoderType="1" />
-  <Button Name="Button1" Pin="51" />
-  <Encoder Name="Encoder2" PinLeft="41" PinRight="43" EncoderType="1" />
-  <Button Name="Button2" Pin="45" />
-  <Encoder Name="Encoder3" PinLeft="35" PinRight="37" EncoderType="1" />
-  <Button Name="Button3" Pin="39" />
-  <Encoder Name="Encoder4" PinLeft="29" PinRight="31" EncoderType="1" />
-  <Button Name="Button4" Pin="33" />
-  <Encoder Name="Encoder5" PinLeft="23" PinRight="25" EncoderType="1" />
-  <Button Name="Button5" Pin="27" />
-  <Button Name="Button6" Pin="2" />
-  <Button Name="Button7" Pin="3" />
-  <Output Name="LED1" Pin="4" />
-  <Output Name="LED2" Pin="5" />
+  <Output Name="LED1_R" Pin="23" />
+  <Output Name="LED1_G" Pin="27" />
+  <Output Name="LED1_B" Pin="25" />
+  <Output Name="LED2_R" Pin="29" />
+  <Output Name="LED2_G" Pin="33" />
+  <Output Name="LED2_B" Pin="31" />
+  <Output Name="LED3_R" Pin="35" />
+  <Output Name="LED3_G" Pin="39" />
+  <Output Name="LED3_B" Pin="37" />
+  <Output Name="LED4_R" Pin="41" />
+  <Output Name="LED4_G" Pin="45" />
+  <Output Name="LED4_B" Pin="43" />
+  <Output Name="LED5_R" Pin="47" />
+  <Output Name="LED5_G" Pin="51" />
+  <Output Name="LED5_B" Pin="49" />
+  <Button Name="SW1" Pin="2" />
+  <Button Name="SW2" Pin="3" />
+  <Button Name="SW3" Pin="4" />
+  <Button Name="SW4" Pin="5" />
+  <Button Name="SW5" Pin="6" />
+  <Encoder Name="ENC1" PinLeft="24" PinRight="26" EncoderType="2" />
+  <Button Name="ENC1_SW" Pin="22" />
+  <Encoder Name="ENC2" PinLeft="30" PinRight="32" EncoderType="2" />
+  <Button Name="ENC2_SW" Pin="28" />
+  <Encoder Name="ENC3" PinLeft="36" PinRight="38" EncoderType="2" />
+  <Button Name="ENC3_SW" Pin="34" />
+  <Encoder Name="ENC4" PinLeft="42" PinRight="44" EncoderType="2" />
+  <Button Name="ENC4_SW" Pin="40" />
+  <Encoder Name="ENC5" PinLeft="48" PinRight="46" EncoderType="2" />
+  <Button Name="ENC5_SW" Pin="50" />
+  <Button Name="SW6" Pin="7" />
+  <Button Name="SW7" Pin="8" />
 </Config>
