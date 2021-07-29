@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="0a99ed08-58fa-4811-8895-c7f9b123f3a7">
+      <active>true</active>
+      <description>NAV1 Standby</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV STANDBY FREQUENCY:1,kHz)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Display Module" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" ledAddress="LedModule" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="0" />
+        <preconditions />
+        <transformation active="True" expression="$/10" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>

@@ -4,7 +4,7 @@
     <config guid="e4fa1112-34de-43c2-866d-84e71deb658d">
       <active>true</active>
       <description>COM1 Active</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:1,khz)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Display Module" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" ledAddress="LedModule" ledConnector="2" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
@@ -23,7 +23,7 @@
     <config guid="3d1d6392-d6d7-4800-845f-d189c8cab197">
       <active>true</active>
       <description>COM1 Standby</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:1,khz)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Display Module" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" ledAddress="LedModule" ledConnector="1" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
@@ -42,7 +42,7 @@
     <config guid="5f86958c-b5b4-433d-ba37-24a5ebfd49ad">
       <active>true</active>
       <description>NAV1 Active</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:NAV ACTIVE FREQUENCY:1,khz)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Display Module" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" ledAddress="LedModule" ledConnector="3" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
@@ -61,7 +61,7 @@
     <config guid="0a99ed08-58fa-4811-8895-c7f9b123f3a7">
       <active>true</active>
       <description>NAV1 Standby</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:NAV STANDBY FREQUENCY:1,kHz)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Display Module" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" ledAddress="LedModule" ledConnector="4" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
@@ -80,7 +80,7 @@
     <config guid="d827a191-2e71-4ba7-93e5-a404e33469c1">
       <active>true</active>
       <description>COM2 Active</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:2,khz)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Display Module" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" ledAddress="LedModule" ledConnector="6" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
@@ -99,7 +99,7 @@
     <config guid="3764cb3a-fc15-4f94-b513-50372c5e03f0">
       <active>true</active>
       <description>COM2 Standby</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:2,khz)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Display Module" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" ledAddress="LedModule" ledConnector="5" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
@@ -118,7 +118,7 @@
     <config guid="7da0878b-55ca-4bce-9e33-52fe19b258a3">
       <active>true</active>
       <description>NAV2 Active</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:NAV ACTIVE FREQUENCY:2,kHz)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Display Module" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" ledAddress="LedModule" ledConnector="7" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
@@ -137,7 +137,7 @@
     <config guid="871ef44e-e4a4-4564-8b72-15b1e0a312cf">
       <active>true</active>
       <description>NAV2 Standby</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:NAV STANDBY FREQUENCY:2,kHz)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Display Module" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" ledAddress="LedModule" ledConnector="8" ledModuleSize="5" ledPadding="False" ledReverseDigits="True" ledPaddingChar="0" ledDigits="0,1,2,3,4" ledDecimalPoints="2" />
@@ -156,8 +156,8 @@
     <config guid="5a0dc55c-ce65-4fac-8ac8-ec920b2e6dab">
       <active>true</active>
       <description>COM1 current precision</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:AS3000_COM1_MHZ_ENTRY,Bool)" />
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="COM1 current precision" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
@@ -175,7 +175,7 @@
     <config guid="68936f09-ed7d-4f7a-929d-587603e7120a">
       <active>true</active>
       <description>COM2 current precision</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(L:AS3000_COM2_MHZ_ENTRY,Bool)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
@@ -194,7 +194,7 @@
     <config guid="4c6abf29-63f9-4df7-b3a8-af459fc94327">
       <active>true</active>
       <description>NAV1 current precision</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(L:AS3000_NAV1_MHZ_ENTRY, Bool)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
@@ -213,7 +213,7 @@
     <config guid="69bb58dc-1c3a-48d4-b7ec-a9489ef1c2ea">
       <active>true</active>
       <description>NAV2 current precision</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(L:AS3000_NAV2_MHZ_ENTRY, Bool)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
@@ -229,12 +229,81 @@
         </configrefs>
       </settings>
     </config>
+    <config guid="d856d92a-261f-4abb-95bc-acfeffa4038c">
+      <active>false</active>
+      <description>Airframe de ice left LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_IsDeiceAirFrame, Number)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" pin="RADIO1_LED" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="abb703b1-65ec-48bd-b36d-6a10cacaa659">
+      <active>false</active>
+      <description>Airframe de ice right LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_IsDeiceAirFrame2, Number)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" pin="RADIO2_LED" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="33211a7f-646b-430f-88dc-c788572c54fe">
+      <active>false</active>
+      <description>Windshield de ice LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:WINDSHIELD DEICE SWITCH, Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="MobiFlight Mega/ SN-eaf-59f" trigger="normal" pin="RADIO1_LED" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="61377e69-2fe4-4513-b3b8-668cdf4634b1">
+      <active>false</active>
+      <description>Prop de ice LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0000" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="2d6e4932-8180-4af3-b720-97a7d233ccf9">
       <active>true</active>
       <description>COM1 MHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020EventIdInputAction" eventId="COM_RADIO_WHOLE_DEC" />
           <onLeftFast type="MSFS2020EventIdInputAction" eventId="" />
@@ -250,7 +319,7 @@
     <config guid="e51cab4c-500e-4b5f-8dcb-7a9eeedf0e3d">
       <active>true</active>
       <description>COM2 MHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC3" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC3" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020EventIdInputAction" eventId="COM2_RADIO_WHOLE_DEC" />
           <onLeftFast type="MSFS2020EventIdInputAction" eventId="" />
@@ -260,20 +329,13 @@
         <preconditions>
           <precondition type="config" active="true" ref="68936f09-ed7d-4f7a-929d-587603e7120a" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="3280c847-074c-4d71-a695-acd6d261da88">
       <active>true</active>
       <description>COM1 KHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020EventIdInputAction" eventId="COM_RADIO_FRACT_DEC" />
           <onLeftFast />
@@ -289,7 +351,7 @@
     <config guid="ff6a05bb-821e-4493-ba22-0344511db959">
       <active>true</active>
       <description>COM2 KHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC3" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC3" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020EventIdInputAction" eventId="COM2_RADIO_FRACT_DEC" />
           <onLeftFast />
@@ -299,24 +361,17 @@
         <preconditions>
           <precondition type="config" active="true" ref="68936f09-ed7d-4f7a-929d-587603e7120a" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="b4232040-c2b1-4d30-bb29-f685dc87bad6">
       <active>true</active>
       <description>NAV1 MHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020EventIdInputAction" eventId="NAV1_RADIO_WHOLE_INC" />
+          <onLeft type="MSFS2020EventIdInputAction" eventId="NAV1_RADIO_WHOLE_DEC" />
           <onLeftFast />
-          <onRight type="MSFS2020EventIdInputAction" eventId="NAV1_RADIO_WHOLE_DEC" />
+          <onRight type="MSFS2020EventIdInputAction" eventId="NAV1_RADIO_WHOLE_INC" />
           <onRightFast />
         </encoder>
         <preconditions>
@@ -328,34 +383,27 @@
     <config guid="738fdd30-5407-477b-befe-f9ed6d9ef506">
       <active>true</active>
       <description>NAV2 MHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC4" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC4" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020EventIdInputAction" eventId="NAV2_RADIO_WHOLE_INC" />
+          <onLeft type="MSFS2020EventIdInputAction" eventId="NAV2_RADIO_WHOLE_DEC" />
           <onLeftFast />
-          <onRight type="MSFS2020EventIdInputAction" eventId="NAV2_RADIO_WHOLE_DEC" />
+          <onRight type="MSFS2020EventIdInputAction" eventId="NAV2_RADIO_WHOLE_INC" />
           <onRightFast />
         </encoder>
         <preconditions>
           <precondition type="config" active="true" ref="69bb58dc-1c3a-48d4-b7ec-a9489ef1c2ea" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="2cff51e6-64c1-4161-ba72-564d5e28e249">
       <active>true</active>
       <description>NAV1 KHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020EventIdInputAction" eventId="NAV1_RADIO_FRACT_INC" />
+          <onLeft type="MSFS2020EventIdInputAction" eventId="NAV1_RADIO_FRACT_DEC" />
           <onLeftFast />
-          <onRight type="MSFS2020EventIdInputAction" eventId="NAV1_RADIO_FRACT_DEC" />
+          <onRight type="MSFS2020EventIdInputAction" eventId="NAV1_RADIO_FRACT_INC" />
           <onRightFast />
         </encoder>
         <preconditions>
@@ -367,30 +415,23 @@
     <config guid="988e3671-533f-4ae7-90bd-08bd3cde426c">
       <active>true</active>
       <description>NAV2 KHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC4" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC4" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020EventIdInputAction" eventId="NAV2_RADIO_FRACT_INC" />
+          <onLeft type="MSFS2020EventIdInputAction" eventId="NAV2_RADIO_FRACT_DEC" />
           <onLeftFast />
-          <onRight type="MSFS2020EventIdInputAction" eventId="NAV2_RADIO_FRACT_DEC" />
+          <onRight type="MSFS2020EventIdInputAction" eventId="NAV2_RADIO_FRACT_INC" />
           <onRightFast />
         </encoder>
         <preconditions>
           <precondition type="config" active="true" ref="69bb58dc-1c3a-48d4-b7ec-a9489ef1c2ea" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="5f873a75-f6a4-4289-b934-053c7295ae86">
       <active>true</active>
       <description>NAV1 swap standby</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="XFR2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="XFR2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="NAV1_RADIO_SWAP" />
           <onRelease />
@@ -409,7 +450,7 @@
     <config guid="8168798b-c045-4831-aed2-2c58ab0d0c53">
       <active>true</active>
       <description>NAV2 swap standby</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="XFR4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="XFR4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="NAV2_RADIO_SWAP" />
           <onRelease />
@@ -428,7 +469,7 @@
     <config guid="17dc9cb7-57af-4e69-bb4e-5e48bc734241">
       <active>true</active>
       <description>COM1 swap standby</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="XFR1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="XFR1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="COM_STBY_RADIO_SWAP" />
           <onRelease />
@@ -447,7 +488,7 @@
     <config guid="665cc945-7de5-4bf8-ac06-110b25872f29">
       <active>true</active>
       <description>COM2 swap standby</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="XFR3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="XFR3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="COM2_RADIO_SWAP" />
           <onRelease />
@@ -466,9 +507,9 @@
     <config guid="8108fed4-4e0b-4b5f-a7d8-576e0ebc198b">
       <active>true</active>
       <description>COM1 toggle MHz/KHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC1_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC1_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="AS3000_TOGGLE_COM1_MHZ_ENTRY" />
+          <onPress type="VariableInputAction" varType="number" varName="COM1 current precision" varExpression="($+1)%2" />
           <onRelease />
         </button>
         <preconditions />
@@ -485,7 +526,7 @@
     <config guid="c988dd64-e762-4ea4-abbf-3f5d52da8e2a">
       <active>true</active>
       <description>COM2 toggle MHz/KHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC3_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC3_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="AS3000_TOGGLE_COM2_MHZ_ENTRY" />
           <onRelease />
@@ -504,7 +545,7 @@
     <config guid="4282c861-123f-4981-bb2a-265898402ff3">
       <active>true</active>
       <description>NAV1 toggle MHz/KHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC2_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC2_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="AS3000_TOGGLE_NAV1_MHZ_ENTRY" />
           <onRelease />
@@ -523,9 +564,180 @@
     <config guid="3a24a7c0-3943-4b01-87f7-b95e8296693b">
       <active>true</active>
       <description>NAV2 toggle MHz/KHz</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC4_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC4_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="AS3000_TOGGLE_NAV2_MHZ_ENTRY" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9cac13cb-6573-4dd2-aa9c-0ff5806f97ad">
+      <active>true</active>
+      <description>AIRFRAME DE ICE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="SW1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TBM930_AIRFRAME_DE_ICE_OFF" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="TBM930_AIRFRAME_DE_ICE_ON" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b086f829-65d0-40dd-948f-884c5b0b5924">
+      <active>true</active>
+      <description>ICE LIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="SW2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TBM930_ICE_LIGHT_OFF" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="TBM930_ICE_LIGHT_ON" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f9b44eff-7c55-4fb6-b025-4ef293118cf0">
+      <active>true</active>
+      <description>PROP DE ICE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="SW3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TBM930_PROP_DE_ICE_OFF" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="TBM930_PROP_DE_ICE_ON" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="45d4b65f-a5a3-47bd-8c8c-8b1f6985f1ed">
+      <active>true</active>
+      <description>WIND SHIELD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="SW4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TBM930_WINDSHIELD_DE_ICE_OFF" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="TBM930_WINDSHIELD_DE_ICE_ON" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="db5a21e4-9afb-4fe0-9bd4-51d2846d1602">
+      <active>true</active>
+      <description>PITOT L HTR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="SW5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:DEICE_Pitot_1)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:DEICE_Pitot_1)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="caf83b61-03ff-484f-b10e-b92659ec4d17">
+      <active>true</active>
+      <description>PITOT R HTR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="SW6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TBM930_Pitot_R_OFF" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="TBM930_Pitot_R_ON" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="08aaaddb-fafe-4311-bdb4-4ebbb1abe500">
+      <active>true</active>
+      <description>INERT SEP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="SW7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TBM930_INERT_SEP_OFF" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="TBM930_INERT_SEP_ON" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="be4f3eb3-6491-4b54-bae1-884e7ad1e3c7">
+      <active>true</active>
+      <description>MASTER WARNING</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="IDENT1_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TBM930_MASTER_WARNING_PUSH" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
+          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
+          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
+          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
+          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
+          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="3d4511bf-8511-4a18-a02d-e0bdca418ef6">
+      <active>true</active>
+      <description>MASTER CAUTION</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="IDENT2_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TBM930_MASTER_CAUTION_PUSH" />
           <onRelease />
         </button>
         <preconditions />

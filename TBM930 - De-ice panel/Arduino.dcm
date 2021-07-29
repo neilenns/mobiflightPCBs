@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ArduinoMEGA2560PROEmbed
+D Mega 2560 PRO (Embed) CH340G/ATmega2560-16AU
+K Arduino Mega ATmega2560
+F https://robotdyn.com/pub/media/0G-00005641==MEGA-PRO-CH340GATmega2560/DOCS/Schematic==0G-00005641==MEGA-PRO-CH340GATmega2560.pdf
+$ENDCMP
+#
+#End Doc Library

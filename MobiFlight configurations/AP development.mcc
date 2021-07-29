@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="264773eb-c819-4fc9-843a-7358541020c3">
+      <active>false</active>
+      <description>test</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0000" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="75fd383c-5676-4d34-bb5e-951debc6343f">
+      <active>true</active>
+      <description>Baro test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="RADIO1_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TBM930_BARO_SYNC" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e4198b1b-85a7-46ef-8ce9-2f10030b72b3">
+      <active>true</active>
+      <description>Light test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-eaf-59f" name="ENC1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="TBM930_PANEL_LIGHT_INC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="TBM930_PANEL_LIGHT_DEC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="264773eb-c819-4fc9-843a-7358541020c3" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

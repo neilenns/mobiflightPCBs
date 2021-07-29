@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="4ce44bdc-4238-400c-a93b-ed4aa5b8ad67">
+      <active>true</active>
+      <description>Inertial separator toggle</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="SW7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;B:DEICE_ENGINE_1_Toggle)" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;B:DEICE_ENGINE_1_Toggle)" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

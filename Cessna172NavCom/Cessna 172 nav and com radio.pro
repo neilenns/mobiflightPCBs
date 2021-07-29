@@ -1,4 +1,4 @@
-update=9/29/2020 3:13:36 PM
+update=7/27/2021 3:48:56 PM
 version=1
 last_client=kicad
 [general]
@@ -261,7 +261,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=C:/Users/neile/OneDrive/Desktop/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew

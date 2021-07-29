@@ -1,0 +1,610 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 610220A8
+P 5950 1200
+F 0 "D1" H 5943 945 50  0000 C CNN
+F 1 "AIRFRAME 1" H 5943 1036 50  0000 C CNN
+F 2 "" H 5950 1200 50  0001 C CNN
+F 3 "~" H 5950 1200 50  0001 C CNN
+	1    5950 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 610226F6
+P 5950 2000
+F 0 "D3" H 5943 1745 50  0000 C CNN
+F 1 "PROP" H 5943 1836 50  0000 C CNN
+F 2 "" H 5950 2000 50  0001 C CNN
+F 3 "~" H 5950 2000 50  0001 C CNN
+	1    5950 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 61023252
+P 5950 2400
+F 0 "D4" H 5943 2145 50  0000 C CNN
+F 1 "WINDSHILED 1" H 5943 2236 50  0000 C CNN
+F 2 "" H 5950 2400 50  0001 C CNN
+F 3 "~" H 5950 2400 50  0001 C CNN
+	1    5950 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 6102343D
+P 5950 2800
+F 0 "D5" H 5943 2545 50  0000 C CNN
+F 1 "WINDSHIELD 2" H 5943 2636 50  0000 C CNN
+F 2 "" H 5950 2800 50  0001 C CNN
+F 3 "~" H 5950 2800 50  0001 C CNN
+	1    5950 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 61029D3C
+P 5950 1600
+F 0 "D2" H 5943 1345 50  0000 C CNN
+F 1 "AIRFRAME 2" H 5943 1436 50  0000 C CNN
+F 2 "" H 5950 1600 50  0001 C CNN
+F 3 "~" H 5950 1600 50  0001 C CNN
+	1    5950 1600
+	-1   0    0    1   
+$EndComp
+Text GLabel 6100 1200 2    50   Input ~ 0
+LED_GND
+Text GLabel 6100 1600 2    50   Input ~ 0
+LED_GND
+Text GLabel 6100 2000 2    50   Input ~ 0
+LED_GND
+Text GLabel 6100 2400 2    50   Input ~ 0
+LED_GND
+Text GLabel 6100 2800 2    50   Input ~ 0
+LED_GND
+Text GLabel 5800 1200 0    50   Input ~ 0
+AIRFRAME_1_LED
+Text GLabel 5800 1600 0    50   Input ~ 0
+AIRFRAME_2_LED
+Text GLabel 5800 2000 0    50   Input ~ 0
+PROP_LED
+Text GLabel 5800 2400 0    50   Input ~ 0
+WINDSHIELD_1_LED
+Text GLabel 5800 2800 0    50   Input ~ 0
+WINDSHIELD_2_LED
+Wire Notes Line
+	4950 850  4950 2950
+Wire Notes Line
+	4950 2950 6600 2950
+Wire Notes Line
+	6600 2950 6600 850 
+Wire Notes Line
+	4950 850  6600 850 
+Text Notes 4950 800  0    50   ~ 0
+Annunciator LEDs
+Text Notes 6950 800  0    50   ~ 0
+Switches
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 61030DD7
+P 7900 1100
+F 0 "J1" H 7872 982 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7872 1073 50  0000 R CNN
+F 2 "" H 7900 1100 50  0001 C CNN
+F 3 "~" H 7900 1100 50  0001 C CNN
+	1    7900 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61031E2C
+P 7700 1100
+F 0 "#PWR0101" H 7700 850 50  0001 C CNN
+F 1 "GND" H 7705 927 50  0000 C CNN
+F 2 "" H 7700 1100 50  0001 C CNN
+F 3 "" H 7700 1100 50  0001 C CNN
+	1    7700 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 1000 0    50   Output ~ 0
+AIRFRAME_DE_ICE
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 61034A3B
+P 7900 2000
+F 0 "J3" H 7872 1882 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7872 1973 50  0000 R CNN
+F 2 "" H 7900 2000 50  0001 C CNN
+F 3 "~" H 7900 2000 50  0001 C CNN
+	1    7900 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61034A41
+P 7700 2000
+F 0 "#PWR0102" H 7700 1750 50  0001 C CNN
+F 1 "GND" H 7705 1827 50  0000 C CNN
+F 2 "" H 7700 2000 50  0001 C CNN
+F 3 "" H 7700 2000 50  0001 C CNN
+	1    7700 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 1900 0    50   Output ~ 0
+PROP_DE_ICE
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 6103503D
+P 7900 2450
+F 0 "J4" H 7872 2332 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7872 2423 50  0000 R CNN
+F 2 "" H 7900 2450 50  0001 C CNN
+F 3 "~" H 7900 2450 50  0001 C CNN
+	1    7900 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61035043
+P 7700 2450
+F 0 "#PWR0103" H 7700 2200 50  0001 C CNN
+F 1 "GND" H 7705 2277 50  0000 C CNN
+F 2 "" H 7700 2450 50  0001 C CNN
+F 3 "" H 7700 2450 50  0001 C CNN
+	1    7700 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 2350 0    50   Output ~ 0
+WIND_SHIELD
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 61035891
+P 7900 2900
+F 0 "J5" H 7872 2782 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7872 2873 50  0000 R CNN
+F 2 "" H 7900 2900 50  0001 C CNN
+F 3 "~" H 7900 2900 50  0001 C CNN
+	1    7900 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 61035897
+P 7700 2900
+F 0 "#PWR0104" H 7700 2650 50  0001 C CNN
+F 1 "GND" H 7705 2727 50  0000 C CNN
+F 2 "" H 7700 2900 50  0001 C CNN
+F 3 "" H 7700 2900 50  0001 C CNN
+	1    7700 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 2800 0    50   Output ~ 0
+PITOT_L_HTR
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 61036191
+P 7900 3350
+F 0 "J6" H 7872 3232 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7872 3323 50  0000 R CNN
+F 2 "" H 7900 3350 50  0001 C CNN
+F 3 "~" H 7900 3350 50  0001 C CNN
+	1    7900 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 61036197
+P 7700 3350
+F 0 "#PWR0105" H 7700 3100 50  0001 C CNN
+F 1 "GND" H 7705 3177 50  0000 C CNN
+F 2 "" H 7700 3350 50  0001 C CNN
+F 3 "" H 7700 3350 50  0001 C CNN
+	1    7700 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 3250 0    50   Output ~ 0
+PITOT_R_HTR
+$Comp
+L Connector:Conn_01x02_Male J7
+U 1 1 61036AB0
+P 7900 3800
+F 0 "J7" H 7872 3682 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7872 3773 50  0000 R CNN
+F 2 "" H 7900 3800 50  0001 C CNN
+F 3 "~" H 7900 3800 50  0001 C CNN
+	1    7900 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 61036AB6
+P 7700 3800
+F 0 "#PWR0106" H 7700 3550 50  0001 C CNN
+F 1 "GND" H 7705 3627 50  0000 C CNN
+F 2 "" H 7700 3800 50  0001 C CNN
+F 3 "" H 7700 3800 50  0001 C CNN
+	1    7700 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 3700 0    50   Output ~ 0
+INERT_SEP
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 61036DB5
+P 7900 1550
+F 0 "J2" H 7872 1432 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7872 1523 50  0000 R CNN
+F 2 "" H 7900 1550 50  0001 C CNN
+F 3 "~" H 7900 1550 50  0001 C CNN
+	1    7900 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 61036DBB
+P 7700 1550
+F 0 "#PWR0107" H 7700 1300 50  0001 C CNN
+F 1 "GND" H 7705 1377 50  0000 C CNN
+F 2 "" H 7700 1550 50  0001 C CNN
+F 3 "" H 7700 1550 50  0001 C CNN
+	1    7700 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 1450 0    50   Output ~ 0
+ICE_LIGHT
+Wire Notes Line
+	6950 850  6950 4050
+Wire Notes Line
+	6950 4050 8650 4050
+Wire Notes Line
+	8650 4050 8650 850 
+Wire Notes Line
+	8650 850  6950 850 
+$Comp
+L Arduino:ArduinoMEGA2560PROEmbed U1
+U 1 1 6106D3FB
+P 2850 3300
+F 0 "U1" H 2850 5615 50  0000 C CNN
+F 1 "ArduinoMEGA2560PROEmbed" H 2850 5524 50  0000 C CNN
+F 2 "" H 2550 4500 50  0001 C CNN
+F 3 "" H 2550 4500 50  0001 C CNN
+	1    2850 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2000 2250
+NoConn ~ 2000 2350
+Text GLabel 2000 2450 0    50   Output ~ 0
+AIRFRAME_1_LED
+Text GLabel 2000 2550 0    50   Output ~ 0
+AIRFRAME_2_LED
+Text GLabel 2000 2650 0    50   Output ~ 0
+PROP_LED
+Text GLabel 2000 2750 0    50   Output ~ 0
+WINDSHIELD_1_LED
+Text GLabel 2000 2850 0    50   Output ~ 0
+WINDSHIELD_2_LED
+Text GLabel 2000 2950 0    50   Input ~ 0
+AIRFRAME_DE_ICE
+Text GLabel 2000 3050 0    50   Input ~ 0
+ICE_LIGHT
+Text GLabel 2000 3150 0    50   Input ~ 0
+PROP_DE_ICE
+Text GLabel 2000 3250 0    50   Input ~ 0
+WIND_SHIELD
+Text GLabel 2000 3350 0    50   Input ~ 0
+PITOT_L_HTR
+Text GLabel 2000 3450 0    50   Input ~ 0
+PITOT_R_HTR
+Text GLabel 2000 3550 0    50   Input ~ 0
+INERT_SEP
+NoConn ~ 2000 3650
+NoConn ~ 2000 3750
+NoConn ~ 2000 3850
+NoConn ~ 2000 3950
+NoConn ~ 2000 4050
+NoConn ~ 2000 4150
+NoConn ~ 2000 4250
+NoConn ~ 2000 4350
+NoConn ~ 2000 4450
+NoConn ~ 2000 4550
+NoConn ~ 2000 4650
+NoConn ~ 2000 4750
+NoConn ~ 2000 4850
+NoConn ~ 2000 4950
+NoConn ~ 2000 5050
+NoConn ~ 2000 5150
+NoConn ~ 2000 5250
+NoConn ~ 2000 5350
+NoConn ~ 3700 1450
+NoConn ~ 3700 1550
+NoConn ~ 3700 1650
+NoConn ~ 3700 1750
+NoConn ~ 3700 1850
+NoConn ~ 3700 1950
+NoConn ~ 3700 2050
+NoConn ~ 3700 2150
+NoConn ~ 3700 2250
+NoConn ~ 3700 2350
+NoConn ~ 3700 2450
+NoConn ~ 3700 2550
+NoConn ~ 3700 2650
+NoConn ~ 3700 2750
+NoConn ~ 3700 2850
+NoConn ~ 3700 2950
+NoConn ~ 3700 3050
+NoConn ~ 3700 3150
+NoConn ~ 3700 3250
+NoConn ~ 3700 3350
+NoConn ~ 3700 3450
+NoConn ~ 3700 3550
+NoConn ~ 3700 3650
+NoConn ~ 3700 3750
+NoConn ~ 3700 3850
+NoConn ~ 3700 3950
+NoConn ~ 3700 4050
+NoConn ~ 3700 4150
+NoConn ~ 3700 4250
+NoConn ~ 3700 4350
+NoConn ~ 2950 5550
+NoConn ~ 3050 5550
+NoConn ~ 3150 5550
+NoConn ~ 3250 5550
+NoConn ~ 3350 5550
+NoConn ~ 3450 5550
+Wire Wire Line
+	1250 1550 1250 1450
+$Comp
+L power:GND #PWR0108
+U 1 1 61078B22
+P 1250 1550
+F 0 "#PWR0108" H 1250 1300 50  0001 C CNN
+F 1 "GND" H 1255 1377 50  0000 C CNN
+F 2 "" H 1250 1550 50  0001 C CNN
+F 3 "" H 1250 1550 50  0001 C CNN
+	1    1250 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1250 1550
+NoConn ~ 2000 1350
+NoConn ~ 2000 1650
+NoConn ~ 2000 1850
+NoConn ~ 2000 1950
+NoConn ~ 2000 2150
+$Comp
+L Device:R R1
+U 1 1 6107A2AD
+P 1550 2050
+F 0 "R1" V 1757 2050 50  0000 C CNN
+F 1 "10k" V 1666 2050 50  0000 C CNN
+F 2 "" V 1480 2050 50  0001 C CNN
+F 3 "~" H 1550 2050 50  0001 C CNN
+	1    1550 2050
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2000 1250
+Text GLabel 3700 1250 2    50   Output ~ 0
+ANNUNCIATOR_BRIGHTNESS
+$Comp
+L power:GND #PWR01
+U 1 1 6107EE4F
+P 6400 4150
+F 0 "#PWR01" H 6400 3900 50  0001 C CNN
+F 1 "GND" H 6405 3977 50  0000 C CNN
+F 2 "" H 6400 4150 50  0001 C CNN
+F 3 "" H 6400 4150 50  0001 C CNN
+	1    6400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6107F8D7
+P 6100 4000
+F 0 "R2" H 6170 4046 50  0000 L CNN
+F 1 "10k" H 6170 3955 50  0000 L CNN
+F 2 "" V 6030 4000 50  0001 C CNN
+F 3 "~" H 6100 4000 50  0001 C CNN
+	1    6100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4150 6400 4150
+Wire Wire Line
+	6400 3850 6400 4150
+Connection ~ 6400 4150
+Text GLabel 6100 3650 0    50   Input ~ 0
+ANNUNCIATOR_BRIGHTNESS
+Wire Notes Line
+	4950 3200 6850 3200
+Text Notes 4950 3150 0    50   ~ 0
+Annunciator LED brightness control
+Wire Notes Line
+	900  5700 4850 5700
+Wire Notes Line
+	4850 5700 4850 850 
+Wire Notes Line
+	4850 850  900  850 
+Wire Notes Line
+	900  850  900  5700
+Text Notes 900  800  0    50   ~ 0
+Microcontroller board
+Text GLabel 3700 1350 2    50   Output ~ 0
+BACKLIGHT_BRIGHTNESS
+$Comp
+L Transistor_FET:BS170 Q2
+U 1 1 610A6F99
+P 6300 5150
+F 0 "Q2" H 6504 5196 50  0000 L CNN
+F 1 "BS170" H 6504 5105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6500 5075 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BS170-D.PDF" H 6300 5150 50  0001 L CNN
+	1    6300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 610A6F9F
+P 6400 5650
+F 0 "#PWR02" H 6400 5400 50  0001 C CNN
+F 1 "GND" H 6405 5477 50  0000 C CNN
+F 2 "" H 6400 5650 50  0001 C CNN
+F 3 "" H 6400 5650 50  0001 C CNN
+	1    6400 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 610A6FA5
+P 6100 5500
+F 0 "R3" H 6170 5546 50  0000 L CNN
+F 1 "10k" H 6170 5455 50  0000 L CNN
+F 2 "" V 6030 5500 50  0001 C CNN
+F 3 "~" H 6100 5500 50  0001 C CNN
+	1    6100 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5150 6100 5350
+Wire Wire Line
+	6100 5650 6400 5650
+Wire Wire Line
+	6400 5350 6400 5650
+Connection ~ 6400 5650
+Text GLabel 6100 5150 0    50   Input ~ 0
+BACKLIGHT_BRIGHTNESS
+Text GLabel 6350 4850 0    50   Output ~ 0
+BACKLIGHT_GND
+Wire Notes Line
+	4950 4700 6850 4700
+Text Notes 4950 4650 0    50   ~ 0
+Backlight LED brightness control
+Wire Wire Line
+	6400 4850 6400 4950
+Wire Wire Line
+	6100 3650 6100 3850
+$Comp
+L Transistor_FET:BS170 Q1
+U 1 1 6107DAC8
+P 6300 3650
+F 0 "Q1" H 6504 3696 50  0000 L CNN
+F 1 "BS170" H 6504 3605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6500 3575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BS170-D.PDF" H 6300 3650 50  0001 L CNN
+	1    6300 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6350 3350 0    50   Output ~ 0
+LED_GND
+Wire Wire Line
+	6350 3350 6400 3350
+Wire Wire Line
+	6400 3350 6400 3450
+Wire Wire Line
+	6350 4850 6400 4850
+Wire Notes Line
+	4950 4700 4950 5950
+Wire Notes Line
+	4950 5950 6850 5950
+Wire Notes Line
+	6850 5950 6850 4700
+Text GLabel 1650 1750 0    50   Output ~ 0
++5V
+Wire Wire Line
+	2000 2050 1700 2050
+Text GLabel 1400 2050 0    50   Input ~ 0
++5V
+$Comp
+L Device:LED D6
+U 1 1 610B015B
+P 7500 5050
+F 0 "D6" H 7493 4795 50  0000 C CNN
+F 1 "LED" H 7493 4886 50  0000 C CNN
+F 2 "" H 7500 5050 50  0001 C CNN
+F 3 "~" H 7500 5050 50  0001 C CNN
+	1    7500 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 610B060A
+P 7950 5050
+F 0 "D7" H 7943 4795 50  0000 C CNN
+F 1 "LED" H 7943 4886 50  0000 C CNN
+F 2 "" H 7950 5050 50  0001 C CNN
+F 3 "~" H 7950 5050 50  0001 C CNN
+	1    7950 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 610B0A64
+P 8400 5050
+F 0 "D8" H 8393 4795 50  0000 C CNN
+F 1 "LED" H 8393 4886 50  0000 C CNN
+F 2 "" H 8400 5050 50  0001 C CNN
+F 3 "~" H 8400 5050 50  0001 C CNN
+	1    8400 5050
+	-1   0    0    1   
+$EndComp
+Text GLabel 7250 5050 0    50   Input ~ 0
++5V
+Text GLabel 8700 5050 2    50   Input ~ 0
+BACKLIGHT_GND
+Wire Wire Line
+	7250 5050 7350 5050
+Wire Wire Line
+	7650 5050 7800 5050
+Wire Wire Line
+	8100 5050 8250 5050
+Wire Wire Line
+	8550 5050 8700 5050
+Wire Notes Line
+	6950 4700 6950 5200
+Wire Notes Line
+	6950 5200 9450 5200
+Wire Notes Line
+	9450 5200 9450 4700
+Wire Notes Line
+	9450 4700 6950 4700
+Text Notes 6950 4650 0    50   ~ 0
+Backlight LEDs
+Wire Notes Line
+	4950 3200 4950 4450
+Wire Notes Line
+	4950 4450 6850 4450
+Wire Notes Line
+	6850 4450 6850 3200
+Wire Wire Line
+	1250 1550 2000 1550
+Wire Wire Line
+	1250 1450 2000 1450
+Wire Wire Line
+	1650 1750 2000 1750
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 610C015E
+P 1250 1450
+F 0 "#FLG0101" H 1250 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 1250 1623 50  0000 C CNN
+F 2 "" H 1250 1450 50  0001 C CNN
+F 3 "~" H 1250 1450 50  0001 C CNN
+	1    1250 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 1250 1450
+$EndSCHEMATC

@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ModuleName />
+  <ModuleName>MobiFlight Mega</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
   <LedModule Name="LedModule" DinPin="29" ClsPin="25" ClkPin="27" Brightness="15" NumModules="8" />
-  <Encoder Name="COMM2" PinLeft="32" PinRight="30" EncoderType="1" />
-  <Encoder Name="COMM1" PinLeft="33" PinRight="31" EncoderType="1" />
-  <Button Name="COMM2_KHZ_SW" Pin="34" />
-  <Button Name="COMM1_KHZ_SW" Pin="35" />
-  <Button Name="COMM2_XFR" Pin="36" />
-  <Button Name="COMM1_XFR" Pin="37" />
-  <Encoder Name="NAV2" PinLeft="40" PinRight="38" EncoderType="1" />
-  <Encoder Name="NAV1" PinLeft="41" PinRight="39" EncoderType="1" />
-  <Button Name="NAV2_KHZ_SW" Pin="42" />
-  <Button Name="NAV1_KHZ_SW" Pin="43" />
-  <Button Name="NAV2_XFR" Pin="44" />
-  <Button Name="NAV1_XFR" Pin="45" />
+  <Encoder Name="ENC3" PinLeft="32" PinRight="30" EncoderType="1" />
+  <Encoder Name="ENC1" PinLeft="33" PinRight="31" EncoderType="1" />
+  <Button Name="ENC3_SW" Pin="34" />
+  <Button Name="ENC1_SW" Pin="35" />
+  <Button Name="XFR3" Pin="36" />
+  <Button Name="XFR1" Pin="37" />
+  <Encoder Name="ENC4" PinLeft="40" PinRight="38" EncoderType="1" />
+  <Encoder Name="ENC2" PinLeft="41" PinRight="39" EncoderType="1" />
+  <Button Name="ENC4_SW" Pin="42" />
+  <Button Name="ENC2_SW" Pin="43" />
+  <Button Name="XFR4" Pin="44" />
+  <Button Name="XFR2" Pin="45" />
   <Button Name="RADIO2_SW" Pin="46" />
   <Button Name="RADIO1_SW" Pin="47" />
   <Output Name="RADIO2_LED" Pin="48" />
   <Output Name="RADIO1_LED" Pin="49" />
   <Button Name="IDENT2_SW" Pin="50" />
   <Button Name="IDENT1_SW" Pin="51" />
-  <LcdDisplay Name="LcdDisplay" Address="39" Cols="20" Lines="4" />
 </Config>
