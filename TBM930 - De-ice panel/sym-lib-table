@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Arduino)(type Legacy)(uri ${KIPRJMOD}/Arduino.lib)(options "")(descr ""))
+  (lib (name TBM930---De-ice-panel-rescue)(type Legacy)(uri "${KIPRJMOD}/TBM930 - De-ice panel-rescue.lib")(options "")(descr ""))
 )

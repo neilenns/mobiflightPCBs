@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Ardino)(type KiCad)(uri ${KIPRJMOD}/Ardino.pretty)(options "")(descr ""))
+  (lib (name Switches)(type KiCad)(uri ${KIPRJMOD}/Switches.pretty)(options "")(descr ""))
+)
