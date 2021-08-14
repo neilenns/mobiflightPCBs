@@ -1,4 +1,6 @@
 (sym_lib_table
   (lib (name Arduino)(type Legacy)(uri ${KIPRJMOD}/Arduino.lib)(options "")(descr ""))
   (lib (name TBM930---De-ice-panel-rescue)(type Legacy)(uri "${KIPRJMOD}/TBM930 - De-ice panel-rescue.lib")(options "")(descr ""))
+  (lib (name "LED drivers")(type Legacy)(uri "${KIPRJMOD}/LED drivers.lib")(options "")(descr ""))
+  (lib (name "Mobiflight docs")(type Legacy)(uri "D:/git/mobiflightPCBs/Mobiflight documentation/Mobiflight docs.lib")(options "")(descr ""))
 )

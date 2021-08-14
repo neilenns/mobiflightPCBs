@@ -1,17 +1,52 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MobiflightConnector>
-  <outputs />
+  <outputs>
+    <config guid="c9bde98a-9067-46c4-878a-0464842ad31c">
+      <active>true</active>
+      <description>Panel brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:4, Percent)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="De-ice panel/ SN-9c3-c7d" trigger="normal" pin="Dimmer1" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
   <inputs>
     <config guid="4ce44bdc-4238-400c-a93b-ed4aa5b8ad67">
       <active>true</active>
-      <description>Inertial separator toggle</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-9c3-c7d" name="SW7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>Panel brightness</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="ENC1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;B:DEICE_ENGINE_1_Toggle)" />
           <onRelease type="MSFS2020CustomInputAction" command="(&gt;B:DEICE_ENGINE_1_Toggle)" />
         </button>
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(A:LIGHT POTENTIOMETER:4, Percent) 5 + 100 min 4 (&gt;K:2:LIGHT_POTENTIOMETER_SET)" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(A:LIGHT POTENTIOMETER:4, Percent) 5 - 0 max 4 (&gt;K:2:LIGHT_POTENTIOMETER_SET)" />
+          <onRightFast />
+        </encoder>
         <preconditions />
-        <configrefs />
+        <configrefs>
+          <configref active="False" ref="c9bde98a-9067-46c4-878a-0464842ad31c" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="dfb95a58-fb22-46ec-b38b-000812edfca5">
+      <active>true</active>
+      <description>De-ice</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="De-ice panel/ SN-9c3-c7d" name="SW7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:MF_TBM930_InertSep)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:MF_TBM930_InertSep)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="c9bde98a-9067-46c4-878a-0464842ad31c" placeholder="#" />
+        </configrefs>
       </settings>
     </config>
   </inputs>
