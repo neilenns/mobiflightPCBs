@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 860)
+    (start_pass_no 798)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -46,11 +46,35 @@
   (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
+  (via 
+    "Via[0-1]_800:400_um-+12V_LED" "Via[0-1]_800:400_um" "+12V_LED"
+  )
+  (via 
+    "Via[0-1]_800:400_um-+5V" "Via[0-1]_800:400_um" +5V
+  )
+  (via 
+    "Via[0-1]_800:400_um-+5V_LED" "Via[0-1]_800:400_um" "+5V_LED"
+  )
+  (via 
+    "Via[0-1]_800:400_um-GND" "Via[0-1]_800:400_um" GND
+  )
   (via_rule
     default "Via[0-1]_800:400_um"
   )
   (via_rule
     "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    "+12V_LED" "Via[0-1]_800:400_um-+12V_LED"
+  )
+  (via_rule
+    +5V "Via[0-1]_800:400_um-+5V"
+  )
+  (via_rule
+    "+5V_LED" "Via[0-1]_800:400_um-+5V_LED"
+  )
+  (via_rule
+    GND "Via[0-1]_800:400_um-GND"
   )
   (class default
     (clearance_class default)
@@ -63,24 +87,61 @@
     )
   )
   (class "kicad_default"
-    GND +5V "AIRFRAME_DE_ICE" "ICE_LIGHT" "PROP_DE_ICE" "WIND_SHIELD" "PITOT_L_HTR" "PITOT_R_HTR"
-    "INERT_SEP" "ANNUNCIATOR_BRIGHTNESS" "Net-(R1-Pad2)" "Net-(U1-Pad1)" "Net-(U1-Pad2)" "Net-(U1-Pad7)" "Net-(U1-Pad8)" "Net-(U1-Pad10)"
-    "Net-(U1-Pad11)" "Net-(U1-Pad12)" "Net-(U1-Pad31)" "Net-(U1-Pad39)" "Net-(U1-Pad41)" "Net-(U1-Pad45)" "Net-(U1-Pad46)" "Net-(U1-Pad47)"
-    "Net-(U1-Pad48)" "Net-(U1-Pad49)" "Net-(U1-Pad50)" "Net-(U1-Pad51)" "Net-(U1-Pad52)" "Net-(U1-Pad53)" "Net-(U1-Pad54)" "Net-(U1-Pad55)"
-    "Net-(U1-Pad56)" "Net-(U1-Pad57)" "Net-(U1-Pad58)" "Net-(U1-Pad59)" "Net-(U1-Pad60)" "Net-(U1-Pad61)" "Net-(U1-Pad62)" "Net-(U1-Pad63)"
-    "Net-(U1-Pad64)" "Net-(U1-Pad65)" "Net-(U1-Pad66)" "Net-(U1-Pad67)" "Net-(U1-Pad68)" "Net-(U1-Pad69)" "Net-(U1-Pad70)" "Net-(U1-Pad71)"
-    "Net-(U1-Pad72)" "Net-(U1-Pad73)" "Net-(U1-Pad74)" "Net-(U1-Pad75)" "Net-(U1-Pad76)" "Net-(U1-Pad77)" "Net-(U1-Pad78)" "Net-(U1-Pad79)"
-    "Net-(U1-Pad80)" "Net-(U1-Pad44)" "Net-(U1-Pad43)" "Net-(U1-Pad29)" "AIRFRAME_1" "+5V_LED" "AIRFRAME_2" PROP
-    "WINDSHIELD_1" "WINDSHIELD_2" "Net-(U1-Pad40)" "Net-(U1-Pad42)" "Net-(U2-Pad14)" "Net-(U2-Pad12)" "Net-(U2-Pad11)" "Net-(U2-Pad10)"
-    "Net-(D6-Pad1)" "+12V_LED" "Net-(D7-Pad1)" BACKLIGHT1 "Net-(D10-Pad2)" BACKLIGHT2 "Net-(D12-Pad1)" BACKLIGHT3
-    "Net-(D15-Pad1)" BACKLIGHT4 "Net-(D18-Pad1)" BACKLIGHT5 "Net-(R2-Pad1)" "Net-(R3-Pad1)" "LTS_TEST" "LED_LATCH"
-    "LED_CLOCK" "LED_DATA" "BACKLIGHT_BRIGHTNESS" "Net-(U3-Pad12)" "Net-(U3-Pad14)" BACKLIGHT6 "Net-(D10-Pad1)" "Net-(D21-Pad1)"
-    "Net-(D13-Pad1)" "Net-(D16-Pad1)" "Net-(D19-Pad1)" "Net-(D23-Pad1)" BACKLIGHT7 "Net-(U1-Pad13)" "Net-(U1-Pad19)" "Net-(U1-Pad21)"
-    "Net-(U1-Pad23)" "Net-(U1-Pad25)" "Net-(U1-Pad27)" "Net-(U1-Pad14)" "Net-(U1-Pad16)" "Net-(U1-Pad34)" "Net-(U1-Pad36)" "Net-(U1-Pad38)"
+    "AIRFRAME_DE_ICE" "ICE_LIGHT" "PROP_DE_ICE" "WIND_SHIELD" "PITOT_L_HTR" "PITOT_R_HTR" "INERT_SEP" "ANNUNCIATOR_BRIGHTNESS"
+    "Net-(U1-Pad1)" "AIRFRAME_1" "AIRFRAME_2" PROP "WINDSHIELD_1" "WINDSHIELD_2" "Net-(U2-Pad14)" "Net-(U2-Pad12)"
+    "Net-(U2-Pad11)" "Net-(U2-Pad10)" "Net-(D6-Pad1)" "Net-(D7-Pad1)" BACKLIGHT1 "Net-(D10-Pad2)" BACKLIGHT2 "Net-(D12-Pad1)"
+    BACKLIGHT3 "Net-(D15-Pad1)" BACKLIGHT4 "Net-(D18-Pad1)" BACKLIGHT5 "Net-(R2-Pad1)" "Net-(R3-Pad1)" "LTS_TEST"
+    "LED_LATCH" "LED_CLOCK" "LED_DATA" "BACKLIGHT_BRIGHTNESS" "Net-(U3-Pad12)" "Net-(U3-Pad14)" BACKLIGHT6 "Net-(D10-Pad1)"
+    "Net-(D21-Pad1)" "Net-(D13-Pad1)" "Net-(D16-Pad1)" "Net-(D19-Pad1)" "Net-(D23-Pad1)" BACKLIGHT7 "Net-(U1-Pad19)" "Net-(U1-Pad18)"
+    "Net-(U1-Pad20)" "Net-(U1-Pad22)" "Net-(U1-Pad24)" "Net-(U1-Pad17)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
       (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "+12V_LED"
+    "+12V_LED"
+    (clearance_class "+12V_LED")
+    (via_rule +12V_LED)
+    (rule
+      (width 1270.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class +5V
+    +5V
+    (clearance_class +5V)
+    (via_rule +5V)
+    (rule
+      (width 1270.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "+5V_LED"
+    "+5V_LED"
+    (clearance_class "+5V_LED")
+    (via_rule +5V_LED)
+    (rule
+      (width 1270.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class GND
+    GND
+    (clearance_class GND)
+    (via_rule GND)
+    (rule
+      (width 1270.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
