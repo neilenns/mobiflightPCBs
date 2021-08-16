@@ -6,4 +6,8 @@ K Arduino Mega ATmega2560
 F https://robotdyn.com/pub/media/0G-00005641==MEGA-PRO-CH340GATmega2560/DOCS/PINOUT==0G-00005641==MEGA-PRO-CH340GATmega2560.pdf
 $ENDCMP
 #
+$CMP ArduinoProMicro
+F https://www.bing.com/images/search?view=detailV2&ccid=Ifx6ykSh&id=0BBC6361FD2BCFB30E89BA79C67F57A4EB82AE7F&thid=OIP.Ifx6ykSh0wt9apflMoqkwgHaHB&mediaurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.21fc7aca44a1d30b7d6a97e5328aa4c2%3Frik%3Df66C66RXf8Z5ug%26riu%3Dhttp%253a%252f%252fqqtrading.com.my%252fimage%252fcatalog%252fProducts%252fArduino%252fpro-micro%252fpro_micro_pinout_v1_0_blue.jpg%26ehk%3D0G140k5jgCHI0lhc8Gt0IEP26qZ9lPhdnuB6EFBxnn0%253d%26risl%3D%26pid%3DImgRaw%26r%3D0&exph=1216&expw=1283&q=arduino+pro+micro+pinout&simid=608018119127401392&form=IRPRST&ck=23D4BDEBDD349B7A12DC02493D4518A9&selectedindex=4&ajaxhist=0&ajaxserp=0&vt=0&sim=11
+$ENDCMP
+#
 #End Doc Library
