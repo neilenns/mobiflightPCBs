@@ -706,8 +706,8 @@
       <description>PITOT R HTR</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="De-ice panel/ SN-9c3-c7d" name="SW6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="TBM930_Pitot_R_OFF" />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="TBM930_Pitot_R_ON" />
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:DEICE_Pitot_2)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:DEICE_Pitot_2)" />
         </button>
         <preconditions />
         <configrefs>
