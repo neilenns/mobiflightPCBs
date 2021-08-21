@@ -350,9 +350,9 @@ F 5 "" H 6750 4400 50  0001 C CNN "LCSC"
 $EndComp
 Text GLabel 7200 4400 2    50   Input ~ 0
 BACKLIGHT5
-Text GLabel 7500 1750 2    50   Output ~ 0
+Text GLabel 7500 1650 2    50   Output ~ 0
 BACKLIGHT4
-Text GLabel 7500 1250 2    50   Output ~ 0
+Text GLabel 7500 1150 2    50   Output ~ 0
 BACKLIGHT5
 $Comp
 L Connector:Barrel_Jack J8
@@ -413,11 +413,11 @@ Text GLabel 6600 1150 0    50   Input ~ 0
 LED_CLOCK
 Text GLabel 6600 1250 0    50   Input ~ 0
 LED_LATCH
-Text GLabel 7500 1150 2    50   Output ~ 0
+Text GLabel 7500 1850 2    50   Output ~ 0
 BACKLIGHT3
-Text GLabel 7500 1350 2    50   Output ~ 0
+Text GLabel 7500 1250 2    50   Output ~ 0
 BACKLIGHT2
-Text GLabel 7500 1550 2    50   Output ~ 0
+Text GLabel 7500 1350 2    50   Output ~ 0
 BACKLIGHT1
 Wire Notes Line
 	5800 5800 8400 5800
@@ -453,7 +453,7 @@ F 5 "" H 6450 4850 50  0001 C CNN "LCSC"
 $EndComp
 Text GLabel 7200 4850 2    50   Input ~ 0
 BACKLIGHT6
-Text GLabel 7500 1650 2    50   Output ~ 0
+Text GLabel 7500 1450 2    50   Output ~ 0
 BACKLIGHT6
 $Comp
 L Device:LED D25
@@ -498,7 +498,7 @@ F 5 "" H 6750 5350 50  0001 C CNN "LCSC"
 	1    6750 5350
 	-1   0    0    1   
 $EndComp
-Text GLabel 7500 1850 2    50   Output ~ 0
+Text GLabel 7500 1750 2    50   Output ~ 0
 BACKLIGHT7
 Wire Wire Line
 	6900 4850 7200 4850
@@ -1980,4 +1980,5 @@ SW_ICE_LIGHT
 Text GLabel 2750 3050 2    50   Input ~ 0
 SW_AIRFRAME
 NoConn ~ 2750 4350
+NoConn ~ 7500 1550
 $EndSCHEMATC
