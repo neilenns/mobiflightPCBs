@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.381)
+    (last_trace_width 0.25)
     (user_trace_width 0.381)
     (user_trace_width 0.508)
     (trace_clearance 0.2)
@@ -62,7 +62,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -87,9 +87,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "gerbers/"))
   )
 
   (net 0 "")
@@ -628,7 +628,7 @@
   (segment (start 124.318899 94.0075) (end 127.671398 90.655001) (width 0.2) (layer F.Cu) (net 9))
   (segment (start 127.671398 90.655001) (end 129.575001 90.655001) (width 0.2) (layer F.Cu) (net 9) (status 20))
 
-  (zone (net 5) (net_name UGnd) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 5) (net_name UGnd) (layer F.Cu) (tstamp 6125060D) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -802,7 +802,7 @@
       )
     )
   )
-  (zone (net 5) (net_name UGnd) (layer B.Cu) (tstamp 61255D5F) (hatch edge 0.508)
+  (zone (net 5) (net_name UGnd) (layer B.Cu) (tstamp 6125060A) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
