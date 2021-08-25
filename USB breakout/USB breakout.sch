@@ -14,12 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_B_Micro J1
+L USB-breakout-rescue:USB_B_Micro-Connector J1
 U 1 1 6125557F
 P 2100 3300
 F 0 "J1" H 2157 3767 50  0000 C CNN
 F 1 "USB_B_Micro" H 2157 3676 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 2250 3250 50  0001 C CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_10118194-0001LF" H 2250 3250 50  0001 C CNN
 F 3 "~" H 2250 3250 50  0001 C CNN
 	1    2100 3300
 	1    0    0    -1  
