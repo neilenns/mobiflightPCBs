@@ -161,7 +161,7 @@ F 3 "~" H 4800 4450 50  0001 C CNN
 	1    4800 4450
 	1    0    0    -1  
 $EndComp
-Text Notes 5900 200  0    50   ~ 0
+Text Notes 9150 6350 0    50   ~ 0
 Switches are mounted to the board via the shaft\nand connected with Molex connectors so they can\nbe removed and reused in other projects.\n
 $Comp
 L power:GND #PWR015
