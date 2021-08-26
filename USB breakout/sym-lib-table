@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name USB-breakout-rescue)(type Legacy)(uri "${KIPRJMOD}/USB breakout-rescue.lib")(options "")(descr ""))
+)
