@@ -1,52 +1,547 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MobiflightConnector>
   <outputs>
-    <config guid="c9bde98a-9067-46c4-878a-0464842ad31c">
+    <config guid="0a40f905-0cc0-4407-b83a-7ac4e110bd72">
       <active>true</active>
-      <description>Panel brightness</description>
+      <description>LED 0</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:4, Percent)" />
+        <source type="Variable" varType="number" varName="SR0" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        <display type="Pin" serial="De-ice panel/ SN-9c3-c7d" trigger="normal" pin="Dimmer1" pinBrightness="255" pinPwm="True" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0" />
         <preconditions />
-        <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
-        <configrefs />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="28558bb2-727a-4718-ac0c-22c5a99f64f3">
+      <active>true</active>
+      <description>LED 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR1" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 1" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="3580f779-9d93-44d6-a3bc-ea4ed39ef562">
+      <active>true</active>
+      <description>LED 2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR2" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 2" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="bc8ce19b-9e8c-4d86-b171-62099f689774">
+      <active>true</active>
+      <description>LED 3</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR3" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 3" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a7fe2204-e533-4327-818a-da21242d2362">
+      <active>true</active>
+      <description>LED 4</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR4" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 4" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="13ca5304-8f7a-4cae-a96f-bd9fc35144cd">
+      <active>true</active>
+      <description>LED 5</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR5" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 5" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="fd1e0072-1222-4b1c-894a-a2688203a6cb">
+      <active>true</active>
+      <description>LED 6</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR6" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 6" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="764e6378-3ffd-4c97-9d2d-c92ab6f8f532">
+      <active>true</active>
+      <description>LED 7</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR7" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 7" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="53233d0f-2d8d-4c2e-8b69-d248457fdcb1">
+      <active>true</active>
+      <description>LED 8</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR8" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 8" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="361ddeb8-c036-4d89-ab3a-c210509dc74a">
+      <active>true</active>
+      <description>LED 9</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR9" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 9" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="87aab27b-ffe1-4846-97c5-d3a8b83bb934">
+      <active>true</active>
+      <description>LED 10</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR10" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 10" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2acc53ea-da4a-4fc4-86b4-1e827186d774">
+      <active>true</active>
+      <description>LED 11</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR11" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 11" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="1f6f0981-79aa-4426-b698-8a257bf6e67d">
+      <active>true</active>
+      <description>LED 12</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR12" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 12" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9c8497b4-d688-4eba-8be3-6eb72cc9bceb">
+      <active>true</active>
+      <description>LED 13</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR13" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 13" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9670a618-7865-4510-bcf8-56625bfff986">
+      <active>true</active>
+      <description>LED 14</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR14" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 14" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="13ca5304-8f7a-4cae-a96f-bd9fc35144cd" placeholder="B" />
+          <configref active="False" ref="a7fe2204-e533-4327-818a-da21242d2362" placeholder="A" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="16739814-218b-42a9-9db7-92e55ac30cc2">
+      <active>true</active>
+      <description>LED 15</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="SR15" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-c16-a13" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 15" />
+        <preconditions />
+        <transformation active="True" expression="$*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="c673ccd4-ae6d-4f6e-9ad5-8c4248c694dd" placeholder="#" />
+        </configrefs>
       </settings>
     </config>
   </outputs>
   <inputs>
-    <config guid="4ce44bdc-4238-400c-a93b-ed4aa5b8ad67">
+    <config guid="e8b339aa-0726-497a-86a6-9576fd35dcb2">
       <active>true</active>
-      <description>Panel brightness</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="ENC1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;B:DEICE_ENGINE_1_Toggle)" />
-          <onRelease type="MSFS2020CustomInputAction" command="(&gt;B:DEICE_ENGINE_1_Toggle)" />
-        </button>
-        <encoder>
-          <onLeft type="MSFS2020CustomInputAction" command="(A:LIGHT POTENTIOMETER:4, Percent) 5 + 100 min 4 (&gt;K:2:LIGHT_POTENTIOMETER_SET)" />
-          <onLeftFast />
-          <onRight type="MSFS2020CustomInputAction" command="(A:LIGHT POTENTIOMETER:4, Percent) 5 - 0 max 4 (&gt;K:2:LIGHT_POTENTIOMETER_SET)" />
-          <onRightFast />
-        </encoder>
+      <description>Shift register 0</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="0">
+          <onPress type="VariableInputAction" varType="number" varName="SR0" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR0" varExpression="0" />
+        </inputShiftRegister>
         <preconditions />
         <configrefs>
-          <configref active="False" ref="c9bde98a-9067-46c4-878a-0464842ad31c" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
         </configrefs>
       </settings>
     </config>
-    <config guid="dfb95a58-fb22-46ec-b38b-000812edfca5">
+    <config guid="1b36c201-e77c-454f-a07d-49b99c169788">
       <active>true</active>
-      <description>De-ice</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="De-ice panel/ SN-9c3-c7d" name="SW7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:MF_TBM930_InertSep)" />
-          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:MF_TBM930_InertSep)" />
-        </button>
+      <description>Shift register 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="1">
+          <onPress type="VariableInputAction" varType="number" varName="SR1" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR1" varExpression="0" />
+        </inputShiftRegister>
         <preconditions />
         <configrefs>
-          <configref active="False" ref="c9bde98a-9067-46c4-878a-0464842ad31c" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
         </configrefs>
+      </settings>
+    </config>
+    <config guid="d0eb6ce5-f54b-4c93-bf98-bd26728a244d">
+      <active>true</active>
+      <description>Shift register 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="2">
+          <onPress type="VariableInputAction" varType="number" varName="SR2" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR2" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c4ce34c6-efd2-4df6-b0d9-53521c84fcfd">
+      <active>true</active>
+      <description>Shift register 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="3">
+          <onPress type="VariableInputAction" varType="number" varName="SR3" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR3" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ec9d5664-a93c-47a5-a90f-98d62456e20d">
+      <active>true</active>
+      <description>Shift register 4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="4">
+          <onPress type="VariableInputAction" varType="number" varName="SR4" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR4" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="11e487ef-353b-4721-beaa-1f6e1f3af260">
+      <active>true</active>
+      <description>Shift register 5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="5">
+          <onPress type="VariableInputAction" varType="number" varName="SR5" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR5" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d0c412ee-34fc-475b-875d-a59c418e03c4">
+      <active>true</active>
+      <description>Shift register 6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="6">
+          <onPress type="VariableInputAction" varType="number" varName="SR6" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR6" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cca81329-2a4b-4074-8d2f-c7836880866f">
+      <active>true</active>
+      <description>Shift register 7</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="7">
+          <onPress type="VariableInputAction" varType="number" varName="SR7" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR7" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6f456ac2-9535-4804-bcdd-ad5478a0f513">
+      <active>true</active>
+      <description>Shift register 8</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="8">
+          <onPress type="VariableInputAction" varType="number" varName="SR8" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR8" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="7251992d-410a-4b1d-a1a5-636569442bcf">
+      <active>true</active>
+      <description>Shift register 9</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="9">
+          <onPress type="VariableInputAction" varType="number" varName="SR9" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR9" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="23846529-7e5c-4071-b47f-e3b08a117747">
+      <active>true</active>
+      <description>Shift register 10</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="10">
+          <onPress type="VariableInputAction" varType="number" varName="SR10" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR10" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="21c122ea-f01d-495a-837d-4b32eab72f92">
+      <active>true</active>
+      <description>Shift register 11</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="11">
+          <onPress type="VariableInputAction" varType="number" varName="SR11" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR11" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9e8e3e1a-6446-4c83-b960-529ba44379a6">
+      <active>true</active>
+      <description>Shift register 12</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="12">
+          <onPress type="VariableInputAction" varType="number" varName="SR12" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR12" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="768413ef-c51b-4ea0-b7f2-da395b7dbe21">
+      <active>true</active>
+      <description>Shift register 13</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="13">
+          <onPress type="VariableInputAction" varType="number" varName="SR13" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR13" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d8f3bcc4-ffbc-4811-9644-6b39d2442549">
+      <active>true</active>
+      <description>Shift register 14</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="14">
+          <onPress type="VariableInputAction" varType="number" varName="SR14" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR14" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a903514a-2579-413b-9bde-938455f0f266">
+      <active>true</active>
+      <description>Shift register 15</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-c16-a13" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="15">
+          <onPress type="VariableInputAction" varType="number" varName="SR15" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="SR15" varExpression="0" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+          <configref active="False" ref="bc8ce19b-9e8c-4d86-b171-62099f689774" placeholder="@" />
+          <configref active="False" ref="3580f779-9d93-44d6-a3bc-ea4ed39ef562" placeholder="?" />
+          <configref active="False" ref="28558bb2-727a-4718-ac0c-22c5a99f64f3" placeholder="!" />
+          <configref active="False" ref="0a40f905-0cc0-4407-b83a-7ac4e110bd72" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="486541f4-226f-4478-af82-54210a6f714c">
+      <active>false</active>
+      <description>Test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="" name="" type="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <preconditions />
+        <configrefs />
       </settings>
     </config>
   </inputs>
