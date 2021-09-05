@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>MobiFlight Micro</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Airframe" Pin="4" />
+  <Button Name="IceLight" Pin="12" />
+  <Button Name="Prop" Pin="8" />
+  <Button Name="Windshield" Pin="9" />
+  <Button Name="PitotL" Pin="10" />
+  <Button Name="PitotR" Pin="19" />
+  <Button Name="InertSep" Pin="23" />
+  <Button Name="LtsTest" Pin="6" />
+  <Output Name="IndicatorBright" Pin="5" />
+  <Output Name="BacklightBright" Pin="13" />
+  <ShiftRegister Name="ShiftRegister" LatchPin="20" ClockPin="21" DataPin="22" NumModules="2" />
+</Config>

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="6233565b-592c-42b9-bad1-d328d3b33c67">
+      <active>true</active>
+      <description>Backlight brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BacklightBrightness" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="MobiFlight Micro/ SN-b2f-535" trigger="normal" pin="BacklightBright" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="0" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30">
+      <active>false</active>
+      <description>Backlights</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Backlights" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 7" />
+        <preconditions />
+        <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="27a77cfd-96f4-48c3-8190-49e58e1eef88">
+      <active>true</active>
+      <description>Indicator brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="IndicatorBrightness" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="MobiFlight Micro/ SN-b2f-535" trigger="normal" pin="IndicatorBright" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="0" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="833095aa-6b4e-4ef7-876e-e8c88a1f4a19">
+      <active>true</active>
+      <description>Indicators</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="IndicatorTest" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0" />
+        <preconditions />
+        <transformation active="True" expression="255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="9f83527d-116c-4274-b5f1-10905e2ee298">
+      <active>true</active>
+      <description>De-ice - airframe</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-b2f-535" name="Airframe" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:STRUCTURAL DEICE SWITCH, Bool) ! if{ (&gt;K:TOGGLE_STRUCTURAL_DEICE) }" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:STRUCTURAL DEICE SWITCH, Bool) if{ (&gt;K:TOGGLE_STRUCTURAL_DEICE) }" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="833095aa-6b4e-4ef7-876e-e8c88a1f4a19" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="39890436-df38-410b-a283-e511d3b8b266">
+      <active>true</active>
+      <description>De-ice - ice light</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-b2f-535" name="IceLight" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 1 (&gt;K:2:WING_LIGHTS_SET) 1 (&gt;L:LIGHTING_WING_1)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 0 (&gt;K:2:WING_LIGHTS_SET) 0 (&gt;L:LIGHTING_WING_1)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="833095aa-6b4e-4ef7-876e-e8c88a1f4a19" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="09b4deca-c6c7-4917-8f59-939d1a16b25b">
+      <active>true</active>
+      <description>De-ice - prop</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-b2f-535" name="Prop" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (A:PROP DEICE SWITCH:1, Bool) != if{ (&gt;K:TOGGLE_PROPELLER_DEICE) &#xA;} 1 (&gt;L:DEICE_Propeller_1)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (A:PROP DEICE SWITCH:1, Bool) != if{ (&gt;K:TOGGLE_PROPELLER_DEICE) &#xA;} 0 (&gt;L:DEICE_Propeller_1)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="833095aa-6b4e-4ef7-876e-e8c88a1f4a19" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cd5f3672-15d4-4540-adc2-efce0232cb5e">
+      <active>true</active>
+      <description>De-ice - windshield</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-b2f-535" name="Windshield" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:WINDSHIELD_DEICE_SET)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:WINDSHIELD_DEICE_SET)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="833095aa-6b4e-4ef7-876e-e8c88a1f4a19" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ce7ef82a-e3d6-4150-896e-905141e0c169">
+      <active>true</active>
+      <description>De-ice - pitot L</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-b2f-535" name="PitotL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_Pitot_1) (A:PITOT HEAT, bool) ! if{ (&gt;K:PITOT_HEAT_TOGGLE) }" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:XMLVAR_Pitot_1) (L:XMLVAR_Pitot_1) ! (L:XMLVAR_Pitot_2) ! and (A:PITOT HEAT, bool) == if{ (&gt;K:PITOT_HEAT_TOGGLE) }" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="833095aa-6b4e-4ef7-876e-e8c88a1f4a19" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

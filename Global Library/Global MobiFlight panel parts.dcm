@@ -1,5 +1,29 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP ATmega16U4-MU-Exposed-Extra-Pins
+D 16MHz, 16kB Flash, 1.25kB SRAM, 512B EEPROM, USB 2.0, QFN-44
+K AVR 8bit Microcontroller MegaAVR USB
+F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
+$ENDCMP
+#
+$CMP ATmega16U4RC-MU
+D 16MHz, 16kB Flash, 1.25kB SRAM, 512B EEPROM, USB 2.0, RC Osc, QFN-44
+K AVR 8bit Microcontroller MegaAVR USB
+F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
+$ENDCMP
+#
+$CMP ATmega32U4-MU
+D 16MHz, 32kB Flash, 2.5kB SRAM, 1kB EEPROM, USB 2.0, QFN-44
+K AVR 8bit Microcontroller MegaAVR USB
+F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
+$ENDCMP
+#
+$CMP ATmega32U4RC-MU
+D 16MHz, 32kB Flash, 2.5kB SRAM, 1kB EEPROM, USB 2.0, RC Osc, QFN-44
+K AVR 8bit Microcontroller MegaAVR USB
+F http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
+$ENDCMP
+#
 $CMP ArduinoMEGA2560PROEmbed
 D Mega 2560 PRO (Embed) CH340G/ATmega2560-16AU
 K Arduino Mega ATmega2560
@@ -8,6 +32,12 @@ $ENDCMP
 #
 $CMP ArduinoProMicro
 F https://www.bing.com/images/search?view=detailV2&ccid=Ifx6ykSh&id=0BBC6361FD2BCFB30E89BA79C67F57A4EB82AE7F&thid=OIP.Ifx6ykSh0wt9apflMoqkwgHaHB&mediaurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.21fc7aca44a1d30b7d6a97e5328aa4c2%3Frik%3Df66C66RXf8Z5ug%26riu%3Dhttp%253a%252f%252fqqtrading.com.my%252fimage%252fcatalog%252fProducts%252fArduino%252fpro-micro%252fpro_micro_pinout_v1_0_blue.jpg%26ehk%3D0G140k5jgCHI0lhc8Gt0IEP26qZ9lPhdnuB6EFBxnn0%253d%26risl%3D%26pid%3DImgRaw%26r%3D0&exph=1216&expw=1283&q=arduino+pro+micro+pinout&simid=608018119127401392&form=IRPRST&ck=23D4BDEBDD349B7A12DC02493D4518A9&selectedindex=4&ajaxhist=0&ajaxserp=0&vt=0&sim=11
+$ENDCMP
+#
+$CMP Crystal_GND24
+D Four pin crystal, GND on pins 2 and 4
+K quartz ceramic resonator oscillator
+F ~
 $ENDCMP
 #
 #End Doc Library
