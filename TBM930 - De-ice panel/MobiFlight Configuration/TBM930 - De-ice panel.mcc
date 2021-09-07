@@ -24,11 +24,11 @@
       <active>true</active>
       <description>De-ice - Backlights</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="Backlights" varExpression="$" />
-        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 7" />
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:4, Percent)" />
+        <comparison active="True" value="0" operand="&gt;" ifValue="1" elseValue="0" />
+        <display type="ShiftRegister" serial="MobiFlight Micro/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0" />
         <preconditions />
-        <transformation active="True" expression="1" substrStart="0" substrEnd="7" />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
         <configrefs>
           <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
           <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="!" />
@@ -175,12 +175,14 @@
       <description>De-ice - Prop switch</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-b2f-535" name="Prop" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="1 (A:PROP DEICE SWITCH:1, Bool) != if{ (&gt;K:TOGGLE_PROPELLER_DEICE) &#xA;} 1 (&gt;L:DEICE_Propeller_1)" />
-          <onRelease type="MSFS2020CustomInputAction" command="0 (A:PROP DEICE SWITCH:1, Bool) != if{ (&gt;K:TOGGLE_PROPELLER_DEICE) &#xA;} 0 (&gt;L:DEICE_Propeller_1)" />
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:MF_TBM930_DEICE_Propeller_1_Set)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:MF_TBM930_DEICE_Propeller_1_Set)" />
         </button>
         <preconditions />
         <configrefs>
-          <configref active="False" ref="833095aa-6b4e-4ef7-876e-e8c88a1f4a19" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
           <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
           <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
           <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
@@ -209,12 +211,14 @@
       <description>De-ice - Pitot L switch</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-b2f-535" name="PitotL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_Pitot_1) (A:PITOT HEAT, bool) ! if{ (&gt;K:PITOT_HEAT_TOGGLE) }" />
-          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:XMLVAR_Pitot_1) (L:XMLVAR_Pitot_1) ! (L:XMLVAR_Pitot_2) ! and (A:PITOT HEAT, bool) == if{ (&gt;K:PITOT_HEAT_TOGGLE) }" />
+          <onPress type="MSFS2020CustomInputAction" command="1 1 (&gt;K:2:PITOT_HEAT_SET) 1 (&gt;L:DEICE_Pitot_1)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 0 (&gt;K:2:PITOT_HEAT_SET) 0 (&gt;L:DEICE_Pitot_1)" />
         </button>
         <preconditions />
         <configrefs>
-          <configref active="False" ref="833095aa-6b4e-4ef7-876e-e8c88a1f4a19" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
           <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
           <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
           <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
@@ -226,8 +230,8 @@
       <description>De-ice - Pitot R switch</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-b2f-535" name="PitotR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="" />
-          <onRelease type="MSFS2020CustomInputAction" command="" />
+          <onPress type="MSFS2020CustomInputAction" command="2 1 (&gt;K:2:PITOT_HEAT_SET) 1 (&gt;L:DEICE_Pitot_2)" />
+          <onRelease type="MSFS2020CustomInputAction" command="2 0 (&gt;K:2:PITOT_HEAT_SET) 0 (&gt;L:DEICE_Pitot_2)" />
         </button>
         <preconditions />
         <configrefs>
@@ -245,8 +249,8 @@
       <description>De-ice - Inertial separator switch</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.2, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-b2f-535" name="InertSep" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress />
-          <onRelease />
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:MF_TBM930_DEICE_Engine_1_Set)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:MF_TBM930_DEICE_Engine_1_Set)" />
         </button>
         <preconditions />
         <configrefs>
