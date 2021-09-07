@@ -1,0 +1,14 @@
+Reference, Quantity, Value, Footprint, Datasheet, JLC, LCSC
+C1 C10 ,2,10uF,Capacitor_SMD:C_0603_1608Metric,~,603,C19702
+C16 C17 ,2,20pf,Capacitor_SMD:C_0402_1005Metric,~,402,C1554
+C6 C7 ,2,1uF,Capacitor_SMD:C_0402_1005Metric,~,402,C52923
+C2 C3 C4 C5 C8 C9 C11 C12 ,8,100nf,Capacitor_SMD:C_0402_1005Metric,~,402,C1525
+D1 ,1,YELLOW,Global MobiFlight panel parts:LED_0603_1608Metric,~,LED_0603,C72038
+D17 ,1,D,Diode_SMD:D_SOD-323F,~,SOD-323F,C2128
+D2 D3 ,2,GREEN,Global MobiFlight panel parts:LED_0603_1608Metric,~,LED_0603,C72043
+FB1 ,1,Ferrite_Bead_Small,Capacitor_SMD:C_0805_2012Metric,https://datasheet.lcsc.com/lcsc/1811141711_Sunlord-GZ2012D601TF_C1017.pdf,805,C1017
+R10 R11 ,2,10K,Resistor_SMD:R_0402_1005Metric,~,402,C25744
+R2 R5 R9 ,3,330,Resistor_SMD:R_0402_1005Metric,~,402,C25104
+R6 ,1,1K,Resistor_SMD:R_0402_1005Metric,~,402,C11702
+R7 R8 ,2,22,Resistor_SMD:R_0402_1005Metric,~,402,C25092
+Y1 ,1,Crystal_GND24,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,~,SMD-CRY-3225_4P,C13738
