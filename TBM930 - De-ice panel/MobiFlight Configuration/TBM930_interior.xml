@@ -1,0 +1,14 @@
+<!-- This section of XML needs to be added to the TBM930_interior.xml file -->
+<!-- for the MobiFlight configuration to work. Add it after the -->
+<!-- <Include ModelBehaviorFile="TBM930_Templates.xml"/> line. -->
+
+<!-- ############################################### -->
+<Component ID="MobiFlight_External_Control">
+    <UseTemplate Name="ASOBO_GT_Update">
+        <UPDATE_CODE>
+            (L:MF_TBM930_DEICE_Propeller_1_Set, Number) (&gt;B:DEICE_Propeller_1_Set)
+            (L:MF_TBM930_DEICE_Engine_1_Set, Number) (&gt;B:DEICE_Engine_1_Set)
+        </UPDATE_CODE>
+        <FREQUENCY>1</FREQUENCY>
+    </UseTemplate>
+</Component>
