@@ -1,0 +1,13 @@
+Comment,Designator,Footprint,LCSC
+"10uF","C1","Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A","C7171"
+"0.01uF","C2,C4,C6,C8,C10","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder"," C1710"
+"0.01uf","C3,C5,C7,C9,C11","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder"," C1710"
+"LED_RCBG","D1,D2,D3,D4,D5","LED_THT:LED_D5.0mm-4_RGB",""
+"LED","D6","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder","C2293"
+"USB_B_Micro","J1","Connector_USB:USB_Micro-B_Molex-105017-0001",""
+"Conn_02x15_Odd_Even","J2,J8","Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical",""
+"EN11-HSM1BF20","J3,J4,J5,J6,J7","SamacSys_Parts:EN11HSM1BF20",""
+"220","R26","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder"," C17557"
+"10k","R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20,R21,R22,R23,R24,R25","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","C17414"
+"470","RN1,RN2,RN3,RN4,RN5","Resistor_SMD:R_Array_Convex_4x0603","C25510"
+"SW_Push","SW1,SW2,SW3,SW4,SW5","Button_Switch_THT:SW_PUSH_6mm_H8mm",""
