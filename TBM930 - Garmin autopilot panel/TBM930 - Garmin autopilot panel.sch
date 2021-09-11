@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
-Sheet 1 3
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -202,12 +202,12 @@ Oscillator
 $Comp
 L power:GND #PWR021
 U 1 1 61262415
-P 3400 3550
-F 0 "#PWR021" H 3400 3300 50  0001 C CNN
-F 1 "GND" H 3405 3377 50  0000 C CNN
-F 2 "" H 3400 3550 50  0001 C CNN
-F 3 "" H 3400 3550 50  0001 C CNN
-	1    3400 3550
+P 4200 3550
+F 0 "#PWR021" H 4200 3300 50  0001 C CNN
+F 1 "GND" H 4205 3377 50  0000 C CNN
+F 2 "" H 4200 3550 50  0001 C CNN
+F 3 "" H 4200 3550 50  0001 C CNN
+	1    4200 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -375,9 +375,6 @@ Wire Notes Line
 	3000 6100 3000 7500
 Text Notes 3000 6100 0    50   ~ 0
 AVR-ISP programing interface
-NoConn ~ 2750 2850
-NoConn ~ 2750 2950
-NoConn ~ 2750 3650
 Wire Notes Line
 	4350 600  4350 5050
 $Comp
@@ -404,13 +401,10 @@ F 3 "" H 3550 5750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1100 5550 1450 5550
-NoConn ~ 2750 2750
 Text Label 1100 5750 0    50   ~ 0
 DR+
 Text Label 1100 5850 0    50   ~ 0
 DR-
-Wire Wire Line
-	2550 3550 2900 3550
 $Comp
 L Device:C_Small C2
 U 1 1 61313AC1
@@ -679,8 +673,6 @@ F 3 "" H 1200 7050 50  0001 C CNN
 	1    1200 7050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2750 2150
-NoConn ~ 2750 2650
 Wire Wire Line
 	2250 5550 2550 5550
 Connection ~ 2250 5550
@@ -816,14 +808,14 @@ Wire Wire Line
 $Comp
 L Device:R_Small R11
 U 1 1 612BF27B
-P 3000 3550
-F 0 "R11" V 2900 3550 50  0000 C CNN
-F 1 "10K" V 2800 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2930 3550 50  0001 C CNN
-F 3 "~" H 3000 3550 50  0001 C CNN
-F 4 "0402" H 3000 3550 50  0001 C CNN "JLC"
-F 5 "C25744" H 3000 3550 50  0001 C CNN "LCSC"
-	1    3000 3550
+P 3800 3550
+F 0 "R11" V 3700 3550 50  0000 C CNN
+F 1 "10K" V 3600 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3730 3550 50  0001 C CNN
+F 3 "~" H 3800 3550 50  0001 C CNN
+F 4 "0402" H 3800 3550 50  0001 C CNN "JLC"
+F 5 "C25744" H 3800 3550 50  0001 C CNN "LCSC"
+	1    3800 3550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -894,7 +886,6 @@ Wire Wire Line
 Connection ~ 3550 5750
 Wire Notes Line
 	3000 6000 4650 6000
-NoConn ~ 2750 4350
 $Comp
 L Connector:USB_B_Mini J9
 U 1 1 61278480
@@ -908,7 +899,7 @@ F 3 "~" H 950 5700 50  0001 C CNN
 $EndComp
 Connection ~ 800  6150
 Wire Wire Line
-	3100 3550 3400 3550
+	3900 3550 4200 3550
 Wire Wire Line
 	2600 1100 3050 1100
 Wire Wire Line
@@ -971,23 +962,23 @@ Wire Wire Line
 Wire Wire Line
 	1550 7300 1800 7300
 $Sheet
-S 5650 1000 1800 900 
+S 5450 750  1250 500 
 U 61405798
 F0 "TBM930 - Garmin autopilot panel - indicators" 50
 F1 "TBM930 - Garmin autopilot panel - indicators.sch" 50
-F2 "INDICATOR_CLOCK" I L 5650 1200 50 
-F3 "INDICATOR_DATA" I L 5650 1100 50 
-F4 "INDICATOR_LATCH" I L 5650 1300 50 
-F5 "INDICATOR_BRIGHTNESS" I L 5650 1400 50 
-F6 "SDO" O R 7450 1100 50 
+F2 "INDICATOR_CLOCK" I L 5450 950 50 
+F3 "INDICATOR_DATA" I L 5450 850 50 
+F4 "INDICATOR_LATCH" I L 5450 1050 50 
+F5 "INDICATOR_BRIGHTNESS" I L 5450 1150 50 
+F6 "SDO" O R 6700 850 50 
 $EndSheet
-Text GLabel 5650 1200 0    50   Input ~ 0
+Text GLabel 5450 950  0    50   Input ~ 0
 LED_CLOCK
-Text GLabel 5650 1100 0    50   Input ~ 0
+Text GLabel 5450 850  0    50   Input ~ 0
 LED_DATA
-Text GLabel 5650 1300 0    50   Input ~ 0
+Text GLabel 5450 1050 0    50   Input ~ 0
 LED_LATCH
-Text GLabel 5650 1400 0    50   Input ~ 0
+Text GLabel 5450 1150 0    50   Input ~ 0
 INDICATOR_BRIGHTNESS
 Text GLabel 2750 1850 2    50   Output ~ 0
 LED_CLOCK
@@ -1000,15 +991,15 @@ INDICATOR_BRIGHTNESS
 Text GLabel 2750 2450 2    50   Output ~ 0
 BACKLIGHT_BRIGHT
 $Sheet
-S 8550 1000 1800 900 
+S 8350 750  1250 500 
 U 613C71FB
 F0 "TBM930 - Garmin autopilot panel - backlights" 50
 F1 "TBM930 - Garmin autopilot panel - backlights.sch" 50
-F2 "BACKLIGHT_CLOCK" I L 8550 1200 50 
-F3 "BACKLIGHT_DATA" I L 8550 1100 50 
-F4 "BACKLIGHT_LATCH" I L 8550 1300 50 
-F5 "BACKLIGHT_BRIGHTNESS" I L 8550 1400 50 
-F6 "SDO" O R 10350 1100 50 
+F2 "BACKLIGHT_CLOCK" I L 8350 950 50 
+F3 "BACKLIGHT_DATA" I L 8350 850 50 
+F4 "BACKLIGHT_LATCH" I L 8350 1050 50 
+F5 "BACKLIGHT_BRIGHTNESS" I L 8350 1150 50 
+F6 "SDO" O R 9600 850 50 
 $EndSheet
 Wire Wire Line
 	3550 5550 3800 5550
@@ -1026,11 +1017,11 @@ $EndComp
 Connection ~ 3800 5550
 Wire Wire Line
 	3800 5550 4150 5550
-Text GLabel 8550 1200 0    50   Input ~ 0
+Text GLabel 8350 950  0    50   Input ~ 0
 LED_CLOCK
-Text GLabel 8550 1300 0    50   Input ~ 0
+Text GLabel 8350 1050 0    50   Input ~ 0
 LED_LATCH
-Text GLabel 8550 1400 0    50   Input ~ 0
+Text GLabel 8350 1150 0    50   Input ~ 0
 BACKLIGHT_BRIGHTNESS
 Wire Wire Line
 	2550 1450 2750 1450
@@ -1040,6 +1031,233 @@ Wire Wire Line
 	2550 3150 2750 3150
 Text Label 2750 3150 2    50   ~ 0
 D24
+$Sheet
+S 5150 1700 1250 500 
+U 613CF326
+F0 "TBM930 - Garmin autopilot panel - button inputs" 50
+F1 "TBM930 - Garmin autopilot panel - button inputs.sch" 50
+F2 "BUTTON_LATCH" I L 5150 1900 50 
+F3 "BUTTON_CLOCK" I L 5150 1800 50 
+F4 "SDO" O R 6400 1800 50 
+$EndSheet
+Text GLabel 5150 1800 0    50   Input ~ 0
+BUTTON_CLOCK
+Text GLabel 5150 1900 0    50   Input ~ 0
+BUTTON_LATCH
+Text GLabel 6400 1800 2    50   Output ~ 0
+BUTTON_DATA
+Text GLabel 2750 2650 2    50   Output ~ 0
+BUTTON_CLOCK
+Text GLabel 2750 2750 2    50   Output ~ 0
+BUTTON_LATCH
+Text GLabel 2750 2850 2    50   Input ~ 0
+BUTTON_DATA
 Wire Wire Line
-	7450 1100 8550 1100
+	6700 850  8350 850 
+Wire Notes Line
+	4450 600  4450 1400
+Wire Notes Line
+	4450 1400 10600 1400
+Wire Notes Line
+	10600 1400 10600 600 
+Wire Notes Line
+	4450 600  10600 600 
+Text Notes 4450 600  0    50   ~ 0
+LED indicators and backlights
+Wire Notes Line
+	4450 1550 4450 2350
+Wire Notes Line
+	4450 2350 7500 2350
+Wire Notes Line
+	7500 2350 7500 1550
+Wire Notes Line
+	4450 1550 7500 1550
+Text Notes 4450 1550 0    50   ~ 0
+Push buttons
+$Sheet
+S 7800 2900 550  400 
+U 614BA0D1
+F0 "Rotary encoder" 50
+F1 "Rotary encoder.sch" 50
+F2 "LEFT" O R 8350 3000 50 
+F3 "RIGHT" O R 8350 3100 50 
+F4 "SW" O R 8350 3200 50 
+$EndSheet
+Text GLabel 8400 3000 2    50   Output ~ 0
+CRS1_KNOB_LEFT
+Text GLabel 8400 3100 2    50   Output ~ 0
+CRS1_KNOB_RIGHT
+Text GLabel 8400 3200 2    50   Output ~ 0
+CRS1_KNOB_BUTTON
+Wire Wire Line
+	8350 3000 8400 3000
+Wire Wire Line
+	8350 3100 8400 3100
+Wire Wire Line
+	8350 3200 8400 3200
+Text GLabel 2750 2950 2    50   Input ~ 0
+HDG_KNOB_LEFT
+Text GLabel 2750 3050 2    50   Input ~ 0
+HDG_KNOB_RIGHT
+$Sheet
+S 6200 2900 550  400 
+U 614E937B
+F0 "sheet614E9376" 50
+F1 "Rotary encoder.sch" 50
+F2 "LEFT" O R 6750 3000 50 
+F3 "RIGHT" O R 6750 3100 50 
+F4 "SW" O R 6750 3200 50 
+$EndSheet
+Text GLabel 6800 3000 2    50   Output ~ 0
+HDG_KNOB_LEFT
+Text GLabel 6800 3100 2    50   Output ~ 0
+HDG_KNOB_RIGHT
+Text GLabel 6800 3200 2    50   Output ~ 0
+HDG_KNOB_BUTTON
+Wire Wire Line
+	6750 3000 6800 3000
+Wire Wire Line
+	6750 3100 6800 3100
+Wire Wire Line
+	6750 3200 6800 3200
+$Sheet
+S 9450 2900 550  400 
+U 614F7810
+F0 "sheet614F780B" 50
+F1 "Rotary encoder.sch" 50
+F2 "LEFT" O R 10000 3000 50 
+F3 "RIGHT" O R 10000 3100 50 
+F4 "SW" O R 10000 3200 50 
+$EndSheet
+Text GLabel 10050 3000 2    50   Output ~ 0
+ALT_SEL_KNOB_LEFT
+Text GLabel 10050 3100 2    50   Output ~ 0
+ALT_SEL_KNOB_RIGHT
+Text GLabel 10050 3200 2    50   Output ~ 0
+ALT_SEL_KNOB_BUTTON
+Wire Wire Line
+	10000 3000 10050 3000
+Wire Wire Line
+	10000 3100 10050 3100
+Wire Wire Line
+	10000 3200 10050 3200
+$Sheet
+S 6200 3600 550  400 
+U 61501314
+F0 "sheet6150130F" 50
+F1 "Rotary encoder.sch" 50
+F2 "LEFT" O R 6750 3700 50 
+F3 "RIGHT" O R 6750 3800 50 
+F4 "SW" O R 6750 3900 50 
+$EndSheet
+Text GLabel 6800 3700 2    50   Output ~ 0
+CRS2_KNOB_LEFT
+Text GLabel 6800 3800 2    50   Output ~ 0
+CRS2_KNOB_RIGHT
+Text GLabel 6800 3900 2    50   Output ~ 0
+CRS2_KNOB_BUTTON
+Wire Wire Line
+	6750 3700 6800 3700
+Wire Wire Line
+	6750 3800 6800 3800
+Wire Wire Line
+	6750 3900 6800 3900
+Text GLabel 2750 3150 2    50   Input ~ 0
+CRS1_KNOB_LEFT
+Text GLabel 2750 3250 2    50   Input ~ 0
+CRS1_KNOB_RIGHT
+Text GLabel 2750 3350 2    50   Input ~ 0
+ALT_SEL_KNOB_LEFT
+Text GLabel 2750 3650 2    50   Input ~ 0
+ALT_SEL_KNOB_RIGHT
+Wire Wire Line
+	2550 3550 3700 3550
+Text GLabel 2750 3850 2    50   Input ~ 0
+CRS2_KNOB_LEFT
+Text GLabel 2750 3950 2    50   Input ~ 0
+CRS2_KNOB_RIGHT
+$Sheet
+S 4550 2900 550  400 
+U 6151A440
+F0 "sheet6151A43B" 50
+F1 "Rotary encoder.sch" 50
+F2 "LEFT" O R 5100 3000 50 
+F3 "RIGHT" O R 5100 3100 50 
+F4 "SW" O R 5100 3200 50 
+$EndSheet
+Text GLabel 5150 3000 2    50   Output ~ 0
+BARO1_KNOB_LEFT
+Text GLabel 5150 3100 2    50   Output ~ 0
+BARO1_KNOB_RIGHT
+Text GLabel 5150 3200 2    50   Output ~ 0
+BARO1_KNOB_BUTTON
+Wire Wire Line
+	5100 3000 5150 3000
+Wire Wire Line
+	5100 3100 5150 3100
+Wire Wire Line
+	5100 3200 5150 3200
+$Sheet
+S 7800 3600 550  400 
+U 61535CC5
+F0 "sheet61535CC0" 50
+F1 "Rotary encoder.sch" 50
+F2 "LEFT" O R 8350 3700 50 
+F3 "RIGHT" O R 8350 3800 50 
+F4 "SW" O R 8350 3900 50 
+$EndSheet
+Text GLabel 8400 3700 2    50   Output ~ 0
+BARO2_KNOB_LEFT
+Text GLabel 8400 3800 2    50   Output ~ 0
+BARO2_KNOB_RIGHT
+Text GLabel 8400 3900 2    50   Output ~ 0
+BARO2_KNOB_BUTTON
+Wire Wire Line
+	8350 3700 8400 3700
+Wire Wire Line
+	8350 3800 8400 3800
+Wire Wire Line
+	8350 3900 8400 3900
+Text GLabel 2750 4050 2    50   Input ~ 0
+BARO1_KNOB_LEFT
+Text GLabel 2750 4350 2    50   Input ~ 0
+BARO2_KNOB_RIGHT
+Text GLabel 2750 4250 2    50   Input ~ 0
+BARO2_KNOB_LEFT
+Text GLabel 2750 4150 2    50   Input ~ 0
+BARO1_KNOB_RIGHT
+Wire Notes Line
+	4500 2750 4500 4150
+Text Notes 4500 2700 0    50   ~ 0
+Rotary encoders
+$Sheet
+S 4550 3550 550  400 
+U 6155931C
+F0 "sheet61559317" 50
+F1 "Rotary encoder.sch" 50
+F2 "LEFT" O R 5100 3650 50 
+F3 "RIGHT" O R 5100 3750 50 
+F4 "SW" O R 5100 3850 50 
+$EndSheet
+Text GLabel 5150 3650 2    50   Output ~ 0
+VS_KNOB_LEFT
+Text GLabel 5150 3750 2    50   Output ~ 0
+VS_KNOB_RIGHT
+Wire Wire Line
+	5100 3650 5150 3650
+Wire Wire Line
+	5100 3750 5150 3750
+Wire Wire Line
+	5100 3850 5150 3850
+NoConn ~ 5150 3850
+Wire Notes Line
+	11050 2750 11050 4150
+Wire Notes Line
+	4500 4150 11050 4150
+Wire Notes Line
+	4500 2750 11050 2750
+Text GLabel 2750 1450 2    50   Input ~ 0
+VS_KNOB_LEFT
+Text GLabel 2750 2150 2    50   Input ~ 0
+VS_KNOB_RIGHT
 $EndSCHEMATC

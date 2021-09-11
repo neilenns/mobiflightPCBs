@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name TBM930_-_Garmin_autopilot_panel)(type Legacy)(uri "${KIPRJMOD}/TBM930 - Garmin autopilot panel.lib")(options "")(descr ""))
+  (lib (name Cessna_172_nav_and_com_radio)(type Legacy)(uri "C:/Users/neile/git/mobiflightPCBs/Cessna172NavCom/Cessna 172 nav and com radio.lib")(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri C:/Users/neile/git/mobiflightPCBs/Cessna172NavCom/SamacSys_Parts.lib)(options "")(descr ""))
 )
