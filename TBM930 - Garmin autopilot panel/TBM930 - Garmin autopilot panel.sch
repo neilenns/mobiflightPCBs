@@ -1260,4 +1260,15 @@ Text GLabel 2750 1450 2    50   Input ~ 0
 VS_KNOB_LEFT
 Text GLabel 2750 2150 2    50   Input ~ 0
 VS_KNOB_RIGHT
+$Comp
+L Regulator_Linear:AMS1117-5.0 U?
+U 1 1 613DD700
+P 5150 5600
+F 0 "U?" H 5150 5842 50  0000 C CNN
+F 1 "AMS1117-5.0" H 5150 5751 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5150 5800 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 5250 5350 50  0001 C CNN
+	1    5150 5600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
