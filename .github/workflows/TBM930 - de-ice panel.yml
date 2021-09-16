@@ -40,5 +40,5 @@ jobs:
         with:
           name: Fabrication_Main
           path: |
-            TBM930_De-ice_panel/
+            TBM930_De-ice_panel/Fabrication
           if-no-files-found: warn
