@@ -20,3 +20,7 @@ fp-info-cache
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
+
+# ERC/DRC kibot checks
+*-drc.txt
+*-erc.txt

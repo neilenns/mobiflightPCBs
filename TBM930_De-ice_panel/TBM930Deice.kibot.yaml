@@ -3,13 +3,20 @@ kibot:
   version: 1
 
 preflight:
-  run_erc: true
-  run_drc: true
+  run_erc: false
+  run_drc: false
   check_zone_fills: false
   ignore_unconnected: false
 
 global:
   output: "%f-%i.%x"
+
+variants:
+  - name: rotated
+    comment: 'Just a place holder for the rotation filter'
+    type: kibom
+    variant: rotated
+    pre_transform: _rot_footprint
 
 filters:
   - name: "exclude_any"
@@ -24,9 +31,6 @@ filters:
     include_only:
       - column: "LCSC"
         regex: '^C\d+'
-  - name: fix_rotation
-    comment: "Adjust rotation for JLC"
-    type: rot_footprint
 
 outputs:
   - name: "print_sch"
@@ -56,36 +60,6 @@ outputs:
     dir: "Fabrication/BOM"
     options:
       blacklist: "DNF*"
-
-  - name: "bom_html"
-    comment: "Bill of Materials in HTML format"
-    type: bom
-    dir: "Fabrication/BOM"
-    options: &bom_options
-      columns:
-        - Row
-        - field: References
-          name: References
-        - field: Part
-          name: Parte
-        - field: Value
-          name: Value
-        - field: manf#
-          name: P/N
-        - field: manf
-          name: Manufacturer
-        - field: LCSC
-          name: "Cod. Digi-Key"
-        - Footprint
-        - field: Desc
-          name: Description
-        - "Quantity Per PCB"
-      group_fields: ["LCSC", "Part"]
-      normalize_values: true
-      normalize_locale: true
-      exclude_filter: "exclude_any"
-      html:
-        highlight_empty: false
 
   - name: JLCPCB_gerbers
     comment: Gerbers compatible with JLCPCB
@@ -134,6 +108,7 @@ outputs:
     type: position
     dir: "Fabrication/JLCPCB"
     options:
+      variant: rotated
       output: "%f_cpl_jlc.%x"
       format: CSV
       units: millimeters
