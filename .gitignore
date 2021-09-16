@@ -6,13 +6,14 @@
 *.bak
 *.bck
 *.kicad_pcb-bak
+*.pro-bak
 *.sch-bak
 *~
 _autosave-*
 *.tmp
 *-save.pro
 *-save.kicad_pcb
-fp-info-cache
+fp-info-cache*
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -20,3 +21,7 @@ fp-info-cache
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
+
+# ERC/DRC kibot checks
+*-drc.txt
+*-erc.txt

@@ -1,0 +1,42 @@
+# Example KiBot config file
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: false
+
+global:
+  output: '%f-%i.%x'
+
+# This is only for JLCPCB export but the import section only supports
+# importing output configurations, not variants.
+variants:
+  - name: rotated
+    comment: 'Just a place holder for the rotation filter'
+    type: kibom
+    variant: rotated
+    pre_transform: _rot_footprint
+
+filters:
+  - name: "exclude_any"
+    type: "generic"
+    comment: "Exclude logos, testpoints, fiducials and power"
+    exclude_any:
+      - column: Reference
+        regex: "^(G|#|TP|F).*"
+  # This is only for JLCPCB export but the import section only supports
+  # importing output configurations, not filters.
+  - name: only_jlc_parts
+    comment: "Only parts with JLC code"
+    type: generic
+    include_only:
+      - column: "LCSC"
+        regex: '^C\d+'
+
+# Generate the fab house specific output configurations
+import:
+  - ../.kibot/configs/common.kibot.yaml
+  - ../.kibot/configs/JLCPCB.kibot.yaml

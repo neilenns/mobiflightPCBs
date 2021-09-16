@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name TBM930_De-ice_panel)(type Legacy)(uri "${KIPRJMOD}/TBM930 -De-ice panel.lib")(options "")(descr ""))
-  (lib (name TBM930---De-ice-panel-rescue)(type Legacy)(uri "${KIPRJMOD}/TBM930 - De-ice panel-rescue.lib")(options "")(descr ""))
-)
