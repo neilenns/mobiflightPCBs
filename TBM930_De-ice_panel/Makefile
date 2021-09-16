@@ -2,8 +2,8 @@
 DEBUG=
 MAK=kibot.mak
 CONFIG=TBM930deice.kibot.yaml
-SCH="TBM930 - De-ice panel.sch"
-PCB="TBM930 - De-ice panel.kicad_pcb"
+SCH="TBM930_De-ice_panel.sch"
+PCB="TBM930_De-ice_panel.kicad_pcb"
 DEST=Fabrication
 
 all: erc_and_fab drc_and_fab
