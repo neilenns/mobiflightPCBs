@@ -27,9 +27,9 @@ jobs:
       - uses: INTI-CMNB/KiBot@v1
         with:
           # Required - kibot config file
-          config: TBM930 - De-ice panel/TBM930Deice.kibot.yaml
+          config: "TBM930 - De-ice panel/TBM930Deice.kibot.yaml"
           # optional - prefix to output defined in config
-          dir: TBM930 - De-ice panel/Fabrication
+          dir: "TBM930 - De-ice panel/Fabrication"
           # optional - schematic file
           schema: "TBM930 - De-ice panel/TBM930 - De-ice panel.sch"
           # optional - PCB design file
