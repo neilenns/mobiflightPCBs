@@ -60,28 +60,26 @@ outputs:
       columns:
         - Row
         - field: References
-          name: Referencias
+          name: References
         - field: Part
           name: Parte
         - field: Value
-          name: Valor
+          name: Value
         - field: manf#
           name: P/N
         - field: manf
-          name: Fabricante
-        - field: digikey#
+          name: Manufacturer
+        - field: LCSC
           name: "Cod. Digi-Key"
         - Footprint
         - field: Desc
-          name: Descripción
+          name: Description
         - "Quantity Per PCB"
-      group_fields: ["digikey#", "Part"]
+      group_fields: ["LCSC", "Part"]
       normalize_values: true
       normalize_locale: true
       exclude_filter: "exclude_any"
       html:
-        logo: "images/inti.png"
-        digikey_link: "digikey#"
         highlight_empty: false
 
   - name: "bom_xlsx"
