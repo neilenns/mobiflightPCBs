@@ -4,14 +4,14 @@ EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "TBM930 de-ice panel"
+Date "2021-09-16"
+Rev "1.0.1"
 Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 "Licensed under the MIT License"
+Comment2 "Copyright © 2021 Neil Enns"
+Comment3 "info@danecreek.com"
+Comment4 "Neil Enns"
 $EndDescr
 Text Notes 4400 600  0    50   ~ 0
 Switches
