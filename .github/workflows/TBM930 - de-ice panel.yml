@@ -30,10 +30,6 @@ jobs:
           config: "'TBM930_De-ice_panel/TBM930Deice.kibot.yaml'"
           # optional - prefix to output defined in config
           dir: "'TBM930_De-ice_panel/Fabrication'"
-          # optional - schematic file
-          schema: "'TBM930_De-ice_panel/TBM930_De-ice_panel.sch'"
-          # optional - PCB design file
-          board: "'TBM930_De-ice_panel/TBM930_De-ice_panel.kicad_pcb'"
       - name: Retrieve results
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
