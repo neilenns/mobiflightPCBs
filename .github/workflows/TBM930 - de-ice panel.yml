@@ -17,7 +17,6 @@ on:
       - "TBM930 - De-ice panel/*.kibot.yaml"
       - "TBM930 - De-ice panel/Makefile"
       - ".github/workflows/TBM930 - De-ice panel.yml"
-  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
