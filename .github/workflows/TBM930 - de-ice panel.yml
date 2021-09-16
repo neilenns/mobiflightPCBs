@@ -15,7 +15,6 @@ on:
       - "TBM930_De-ice_panel/*.sch"
       - "TBM930_De-ice_panel/*.kicad_pcb"
       - "TBM930_De-ice_panel/*.kibot.yaml"
-      - "TBM930_De-ice_panel/Makefile"
       - ".kibot/configs/*.yaml"
       - ".github/workflows/TBM930 - De-ice panel.yml"
 
@@ -39,7 +38,7 @@ jobs:
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
         with:
-          name: Fabrication_Main
+          name: Fabrication
           path: |
             TBM930_De-ice_panel/
           if-no-files-found: warn

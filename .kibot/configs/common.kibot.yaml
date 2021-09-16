@@ -47,13 +47,3 @@ outputs:
       bottom: True
       show_components: none
       dpi: 600
-
-  - name: step
-    comment: "Renders - 3D model (STEP)"
-    type: step
-    dir: "Fabrication/Renders"
-    options:
-      metric_units: true
-      origin: 85,66.2
-      download: true
-      kicad_3d_url: "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/"
