@@ -68,13 +68,13 @@ outputs:
       metric_units: false
       output: "%f%i.%x"
 
-- name: 'JLCPCB_position'
+  - name: JLCPCB_position
     comment: "Pick and place file, JLC style"
     type: position
     dir: JLCPCB
     options:
       variant: rotated
-      output: '%f_cpl_jlc.%x'
+      output: "%f_cpl_jlc.%x"
       format: CSV
       units: millimeters
       separate_files_for_front_and_back: false
@@ -93,21 +93,21 @@ outputs:
         - id: Side
           name: Layer
 
-  - name: 'JLCPCB_bom'
+  - name: JLCPCB_bom
     comment: "BoM for JLC"
     type: bom
     options:
-      output: '%f_%i_jlc.%x'
-      exclude_filter: 'only_jlc_parts'
-      ref_separator: ','
+      output: "%f_%i_jlc.%x"
+      exclude_filter: "only_jlc_parts"
+      ref_separator: ","
       columns:
         - field: Value
           name: Comment
         - field: References
           name: Designator
         - Footprint
-        - field: 'LCSC'
-          name: 'LCSC Part #'
+        - field: "LCSC"
+          name: "LCSC Part #"
       csv:
         hide_pcb_info: true
         hide_stats_info: true
