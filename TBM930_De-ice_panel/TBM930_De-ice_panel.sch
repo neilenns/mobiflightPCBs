@@ -1517,7 +1517,7 @@ U 1 1 61216C04
 P 4350 5550
 F 0 "J11" H 4400 5250 50  0000 R CNN
 F 1 "Screw_Terminal_01x02" H 4600 5350 50  0000 R CNN
-F 2 "TerminalBlock_Philmore:TerminalBlock_Philmore_TB132_1x02_P5.00mm_Horizontal" H 4350 5550 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 4350 5550 50  0001 C CNN
 F 3 "~" H 4350 5550 50  0001 C CNN
 	1    4350 5550
 	1    0    0    -1  
