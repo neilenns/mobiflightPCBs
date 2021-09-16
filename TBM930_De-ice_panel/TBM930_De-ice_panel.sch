@@ -106,7 +106,7 @@ F 3 "~" H 4750 4500 50  0001 C CNN
 	1    4750 4500
 	1    0    0    -1  
 $EndComp
-Text Notes 9150 6350 0    50   ~ 0
+Text Notes 10850 5750 0    50   ~ 0
 Switches are mounted to the board via the shaft\nand connected with Molex connectors so they can\nbe removed and reused in other projects.\n
 Text GLabel 7000 2450 0    50   Input ~ 0
 +12V_LED
@@ -776,7 +776,7 @@ P 3850 6850
 F 0 "J10" H 3521 6946 50  0000 R CNN
 F 1 "AVR-ISP-6" H 3521 6855 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" V 3600 6900 50  0001 C CNN
-F 3 " ~" H 2575 6300 50  0001 C CNN
+F 3 "~" H 2575 6300 50  0001 C CNN
 	1    3850 6850
 	1    0    0    -1  
 $EndComp
@@ -2139,4 +2139,174 @@ F 5 "" H 7150 2450 50  0001 C CNN "LCSC"
 	1    7150 2450
 	-1   0    0    1   
 $EndComp
+$Comp
+L Mechanical:MountingHole TH1
+U 1 1 61445600
+P 9300 4750
+F 0 "TH1" H 9400 4796 50  0000 L CNN
+F 1 "MountingHole" H 9400 4705 50  0000 L CNN
+F 2 "TBM930 - De-ice panel:JLCPCB_Tooling_Hole" H 9300 4750 50  0001 C CNN
+F 3 "~" H 9300 4750 50  0001 C CNN
+	1    9300 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole TH2
+U 1 1 61446718
+P 9300 4950
+F 0 "TH2" H 9400 4996 50  0000 L CNN
+F 1 "MountingHole" H 9400 4905 50  0000 L CNN
+F 2 "TBM930 - De-ice panel:JLCPCB_Tooling_Hole" H 9300 4950 50  0001 C CNN
+F 3 "~" H 9300 4950 50  0001 C CNN
+	1    9300 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole TH3
+U 1 1 6145058F
+P 9300 5150
+F 0 "TH3" H 9400 5196 50  0000 L CNN
+F 1 "MountingHole" H 9400 5105 50  0000 L CNN
+F 2 "TBM930 - De-ice panel:JLCPCB_Tooling_Hole" H 9300 5150 50  0001 C CNN
+F 3 "~" H 9300 5150 50  0001 C CNN
+	1    9300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole HOLE1
+U 1 1 6145AC3B
+P 10100 4750
+F 0 "HOLE1" H 10200 4796 50  0000 L CNN
+F 1 "MountingHole" H 10200 4705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10100 4750 50  0001 C CNN
+F 3 "~" H 10100 4750 50  0001 C CNN
+	1    10100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole HOLE2
+U 1 1 6146567E
+P 10100 4950
+F 0 "HOLE2" H 10200 4996 50  0000 L CNN
+F 1 "MountingHole" H 10200 4905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10100 4950 50  0001 C CNN
+F 3 "~" H 10100 4950 50  0001 C CNN
+	1    10100 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole HOLE3
+U 1 1 6146F39B
+P 10100 5150
+F 0 "HOLE3" H 10200 5196 50  0000 L CNN
+F 1 "MountingHole" H 10200 5105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10100 5150 50  0001 C CNN
+F 3 "~" H 10100 5150 50  0001 C CNN
+	1    10100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole HOLE4
+U 1 1 614794E2
+P 10100 5350
+F 0 "HOLE4" H 10200 5396 50  0000 L CNN
+F 1 "MountingHole" H 10200 5305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10100 5350 50  0001 C CNN
+F 3 "~" H 10100 5350 50  0001 C CNN
+	1    10100 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole TSW1
+U 1 1 61491315
+P 10950 4750
+F 0 "TSW1" H 11050 4796 50  0000 L CNN
+F 1 "MountingHole" H 11050 4705 50  0000 L CNN
+F 2 "TBM930 - De-ice panel:MiniToggleSPDT_screw_mount" H 10950 4750 50  0001 C CNN
+F 3 "~" H 10950 4750 50  0001 C CNN
+	1    10950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole TSW2
+U 1 1 6149AD01
+P 10950 4950
+F 0 "TSW2" H 11050 4996 50  0000 L CNN
+F 1 "MountingHole" H 11050 4905 50  0000 L CNN
+F 2 "TBM930 - De-ice panel:MiniToggleSPDT_screw_mount" H 10950 4950 50  0001 C CNN
+F 3 "~" H 10950 4950 50  0001 C CNN
+	1    10950 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole TSW3
+U 1 1 614A4147
+P 10950 5150
+F 0 "TSW3" H 11050 5196 50  0000 L CNN
+F 1 "MountingHole" H 11050 5105 50  0000 L CNN
+F 2 "TBM930 - De-ice panel:MiniToggleSPDT_screw_mount" H 10950 5150 50  0001 C CNN
+F 3 "~" H 10950 5150 50  0001 C CNN
+	1    10950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole TSW4
+U 1 1 614AD526
+P 10950 5350
+F 0 "TSW4" H 11050 5396 50  0000 L CNN
+F 1 "MountingHole" H 11050 5305 50  0000 L CNN
+F 2 "TBM930 - De-ice panel:MiniToggleSPDT_screw_mount" H 10950 5350 50  0001 C CNN
+F 3 "~" H 10950 5350 50  0001 C CNN
+	1    10950 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole TSW5
+U 1 1 614B67D6
+P 11700 4750
+F 0 "TSW5" H 11800 4796 50  0000 L CNN
+F 1 "MountingHole" H 11800 4705 50  0000 L CNN
+F 2 "TBM930 - De-ice panel:MiniToggleSPDT_screw_mount" H 11700 4750 50  0001 C CNN
+F 3 "~" H 11700 4750 50  0001 C CNN
+	1    11700 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole TSW6
+U 1 1 614BFB8D
+P 11700 4950
+F 0 "TSW6" H 11800 4996 50  0000 L CNN
+F 1 "MountingHole" H 11800 4905 50  0000 L CNN
+F 2 "TBM930 - De-ice panel:MiniToggleSPDT_screw_mount" H 11700 4950 50  0001 C CNN
+F 3 "~" H 11700 4950 50  0001 C CNN
+	1    11700 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole TSW7
+U 1 1 614C8F70
+P 11700 5150
+F 0 "TSW7" H 11800 5196 50  0000 L CNN
+F 1 "MountingHole" H 11800 5105 50  0000 L CNN
+F 2 "TBM930 - De-ice panel:MiniToggleSPDT_screw_mount" H 11700 5150 50  0001 C CNN
+F 3 "~" H 11700 5150 50  0001 C CNN
+	1    11700 5150
+	1    0    0    -1  
+$EndComp
+Text Notes 9200 4600 0    50   ~ 0
+Pick and place
+Text Notes 10000 4600 0    50   ~ 0
+Board mounting
+Text Notes 10850 4600 0    50   ~ 0
+Switch mounting
+Wire Notes Line
+	9150 4450 9150 5800
+Wire Notes Line
+	9150 5800 12850 5800
+Wire Notes Line
+	12850 5800 12850 4450
+Wire Notes Line
+	9150 4450 12850 4450
+Text Notes 9150 4450 0    50   ~ 0
+Mounting holes
 $EndSCHEMATC
