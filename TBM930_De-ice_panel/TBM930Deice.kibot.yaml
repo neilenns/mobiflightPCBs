@@ -90,8 +90,6 @@ outputs:
       <<: *bom_options
       format: XLSX
       xlsx:
-        logo: "images/inti.png"
-        digikey_link: "digikey#"
         highlight_empty: false
 
   - name: "bom_csv"
