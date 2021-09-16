@@ -12,10 +12,10 @@ on:
   #     - ".github/workflows/TBM930 - De-ice panel.yml"
   pull_request:
     paths:
-      - "TBM930 - De-ice panel/*.sch"
-      - "TBM930 - De-ice panel/*.kicad_pcb"
-      - "TBM930 - De-ice panel/*.kibot.yaml"
-      - "TBM930 - De-ice panel/Makefile"
+      - "TBM930_De-ice_panel/*.sch"
+      - "TBM930_De-ice_panel/*.kicad_pcb"
+      - "TBM930_De-ice_panel/*.kibot.yaml"
+      - "TBM930_De-ice_panel/Makefile"
       - ".github/workflows/TBM930 - De-ice panel.yml"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -40,5 +40,5 @@ jobs:
         with:
           name: Fabrication_Main
           path: |
-            TBM930_De-ice_panel/Fabrication/
+            TBM930_De-ice_panel/
           if-no-files-found: warn
