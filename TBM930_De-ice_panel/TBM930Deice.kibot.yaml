@@ -45,40 +45,6 @@ outputs:
       - layer: B.Cu
       - layer: Dwgs.User
 
-  - name: "print_gnd"
-    comment: "Print GND+Dwgs.User"
-    type: pdf_pcb_print
-    dir: .
-    layers:
-      - layer: GND
-      - layer: Dwgs.User
-
-  - name: "print_power"
-    comment: "Print Power_+3,3V+Dwgs.User"
-    type: pdf_pcb_print
-    dir: .
-    layers:
-      - layer: Power_+3,3V
-      - layer: Dwgs.User
-
-  - name: "print_s1"
-    comment: "Print Señal_1+Dwgs.User"
-    type: pdf_pcb_print
-    dir: .
-    layers:
-      - layer: Señal_1
-        suffix: S1_Cu
-      - layer: Dwgs.User
-
-  - name: "print_s2"
-    comment: "Print Señal_2+Dwgs.User"
-    type: pdf_pcb_print
-    dir: .
-    layers:
-      - layer: Señal_2
-        suffix: S2_Cu
-      - layer: Dwgs.User
-
   - name: "interactive_bom"
     comment: "Interactive Bill of Materials (HTML)"
     type: ibom
@@ -138,86 +104,6 @@ outputs:
       <<: *bom_options
       format: CSV
 
-  - name: "gerbers"
-    comment: "Gerbers for the board house"
-    type: gerber
-    dir: Gerbers
-    options:
-      # generic layer options
-      exclude_edge_layer: true
-      exclude_pads_from_silkscreen: false
-      use_aux_axis_as_origin: false
-      plot_sheet_reference: false
-      plot_footprint_refs: true
-      plot_footprint_values: true
-      force_plot_invisible_refs_vals: false
-      tent_vias: true
-
-      # gerber options
-      line_width: 0.1
-      subtract_mask_from_silk: false
-      use_protel_extensions: false
-      gerber_precision: 4.6
-      create_gerber_job_file: true
-      use_gerber_x2_attributes: true
-      use_gerber_net_attributes: true
-
-    layers:
-      - layer: F.Cu
-        suffix: F_Cu
-      - layer: B.Cu
-        suffix: B_Cu
-      - layer: GND
-        suffix: GND_Cu
-      - layer: Power_+3,3V
-        suffix: Power_Cu
-      - layer: Señal_1
-        suffix: S1_Cu
-      - layer: Señal_2
-        suffix: S2_Cu
-      - layer: F.Paste
-        suffix: F_Paste
-      - layer: B.Paste
-        suffix: B_Paste
-      - layer: F.SilkS
-        suffix: F_SilkS
-      - layer: B.SilkS
-        suffix: B_SilkS
-      - layer: F.Mask
-        suffix: F_Mask
-      - layer: B.Mask
-        suffix: B_Mask
-      - layer: Dwgs.User
-        suffix: Dwgs_User
-      - layer: Edge.Cuts
-        suffix: Edge_Cuts
-      - layer: F.Fab
-        suffix: F_Fab
-      - layer: B.Fab
-        suffix: B_Fab
-
-  - name: excellon_drill
-    comment: "Excellon drill files"
-    type: excellon
-    dir: Drill
-    options:
-      metric_units: false
-      pth_and_npth_single_file: false
-      use_aux_axis_as_origin: false
-      minimal_header: false
-      mirror_y_axis: false
-      report:
-        filename: "spora-drl.rpt"
-      map:
-        type: "pdf"
-
-  - name: gerber_drills
-    comment: "Gerber drill files"
-    type: gerb_drill
-    dir: Drill
-    options:
-      use_aux_axis_as_origin: false
-
   - name: "position"
     comment: "Pick and place file"
     type: position
@@ -228,63 +114,23 @@ outputs:
       separate_files_for_front_and_back: true
       only_smd: true
 
-  - name: pcb_top_g
-    comment: "PCB render top green"
+  - name: pcb_top_w
+    comment: "PCB render top white"
     type: pcbdraw
-    dir: PCB/green
+    dir: PCB/white
     options:
       format: jpg
+      style: set-white-enig
       show_components: none
       dpi: 600
 
-  - name: pcb_bot_g
-    comment: "PCB render bottom green"
+  - name: pcb_bot_w
+    comment: "PCB render bottom white"
     type: pcbdraw
-    dir: PCB/green
+    dir: PCB/white
     options:
       format: jpg
-      bottom: True
-      show_components: none
-      dpi: 600
-
-  - name: pcb_top_b
-    comment: "PCB render top blue"
-    type: pcbdraw
-    dir: PCB/blue
-    options:
-      format: jpg
-      style: set-blue-enig
-      show_components: none
-      dpi: 600
-
-  - name: pcb_bot_b
-    comment: "PCB render bottom blue"
-    type: pcbdraw
-    dir: PCB/blue
-    options:
-      format: jpg
-      style: set-blue-enig
-      bottom: True
-      show_components: none
-      dpi: 600
-
-  - name: pcb_top_r
-    comment: "PCB render top red"
-    type: pcbdraw
-    dir: PCB/red
-    options:
-      format: jpg
-      style: set-red-enig
-      show_components: none
-      dpi: 600
-
-  - name: pcb_bot_r
-    comment: "PCB render bottom red"
-    type: pcbdraw
-    dir: PCB/red
-    options:
-      format: jpg
-      style: set-red-enig
+      style: set-white-enig
       bottom: True
       show_components: none
       dpi: 600
