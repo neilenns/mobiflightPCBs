@@ -9,8 +9,7 @@ preflight:
   ignore_unconnected: false
 
 global:
-  # We want the revision added to the names for this project
-  output: "%f-%i_%r.%x"
+  output: "%f-%i.%x"
 
 filters:
   - name: "exclude_any"
@@ -33,12 +32,12 @@ outputs:
   - name: "print_sch"
     comment: "Print schematic (PDF)"
     type: pdf_sch_print
-    dir: .
+    dir: "Fabrication/PDFs"
 
   - name: "print_front"
     comment: "Print F.Cu+Dwgs.User"
     type: pdf_pcb_print
-    dir: .
+    dir: "Fabrication/PDFs"
     layers:
       - layer: F.Cu
       - layer: Dwgs.User
@@ -46,7 +45,7 @@ outputs:
   - name: "print_bottom"
     comment: "Print B.Cu+Dwgs.User"
     type: pdf_pcb_print
-    dir: .
+    dir: "Fabrication/PDFs"
     layers:
       - layer: B.Cu
       - layer: Dwgs.User
@@ -54,14 +53,14 @@ outputs:
   - name: "interactive_bom"
     comment: "Interactive Bill of Materials (HTML)"
     type: ibom
-    dir: BoM
+    dir: "Fabrication/BOM"
     options:
       blacklist: "DNF*"
 
   - name: "bom_html"
     comment: "Bill of Materials in HTML format"
     type: bom
-    dir: BoM
+    dir: "Fabrication/BOM"
     options: &bom_options
       columns:
         - Row
@@ -91,7 +90,7 @@ outputs:
   - name: JLCPCB_gerbers
     comment: Gerbers compatible with JLCPCB
     type: gerber
-    dir: JLCPCB
+    dir: "Fabrication/JLCPCB"
     options: &gerber_options
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
@@ -113,12 +112,6 @@ outputs:
       # are slightly different.
       - F.Cu
       - B.Cu
-      - In1.Cu
-      - In2.Cu
-      - In3.Cu
-      - In4.Cu
-      - In5.Cu
-      - In6.Cu
       - F.SilkS
       - B.SilkS
       - F.Mask
@@ -128,7 +121,7 @@ outputs:
   - name: JLCPCB_drill
     comment: Drill files compatible with JLCPCB
     type: excellon
-    dir: JLCPCB
+    dir: "Fabrication/JLCPCB"
     options:
       pth_and_npth_single_file: false
       pth_id: "-PTH"
@@ -139,7 +132,7 @@ outputs:
   - name: JLCPCB_position
     comment: "Pick and place file, JLC style"
     type: position
-    dir: JLCPCB
+    dir: "Fabrication/JLCPCB"
     options:
       output: "%f_cpl_jlc.%x"
       format: CSV
@@ -163,6 +156,7 @@ outputs:
   - name: JLCPCB_bom
     comment: "BoM for JLC"
     type: bom
+    dir: "Fabrication/JLCPCB"
     options:
       output: "%f_%i_jlc.%x"
       exclude_filter: only_jlc_parts
@@ -183,7 +177,7 @@ outputs:
   - name: JLCPCB
     comment: ZIP file for JLCPCB
     type: compress
-    dir: JLCPCB
+    dir: "Fabrication/JLCPCB"
     options:
       files:
         - from_output: JLCPCB_gerbers
@@ -198,7 +192,7 @@ outputs:
   - name: pcb_top_w
     comment: "PCB render top white"
     type: pcbdraw
-    dir: PCB/white
+    dir: "Fabrication/Renders"
     options:
       format: jpg
       style: set-white-enig
@@ -208,7 +202,7 @@ outputs:
   - name: pcb_bot_w
     comment: "PCB render bottom white"
     type: pcbdraw
-    dir: PCB/white
+    dir: "Fabrication/Renders"
     options:
       format: jpg
       style: set-white-enig
@@ -219,7 +213,7 @@ outputs:
   - name: step
     comment: "Generate 3D model (STEP)"
     type: step
-    dir: 3D
+    dir: "Fabrication/Renders"
     options:
       metric_units: true
       origin: 85,66.2
