@@ -55,3 +55,5 @@ outputs:
     options:
       metric_units: true
       origin: 85,66.2
+      download: true
+      kicad_3d_url: "https://gitlab.com/kicad/libraries/kicad-packages3D/-/raw/master/"

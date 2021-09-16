@@ -16,6 +16,7 @@ on:
       - "TBM930_De-ice_panel/*.kicad_pcb"
       - "TBM930_De-ice_panel/*.kibot.yaml"
       - "TBM930_De-ice_panel/Makefile"
+      - ".kibot/configs/*.yaml"
       - ".github/workflows/TBM930 - De-ice panel.yml"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
