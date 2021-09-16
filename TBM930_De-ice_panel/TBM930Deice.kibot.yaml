@@ -13,7 +13,7 @@ global:
   output: "%f-%i_%r.%x"
 
 import:
-  - JLCPCB.kibot.yaml
+  - jlcpcb.kibot.yaml
 
 filters:
   - name: "exclude_any"
