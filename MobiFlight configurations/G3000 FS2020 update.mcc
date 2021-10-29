@@ -229,6 +229,139 @@
         </configrefs>
       </settings>
     </config>
+    <config guid="6233565b-592c-42b9-bad1-d328d3b33c67">
+      <active>true</active>
+      <description>De-ice - Backlight brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:4, Percent)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" pin="BacklightBright" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="255 - (255 * ($/100))" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="8b178055-d15d-4b29-a4d3-f64c0349d297" placeholder="B" />
+          <configref active="False" ref="29eae499-c1fe-4fef-9fa5-9156237cecde" placeholder="A" />
+          <configref active="False" ref="e498e39f-3f4e-4b7c-853f-954fb6bacda3" placeholder="@" />
+          <configref active="False" ref="6fe2dc59-05c3-4ed2-989d-28cf77a7e43e" placeholder="?" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="!" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30">
+      <active>true</active>
+      <description>De-ice - Backlights</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:4, Percent)" />
+        <comparison active="True" value="0" operand="&gt;" ifValue="1" elseValue="0" />
+        <display type="ShiftRegister" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+          <configref active="False" ref="6fe2dc59-05c3-4ed2-989d-28cf77a7e43e" placeholder="?" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="27a77cfd-96f4-48c3-8190-49e58e1eef88">
+      <active>true</active>
+      <description>De-ice - Annunciator brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:4, Percent)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" pin="IndicatorBright" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="0" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+          <configref active="False" ref="e498e39f-3f4e-4b7c-853f-954fb6bacda3" placeholder="@" />
+          <configref active="False" ref="6fe2dc59-05c3-4ed2-989d-28cf77a7e43e" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6fe2dc59-05c3-4ed2-989d-28cf77a7e43e">
+      <active>true</active>
+      <description>De-ice - Airframe 1 LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_LTS_Test) (L:XMLVAR_IsDeiceAirFrame) or" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 11" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="8b178055-d15d-4b29-a4d3-f64c0349d297" placeholder="A" />
+          <configref active="False" ref="29eae499-c1fe-4fef-9fa5-9156237cecde" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e498e39f-3f4e-4b7c-853f-954fb6bacda3">
+      <active>true</active>
+      <description>De-ice - Airframe 2 LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_LTS_Test) (L:XMLVAR_IsDeiceAirFrame2) or" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 15" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="8b178055-d15d-4b29-a4d3-f64c0349d297" placeholder="A" />
+          <configref active="False" ref="29eae499-c1fe-4fef-9fa5-9156237cecde" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="29eae499-c1fe-4fef-9fa5-9156237cecde">
+      <active>true</active>
+      <description>De-ice - Prop LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_LTS_Test) (A:PROP DEICE SWITCH:1, Bool) or" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 14" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="8b178055-d15d-4b29-a4d3-f64c0349d297" placeholder="A" />
+          <configref active="False" ref="6fe2dc59-05c3-4ed2-989d-28cf77a7e43e" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="8b178055-d15d-4b29-a4d3-f64c0349d297">
+      <active>true</active>
+      <description>De-ice - Windshield 1 and 2 LEDs</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_LTS_Test) (A:WINDSHIELD DEICE SWITCH, Bool) or" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 12|Output 13" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="29eae499-c1fe-4fef-9fa5-9156237cecde" placeholder="A" />
+          <configref active="False" ref="6fe2dc59-05c3-4ed2-989d-28cf77a7e43e" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="2d6e4932-8180-4af3-b720-97a7d233ccf9">
@@ -244,14 +377,7 @@
         <preconditions>
           <precondition type="config" active="true" ref="5a0dc55c-ce65-4fac-8ac8-ec920b2e6dab" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="e51cab4c-500e-4b5f-8dcb-7a9eeedf0e3d">
@@ -267,14 +393,7 @@
         <preconditions>
           <precondition type="config" active="true" ref="68936f09-ed7d-4f7a-929d-587603e7120a" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="3280c847-074c-4d71-a695-acd6d261da88">
@@ -290,14 +409,7 @@
         <preconditions>
           <precondition type="config" active="true" ref="5a0dc55c-ce65-4fac-8ac8-ec920b2e6dab" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="ff6a05bb-821e-4493-ba22-0344511db959">
@@ -313,14 +425,7 @@
         <preconditions>
           <precondition type="config" active="true" ref="68936f09-ed7d-4f7a-929d-587603e7120a" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="b4232040-c2b1-4d30-bb29-f685dc87bad6">
@@ -336,14 +441,7 @@
         <preconditions>
           <precondition type="config" active="true" ref="4c6abf29-63f9-4df7-b3a8-af459fc94327" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="738fdd30-5407-477b-befe-f9ed6d9ef506">
@@ -359,14 +457,7 @@
         <preconditions>
           <precondition type="config" active="true" ref="69bb58dc-1c3a-48d4-b7ec-a9489ef1c2ea" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="2cff51e6-64c1-4161-ba72-564d5e28e249">
@@ -382,14 +473,7 @@
         <preconditions>
           <precondition type="config" active="true" ref="4c6abf29-63f9-4df7-b3a8-af459fc94327" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="988e3671-533f-4ae7-90bd-08bd3cde426c">
@@ -405,14 +489,7 @@
         <preconditions>
           <precondition type="config" active="true" ref="69bb58dc-1c3a-48d4-b7ec-a9489ef1c2ea" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3764cb3a-fc15-4f94-b513-50372c5e03f0" placeholder="B" />
-          <configref active="False" ref="d827a191-2e71-4ba7-93e5-a404e33469c1" placeholder="A" />
-          <configref active="False" ref="0a99ed08-58fa-4811-8895-c7f9b123f3a7" placeholder="@" />
-          <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
-          <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
-          <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="5f873a75-f6a4-4289-b934-053c7295ae86">
@@ -564,6 +641,152 @@
           <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
           <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
           <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9f83527d-116c-4274-b5f1-10905e2ee298">
+      <active>true</active>
+      <description>De-ice - Airframe switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="Airframe" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:STRUCTURAL DEICE SWITCH, Bool) ! if{ (&gt;K:TOGGLE_STRUCTURAL_DEICE) }" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:STRUCTURAL DEICE SWITCH, Bool) if{ (&gt;K:TOGGLE_STRUCTURAL_DEICE) }" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="833095aa-6b4e-4ef7-876e-e8c88a1f4a19" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="39890436-df38-410b-a283-e511d3b8b266">
+      <active>true</active>
+      <description>De-ice - Ice light switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="IceLight" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 1 (&gt;K:2:WING_LIGHTS_SET) 1 (&gt;L:LIGHTING_WING_1)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 0 (&gt;K:2:WING_LIGHTS_SET) 0 (&gt;L:LIGHTING_WING_1)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="833095aa-6b4e-4ef7-876e-e8c88a1f4a19" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="09b4deca-c6c7-4917-8f59-939d1a16b25b">
+      <active>true</active>
+      <description>De-ice - Prop switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="Prop" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:MF_TBM930_DEICE_Propeller_1_Set)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:MF_TBM930_DEICE_Propeller_1_Set)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cd5f3672-15d4-4540-adc2-efce0232cb5e">
+      <active>true</active>
+      <description>De-ice - Windshield switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="Windshield" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:WINDSHIELD_DEICE_SET)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:WINDSHIELD_DEICE_SET)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="833095aa-6b4e-4ef7-876e-e8c88a1f4a19" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ce7ef82a-e3d6-4150-896e-905141e0c169">
+      <active>true</active>
+      <description>De-ice - Pitot L switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="PitotL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 1 (&gt;K:2:PITOT_HEAT_SET) 1 (&gt;L:DEICE_Pitot_1)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 0 (&gt;K:2:PITOT_HEAT_SET) 0 (&gt;L:DEICE_Pitot_1)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="708ba344-e228-48ec-98fb-6bac6565322f">
+      <active>true</active>
+      <description>De-ice - Pitot R switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="PitotR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 1 (&gt;K:2:PITOT_HEAT_SET) 1 (&gt;L:DEICE_Pitot_2)" />
+          <onRelease type="MSFS2020CustomInputAction" command="2 0 (&gt;K:2:PITOT_HEAT_SET) 0 (&gt;L:DEICE_Pitot_2)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="29eae499-c1fe-4fef-9fa5-9156237cecde" placeholder="B" />
+          <configref active="False" ref="e498e39f-3f4e-4b7c-853f-954fb6bacda3" placeholder="A" />
+          <configref active="False" ref="6fe2dc59-05c3-4ed2-989d-28cf77a7e43e" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="162480c7-d7c3-4d8b-9f43-94867f168717">
+      <active>true</active>
+      <description>De-ice - Inertial separator switch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="InertSep" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:MF_TBM930_DEICE_Engine_1_Set)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:MF_TBM930_DEICE_Engine_1_Set)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="29eae499-c1fe-4fef-9fa5-9156237cecde" placeholder="B" />
+          <configref active="False" ref="e498e39f-3f4e-4b7c-853f-954fb6bacda3" placeholder="A" />
+          <configref active="False" ref="6fe2dc59-05c3-4ed2-989d-28cf77a7e43e" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="52c65207-25d3-4b8f-92a9-77e22ab1062e">
+      <active>true</active>
+      <description>De-ice - LTS test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="LtsTest" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_LTS_Test)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:XMLVAR_LTS_Test)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="29eae499-c1fe-4fef-9fa5-9156237cecde" placeholder="B" />
+          <configref active="False" ref="e498e39f-3f4e-4b7c-853f-954fb6bacda3" placeholder="A" />
+          <configref active="False" ref="6fe2dc59-05c3-4ed2-989d-28cf77a7e43e" placeholder="@" />
+          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
+          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
+          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
         </configrefs>
       </settings>
     </config>

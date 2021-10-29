@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>MobiFlight Micro</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <InputShiftRegister Name="InputShifter" LatchPin="3" ClockPin="2" DataPin="4" NumModules="2" />
+  <ShiftRegister Name="OutputShifter" LatchPin="6" ClockPin="5" DataPin="7" NumModules="2" />
+</Config>
