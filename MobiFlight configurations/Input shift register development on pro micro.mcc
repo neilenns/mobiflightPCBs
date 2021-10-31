@@ -4,8 +4,7 @@
     <config guid="95679048-147b-4d12-9aa7-81b9d39cef19">
       <active>true</active>
       <description>Output - 0</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter0" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0" />
@@ -24,8 +23,7 @@
     <config guid="1c9f0829-74f8-4f75-ab96-13f09fe11fc9">
       <active>true</active>
       <description>Output - 1</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter1" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 1" />
@@ -39,8 +37,7 @@
     <config guid="dc75e4c1-9c8a-4845-a1f9-bf75a8c81352">
       <active>true</active>
       <description>Output - 2</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter2" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 2" />
@@ -54,8 +51,7 @@
     <config guid="f1a379c9-b3da-4735-bc01-5cdfc2c42bb0">
       <active>true</active>
       <description>Output - 3</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter3" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 3" />
@@ -69,8 +65,7 @@
     <config guid="7c2b21c5-d5e1-4335-87ff-c498db5c2f64">
       <active>true</active>
       <description>Output - 4</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter4" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 4" />
@@ -84,8 +79,7 @@
     <config guid="4245df09-d4eb-491f-8761-ffe8c55909e6">
       <active>true</active>
       <description>Output - 5</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter5" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 5" />
@@ -99,8 +93,7 @@
     <config guid="29e27790-f368-4121-ac8b-58d8b813411e">
       <active>true</active>
       <description>Output - 6</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter6" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 6" />
@@ -114,8 +107,7 @@
     <config guid="199a54e7-478b-420d-9d98-6ad7a22e7de4">
       <active>true</active>
       <description>Output - 7</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter7" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 7" />
@@ -129,8 +121,7 @@
     <config guid="edef2998-ec60-45ce-852c-2c1f762396c3">
       <active>true</active>
       <description>Output - 8</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter8" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 8" />
@@ -144,8 +135,7 @@
     <config guid="a1d55261-2e2f-4ad4-84af-4b0c6a74bbbb">
       <active>true</active>
       <description>Output - 9</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter9" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 9" />
@@ -159,8 +149,7 @@
     <config guid="adf0438b-29c2-4ffb-9770-2a86dec77b3f">
       <active>true</active>
       <description>Output - 10</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter10" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 10" />
@@ -174,8 +163,7 @@
     <config guid="e77eef49-f71b-489d-8425-462150605cce">
       <active>true</active>
       <description>Output - 11</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter11" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 11" />
@@ -189,8 +177,7 @@
     <config guid="d0f50ec4-4d8b-4f95-aeee-155f6f74e2f0">
       <active>true</active>
       <description>Output - 12</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter12" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 12" />
@@ -204,8 +191,7 @@
     <config guid="edb07339-2733-4513-8553-8aeb2611f205">
       <active>true</active>
       <description>Output - 13</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter13" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 13" />
@@ -219,8 +205,7 @@
     <config guid="ba9318a7-9e55-4a31-a3f7-f450ccd0e361">
       <active>true</active>
       <description>Output - 14</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter14" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 14" />
@@ -234,8 +219,7 @@
     <config guid="3bb37a58-6c5d-461e-8b7f-047374646e28">
       <active>true</active>
       <description>Output - 15</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="Variable" varType="number" varName="Shifter15" varExpression="$" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 15" />
@@ -251,9 +235,8 @@
     <config guid="ee7b40bd-3a6c-4afd-b7a6-93062e6743f6">
       <active>true</active>
       <description>Shifter - 0</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <inputShiftRegister pin="0">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister pin="6">
           <onPress type="VariableInputAction" varType="number" varName="Shifter0" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter0" varExpression="1" />
         </inputShiftRegister>
@@ -271,8 +254,7 @@
     <config guid="44bc4071-13ca-4cc5-a770-ec2c5d361d67">
       <active>true</active>
       <description>Shifter - 1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="1">
           <onPress type="VariableInputAction" varType="number" varName="Shifter1" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter1" varExpression="1" />
@@ -291,8 +273,7 @@
     <config guid="7f7ec7b4-17cb-4303-92a2-0be972779d78">
       <active>true</active>
       <description>Shifter - 2</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="2">
           <onPress type="VariableInputAction" varType="number" varName="Shifter2" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter2" varExpression="1" />
@@ -306,8 +287,7 @@
     <config guid="02395ba1-34cd-423e-84f1-b8849bcfb3bb">
       <active>true</active>
       <description>Shifter - 3</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="3">
           <onPress type="VariableInputAction" varType="number" varName="Shifter3" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter3" varExpression="1" />
@@ -321,8 +301,7 @@
     <config guid="89426cc8-2f43-41e9-b448-d0669eb44bb2">
       <active>true</active>
       <description>Shifter - 4</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="4">
           <onPress type="VariableInputAction" varType="number" varName="Shifter4" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter4" varExpression="1" />
@@ -336,8 +315,7 @@
     <config guid="46aa05a3-e944-4ce3-ad4a-d14da570ce28">
       <active>true</active>
       <description>Shifter - 5</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="5">
           <onPress type="VariableInputAction" varType="number" varName="Shifter5" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter5" varExpression="1" />
@@ -351,8 +329,7 @@
     <config guid="9db34dd3-50c8-44dc-aeb1-cb20aeccdc4e">
       <active>true</active>
       <description>Shifter - 6</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="6">
           <onPress type="VariableInputAction" varType="number" varName="Shifter6" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter6" varExpression="1" />
@@ -366,8 +343,7 @@
     <config guid="f7df97bf-46d6-45c5-a644-d7ef0494021c">
       <active>true</active>
       <description>Shifter - 7</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="7">
           <onPress type="VariableInputAction" varType="number" varName="Shifter7" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter7" varExpression="1" />
@@ -381,8 +357,7 @@
     <config guid="41d9ce1b-0802-4770-afa6-91073a7dbe77">
       <active>true</active>
       <description>Shifter - 8</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="8">
           <onPress type="VariableInputAction" varType="number" varName="Shifter8" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter8" varExpression="1" />
@@ -396,8 +371,7 @@
     <config guid="f62ac265-2b99-47ee-a47a-0cdeca5decb0">
       <active>true</active>
       <description>Shifter - 9</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="9">
           <onPress type="VariableInputAction" varType="number" varName="Shifter9" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter9" varExpression="1" />
@@ -411,8 +385,7 @@
     <config guid="1634dd89-a2eb-4305-b374-836c4a795d34">
       <active>true</active>
       <description>Shifter - 10</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="10">
           <onPress type="VariableInputAction" varType="number" varName="Shifter10" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter10" varExpression="1" />
@@ -426,8 +399,7 @@
     <config guid="0ef0b037-1ee6-440f-bddb-1a745576b0fe">
       <active>true</active>
       <description>Shifter - 11</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="11">
           <onPress type="VariableInputAction" varType="number" varName="Shifter11" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter11" varExpression="1" />
@@ -441,8 +413,7 @@
     <config guid="286f43af-c01d-445c-ac27-873c765c7d68">
       <active>true</active>
       <description>Shifter - 12</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="12">
           <onPress type="VariableInputAction" varType="number" varName="Shifter12" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter12" varExpression="1" />
@@ -456,8 +427,7 @@
     <config guid="fb70c68e-106f-4e3d-a954-697a05309059">
       <active>true</active>
       <description>Shifter - 13</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="13">
           <onPress type="VariableInputAction" varType="number" varName="Shifter13" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter13" varExpression="1" />
@@ -471,8 +441,7 @@
     <config guid="ded1c3e6-7d21-4950-b786-0f617369612e">
       <active>true</active>
       <description>Shifter - 14</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="14">
           <onPress type="VariableInputAction" varType="number" varName="Shifter14" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter14" varExpression="1" />
@@ -486,8 +455,7 @@
     <config guid="4de47502-7df3-4dab-8630-180a56c4bf1d">
       <active>true</active>
       <description>Shifter - 15</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.4, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister"
-        xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister pin="15">
           <onPress type="VariableInputAction" varType="number" varName="Shifter15" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter15" varExpression="1" />
