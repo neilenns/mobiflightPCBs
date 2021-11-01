@@ -96,6 +96,82 @@
         </configrefs>
       </settings>
     </config>
+    <config guid="7fb78aba-d626-4850-9576-f3d4fee433e8">
+      <active>true</active>
+      <description>Anti ice - LED - Pitot L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:DEICE_Pitot_1, Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 13" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" placeholder="B" />
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ca8e73a6-d688-434c-88b6-a8dc3cfa2e7d">
+      <active>true</active>
+      <description>Anti ice - LED - Pitot R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:DEICE_Pitot_2, Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 12" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" placeholder="B" />
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="80f16514-8c25-4486-8799-9ef85ca0f5c5">
+      <active>true</active>
+      <description>Anti ice - Airframe - L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:DEICE_Airframe_1)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 11" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" placeholder="B" />
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="fa1d1719-5571-4f1e-afdd-f8bbad565547">
+      <active>true</active>
+      <description>Anti ice - Airframe - R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:DEICE_Airframe_2)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="TBM930 De-ice/ SN-b2f-535" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 15" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" placeholder="B" />
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="e9e55d40-a75e-47b5-bbde-d69edf34a116">
@@ -443,6 +519,44 @@
         </configrefs>
       </settings>
     </config>
+    <config guid="e148b74f-2c47-45af-ad6b-671c0a51d40d">
+      <active>true</active>
+      <description>Controls - Parking brake - On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 42" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:PARKING_BRAKE_SET)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4563cdd7-79f5-4639-ae58-135eecf82233">
+      <active>true</active>
+      <description>Controls - Parking brake - Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 43" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;K:PARKING_BRAKE_SET)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
     <config guid="5f8fa8b9-74a0-44be-9351-02eefb49588d">
       <active>true</active>
       <description>Autopilot - HDG</description>
@@ -525,6 +639,25 @@
         </button>
         <preconditions />
         <configrefs />
+      </settings>
+    </config>
+    <config guid="26332478-ecf5-4037-9077-8ea89b75b2d1">
+      <active>true</active>
+      <description>Autopilot - TOGO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AUTO_THROTTLE_TO_GA)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" placeholder="B" />
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
       </settings>
     </config>
     <config guid="3456bc2c-4828-4d9d-8b35-1b4aefab81a8">
@@ -629,14 +762,7 @@
           <precondition type="config" active="true" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="c115351f-d616-42fd-89c0-c5ff8cf76b49">
@@ -651,14 +777,7 @@
           <precondition type="config" active="true" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="29392493-055b-4070-a9fd-c51a7cb7c506">
@@ -673,14 +792,7 @@
           <precondition type="config" active="true" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="403caa1f-1d16-4485-8c69-7fd7a20e36e7">
@@ -695,14 +807,7 @@
           <precondition type="config" active="true" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="dec14ee1-ee55-4f1d-9180-1a0a32c0d36d">
@@ -716,13 +821,7 @@
         <preconditions>
           <precondition type="config" active="true" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="2dfb7e01-a7f9-42d9-b951-9991d408aa69">
@@ -736,13 +835,7 @@
         <preconditions>
           <precondition type="config" active="true" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="c6be6d6e-2770-4bb4-a752-256355190bbd">
@@ -757,14 +850,7 @@
           <precondition type="config" active="true" ref="951840f3-afdd-425b-985b-9d070929b8c2" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="b04f3e00-49da-4246-afce-282d5e9fbe9e">
@@ -779,14 +865,7 @@
           <precondition type="config" active="true" ref="951840f3-afdd-425b-985b-9d070929b8c2" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="17441563-520a-4d61-b9e7-de3000369a98">
@@ -801,14 +880,7 @@
           <precondition type="config" active="true" ref="951840f3-afdd-425b-985b-9d070929b8c2" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="08f41e3d-b91d-4052-8ac3-d480530e0e39">
@@ -823,14 +895,7 @@
           <precondition type="config" active="true" ref="951840f3-afdd-425b-985b-9d070929b8c2" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="51e321c0-2854-427b-9061-1ee34ff8ce2f">
@@ -845,14 +910,7 @@
           <precondition type="config" active="true" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="acb99e74-1354-4361-a2fa-a05379d034c2">
@@ -867,14 +925,7 @@
           <precondition type="config" active="true" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="5294f8e6-df22-4cc9-b07f-add115bd1100">
@@ -889,14 +940,7 @@
           <precondition type="config" active="true" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="2381ce02-7da8-4204-9a80-fe6bc7350468">
@@ -911,14 +955,7 @@
           <precondition type="config" active="true" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="2e5db6d9-23f5-48cc-8d4a-adbb4c74868f">
@@ -933,14 +970,7 @@
           <precondition type="config" active="true" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="8b1726bc-86d3-48cc-8db8-160f165da977">
@@ -955,14 +985,7 @@
           <precondition type="config" active="true" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" operand="=" value="1" logic="and" />
           <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
         </preconditions>
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
+        <configrefs />
       </settings>
     </config>
     <config guid="3af05041-9509-4adf-a595-1f85d0a282aa">
@@ -975,6 +998,82 @@
         </button>
         <preconditions />
         <configrefs>
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="89dcc18b-a401-47b5-814e-22788d68c226">
+      <active>true</active>
+      <description>Anti ice - Pitot L</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="PitotL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:PITOT_HEAT_ON)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;K:PITOT_HEAT_OFF)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" placeholder="B" />
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d538c74d-7b01-4b9d-ac11-838b282f4f97">
+      <active>true</active>
+      <description>Anti ice - Pitot R</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="PitotR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;K:PITOT_HEAT_ON)" />
+          <onRelease type="MSFS2020CustomInputAction" command="2 (&gt;K:PITOT_HEAT_OFF)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" placeholder="B" />
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="423d7e1a-cab3-4070-a939-3e8c13cd6619">
+      <active>true</active>
+      <description>Anti ice - Airframe</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="Airframe" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:DEICE_Airframe_1) 1 (&gt;L:DEICE_Airframe_2) (A:STRUCTURAL DEICE SWITCH, Bool) 0 == if{ (&gt;K:TOGGLE_STRUCTURAL_DEICE) }&#xD;" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:DEICE_Airframe_1) 0 (&gt;L:DEICE_Airframe_2) (A:STRUCTURAL DEICE SWITCH, Bool) 1 == if{ (&gt;K:TOGGLE_STRUCTURAL_DEICE) }&#xD;" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" placeholder="B" />
+          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
+          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
+          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
+          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
+          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="90929d77-8f0b-4481-bd4f-3a93b3a8f999">
+      <active>true</active>
+      <description>Anti ice - Engine</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-b2f-535" name="InertSep" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (A:ENG ANTI ICE:1, Bool) != if{ (&gt;K:ANTI_ICE_TOGGLE_ENG1) &#xA;} 1 (A:ENG ANTI ICE:2, Bool) != if{ (&gt;K:ANTI_ICE_TOGGLE_ENG2) &#xA;}" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (A:ENG ANTI ICE:1, Bool) != if{ (&gt;K:ANTI_ICE_TOGGLE_ENG1) &#xA;} 0 (A:ENG ANTI ICE:2, Bool) != if{ (&gt;K:ANTI_ICE_TOGGLE_ENG2) &#xA;}" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" placeholder="B" />
           <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
           <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
           <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
