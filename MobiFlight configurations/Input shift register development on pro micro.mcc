@@ -9,7 +9,7 @@
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="ShiftRegister" serial="MobiFlight Micro/ SN-28b-9c4" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0" />
         <preconditions />
-        <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
         <configrefs>
           <configref active="False" ref="1c9f0829-74f8-4f75-ab96-13f09fe11fc9" placeholder="#" />
           <configref active="False" ref="4245df09-d4eb-491f-8761-ffe8c55909e6" placeholder="A" />
@@ -236,7 +236,7 @@
       <active>true</active>
       <description>Shifter - 0</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.7, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Micro/ SN-28b-9c4" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <inputShiftRegister pin="6">
+        <inputShiftRegister pin="0">
           <onPress type="VariableInputAction" varType="number" varName="Shifter0" varExpression="0" />
           <onRelease type="VariableInputAction" varType="number" varName="Shifter0" varExpression="1" />
         </inputShiftRegister>
