@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="256dac95-af2a-4461-a662-88d1601eab50">
+      <active>true</active>
+      <description>Gear - parking brake on</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 42" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:PARKING_BRAKE_SET)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b1bf900f-49a0-4181-ae7f-101cd573632b">
+      <active>true</active>
+      <description>Gear - parking brake off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 43" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;K:PARKING_BRAKE_SET)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3c6885c7-cbd2-40a3-a241-1dbcae474b9e">
+      <active>true</active>
+      <description>Lights - taxi on</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 25" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 1 (&gt;K:2:TAXI_LIGHTS_SET) 1 (&gt;L:LIGHTING_TAXI_1)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="67e5ccb0-a1c1-4984-831a-8f3db6bc32bd">
+      <active>true</active>
+      <description>Lights - taxi off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 26" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 0 (&gt;K:2:TAXI_LIGHTS_SET) 1 (&gt;L:LIGHTING_TAXI_1)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="890b36bd-03de-4710-a1f9-97d8e3463959">
+      <active>true</active>
+      <description>Lights - landing on</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 23" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 1 (&gt;K:2:LANDING_LIGHTS_SET) 1 (&gt;L:LIGHTING_LANDING_1)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6b834254-a231-413f-9028-9bb4abe5197c">
+      <active>true</active>
+      <description>Lights - landing off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 24" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 0 (&gt;K:2:LANDING_LIGHTS_SET) 0 (&gt;L:LIGHTING_LANDING_1)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fd5bd540-8fe2-46bf-b03d-5ed11cdff35d">
+      <active>true</active>
+      <description>Lights - position on</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 27" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 1 (&gt;K:2:NAV_LIGHTS_SET) 1 (&gt;L:LIGHTING_NAV_1)   " />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="735c83a8-cc58-4605-9907-0395a1ad92e1">
+      <active>true</active>
+      <description>Lights - position off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 28" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 0 (&gt;K:2:NAV_LIGHTS_SET) 0 (&gt;L:LIGHTING_NAV_1)   " />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bd5c503d-eb86-450e-a19c-6d7fd00cf079">
+      <active>true</active>
+      <description>Lights - strobe on</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 29" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 1 (&gt;K:2:STROBES_SET) 1 (&gt;L:LIGHTING_STROBE_1)   " />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="907619f7-3a15-4527-b52c-6689487d0c77">
+      <active>true</active>
+      <description>Lights - strobe off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 30" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 0 (&gt;K:2:STROBES_SET) 0 (&gt;L:LIGHTING_STROBE_1)   " />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c8ed301b-f50f-4c67-8d12-1cc81b7af297">
+      <active>true</active>
+      <description>De-ice - pitot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-7b6-294" name="PitotL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 1 (&gt;K:2:PITOT_HEAT_SET) 1 (&gt;L:DEICE_Pitot_1)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 0 (&gt;K:2:PITOT_HEAT_SET) 0 (&gt;L:DEICE_Pitot_1)" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fd79740d-2007-46fd-b4ae-edf2e32255aa">
+      <active>true</active>
+      <description>Fuel - transfer pump</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="TBM930 De-ice/ SN-7b6-294" name="IceLight" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:FUEL TRANSFER PUMP ON:1, Bool)  ! if{ 1 (&gt;K:FUEL_TRANSFER_CUSTOM_INDEX_TOGGLE) &#xA;}" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:FUEL TRANSFER PUMP ON:1, Bool) if{ 1 (&gt;K:FUEL_TRANSFER_CUSTOM_INDEX_TOGGLE) &#xA;}" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7056e034-4d50-4663-a499-a2d492153d44">
+      <active>true</active>
+      <description>Flaps - increment</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 15" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="FLAPS_INCR" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5d932985-d0a3-42b7-abef-eb568f37dc87">
+      <active>true</active>
+      <description>Flaps - decrement</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.5, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 16" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="FLAPS_DECR" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
