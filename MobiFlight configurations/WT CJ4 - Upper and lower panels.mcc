@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="06296c8d-3b6a-4942-a60e-9b61f9421b43">
+      <active>true</active>
+      <description>AS3000 - Lower panel - UPR MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.2, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="RADIO1_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_UPR_MENU" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9dbccc69-0b3e-4e38-8e5a-e2d3faea19ac">
+      <active>true</active>
+      <description>AS3000 - Lower panel - LWR MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.2, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="RADIO2_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_LWR_MENU" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="991b8eb4-85d0-4c0c-b6aa-4d8c484f4f4c">
+      <active>true</active>
+      <description>AS3000 - Lower panel - MENU ADV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.2, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="ENC3" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_MENU_ADV_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_MENU_ADV_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8a8e3b17-19d6-419b-bd92-adbd60ea375d">
+      <active>true</active>
+      <description>AS3000 - Lower panel - DATA PUSH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.2, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="ENC3_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_DATA_PUSH" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="37a12597-354f-44e1-8725-fe97dabe1d58">
+      <active>true</active>
+      <description>AS3000 - Upper panel - BARO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.2, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="ENC1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="WT_CJ4_BARO1_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="WT_CJ4_BARO1_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e527e858-67b8-46c4-8b91-2d41baa04088">
+      <active>true</active>
+      <description>AS3000 - Upper panel - BARO STD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.2, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="ENC1_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_BARO1_STD_PUSH" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5cda18ab-ad09-4d5c-b956-049ab19d4f3d">
+      <active>true</active>
+      <description>AS3000 - Lower panel - TERR/WX</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.2, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="XFR3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_TERR_WX" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7fb97300-f223-47ee-a9a5-8898b32baf34">
+      <active>true</active>
+      <description>AS3000 - Lower panel - CKLST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.2, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="IDENT2_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_CKLST_1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f14740c3-b7f6-4a48-a184-fb2403b409fc">
+      <active>true</active>
+      <description>AS3000 - Lower panel - PASS BRIEF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.2, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="XFR4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_PASSBRIEF_1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="93c58d9f-309b-4139-971f-607a12b8bc78">
+      <active>true</active>
+      <description>AS3000 - Upper panel - RANGE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.2, Culture=neutral, PublicKeyToken=null" serial="Radio stack/ SN-eaf-59f" name="ENC2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Upr_RANGE_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="Generic_Upr_RANGE_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
