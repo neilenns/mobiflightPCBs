@@ -5,9 +5,9 @@
       <active>true</active>
       <description>FMS - Backlight brightness</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool) if{ (L:LIGHTING_Knob_Master) } els{ 100 }" UUID="0" />
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
         <modifiers>
-          <transformation active="True" expression="100-$" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="0" y="0" />
@@ -16,16 +16,18 @@
         </modifiers>
         <display type="Output" serial="Collins FMS 3000/ SN-9a4-828" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
         <preconditions />
-        <configrefs />
+        <configrefs>
+          <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
+        </configrefs>
       </settings>
     </config>
     <config guid="ad46e6b2-a041-4d57-bb5b-4bd2eb7b7205">
       <active>true</active>
       <description>MFD menu panel - Backlight brightness</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool) if{ (L:LIGHTING_Knob_Master) } els{ 100 }" UUID="0" />
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
         <modifiers>
-          <transformation active="True" expression="100-$" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="0" y="0" />
@@ -34,7 +36,9 @@
         </modifiers>
         <display type="Output" serial="CJ4 MFD panel/ SN-fe3-c71" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
         <preconditions />
-        <configrefs />
+        <configrefs>
+          <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
+        </configrefs>
       </settings>
     </config>
     <config guid="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6">
@@ -196,18 +200,20 @@
       <active>true</active>
       <description>Autopilot - Backlight brightness</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool) if{ (L:LIGHTING_Knob_Master) } els{ 100 }" UUID="0" />
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 255 }" UUID="0" />
         <modifiers>
-          <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="(100-$)*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="0" y="0" />
             <value x="100" y="255" />
           </interpolation>
         </modifiers>
-        <display type="Pin" serial="CJ4 Autopilot/ SN-99b-d21" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
+        <display type="Output" serial="CJ4 Autopilot/ SN-99b-d21" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
         <preconditions />
-        <configrefs />
+        <configrefs>
+          <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
+        </configrefs>
       </settings>
     </config>
     <config guid="ce0ab4ef-0519-43b8-9f7c-eaf534a62ea8">
@@ -510,10 +516,22 @@
   <inputs>
     <config guid="4328343a-ef23-41ee-876a-85fa3039137b">
       <active>true</active>
-      <description>MFD panel - UPR MENU</description>
+      <description>MFD panel - UPR MENU - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="UPR_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_UPR_MENU" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_UPR_MENU)" presetId="087b65c8-c2ee-4517-b3cd-cddd9324c372" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="404f8ef1-e726-4a2b-9602-807dbdb92519">
+      <active>true</active>
+      <description>MFD panel - UPR MENU - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="UPR_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_UPR_MENU)" presetId="087b65c8-c2ee-4517-b3cd-cddd9324c372" />
           <onRelease />
         </button>
         <preconditions />
@@ -522,10 +540,22 @@
     </config>
     <config guid="5d1e8183-2d98-4a96-b970-e55349624451">
       <active>true</active>
-      <description>MFD panel - LWR MENU</description>
+      <description>MFD panel - LWR MENU - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="LWR_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_LWR_MENU" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_LWR_MENU)" presetId="eaccd1ed-e406-4666-b449-d4ca7699d318" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="72606ed1-a4f0-445a-9d82-c988b28e9b2f">
+      <active>true</active>
+      <description>MFD panel - LWR MENU - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="LWR_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_LWR_MENU)" presetId="eaccd1ed-e406-4666-b449-d4ca7699d318" />
           <onRelease />
         </button>
         <preconditions />
@@ -534,10 +564,22 @@
     </config>
     <config guid="d3605715-8085-4d89-b515-7a5d7ad0157a">
       <active>true</active>
-      <description>MFD panel - ENG</description>
+      <description>MFD panel - ENG - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ENG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_ENG" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_ENG)" presetId="2cc023f0-72b1-440e-a701-3854e557643f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ec35d440-ed85-4c56-90b4-c07c96b0e655">
+      <active>true</active>
+      <description>MFD panel - ENG - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ENG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_ENG)" presetId="2cc023f0-72b1-440e-a701-3854e557643f" />
           <onRelease />
         </button>
         <preconditions />
@@ -546,10 +588,22 @@
     </config>
     <config guid="e2581568-f383-4fdd-84e2-5433664e2eea">
       <active>true</active>
-      <description>MFD panel - ESC</description>
+      <description>MFD panel - ESC - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ESC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_ESC" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_ESC)" presetId="0c5c9449-d468-4a9a-85d9-10f86c8b4b37" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2f3e2c16-9348-4afc-ba3a-c302c7627565">
+      <active>true</active>
+      <description>MFD panel - ESC - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ESC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_ESC)" presetId="0c5c9449-d468-4a9a-85d9-10f86c8b4b37" />
           <onRelease />
         </button>
         <preconditions />
@@ -558,10 +612,22 @@
     </config>
     <config guid="95de228d-0ae6-4139-9d50-4c78c3aaf439">
       <active>true</active>
-      <description>MFD panel - TERR WX</description>
+      <description>MFD panel - TERR WX - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="TERR_WX" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_TERR_WX" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_TERR_WX)" presetId="fe89e3f0-c061-4a2a-8d06-ac24f2793fae" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4a58abbb-944c-48a7-b4b5-9caae2d0b4de">
+      <active>true</active>
+      <description>MFD panel - TERR WX - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="TERR_WX" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_TERR_WX)" presetId="fe89e3f0-c061-4a2a-8d06-ac24f2793fae" />
           <onRelease />
         </button>
         <preconditions />
@@ -570,10 +636,22 @@
     </config>
     <config guid="6c59d979-09bd-4370-8316-ed2bed8f1a09">
       <active>true</active>
-      <description>MFD panel - TFC</description>
+      <description>MFD panel - TFC - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="TFC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_TFC" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_TFC)" presetId="adcfbf79-36fd-4e18-aaf8-01fa82005c67" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c535ef72-d787-4c69-8e3b-4d152909c7df">
+      <active>true</active>
+      <description>MFD panel - TFC - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="TFC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_TFC)" presetId="adcfbf79-36fd-4e18-aaf8-01fa82005c67" />
           <onRelease />
         </button>
         <preconditions />
@@ -582,10 +660,22 @@
     </config>
     <config guid="a5fb4e33-427b-4929-86dd-8433197ab065">
       <active>true</active>
-      <description>MFD panel - NAV DATA</description>
+      <description>MFD panel - NAV DATA - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="NAV_DATA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_NAV_DATA" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_NAV_DATA)" presetId="680d04c2-c188-4551-a861-145b110a450f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aef8d572-aea6-4c2c-8bbb-1acf80d65a60">
+      <active>true</active>
+      <description>MFD panel - NAV DATA - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="NAV_DATA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_NAV_DATA)" presetId="680d04c2-c188-4551-a861-145b110a450f" />
           <onRelease />
         </button>
         <preconditions />
@@ -594,11 +684,23 @@
     </config>
     <config guid="3a400fe3-8c52-4ed0-8fa5-5460e6b619fe">
       <active>true</active>
-      <description>MFD panel - MEM 1 short</description>
+      <description>MFD panel - MEM 1 short - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_MEM1_1" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_MEM1)" presetId="a8aa6ae9-2ada-4d23-bd6b-683c1fa32eee" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0c2c2dcc-8a98-4b38-9a64-42ef5887b032">
+      <active>true</active>
+      <description>MFD panel - MEM 1 short - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_MEM1)" presetId="a8aa6ae9-2ada-4d23-bd6b-683c1fa32eee" />
         </button>
         <preconditions />
         <configrefs />
@@ -606,11 +708,23 @@
     </config>
     <config guid="ee039130-9ef7-4112-baee-4cfb997ad408">
       <active>true</active>
-      <description>MFD panel - MEM 1 long</description>
+      <description>MFD panel - MEM 1 long - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_1_LONG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Hold_MEM1_1" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Hold_MEM1)" presetId="df4a6e5d-a4df-41bf-be7c-10393ce9650d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="22acc38a-e090-4fe2-ab65-4de13b728219">
+      <active>true</active>
+      <description>MFD panel - MEM 1 long - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_1_LONG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Hold_MEM1)" presetId="df4a6e5d-a4df-41bf-be7c-10393ce9650d" />
         </button>
         <preconditions />
         <configrefs />
@@ -618,11 +732,23 @@
     </config>
     <config guid="e3da502a-4775-48ed-b97f-5430bc7161ef">
       <active>true</active>
-      <description>MFD panel - MEM 2 short</description>
+      <description>MFD panel - MEM 2 short - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_MEM2_1" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_MEM2)" presetId="af88c2c2-d79a-444a-8e2c-25193cba09c3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1b7733e5-dcc2-49fb-8b0e-e908a3322c91">
+      <active>true</active>
+      <description>MFD panel - MEM 2 short - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_MEM2)" presetId="af88c2c2-d79a-444a-8e2c-25193cba09c3" />
         </button>
         <preconditions />
         <configrefs />
@@ -630,11 +756,23 @@
     </config>
     <config guid="dbc17795-182f-433a-9e8c-fec99c3b26f2">
       <active>true</active>
-      <description>MFD panel - MEM 2 long</description>
+      <description>MFD panel - MEM 2 long - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_2_LONG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Hold_MEM2_1" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Hold_MEM2)" presetId="7d4467fc-804a-477f-8c2b-a1432ed87a5f" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2c89bdd2-4bf3-41e7-a08c-de3ef52c179f">
+      <active>true</active>
+      <description>MFD panel - MEM 2 long - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_2_LONG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Hold_MEM2)" presetId="7d4467fc-804a-477f-8c2b-a1432ed87a5f" />
         </button>
         <preconditions />
         <configrefs />
@@ -642,11 +780,23 @@
     </config>
     <config guid="d919cc1d-1c41-4ad4-b0b3-ab01f5e91bc7">
       <active>true</active>
-      <description>MFD panel - MEM 3 short</description>
+      <description>MFD panel - MEM 3 short - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_MEM3_1" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_MEM3)" presetId="971c83ba-f9be-420b-8288-c80239b96cd1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2f753327-d5a9-4d01-a405-2a6726b2108c">
+      <active>true</active>
+      <description>MFD panel - MEM 3 short - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_MEM3)" presetId="971c83ba-f9be-420b-8288-c80239b96cd1" />
         </button>
         <preconditions />
         <configrefs />
@@ -654,23 +804,23 @@
     </config>
     <config guid="87b39ce3-c3e6-4798-b6ee-acc417f3763f">
       <active>true</active>
-      <description>MFD panel - MEM 3 long</description>
+      <description>MFD panel - MEM 3 long - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_3_LONG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Hold_MEM3_1" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Hold_MEM3)" presetId="40a26714-0cef-4f9a-830f-fe4266fb5367" />
         </button>
         <preconditions />
         <configrefs />
       </settings>
     </config>
-    <config guid="c49d7a26-ffd3-4d4a-9e5c-ad9ee41eba11">
+    <config guid="daa5e99a-c90a-44a9-ad6f-bedf6cdd617f">
       <active>true</active>
-      <description>MFD panel - CHART</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="CHART" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>MFD panel - MEM 3 long - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="MEM_3_LONG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_Chart_1" />
-          <onRelease />
+          <onPress />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Hold_MEM3)" presetId="40a26714-0cef-4f9a-830f-fe4266fb5367" />
         </button>
         <preconditions />
         <configrefs />
@@ -678,10 +828,22 @@
     </config>
     <config guid="9013ce7a-c988-4504-b737-0090d0993062">
       <active>true</active>
-      <description>MFD panel - ZOOM MINUS</description>
+      <description>MFD panel - ZOOM MINUS - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ZOOM_MINUS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_ZOOM_DEC" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_ZOOM_DEC)" presetId="050315dc-9865-41b2-a940-1ce5dd310cbe" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b47d6316-bc4b-49a1-ad00-4ea171c40567">
+      <active>true</active>
+      <description>MFD panel - ZOOM MINUS - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ZOOM_MINUS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_ZOOM_DEC)" presetId="050315dc-9865-41b2-a940-1ce5dd310cbe" />
           <onRelease />
         </button>
         <preconditions />
@@ -690,10 +852,22 @@
     </config>
     <config guid="a7fc8d11-664e-4f16-9cba-ef3ce2fb03ab">
       <active>true</active>
-      <description>MFD panel - ZOOM PLUS</description>
+      <description>MFD panel - ZOOM PLUS - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ZOOM_PLUS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_ZOOM_DEC" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_ZOOM_DEC)" presetId="050315dc-9865-41b2-a940-1ce5dd310cbe" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a4a9ae05-3f55-4b41-9d1b-6e13a31835cf">
+      <active>true</active>
+      <description>MFD panel - ZOOM PLUS - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ZOOM_PLUS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_ZOOM_DEC)" presetId="050315dc-9865-41b2-a940-1ce5dd310cbe" />
           <onRelease />
         </button>
         <preconditions />
@@ -702,10 +876,22 @@
     </config>
     <config guid="964bf201-afa5-42e1-9eae-5eb44e0a69d7">
       <active>true</active>
-      <description>MFD panel - SYS</description>
+      <description>MFD panel - SYS - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="SYS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_SYS" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_SYS)" presetId="979a8b9b-43e1-4b9f-8068-01ae69098398" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="60a218c7-ce09-4dc7-9e07-4a2d2c1d3c2c">
+      <active>true</active>
+      <description>MFD panel - SYS - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="SYS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_SYS)" presetId="979a8b9b-43e1-4b9f-8068-01ae69098398" />
           <onRelease />
         </button>
         <preconditions />
@@ -714,34 +900,22 @@
     </config>
     <config guid="894d6516-7299-4d04-9d0d-dd240fe023e6">
       <active>true</active>
-      <description>MFD panel - CAS PAGE</description>
+      <description>MFD panel - CAS PAGE - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="CAS_PAGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_CAS_PAGE" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_Push_CAS_PAGE)" presetId="2d14194a-0545-4e94-8bab-2b023039ecdb" />
           <onRelease />
         </button>
         <preconditions />
         <configrefs />
       </settings>
     </config>
-    <config guid="5474f521-8f39-4b26-80ad-c89d4bd1f8d2">
+    <config guid="643f71a2-55d6-4f43-83e5-b623951c1071">
       <active>true</active>
-      <description>MFD panel - CKLIST</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="CKLIST" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>MFD panel - CAS PAGE - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="CAS_PAGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_CKLST_1" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="6b073ecf-b57b-4df8-8f01-5e1cf8faa9e8">
-      <active>true</active>
-      <description>MFD panel - PASS BRIEF</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="PASS_BRIEF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_PASSBRIEF_1" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_Push_CAS_PAGE)" presetId="2d14194a-0545-4e94-8bab-2b023039ecdb" />
           <onRelease />
         </button>
         <preconditions />
@@ -750,12 +924,26 @@
     </config>
     <config guid="07ad4afd-887f-4bf6-940c-255ee5fdf31e">
       <active>true</active>
-      <description>MFD panel - DATA</description>
+      <description>MFD panel - DATA - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ENC_1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_DATA_DEC" />
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_DATA_DEC)" presetId="6016aba3-2a1d-47c0-a787-8a41317a0886" />
           <onLeftFast />
-          <onRight type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_DATA_INC" />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_DATA_INC)" presetId="03ddcb63-d304-4218-8a42-878c69d8a4a4" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b5ec1a7c-7e21-49e7-92ba-b5675c8b1214">
+      <active>true</active>
+      <description>MFD panel - DATA - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ENC_1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_DATA_DEC)" presetId="6016aba3-2a1d-47c0-a787-8a41317a0886" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_DATA_INC)" presetId="03ddcb63-d304-4218-8a42-878c69d8a4a4" />
           <onRightFast />
         </encoder>
         <preconditions />
@@ -764,11 +952,23 @@
     </config>
     <config guid="29ff47e6-9615-428a-918b-050842e9de7a">
       <active>true</active>
-      <description>MFD panel - DATA short</description>
+      <description>MFD panel - DATA short - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="DATA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_DATA_PUSH" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_DATA_PUSH)" presetId="486ba0e6-1d05-4058-a5a1-ba2259afc4b8" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="94f6ac76-c1aa-4029-80dc-7e457b24dab5">
+      <active>true</active>
+      <description>MFD panel - DATA short - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="DATA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_DATA_PUSH)" presetId="486ba0e6-1d05-4058-a5a1-ba2259afc4b8" />
         </button>
         <preconditions />
         <configrefs />
@@ -776,59 +976,23 @@
     </config>
     <config guid="fe496ebc-1d2b-4003-be28-7f58fd8c1f9e">
       <active>true</active>
-      <description>MFD panel - DATA long</description>
+      <description>MFD panel - DATA long - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="DATA_LONG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_DATA_PUSH_LONG" />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_DATA_PUSH_LONG)" presetId="d4367c38-f499-4d6f-b85c-c949fa2ae90a" />
         </button>
         <preconditions />
         <configrefs />
       </settings>
     </config>
-    <config guid="989737c3-252a-43b2-acc1-0d172d0f51fc">
+    <config guid="e99cc1c2-91e0-4c3b-a922-32926a3a341b">
       <active>true</active>
-      <description>MFD panel - JOYSTICK LEFT</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="LEFT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>MFD panel - DATA long - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="DATA_LONG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_JOYSTICK_LEFT" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="c20661cf-5ab2-4325-ad6d-44aac7f44957">
-      <active>true</active>
-      <description>MFD panel - JOYSTICK RIGHT</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="RIGHT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_JOYSTICK_RIGHT" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="7fc5a08e-6c02-4a33-bf1a-06eb18e50094">
-      <active>true</active>
-      <description>MFD panel - JOYSTICK UP</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="UP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_JOYSTICK_UP" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="b53b7316-9b74-45fa-925f-06d3a6002bb3">
-      <active>true</active>
-      <description>MFD panel - JOYSTICK DOWN</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="DOWN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_JOYSTICK_DOWN" />
-          <onRelease />
+          <onPress />
+          <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_DATA_PUSH_LONG)" presetId="d4367c38-f499-4d6f-b85c-c949fa2ae90a" />
         </button>
         <preconditions />
         <configrefs />
@@ -836,64 +1000,28 @@
     </config>
     <config guid="7344fabc-175f-4d99-8422-85ab8e8dd20b">
       <active>true</active>
-      <description>MFD panel - MENU ADV</description>
+      <description>MFD panel - MENU ADV - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ENC_2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_MENU_ADV_DEC" />
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_MENU_ADV_DEC)" presetId="c10fca3a-096b-480c-a04f-9828960718d4" />
           <onLeftFast />
-          <onRight type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_MENU_ADV_INC" />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_1_MENU_ADV_INC)" presetId="544d9df0-6906-4667-8de7-23e182bd89ea" />
           <onRightFast />
         </encoder>
         <preconditions />
         <configrefs />
       </settings>
     </config>
-    <config guid="06296c8d-3b6a-4942-a60e-9b61f9421b43">
+    <config guid="4b15b555-0152-45bf-9e81-ef889add9930">
       <active>true</active>
-      <description>AS3000 - Lower panel - UPR MENU</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Radio Stack/ SN-eaf-59f" name="RADIO1_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_UPR_MENU" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="9dbccc69-0b3e-4e38-8e5a-e2d3faea19ac">
-      <active>true</active>
-      <description>AS3000 - Lower panel - LWR MENU</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Radio Stack/ SN-eaf-59f" name="RADIO2_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_LWR_MENU" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="991b8eb4-85d0-4c0c-b6aa-4d8c484f4f4c">
-      <active>true</active>
-      <description>AS3000 - Lower panel - MENU ADV</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Radio Stack/ SN-eaf-59f" name="ENC3" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>MFD panel - MENU ADV - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 MFD panel/ SN-fe3-c71" name="ENC_2" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_MENU_ADV_DEC" />
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_MENU_ADV_DEC)" presetId="c10fca3a-096b-480c-a04f-9828960718d4" />
           <onLeftFast />
-          <onRight type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_MENU_ADV_INC" />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Lwr_2_MENU_ADV_INC)" presetId="544d9df0-6906-4667-8de7-23e182bd89ea" />
           <onRightFast />
         </encoder>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="8a8e3b17-19d6-419b-bd92-adbd60ea375d">
-      <active>true</active>
-      <description>AS3000 - Lower panel - DATA PUSH</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Radio Stack/ SN-eaf-59f" name="ENC3_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_DATA_PUSH" />
-          <onRelease />
-        </button>
         <preconditions />
         <configrefs />
       </settings>
@@ -903,9 +1031,9 @@
       <description>AS3000 - Upper panel - BARO</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Radio Stack/ SN-eaf-59f" name="ENC1" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020EventIdInputAction" eventId="WT_CJ4_BARO1_DEC" />
+          <onLeft type="MSFS2020CustomInputAction" command="(L:XMLVAR_Baro1_ForcedToSTD) if{ 1 (&gt;H:AP_BARO_Down) } els{ 1 (&gt;K:KOHLSMAN_DEC) (&gt;H:AP_BARO_Down) }" presetId="0" />
           <onLeftFast />
-          <onRight type="MSFS2020EventIdInputAction" eventId="WT_CJ4_BARO1_INC" />
+          <onRight type="MSFS2020CustomInputAction" command="(L:XMLVAR_Baro1_ForcedToSTD) if{ 1 (&gt;H:AP_BARO_Up) } els{ 1 (&gt;K:KOHLSMAN_INC) (&gt;H:AP_BARO_Up) }" presetId="0" />
           <onRightFast />
         </encoder>
         <preconditions />
@@ -924,50 +1052,14 @@
         <configrefs />
       </settings>
     </config>
-    <config guid="5cda18ab-ad09-4d5c-b956-049ab19d4f3d">
-      <active>true</active>
-      <description>AS3000 - Lower panel - TERR/WX</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Radio Stack/ SN-eaf-59f" name="XFR3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_TERR_WX" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="7fb97300-f223-47ee-a9a5-8898b32baf34">
-      <active>true</active>
-      <description>AS3000 - Lower panel - CKLST</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Radio Stack/ SN-eaf-59f" name="IDENT2_SW" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_CKLST_1" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="f14740c3-b7f6-4a48-a184-fb2403b409fc">
-      <active>true</active>
-      <description>AS3000 - Lower panel - PASS BRIEF</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Radio Stack/ SN-eaf-59f" name="XFR4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_PASSBRIEF_1" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
     <config guid="93c58d9f-309b-4139-971f-607a12b8bc78">
       <active>true</active>
       <description>AS3000 - Upper panel - RANGE</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Radio Stack/ SN-eaf-59f" name="ENC4" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Upr_RANGE_INC" />
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_1_RANGE_INC)" presetId="70174e8f-f3a6-4771-9b81-3917321f6f27" />
           <onLeftFast />
-          <onRight type="MSFS2020EventIdInputAction" eventId="Generic_Upr_RANGE_DEC" />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_1_RANGE_DEC)" presetId="4a99636f-b938-4f67-a28f-f09c97467a27" />
           <onRightFast />
         </encoder>
         <preconditions />
@@ -1102,10 +1194,24 @@
     </config>
     <config guid="58e56fe5-edbb-4feb-8d07-23149861ca1d">
       <active>true</active>
-      <description>TUN</description>
+      <description>TUN - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="TUN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_TUN)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="c59e986f-ae2c-4560-916f-093dcd032aa9" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="7aad4e3f-5ca7-42f5-b350-544433d8bc38">
+      <active>true</active>
+      <description>TUN - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="TUN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_TUN)" presetId="8eb5b372-c76e-43d7-83a5-31bfb1715205" />
           <onRelease />
         </button>
         <preconditions />
@@ -2125,8 +2231,8 @@
       <description>Electrical - EMERG LIGHTS - Armed</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Elec/ SN-e69-174" name="ELT_ARMED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_EMER_LIGHT_ARM" />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_EMER_LIGHT_OFF" />
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:CJ4_EMER_LIGHT_ARMED)" presetId="360ac587-0010-4700-b91c-34b4bc759301" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:CJ4_EMER_LIGHT_ARMED)" presetId="9b32334f-1c72-427c-b9e8-b9f3836a203e" />
         </button>
         <preconditions />
         <configrefs />
@@ -2357,54 +2463,6 @@
         <configrefs />
       </settings>
     </config>
-    <config guid="01e98699-7eaf-4624-a095-d029f5a33250">
-      <active>false</active>
-      <description>Autopilot - VNAV</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_VNAV_PRESSED" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="14a1b3bd-f6fd-4f01-9d34-c6971414b354">
-      <active>false</active>
-      <description>Autopilot - ALT</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_ALT_PRESSED" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="bf44fc2e-295a-4e30-882f-aff62bd4a1e9">
-      <active>false</active>
-      <description>Autopilot - VS</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_VS_PRESSED" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="7d8181c8-b034-441f-b3be-09f115f20c02">
-      <active>false</active>
-      <description>Autopilot - FLC</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_FLC_PRESSED" />
-          <onRelease />
-        </button>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
     <config guid="26332478-ecf5-4037-9077-8ea89b75b2d1">
       <active>true</active>
       <description>Autopilot - TOGO</description>
@@ -2514,262 +2572,6 @@
         </configrefs>
       </settings>
     </config>
-    <config guid="7d0d0e71-a75e-47b9-8dbd-03a34754bda4">
-      <active>false</active>
-      <description>Autopilot - ALT decrement - 100</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_ALT_VAR_DEC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="c115351f-d616-42fd-89c0-c5ff8cf76b49">
-      <active>false</active>
-      <description>Autopilot - ALT decrement - 1000</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_ALT_FAST_DEC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="29392493-055b-4070-a9fd-c51a7cb7c506">
-      <active>false</active>
-      <description>Autopilot - ALT increment - 100</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_ALT_VAR_INC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="403caa1f-1d16-4485-8c69-7fd7a20e36e7">
-      <active>false</active>
-      <description>Autopilot - ALT increment - 1000</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_ALT_FAST_INC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="dec14ee1-ee55-4f1d-9180-1a0a32c0d36d">
-      <active>false</active>
-      <description>Autopilot - VS decrement</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_VS_DEC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" operand="=" value="1" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="2dfb7e01-a7f9-42d9-b951-9991d408aa69">
-      <active>false</active>
-      <description>Autopilot - VS increment</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_VS_INC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" operand="=" value="1" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="c6be6d6e-2770-4bb4-a752-256355190bbd">
-      <active>false</active>
-      <description>Autopilot - HDG decrement - 1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_HDG_DEC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="951840f3-afdd-425b-985b-9d070929b8c2" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="b04f3e00-49da-4246-afce-282d5e9fbe9e">
-      <active>false</active>
-      <description>Autopilot - HDG decrement - 5</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_HDG_FAST_DEC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="951840f3-afdd-425b-985b-9d070929b8c2" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="17441563-520a-4d61-b9e7-de3000369a98">
-      <active>false</active>
-      <description>Autopilot - HDG increment - 1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_HDG_INC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="951840f3-afdd-425b-985b-9d070929b8c2" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="08f41e3d-b91d-4052-8ac3-d480530e0e39">
-      <active>false</active>
-      <description>Autopilot - HDG increment - 5</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_HDG_FAST_INC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="951840f3-afdd-425b-985b-9d070929b8c2" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="51e321c0-2854-427b-9061-1ee34ff8ce2f">
-      <active>false</active>
-      <description>Autopilot - CRS decrement - 1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_CRS1_DEC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="acb99e74-1354-4361-a2fa-a05379d034c2">
-      <active>false</active>
-      <description>Autopilot - CRS increment - 1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_CRS1_DEC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="5294f8e6-df22-4cc9-b07f-add115bd1100">
-      <active>false</active>
-      <description>Autopilot - IAS decrement - 1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_SPEED_DEC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="2381ce02-7da8-4204-9a80-fe6bc7350468">
-      <active>false</active>
-      <description>Autopilot - IAS decrement - 10</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_SPEED_FAST_DEC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="2e5db6d9-23f5-48cc-8d4a-adbb4c74868f">
-      <active>false</active>
-      <description>Autopilot - IAS increment - 1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_SPEED_INC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="0" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="8b1726bc-86d3-48cc-8db8-160f165da977">
-      <active>false</active>
-      <description>Autopilot - IAS increment - 10</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_SPEED_FAST_INC" />
-          <onRelease />
-        </button>
-        <preconditions>
-          <precondition type="config" active="true" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" operand="=" value="1" logic="and" />
-          <precondition type="config" active="true" ref="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a" operand="=" value="1" logic="and" />
-        </preconditions>
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="3af05041-9509-4adf-a595-1f85d0a282aa">
-      <active>true</active>
-      <description>Autopilot - Fast increment/decrement</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 46" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="VariableInputAction" varType="number" varName="FastIncDec" varExpression="1" />
-          <onRelease type="VariableInputAction" varType="number" varName="FastIncDec" varExpression="0" />
-        </button>
-        <preconditions />
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
-      </settings>
-    </config>
     <config guid="34baf54f-d0a9-4bb5-be19-321e64c1f4ab">
       <active>true</active>
       <description>Engines - Left starter</description>
@@ -2804,18 +2606,6 @@
           <onRight type="MSFS2020EventIdInputAction" eventId="WT_CJ4_BARO3_INC" />
           <onRightFast />
         </encoder>
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="d5cb1807-f1b5-417f-8eac-f56f1ee21303">
-      <active>false</active>
-      <description>Autopilot - YD</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 44" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_YD_ON" />
-          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AP_YD_OFF" />
-        </button>
         <preconditions />
         <configrefs />
       </settings>
@@ -2860,7 +2650,7 @@
       <description>Autopilot - HDG</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="9">
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_HDG_PRESSED)" presetId="a4e1f42f-d6d6-4f64-95cb-a67c3b05df1a" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_PANEL_HEADING_HOLD)" presetId="a4e1f42f-d6d6-4f64-95cb-a67c3b05df1a" />
           <onRelease />
         </inputShiftRegister>
         <preconditions />
@@ -2908,7 +2698,7 @@
       <description>Autopilot - NAV</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="8">
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_NAV_PRESSED)" presetId="9674069c-b7e6-446e-a674-e4276a4bbde6" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_NAV1_HOLD)" presetId="9674069c-b7e6-446e-a674-e4276a4bbde6" />
           <onRelease />
         </inputShiftRegister>
         <preconditions />
@@ -2920,7 +2710,7 @@
       <description>Autopilot - APPR</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="11">
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_APPR_PRESSED)" presetId="fcc075a2-757b-4824-ad95-e205c162fc6c" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_APR_HOLD)" presetId="fcc075a2-757b-4824-ad95-e205c162fc6c" />
           <onRelease />
         </inputShiftRegister>
         <preconditions />
@@ -2932,7 +2722,7 @@
       <description>Autopilot - VNAV</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="VNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_VNAV_PRESSED)" presetId="cc7dee1e-1b66-4c6a-a62b-18883332827f" />
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_VNAVButtonValue) ! (&gt;L:XMLVAR_VNAVButtonValue)" presetId="cc7dee1e-1b66-4c6a-a62b-18883332827f" />
           <onRelease />
         </button>
         <preconditions />
@@ -2944,7 +2734,7 @@
       <description>Autopilot - ALT</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="2">
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_ALT_PRESSED)" presetId="66ae15fb-66f6-4660-8be1-78d32991f745" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_ALT_HOLD)" presetId="66ae15fb-66f6-4660-8be1-78d32991f745" />
           <onRelease />
         </inputShiftRegister>
         <preconditions />
@@ -2956,7 +2746,7 @@
       <description>Autopilot - VS</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="VS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_VS_PRESSED)" presetId="7acdd720-d157-435b-b708-791c224bf0a0" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_PANEL_VS_HOLD)" presetId="7acdd720-d157-435b-b708-791c224bf0a0" />
           <onRelease />
         </button>
         <preconditions />
@@ -2968,7 +2758,7 @@
       <description>Autopilot - FLC</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="FLC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_FLC_PRESSED)" presetId="0" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:FLIGHT_LEVEL_CHANGE) (A:AIRSPEED INDICATED, knots) (&gt;K:AP_SPD_VAR_SET)" presetId="0" />
           <onRelease />
         </button>
         <preconditions />
@@ -3022,7 +2812,7 @@
       <description>Autopilot - HDG sync</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="HDG_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(A:HEADING INDICATOR, degrees) (&gt;K:HEADING_BUG_SET)" presetId="48cf9fc6-d1a0-4c72-9119-fd28e331c962" />
+          <onPress type="MSFS2020CustomInputAction" command="1 (A:HEADING INDICATOR, degrees) (&gt;K:HEADING_BUG_SET)" presetId="48cf9fc6-d1a0-4c72-9119-fd28e331c962" />
           <onRelease />
         </button>
         <preconditions>
@@ -3037,10 +2827,10 @@
       <description>Autopilot - CRS1 set</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="CRS1_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020CustomInputAction" command="(L:WT_CJ4_LNAV_MODE, Number) 2 == if{ &#xA;(A:NAV OBS:2, degree) 1 - dnor (&gt;K:VOR2_SET) } &#xA;   els{ (A:NAV OBS:1, degree) 1 - dnor (&gt;K:VOR1_SET) }" presetId="4d07ca66-1702-4a16-b361-7de810c2277a" />
-          <onLeftFast />
-          <onRight type="MSFS2020CustomInputAction" command="(L:WT_CJ4_LNAV_MODE, Number) 2 == if{ &#xA;(A:NAV OBS:2, degree) 1 + dnor (&gt;K:VOR2_SET) } &#xA;   els{ (A:NAV OBS:1, degree) 1 + dnor (&gt;K:VOR1_SET) }" presetId="7cc2d58d-0425-47c8-a8e2-c80301db801a" />
-          <onRightFast />
+          <onLeft type="MSFS2020CustomInputAction" command="(A:AUTOPILOT NAV SELECTED, Number) 1 == if{ (A:NAV OBS:1, degree) 1 - dnor (&gt;K:VOR1_SET) } els{ (A:NAV OBS:2, degree) 1 - dnor (&gt;K:VOR2_SET) }" presetId="4d07ca66-1702-4a16-b361-7de810c2277a" />
+          <onLeftFast type="MSFS2020CustomInputAction" command="(A:AUTOPILOT NAV SELECTED, Number) 1 == if{ (A:NAV OBS:1, degree) 10 - dnor (&gt;K:VOR1_SET) } els{ (A:NAV OBS:2, degree) 10 - dnor (&gt;K:VOR2_SET) }" presetId="-" />
+          <onRight type="MSFS2020CustomInputAction" command="(A:AUTOPILOT NAV SELECTED, Number) 1 == if{ (A:NAV OBS:1, degree) 1 + dnor (&gt;K:VOR1_SET) } els{ (A:NAV OBS:2, degree) 1 + dnor (&gt;K:VOR2_SET) }" presetId="7cc2d58d-0425-47c8-a8e2-c80301db801a" />
+          <onRightFast type="MSFS2020CustomInputAction" command="(A:AUTOPILOT NAV SELECTED, Number) 1 == if{ (A:NAV OBS:1, degree) 10 + dnor (&gt;K:VOR1_SET) } els{ (A:NAV OBS:2, degree) 10 + dnor (&gt;K:VOR2_SET) }" presetId="-" />
         </encoder>
         <preconditions />
         <configrefs />
@@ -3051,10 +2841,10 @@
       <description>Autopilot - CRS2 set</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="CRS2_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020CustomInputAction" command="(L:WT_CJ4_LNAV_MODE, Number) 2 == if{ &#xA;(A:NAV OBS:2, degree) 1 - dnor (&gt;K:VOR2_SET) } &#xA;   els{ (A:NAV OBS:1, degree) 1 - dnor (&gt;K:VOR1_SET) }" presetId="4d07ca66-1702-4a16-b361-7de810c2277a" />
-          <onLeftFast />
-          <onRight type="MSFS2020CustomInputAction" command="(L:WT_CJ4_LNAV_MODE, Number) 2 == if{ &#xA;(A:NAV OBS:2, degree) 1 + dnor (&gt;K:VOR2_SET) } &#xA;   els{ (A:NAV OBS:1, degree) 1 + dnor (&gt;K:VOR1_SET) }" presetId="7cc2d58d-0425-47c8-a8e2-c80301db801a" />
-          <onRightFast />
+          <onLeft type="MSFS2020CustomInputAction" command="(A:AUTOPILOT NAV SELECTED, Number) 1 == if{ (A:NAV OBS:1, degree) 1 - dnor (&gt;K:VOR1_SET) } els{ (A:NAV OBS:2, degree) 1 - dnor (&gt;K:VOR2_SET) }" presetId="4d07ca66-1702-4a16-b361-7de810c2277a" />
+          <onLeftFast type="MSFS2020CustomInputAction" command="(A:AUTOPILOT NAV SELECTED, Number) 1 == if{ (A:NAV OBS:1, degree) 10 - dnor (&gt;K:VOR1_SET) } els{ (A:NAV OBS:2, degree) 10 - dnor (&gt;K:VOR2_SET) }" presetId="-" />
+          <onRight type="MSFS2020CustomInputAction" command="(A:AUTOPILOT NAV SELECTED, Number) 1 == if{ (A:NAV OBS:1, degree) 1 + dnor (&gt;K:VOR1_SET) } els{ (A:NAV OBS:2, degree) 1 + dnor (&gt;K:VOR2_SET) }" presetId="7cc2d58d-0425-47c8-a8e2-c80301db801a" />
+          <onRightFast type="MSFS2020CustomInputAction" command="(&gt;K:A32NX.FCU_AP_1_PUSH)" presetId="7f471277-ed45-481b-aa59-6a305bc74465" />
         </encoder>
         <preconditions />
         <configrefs />
@@ -3079,7 +2869,7 @@
       <description>Autopilot - SPEED ias/mach</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="FLC_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_AirSpeedIsInMach, Bool) ! (&gt;L:XMLVAR_AirSpeedIsInMach, Bool)" presetId="cc4270cd-361c-4c7f-bdeb-2b3428115dcd" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_MANAGED_SPEED_IN_MACH_TOGGLE)" presetId="cc4270cd-361c-4c7f-bdeb-2b3428115dcd" />
           <onRelease />
         </button>
         <preconditions>
@@ -3094,7 +2884,7 @@
       <description>Autopilot - CRS1 pressed</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="CRS1_BTN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(A:HEADING INDICATOR, degrees) sp0 &#xA;(L:WT_CJ4_LNAV_MODE, Number) 2 == if{ l0 (&gt;K:VOR2_SET) } &#xA;   els{ l0 (&gt;K:VOR1_SET) }" presetId="ee835906-168b-4827-87a2-c6e9a492bba4" />
+          <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT NAV SELECTED, Number) 1 == sp0 &#xA;(A:NAV RADIAL:1, degrees) (A:NAV RADIAL:2, degrees) l0 ? 180 + dnor sp1 &#xA;(A:NAV OBS:1, degrees) (A:NAV OBS:2, degrees) l0 ? sp2 &#xA;(A:NAV HAS NAV:1, Bool) (A:NAV HAS NAV:2, Bool) l0 ? sp3 &#xA;l1 l2 l3 ? &#xA;sp0 (A:AUTOPILOT NAV SELECTED, Number) 1 == if{ &#xA;	 l0 (&gt;K:VOR1_SET) &#xA;} els{ &#xA;	 l0 (&gt;K:VOR2_SET) &#xA;}" presetId="ee835906-168b-4827-87a2-c6e9a492bba4" />
           <onRelease />
         </button>
         <preconditions />
@@ -3115,10 +2905,22 @@
     </config>
     <config guid="fb404ef1-ef2a-425a-9e09-2f3bab6bdbb7">
       <active>true</active>
-      <description>Autopilot - HALF BANK pressed</description>
+      <description>Autopilot - HALF BANK</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="15">
           <onPress type="MSFS2020CustomInputAction" command="(A:AUTOPILOT MAX BANK, degrees) 16 &lt; if{ (&gt;K:AP_MAX_BANK_INC) } els{ (&gt;K:AP_MAX_BANK_DEC) }" presetId="5eca610d-d7a1-4e92-ae5a-1e2fef431030" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c358d457-4d65-43ad-bbc2-85c8ef0a06ca">
+      <active>true</active>
+      <description>Autopilot - XFR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="7">
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_PushXFR) ! (&gt;L:XMLVAR_PushXFR)" presetId="5eca610d-d7a1-4e92-ae5a-1e2fef431030" />
           <onRelease />
         </inputShiftRegister>
         <preconditions />
@@ -3130,7 +2932,7 @@
       <description>Autopilot - BC</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputShiftRegister ExtPin="12">
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:WT_CJ4_AP_BC_PRESSED)" presetId="c8f78459-77f6-403f-875b-66de2dd86f2c" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_BC_HOLD)" presetId="c8f78459-77f6-403f-875b-66de2dd86f2c" />
           <onRelease />
         </inputShiftRegister>
         <preconditions />
@@ -3181,7 +2983,7 @@
       <description>PFD Panel - Data knob increment 10</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_Data_INC) (&gt;H:Generic_Upr_Data_INC)" presetId="b27fcfac-019c-43c5-adf0-168c54a35017" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_1_Data_INC) (&gt;H:Generic_Upr_1_Data_INC)" presetId="b27fcfac-019c-43c5-adf0-168c54a35017" />
           <onRelease />
         </button>
         <preconditions>
@@ -3196,7 +2998,7 @@
       <description>PFD Panel - Data knob decrement 1</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_Data_DEC)" presetId="3ab0c93d-b84d-4b81-b2fb-06e268f634ab" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_1_Data_DEC)" presetId="3ab0c93d-b84d-4b81-b2fb-06e268f634ab" />
           <onRelease />
         </button>
         <preconditions>
@@ -3211,7 +3013,7 @@
       <description>PFD Panel - Data knob decrement 10</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_Data_DEC) (&gt;H:Generic_Upr_Data_DEC)" presetId="3ab0c93d-b84d-4b81-b2fb-06e268f634ab" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_1_Data_DEC) (&gt;H:Generic_Upr_1_Data_DEC)" presetId="3ab0c93d-b84d-4b81-b2fb-06e268f634ab" />
           <onRelease />
         </button>
         <preconditions>
@@ -3226,7 +3028,7 @@
       <description>PFD Panel - Menu advance increment</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_MENU_ADV_INC)" presetId="-" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_1_MENU_ADV_INC)" presetId="f46cb4da-a715-4e40-866a-88d8baea7131" />
           <onRelease />
         </button>
         <preconditions>
@@ -3240,7 +3042,7 @@
       <description>PFD Panel - Menu advance decrement</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_MENU_ADV_DEC)" presetId="-" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_1_MENU_ADV_DEC)" presetId="966ef788-0e92-46ea-bb63-ee90699e8eb7" />
           <onRelease />
         </button>
         <preconditions>
@@ -3254,7 +3056,7 @@
       <description>PFD Panel - Data knob push</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Button 7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_Data_PUSH)" presetId="a35995db-77cc-4f05-b047-705bfcb1ee61" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Generic_Upr_1_Data_PUSH)" presetId="a35995db-77cc-4f05-b047-705bfcb1ee61" />
           <onRelease />
         </button>
         <preconditions />
