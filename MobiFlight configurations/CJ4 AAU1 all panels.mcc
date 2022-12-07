@@ -532,6 +532,20 @@
         <configrefs />
       </settings>
     </config>
+    <config guid="6e3009c2-cb3e-4c8a-a35a-7d96da068908">
+      <active>true</active>
+      <description>Force hide yoke</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:SIMULATION TIME, seconds) 0 &gt; (&gt;L:XMLVAR_YokeHidden1) 0 = if{ 1 (&gt;L:XMLVAR_YokeHidden1) 1 (&gt;L:XMLVAR_YokeHidden2) }" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="4328343a-ef23-41ee-876a-85fa3039137b">
