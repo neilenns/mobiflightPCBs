@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MobiflightConnector>
   <outputs>
     <config guid="c59e986f-ae2c-4560-916f-093dcd032aa9">
       <active>true</active>
-      <description>FMS - Backlight brightness</description>
+      <description>FMS - Backlight brightness - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
         <modifiers>
@@ -15,6 +15,26 @@
           </interpolation>
         </modifiers>
         <display type="Output" serial="Collins FMS 3000/ SN-9a4-828" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c46b3fc2-c6b1-4857-9b2e-a102eb4fda3a">
+      <active>true</active>
+      <description>FMS - Backlight brightness - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
+        <modifiers>
+          <transformation active="True" expression="$*M" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="100" y="255" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="Collins FMS 3000/ SN-af4-eed" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -200,7 +220,7 @@
       <active>true</active>
       <description>Autopilot - Backlight brightness</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 255 }" UUID="0" />
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
         <modifiers>
           <transformation active="True" expression="(100-$)*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
