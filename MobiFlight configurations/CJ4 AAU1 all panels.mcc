@@ -496,9 +496,9 @@
       <active>true</active>
       <description>Misc - LED brightness</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 &lt;  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
         <modifiers>
-          <transformation active="True" expression="10" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="Round((100-$)*2.55, 0)*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="Output" serial="CJ4 misc/ SN-E4617107E339442F" trigger="normal" pin="LED_BRIGHT" pinBrightness="255" pinPwm="True" />
