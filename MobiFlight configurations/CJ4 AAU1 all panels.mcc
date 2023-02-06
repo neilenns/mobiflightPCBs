@@ -5,7 +5,7 @@
       <active>true</active>
       <description>FMS - Backlight brightness - Pilot</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT PANEL:1, Bool) if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
         <modifiers>
           <transformation active="True" expression="$*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
@@ -14,7 +14,7 @@
             <value x="100" y="255" />
           </interpolation>
         </modifiers>
-        <display type="Output" serial="Collins FMS 3000/ SN-9a4-828" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
+        <display type="Output" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -25,7 +25,7 @@
       <active>true</active>
       <description>FMS - Backlight brightness - Co-pilot</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT PANEL:1, Bool) if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
         <modifiers>
           <transformation active="True" expression="$*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
@@ -34,7 +34,7 @@
             <value x="100" y="255" />
           </interpolation>
         </modifiers>
-        <display type="Output" serial="Collins FMS 3000/ SN-af4-eed" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
+        <display type="Output" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -45,7 +45,7 @@
       <active>true</active>
       <description>MFD menu panel - Backlight brightness</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT PANEL:1, Bool) if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
         <modifiers>
           <transformation active="True" expression="$*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
@@ -172,9 +172,9 @@
       <active>true</active>
       <description>Autopilot - Backlight</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="Backlight" varExpression="$" />
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT PANEL:1, Bool)" UUID="-" />
         <modifiers>
-          <transformation active="True" expression="M" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="ShiftRegister" serial="CJ4 Autopilot/ SN-99b-d21" trigger="normal" shiftRegister="Lights" registerOutputPin="Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 7|Output 8|Output 9|Output 10|Output 11|Output 12|Output 13|Output 14|Output 15" />
@@ -186,14 +186,14 @@
     </config>
     <config guid="dbd7bca1-5366-4942-bb81-fd59b12969a3">
       <active>true</active>
-      <description>PFD menu panel - Backlight</description>
+      <description>PFD menu - Backlights</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="Backlight" varExpression="$" />
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT PANEL:1, Bool)" UUID="0" />
         <modifiers>
-          <transformation active="True" expression="M" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="ShiftRegister" serial="CJ4 PFD/ SN-E461D0635B2A1724" trigger="normal" shiftRegister="BACKLIGHT_LEDS" registerOutputPin="Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 7|Output 8|Output 9|Output 10|Output 11|Output 12|Output 13|Output 14|Output 15" />
+        <display type="ShiftRegister" serial="CJ4 PFD/ SN-E461D0635B2A1724" trigger="normal" shiftRegister="BACKLIGHT_LEDS" registerOutputPin="Output 0|Output 1|Output 2|Output 3|Output 4|Output 7|Output 8|Output 9|Output 10|Output 11|Output 12|Output 13|Output 14|Output 15" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -204,9 +204,9 @@
       <active>true</active>
       <description>Autopilot - Backlight brightness</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
+        <source type="SimConnect" VarType="CODE" Value="100 (L:LIGHTING_PANEL_1) -" UUID="0" />
         <modifiers>
-          <transformation active="True" expression="(100-$)*M" substrStart="0" substrEnd="7" />
+          <transformation active="True" expression="$*M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
           <interpolation active="True">
             <value x="0" y="0" />
@@ -214,26 +214,6 @@
           </interpolation>
         </modifiers>
         <display type="Output" serial="CJ4 Autopilot/ SN-99b-d21" trigger="normal" pin="Brightness" pinBrightness="255" pinPwm="True" />
-        <preconditions />
-        <configrefs>
-          <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
-        </configrefs>
-      </settings>
-    </config>
-    <config guid="374dbbb0-9164-413c-8b48-46187100a28d">
-      <active>true</active>
-      <description>PFD menu panel - Backlight brightness</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 !=  if{ (L:LIGHTING_PANEL_1) } els{ 0 }" UUID="0" />
-        <modifiers>
-          <transformation active="True" expression="(100-$)*M" substrStart="0" substrEnd="7" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-          <interpolation active="True">
-            <value x="0" y="0" />
-            <value x="100" y="255" />
-          </interpolation>
-        </modifiers>
-        <display type="Output" serial="CJ4 PFD/ SN-E461D0635B2A1724" trigger="normal" pin="BRIGHTNESS" pinBrightness="255" pinPwm="True" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -249,7 +229,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Parking Brake" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Parking Brake" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -274,12 +254,28 @@
       <active>true</active>
       <description>Bravo - Master warning</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:Generic_Master_Warning_Active)" UUID="1bd1f480-1004-4a3c-b352-3439d913ac99" />
+        <source type="SimConnect" VarType="CODE" Value="(A:MASTER WARNING ACTIVE, Boolean)" UUID="1bd1f480-1004-4a3c-b352-3439d913ac99" />
         <modifiers>
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Master Warning" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Master Warning" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="fe72a8a7-8bd3-4a1d-b67e-532734e848f3">
+      <active>true</active>
+      <description>Bravo - Master warning Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:MASTER WARNING ACTIVE, Boolean)" UUID="1bd1f480-1004-4a3c-b352-3439d913ac99" />
+        <modifiers>
+          <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="CJ4 PFD/ SN-E461D0635B2A1724" trigger="normal" shiftRegister="BACKLIGHT_LEDS" registerOutputPin="Output 6" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -290,12 +286,28 @@
       <active>true</active>
       <description>Bravo - Master caution</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(L:Generic_Master_Caution_Active)" UUID="51da03a2-9e3b-434c-8bfa-dd704363bcb9" />
+        <source type="SimConnect" VarType="CODE" Value="(A:MASTER CAUTION ACTIVE, Boolean)" UUID="51da03a2-9e3b-434c-8bfa-dd704363bcb9" />
         <modifiers>
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Master Caution" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Master Caution" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="3d8a34aa-783e-484c-b902-c514beac6990">
+      <active>true</active>
+      <description>Bravo - Master caution Copy</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:MASTER CAUTION ACTIVE, Boolean)" UUID="51da03a2-9e3b-434c-8bfa-dd704363bcb9" />
+        <modifiers>
+          <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="CJ4 PFD/ SN-E461D0635B2A1724" trigger="normal" shiftRegister="BACKLIGHT_LEDS" registerOutputPin="Output 5" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -311,7 +323,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Low Volts" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Low Volts" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -327,7 +339,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Low Oil Pressure" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Low Oil Pressure" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -343,7 +355,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Low Fuel Pressure" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Low Fuel Pressure" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -359,7 +371,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Starter Engaged" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Starter Engaged" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -375,7 +387,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Engine Fire" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Lights - Engine Fire" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="c59e986f-ae2c-4560-916f-093dcd032aa9" placeholder="M" />
@@ -391,7 +403,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Center Green" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Center Green" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -407,7 +419,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Left Green" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Left Green" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -423,7 +435,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Right Green" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Right Green" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -439,7 +451,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Center Red" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Center Red" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -455,7 +467,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Left Red" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Left Red" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -471,7 +483,7 @@
           <transformation active="True" expression="$ * M" substrStart="0" substrEnd="7" />
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
-        <display type="Pin" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Right Red" pinBrightness="255" />
+        <display type="Output" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" trigger="normal" pin="Gear - Right Red" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -502,6 +514,22 @@
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="Output" serial="CJ4 misc/ SN-E4617107E339442F" trigger="normal" pin="LED_BRIGHT" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="be28243a-5d5b-43d9-8a7a-81e2b93e3b76">
+      <active>true</active>
+      <description>PFD menu panel - LED brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_PANEL_1) 100 &lt;  if{ 255 (L:LIGHTING_PANEL_1) - } els{ 0 }" UUID="0" />
+        <modifiers>
+          <transformation active="True" expression="$*M" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="CJ4 PFD/ SN-E461D0635B2A1724" trigger="normal" pin="BRIGHTNESS" pinBrightness="255" pinPwm="True" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
@@ -728,6 +756,20 @@
           <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         </modifiers>
         <display type="ShiftRegister" serial="CJ4 misc/ SN-E4617107E339442F" trigger="normal" shiftRegister="LEDs" registerOutputPin="Output 14" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0c4cf166-fd60-4419-b8f6-83c2ab85ef17">
+      <active>true</active>
+      <description>Panel lights - ON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT PANEL:1, Bool)" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -1249,7 +1291,7 @@
     <config guid="e26edfaa-669d-45b1-86a4-d3050758aee2">
       <active>true</active>
       <description>FMC - L1 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="L1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="L1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_L1)" />
           <onRelease />
@@ -1263,7 +1305,7 @@
     <config guid="93635236-19d9-45ef-a357-6a7347909e48">
       <active>true</active>
       <description>FMC - L2 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="L2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="L2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_L2)" />
           <onRelease />
@@ -1277,7 +1319,7 @@
     <config guid="bc378d0e-4dfe-4d65-81db-c6b4b12c92a9">
       <active>true</active>
       <description>FMC - L3 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="L3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="L3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_L3)" />
           <onRelease />
@@ -1291,7 +1333,7 @@
     <config guid="4d317fbc-4eef-444b-af9d-091417e01d3a">
       <active>true</active>
       <description>FMC - L4 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="L4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="L4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_L4)" />
           <onRelease />
@@ -1305,7 +1347,7 @@
     <config guid="0f23da7b-49a1-40c1-b35b-cffc439369c0">
       <active>true</active>
       <description>FMC - L5 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="L5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="L5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_L5)" />
           <onRelease />
@@ -1319,7 +1361,7 @@
     <config guid="f1301332-edc1-4ced-aff6-33c2d14bf557">
       <active>true</active>
       <description>FMC - L6 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="L6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="L6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_L6)" />
           <onRelease />
@@ -1333,7 +1375,7 @@
     <config guid="47e5fa6d-32d1-4403-a0a5-085fad6d1efc">
       <active>true</active>
       <description>FMC - MSG - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="MSG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="MSG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_MSG)" />
           <onRelease />
@@ -1347,7 +1389,7 @@
     <config guid="d01acff6-9369-4a8d-842e-ca84b99baecc">
       <active>true</active>
       <description>FMC - DIR - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="DIR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="DIR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_DIR)" />
           <onRelease />
@@ -1361,7 +1403,7 @@
     <config guid="45565c9e-e5ac-49d9-b5fb-cde4db623aa3">
       <active>true</active>
       <description>FMC - IDX - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="IDX" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="IDX" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_IDX)" />
           <onRelease />
@@ -1375,7 +1417,7 @@
     <config guid="58e56fe5-edbb-4feb-8d07-23149861ca1d">
       <active>true</active>
       <description>FMC - TUN - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="TUN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="TUN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_TUN)" />
           <onRelease />
@@ -1389,7 +1431,7 @@
     <config guid="4a33dac7-610a-4472-999b-29a78c936556">
       <active>true</active>
       <description>FMC - A - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="A" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="A" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_A)" />
           <onRelease />
@@ -1403,7 +1445,7 @@
     <config guid="1422b250-7b5e-4799-b63a-6a26f9dbb510">
       <active>true</active>
       <description>FMC - H - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="H" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="H" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_H)" />
           <onRelease />
@@ -1417,7 +1459,7 @@
     <config guid="c24208a8-8dd3-44c8-a341-64c35b170409">
       <active>true</active>
       <description>FMC - O - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="O" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="O" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_O)" />
           <onRelease />
@@ -1431,7 +1473,7 @@
     <config guid="31ef1749-11d3-42dc-a72a-cd25f21458a5">
       <active>true</active>
       <description>FMC - V - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="V" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="V" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_V)" />
           <onRelease />
@@ -1445,7 +1487,7 @@
     <config guid="9417b603-e8c3-4a0d-8182-edd1d48b6109">
       <active>true</active>
       <description>FMC - FPLN - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="FPLN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="FPLN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_FPLN)" />
           <onRelease />
@@ -1459,7 +1501,7 @@
     <config guid="fe359930-d671-42dc-abf4-b6319bda0aab">
       <active>true</active>
       <description>FMC - B - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="B" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="B" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_B)" />
           <onRelease />
@@ -1473,7 +1515,7 @@
     <config guid="01378e14-ebf8-4e30-8f8d-8dcddba5a486">
       <active>true</active>
       <description>FMC - I - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="I" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="I" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_I)" />
           <onRelease />
@@ -1487,7 +1529,7 @@
     <config guid="902c8079-a25b-4cca-b3f5-4204fd4c6d36">
       <active>true</active>
       <description>FMC - P - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_P)" />
           <onRelease />
@@ -1501,7 +1543,7 @@
     <config guid="ec4eec4f-8372-42c7-a23f-87012e056a3f">
       <active>true</active>
       <description>FMC - W - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="W" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="W" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_W)" />
           <onRelease />
@@ -1515,7 +1557,7 @@
     <config guid="426f555e-662f-438a-bb40-394a17fb9ab1">
       <active>true</active>
       <description>FMC - LEGS - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="LEGS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="LEGS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_LEGS)" />
           <onRelease />
@@ -1529,7 +1571,7 @@
     <config guid="278cef5f-0fdc-45f9-bfdd-4ad0ea4a051e">
       <active>true</active>
       <description>FMC - C - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="C" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="C" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_C)" />
           <onRelease />
@@ -1543,7 +1585,7 @@
     <config guid="1b313cd4-99f0-45b0-a640-123ae11ffcec">
       <active>true</active>
       <description>FMC - J - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="J" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="J" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_J)" />
           <onRelease />
@@ -1557,7 +1599,7 @@
     <config guid="a3b3336c-5706-4367-95ad-352c8f48e73a">
       <active>true</active>
       <description>FMC - Q - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="Q" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="Q" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_Q)" />
           <onRelease />
@@ -1571,7 +1613,7 @@
     <config guid="a394aed9-1f00-4cb8-95e3-8ff30f0a6346">
       <active>true</active>
       <description>FMC - X - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="X" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="X" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_X)" />
           <onRelease />
@@ -1585,9 +1627,9 @@
     <config guid="a8bce0b5-3594-499e-b95a-36cf01f163ff">
       <active>true</active>
       <description>FMC - DEPARR - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="DEPARR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="DEP_ARR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_DEPARR)" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_DEPARR)" presetId="8be30c1f-e9bb-44bf-be65-90f4939020f6" />
           <onRelease />
         </button>
         <preconditions />
@@ -1599,7 +1641,7 @@
     <config guid="ff2a7988-b378-4811-8c8c-6bec2ee2805d">
       <active>true</active>
       <description>FMC - D - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="D" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="D" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_D)" />
           <onRelease />
@@ -1613,7 +1655,7 @@
     <config guid="b1b966f1-1a0d-4056-9457-66992828088a">
       <active>true</active>
       <description>FMC - K - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="K" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="K" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_K)" />
           <onRelease />
@@ -1627,7 +1669,7 @@
     <config guid="d0e2ac44-d1ee-49fb-a0f2-d34629a3b484">
       <active>true</active>
       <description>FMC - R - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="R" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="R" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_R)" />
           <onRelease />
@@ -1641,7 +1683,7 @@
     <config guid="62ec143f-2b26-41fd-b318-0257c6d5afd5">
       <active>true</active>
       <description>FMC - Y - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="Y" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="Y" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_Y)" />
           <onRelease />
@@ -1655,7 +1697,7 @@
     <config guid="54514f31-d3c3-4d56-9fbb-e2426c632e8a">
       <active>true</active>
       <description>FMC - PERF - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="PERF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="PERF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_PERF)" />
           <onRelease />
@@ -1669,7 +1711,7 @@
     <config guid="6c8a3c22-0e36-4229-a590-6abc58bff86c">
       <active>true</active>
       <description>FMC - E - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="E" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="E" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_E)" />
           <onRelease />
@@ -1683,7 +1725,7 @@
     <config guid="0b5bfe12-dd1b-497f-b8e0-255cd68b79af">
       <active>true</active>
       <description>FMC - L - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="L" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="L" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_L)" />
           <onRelease />
@@ -1697,7 +1739,7 @@
     <config guid="1333fe47-dd72-46d4-b4c2-5315acef03c6">
       <active>true</active>
       <description>FMC - S - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="S" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="S" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_S)" />
           <onRelease />
@@ -1711,7 +1753,7 @@
     <config guid="7b777956-c456-41de-b21e-1893e33bd85a">
       <active>true</active>
       <description>FMC - Z - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="Z" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="Z" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_Z)" />
           <onRelease />
@@ -1725,7 +1767,7 @@
     <config guid="cf34d8a3-38a1-405a-8bef-9f31a7f42764">
       <active>true</active>
       <description>FMC - DSPL_MENU - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="DSPL_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="DSPL_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_DSPL_MENU)" />
           <onRelease />
@@ -1739,7 +1781,7 @@
     <config guid="f8a242af-45ee-43ad-bad2-ebbb9c6486f9">
       <active>true</active>
       <description>FMC - F - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="F" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="F" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_F)" />
           <onRelease />
@@ -1753,7 +1795,7 @@
     <config guid="172e0cd5-0515-4bf5-851e-87e0c51be5bd">
       <active>true</active>
       <description>FMC - M - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="M" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="M" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_M)" />
           <onRelease />
@@ -1767,7 +1809,7 @@
     <config guid="c4de5157-38c6-459f-9b7c-230ed09a7f52">
       <active>true</active>
       <description>FMC - T - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="T" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="T" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_T)" />
           <onRelease />
@@ -1781,7 +1823,7 @@
     <config guid="709c5db7-28b7-4b3c-9d2f-23a48cd1c61b">
       <active>true</active>
       <description>FMC - SP - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="SP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="SP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_SP)" />
           <onRelease />
@@ -1795,7 +1837,7 @@
     <config guid="3a47c7fe-a24b-407f-8eac-33c8a51900c9">
       <active>true</active>
       <description>FMC - MFD_ADV - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="MFD_ADV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="MFD_ADV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_MFD_ADV)" />
           <onRelease />
@@ -1809,7 +1851,7 @@
     <config guid="77930d89-8490-42a4-875f-cf2d3ae6de3d">
       <active>true</active>
       <description>FMC - G - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="G" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="G" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_G)" />
           <onRelease />
@@ -1823,7 +1865,7 @@
     <config guid="7e8476fc-3a8e-4e8d-90a8-9fa43b998246">
       <active>true</active>
       <description>FMC - N - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="N" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="N" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_N)" />
           <onRelease />
@@ -1837,7 +1879,7 @@
     <config guid="423ade3d-950f-47b8-9cab-8a7349d13b9a">
       <active>true</active>
       <description>FMC - U - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="U" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="U" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_U)" />
           <onRelease />
@@ -1851,7 +1893,7 @@
     <config guid="4971d105-8361-4e5c-97f1-54580cb1a19e">
       <active>true</active>
       <description>FMC - DIV - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="DIV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="DIV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_DIV)" />
           <onRelease />
@@ -1865,7 +1907,7 @@
     <config guid="2dfe758f-dad2-4bb1-b011-dad2a12e5e64">
       <active>true</active>
       <description>FMC - MFD_DATA - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="MFD_DATA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="MFD_DATA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_MFD_DATA)" />
           <onRelease />
@@ -1879,7 +1921,7 @@
     <config guid="6d9009e0-6492-48f9-b9c4-ddc1e761731a">
       <active>true</active>
       <description>FMC - 1 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_1)" />
           <onRelease />
@@ -1893,7 +1935,7 @@
     <config guid="ede2cf99-42c1-457f-a03f-9dcc67312ce3">
       <active>true</active>
       <description>FMC - 4 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_4)" />
           <onRelease />
@@ -1907,7 +1949,7 @@
     <config guid="affbfe3e-f25d-403e-abfd-6fbbe2decc81">
       <active>true</active>
       <description>FMC - 7 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_7)" />
           <onRelease />
@@ -1921,7 +1963,7 @@
     <config guid="27bd33e0-8d76-4d8f-843b-a3d15f833da3">
       <active>true</active>
       <description>FMC - DOT - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="DOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="DOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_DOT)" />
           <onRelease />
@@ -1934,10 +1976,10 @@
     </config>
     <config guid="61dabe13-0066-4d51-8faa-9b981e62df7b">
       <active>true</active>
-      <description>FMC - PREVPAGE - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="PREVPAGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>FMC - PREV - Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="PREV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_PREVPAGE)" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_PREVPAGE)" presetId="3da66bf8-ffeb-45f1-aac6-163c02ced408" />
           <onRelease />
         </button>
         <preconditions />
@@ -1949,7 +1991,7 @@
     <config guid="d1f16869-efbd-4d71-9fc9-ad270776ac57">
       <active>true</active>
       <description>FMC - 2 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_2)" />
           <onRelease />
@@ -1963,7 +2005,7 @@
     <config guid="5cd9a0fc-ce3c-4f1e-8ccb-2322bfdaf656">
       <active>true</active>
       <description>FMC - 5 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_5)" />
           <onRelease />
@@ -1977,7 +2019,7 @@
     <config guid="5a1404af-2b1c-44c5-aeef-9aa16421af07">
       <active>true</active>
       <description>FMC - 8 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_8)" />
           <onRelease />
@@ -1991,7 +2033,7 @@
     <config guid="81139b72-5928-4b93-9391-304fb16e31d2">
       <active>true</active>
       <description>FMC - 0 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_0)" />
           <onRelease />
@@ -2005,7 +2047,7 @@
     <config guid="7cc90fd8-0995-4cb7-8542-16120371e0fd">
       <active>true</active>
       <description>FMC - 3 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_3)" />
           <onRelease />
@@ -2019,7 +2061,7 @@
     <config guid="d8398221-6703-4893-b632-6d99e6d967d5">
       <active>true</active>
       <description>FMC - 6 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_6)" />
           <onRelease />
@@ -2033,7 +2075,7 @@
     <config guid="0465208f-5bf0-4b59-8f99-9bc550a5aa1e">
       <active>true</active>
       <description>FMC - 9 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_9)" />
           <onRelease />
@@ -2047,7 +2089,7 @@
     <config guid="e1a49321-5e84-42ba-a306-7d9225e89c9a">
       <active>true</active>
       <description>FMC - PLUSMINUS - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="PLUSMINUS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="PLUSMINUS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_PLUSMINUS)" />
           <onRelease />
@@ -2061,7 +2103,7 @@
     <config guid="b97b19e8-36f1-4ff0-888b-687bdf8b71c3">
       <active>true</active>
       <description>FMC - R1 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="R1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="R1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_R1)" />
           <onRelease />
@@ -2075,7 +2117,7 @@
     <config guid="f05e337a-b936-4848-8b85-0abee71f2bff">
       <active>true</active>
       <description>FMC - R2 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="R2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="R2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_R2)" />
           <onRelease />
@@ -2089,7 +2131,7 @@
     <config guid="ec49fc38-436e-49cb-9690-9dcc4cc8d82f">
       <active>true</active>
       <description>FMC - R3 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="R3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="R3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_R3)" />
           <onRelease />
@@ -2103,7 +2145,7 @@
     <config guid="4c8921c1-437c-48bc-88d6-ea3dbdf29749">
       <active>true</active>
       <description>FMC - R4 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="R4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="R4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_R4)" />
           <onRelease />
@@ -2117,7 +2159,7 @@
     <config guid="2c001528-e10a-47e8-82c1-82449b8768c6">
       <active>true</active>
       <description>FMC - R5 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="R5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="R5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_R5)" />
           <onRelease />
@@ -2131,7 +2173,7 @@
     <config guid="1fd23058-3d9e-4cfa-ac68-84c5306017c7">
       <active>true</active>
       <description>FMC - R6 - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="R6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="R6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_R6)" />
           <onRelease />
@@ -2145,7 +2187,7 @@
     <config guid="d6371d80-105e-4a65-bac0-b8a993b38609">
       <active>true</active>
       <description>FMC - EXEC - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="EXEC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="EXEC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_EXEC)" />
           <onRelease />
@@ -2158,10 +2200,10 @@
     </config>
     <config guid="31043f81-1ab4-4163-98fc-abbb89b738a3">
       <active>true</active>
-      <description>FMC - NEXTPAGE - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="NEXTPAGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>FMC - NEXT - Pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="NEXT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_NEXTPAGE)" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_NEXTPAGE)" presetId="3151256b-ac62-4e60-a87f-6db3ba947d79" />
           <onRelease />
         </button>
         <preconditions />
@@ -2173,7 +2215,7 @@
     <config guid="ab1b9402-9fa0-49ba-b211-f55476cbbeba">
       <active>true</active>
       <description>FMC - CLR - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
           <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_CLR)" />
@@ -2187,7 +2229,7 @@
     <config guid="f33acbdf-4c80-4cc2-96e3-0e6af03068b2">
       <active>true</active>
       <description>FMC - BRT - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="BRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="BRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_BRT)" />
           <onRelease />
@@ -2201,7 +2243,7 @@
     <config guid="9ecaaea7-519d-4c9e-b4ec-f91adef58aa5">
       <active>true</active>
       <description>FMC - DIM - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="DIM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="DIM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_DIM)" />
           <onRelease />
@@ -2215,7 +2257,7 @@
     <config guid="97389cc8-b55b-4c66-8b11-c189d81560e6">
       <active>true</active>
       <description>FMC - DEL - Pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-9a4-828" name="DEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 1/ SN-E46224D7D70E4225" name="DEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
           <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_1_BTN_CLR_Long)" />
@@ -3063,7 +3105,7 @@
     <config guid="d718b503-6dc9-4d08-87f5-3da7b61b78a4">
       <active>true</active>
       <description>FMC - L1 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="L1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="L1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_L1)" />
           <onRelease />
@@ -3077,7 +3119,7 @@
     <config guid="e3085ce3-905c-4517-a4bc-59c3d19f6f3a">
       <active>true</active>
       <description>FMC - L2 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="L2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="L2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_L2)" />
           <onRelease />
@@ -3091,7 +3133,7 @@
     <config guid="2ea3cac1-75f7-4d00-892e-0b390ead1411">
       <active>true</active>
       <description>FMC - L3 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="L3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="L3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_L3)" />
           <onRelease />
@@ -3105,7 +3147,7 @@
     <config guid="943e7da2-84d8-4a92-a10e-5e19b7f5b203">
       <active>true</active>
       <description>FMC - L4 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="L4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="L4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_L4)" />
           <onRelease />
@@ -3119,7 +3161,7 @@
     <config guid="adb4cd99-e2de-46bd-9186-cb949af9aab9">
       <active>true</active>
       <description>FMC - L5 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="L5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="L5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_L5)" />
           <onRelease />
@@ -3133,7 +3175,7 @@
     <config guid="00e97a4e-45b6-4fa6-9a73-0911855fd701">
       <active>true</active>
       <description>FMC - L6 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="L6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="L6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_L6)" />
           <onRelease />
@@ -3147,7 +3189,7 @@
     <config guid="153e98eb-eb84-4e00-896b-29e1b0b3cf00">
       <active>true</active>
       <description>FMC - MSG - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="MSG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="MSG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_MSG)" />
           <onRelease />
@@ -3161,7 +3203,7 @@
     <config guid="bd1b1ae2-7a73-4d60-a023-2dec162f2aa3">
       <active>true</active>
       <description>FMC - DIR - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="DIR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="DIR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_DIR)" />
           <onRelease />
@@ -3175,7 +3217,7 @@
     <config guid="a8a45cce-d67c-4327-b28e-8409c58aa8b2">
       <active>true</active>
       <description>FMC - IDX - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="IDX" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="IDX" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_IDX)" />
           <onRelease />
@@ -3189,7 +3231,7 @@
     <config guid="6603b250-d289-4763-bede-d740fb8a4e6a">
       <active>true</active>
       <description>FMC - TUN - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="TUN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="TUN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_TUN)" />
           <onRelease />
@@ -3203,7 +3245,7 @@
     <config guid="a11052bc-6ad5-4c83-910c-24723ac024c3">
       <active>true</active>
       <description>FMC - A - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="A" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="A" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_A)" />
           <onRelease />
@@ -3217,7 +3259,7 @@
     <config guid="c42692e1-94dd-4eab-baac-f1f7236cad10">
       <active>true</active>
       <description>FMC - H - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="H" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="H" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_H)" />
           <onRelease />
@@ -3231,7 +3273,7 @@
     <config guid="49890e6e-af63-47fc-bd4e-c700b8aa7d40">
       <active>true</active>
       <description>FMC - O - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="O" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="O" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_O)" />
           <onRelease />
@@ -3245,7 +3287,7 @@
     <config guid="cfddab78-8448-46e3-9699-7f4093e26c97">
       <active>true</active>
       <description>FMC - V - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="V" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="V" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_V)" />
           <onRelease />
@@ -3259,7 +3301,7 @@
     <config guid="73a167a2-f2b5-48d8-86fc-7086d2f1fc6d">
       <active>true</active>
       <description>FMC - FPLN - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="FPLN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="FPLN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_FPLN)" />
           <onRelease />
@@ -3273,7 +3315,7 @@
     <config guid="24c776fe-9b34-4a2e-ac97-45ff0e37398d">
       <active>true</active>
       <description>FMC - B - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="B" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="B" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_B)" />
           <onRelease />
@@ -3287,7 +3329,7 @@
     <config guid="7dc9cb0d-16de-4c8c-af8a-1980ef24addf">
       <active>true</active>
       <description>FMC - I - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="I" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="I" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_I)" />
           <onRelease />
@@ -3301,7 +3343,7 @@
     <config guid="9f575bb0-0867-49b8-a42d-01623849f3f6">
       <active>true</active>
       <description>FMC - P - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_P)" />
           <onRelease />
@@ -3315,7 +3357,7 @@
     <config guid="ddfe39ea-d204-4038-ad33-c19ca6bbfc76">
       <active>true</active>
       <description>FMC - W - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="W" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="W" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_W)" />
           <onRelease />
@@ -3329,7 +3371,7 @@
     <config guid="d20aa4f8-36df-4c18-a295-1de1a37dee29">
       <active>true</active>
       <description>FMC - LEGS - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="LEGS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="LEGS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_LEGS)" />
           <onRelease />
@@ -3343,7 +3385,7 @@
     <config guid="5546d729-0411-4f8b-bb71-5b5340c76d3b">
       <active>true</active>
       <description>FMC - C - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="C" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="C" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_C)" />
           <onRelease />
@@ -3357,7 +3399,7 @@
     <config guid="27a14a9a-8c55-4adb-a3d7-5b157e5e8b32">
       <active>true</active>
       <description>FMC - J - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="J" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="J" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_J)" />
           <onRelease />
@@ -3371,7 +3413,7 @@
     <config guid="5fd7e078-3688-437a-a03b-4c5848d11cce">
       <active>true</active>
       <description>FMC - Q - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="Q" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="Q" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_Q)" />
           <onRelease />
@@ -3385,7 +3427,7 @@
     <config guid="fdb119cb-7a51-4036-984a-c9e38e173c1b">
       <active>true</active>
       <description>FMC - X - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="X" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="X" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_X)" />
           <onRelease />
@@ -3399,9 +3441,9 @@
     <config guid="64a96087-a731-4bcc-b180-c61d1c79f80c">
       <active>true</active>
       <description>FMC - DEPARR - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="DEPARR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="DEP_ARR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_DEPARR)" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_DEPARR)" presetId="0" />
           <onRelease />
         </button>
         <preconditions />
@@ -3413,7 +3455,7 @@
     <config guid="4699ea73-d8ef-4872-8665-9535bbdc8b6a">
       <active>true</active>
       <description>FMC - D - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="D" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="D" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_D)" />
           <onRelease />
@@ -3427,7 +3469,7 @@
     <config guid="e0d60152-695d-4b71-89ed-146185b82948">
       <active>true</active>
       <description>FMC - K - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="K" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="K" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_K)" />
           <onRelease />
@@ -3441,7 +3483,7 @@
     <config guid="c63fb71a-c3f2-4854-9b15-6b7ccc01a14b">
       <active>true</active>
       <description>FMC - R - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="R" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="R" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_R)" />
           <onRelease />
@@ -3455,7 +3497,7 @@
     <config guid="bcf6df2f-e994-4e1b-8fb2-e588c54bf083">
       <active>true</active>
       <description>FMC - Y - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="Y" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="Y" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_Y)" />
           <onRelease />
@@ -3469,7 +3511,7 @@
     <config guid="88fb4a57-bb0e-44d5-a76e-199d69a0b908">
       <active>true</active>
       <description>FMC - PERF - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="PERF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="PERF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_PERF)" />
           <onRelease />
@@ -3483,7 +3525,7 @@
     <config guid="17447205-0097-4b69-a886-8fbc46d471a0">
       <active>true</active>
       <description>FMC - E - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="E" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="E" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_E)" />
           <onRelease />
@@ -3497,7 +3539,7 @@
     <config guid="9296fb52-b9a1-4b8e-a4a1-da7d5f8958be">
       <active>true</active>
       <description>FMC - L - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="L" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="L" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_L)" />
           <onRelease />
@@ -3511,7 +3553,7 @@
     <config guid="0a7e0f65-3b6e-4935-88cf-d6bd1568e7dc">
       <active>true</active>
       <description>FMC - S - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="S" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="S" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_S)" />
           <onRelease />
@@ -3525,7 +3567,7 @@
     <config guid="c3ffddd8-5fe1-41ef-86cb-f0d59e3518b3">
       <active>true</active>
       <description>FMC - Z - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="Z" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="Z" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_Z)" />
           <onRelease />
@@ -3539,7 +3581,7 @@
     <config guid="f90dc952-2d54-4990-82c8-c9b12fb6985a">
       <active>true</active>
       <description>FMC - DSPL_MENU - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="DSPL_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="DSPL_MENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_DSPL_MENU)" />
           <onRelease />
@@ -3553,7 +3595,7 @@
     <config guid="96a0bb9c-9fee-45e1-9680-fd2afb69cead">
       <active>true</active>
       <description>FMC - F - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="F" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="F" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_F)" />
           <onRelease />
@@ -3567,7 +3609,7 @@
     <config guid="27e341ec-2d93-46be-9a7e-28285cb78edf">
       <active>true</active>
       <description>FMC - M - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="M" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="M" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_M)" />
           <onRelease />
@@ -3581,7 +3623,7 @@
     <config guid="e3b061b5-4aeb-4efb-9533-816ab0ac2713">
       <active>true</active>
       <description>FMC - T - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="T" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="T" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_T)" />
           <onRelease />
@@ -3595,7 +3637,7 @@
     <config guid="ac5fe4af-d30f-44fa-98fb-51fb7bbe6fa2">
       <active>true</active>
       <description>FMC - SP - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="SP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="SP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_SP)" />
           <onRelease />
@@ -3609,7 +3651,7 @@
     <config guid="d97782ed-cc29-46e5-a788-6eb111d3a0c5">
       <active>true</active>
       <description>FMC - MFD_ADV - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="MFD_ADV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="MFD_ADV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_MFD_ADV)" />
           <onRelease />
@@ -3623,7 +3665,7 @@
     <config guid="f2a5f37e-a0ac-4dce-a6a4-063d373f58ea">
       <active>true</active>
       <description>FMC - G - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="G" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="G" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_G)" />
           <onRelease />
@@ -3637,7 +3679,7 @@
     <config guid="e37a91b4-de0c-457e-8490-373a09d1a14b">
       <active>true</active>
       <description>FMC - N - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="N" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="N" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_N)" />
           <onRelease />
@@ -3651,7 +3693,7 @@
     <config guid="6b851049-efdc-4936-916e-b73f893b8d9b">
       <active>true</active>
       <description>FMC - U - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="U" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="U" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_U)" />
           <onRelease />
@@ -3665,7 +3707,7 @@
     <config guid="c6dcadc4-8cb7-485f-8b9c-31cfc048848e">
       <active>true</active>
       <description>FMC - DIV - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="DIV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="DIV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_DIV)" />
           <onRelease />
@@ -3679,7 +3721,7 @@
     <config guid="17f53300-53ce-4dff-88e9-d0bfc08b78de">
       <active>true</active>
       <description>FMC - MFD_DATA - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="MFD_DATA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="MFD_DATA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_MFD_DATA)" />
           <onRelease />
@@ -3693,7 +3735,7 @@
     <config guid="5e33c0a0-cc05-4cb1-b957-d6448a0635ce">
       <active>true</active>
       <description>FMC - 1 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_1)" />
           <onRelease />
@@ -3707,7 +3749,7 @@
     <config guid="bc644785-f2a0-4d63-9956-ac6e9f861da4">
       <active>true</active>
       <description>FMC - 4 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_4)" />
           <onRelease />
@@ -3721,7 +3763,7 @@
     <config guid="c112314a-1e87-4a1b-a631-2919311eae80">
       <active>true</active>
       <description>FMC - 7 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_7)" />
           <onRelease />
@@ -3735,7 +3777,7 @@
     <config guid="4c428e7d-f964-485f-a68f-4487ea007993">
       <active>true</active>
       <description>FMC - DOT - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="DOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="DOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_DOT)" />
           <onRelease />
@@ -3748,10 +3790,10 @@
     </config>
     <config guid="3ed617eb-4fba-415c-92c1-649f9fe43d6b">
       <active>true</active>
-      <description>FMC - PREVPAGE - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="PREVPAGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>FMC - PREV - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="PREV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_PREVPAGE)" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_PREVPAGE)" presetId="0" />
           <onRelease />
         </button>
         <preconditions />
@@ -3763,7 +3805,7 @@
     <config guid="df938f32-6a50-493d-a853-e1eeee4bbbeb">
       <active>true</active>
       <description>FMC - 2 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_2)" />
           <onRelease />
@@ -3777,7 +3819,7 @@
     <config guid="7ef4356e-da0b-4528-8128-fc972266579b">
       <active>true</active>
       <description>FMC - 5 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_5)" />
           <onRelease />
@@ -3791,7 +3833,7 @@
     <config guid="19fef87e-7f04-4bdf-9e08-663b7ac03540">
       <active>true</active>
       <description>FMC - 8 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_8)" />
           <onRelease />
@@ -3805,7 +3847,7 @@
     <config guid="e5524a52-86a8-4ba2-bc18-e599c7220e0f">
       <active>true</active>
       <description>FMC - 0 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_0)" />
           <onRelease />
@@ -3819,7 +3861,7 @@
     <config guid="329724da-614b-4ffd-85b3-71722edc6aa4">
       <active>true</active>
       <description>FMC - 3 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_3)" />
           <onRelease />
@@ -3833,7 +3875,7 @@
     <config guid="cdbf27e8-b7cc-4d8e-b39f-d839624a74e2">
       <active>true</active>
       <description>FMC - 6 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_6)" />
           <onRelease />
@@ -3847,7 +3889,7 @@
     <config guid="834d7670-cc79-4b56-98ee-b3eccdea24c1">
       <active>true</active>
       <description>FMC - 9 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_9)" />
           <onRelease />
@@ -3861,7 +3903,7 @@
     <config guid="bbd624c3-723b-42ea-a203-871d41d0c05d">
       <active>true</active>
       <description>FMC - PLUSMINUS - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="PLUSMINUS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="PLUSMINUS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_PLUSMINUS)" />
           <onRelease />
@@ -3875,7 +3917,7 @@
     <config guid="dd3e2e6e-cae3-479c-b1c5-8ebaca89820d">
       <active>true</active>
       <description>FMC - R1 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="R1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="R1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_R1)" />
           <onRelease />
@@ -3889,7 +3931,7 @@
     <config guid="3c6e34c5-674a-4ce7-8410-bee81d45c0a3">
       <active>true</active>
       <description>FMC - R2 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="R2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="R2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_R2)" />
           <onRelease />
@@ -3903,7 +3945,7 @@
     <config guid="e16357f5-f4ce-4119-b428-5aee8465ee41">
       <active>true</active>
       <description>FMC - R3 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="R3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="R3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_R3)" />
           <onRelease />
@@ -3917,7 +3959,7 @@
     <config guid="a85e7ea8-4511-4f99-9704-aea2a0ab9fdd">
       <active>true</active>
       <description>FMC - R4 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="R4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="R4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_R4)" />
           <onRelease />
@@ -3931,7 +3973,7 @@
     <config guid="5c820b04-c807-4c3b-885c-d53045003512">
       <active>true</active>
       <description>FMC - R5 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="R5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="R5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_R5)" />
           <onRelease />
@@ -3945,7 +3987,7 @@
     <config guid="91e44978-97b4-4f19-96f5-4aa7880b0322">
       <active>true</active>
       <description>FMC - R6 - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="R6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="R6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_R6)" />
           <onRelease />
@@ -3959,7 +4001,7 @@
     <config guid="2732ef87-fcb2-4bea-baed-6738c26fbe8e">
       <active>true</active>
       <description>FMC - EXEC - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="EXEC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="EXEC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_EXEC)" />
           <onRelease />
@@ -3972,10 +4014,10 @@
     </config>
     <config guid="3e92a97f-3459-4e46-a85f-e40e1ff7184b">
       <active>true</active>
-      <description>FMC - NEXTPAGE - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="NEXTPAGE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <description>FMC - NEXT - Co-pilot</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="NEXT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_NEXTPAGE)" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_NEXTPAGE)" presetId="0" />
           <onRelease />
         </button>
         <preconditions />
@@ -3987,7 +4029,7 @@
     <config guid="d0ef976f-0363-43d2-b4c8-0fd7cd32f5c8">
       <active>true</active>
       <description>FMC - CLR - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
           <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_CLR)" />
@@ -4001,7 +4043,7 @@
     <config guid="f3a173ce-54ac-44a4-8236-e19d5419fea9">
       <active>true</active>
       <description>FMC - BRT - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="BRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="BRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_BRT)" />
           <onRelease />
@@ -4015,7 +4057,7 @@
     <config guid="a39025fc-7e69-4ef9-b650-f6295b162229">
       <active>true</active>
       <description>FMC - DIM - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="DIM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="DIM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_DIM)" />
           <onRelease />
@@ -4029,7 +4071,7 @@
     <config guid="b9f4cc90-0e15-4cd2-b649-27ec4d501c16">
       <active>true</active>
       <description>FMC - DEL - Co-pilot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="DEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="FMS 3000 - 2/ SN-E46224D7D73E3225" name="DEL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
           <onRelease type="MSFS2020CustomInputAction" command="(&gt;H:CJ4_FMC_2_BTN_CLR_Long)" />
@@ -4367,6 +4409,18 @@
         <button>
           <onPress type="MSFS2020CustomInputAction" command="1 (L:LIGHTING_WING_1) ! d (&gt;L:LIGHTING_WING_1) (&gt;K:2:WING_LIGHTS_SET)" presetId="2c3ddd5a-ae30-4f9f-b9e7-cc5f756ebfe2" />
           <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="399c2bdc-28a1-41dd-8463-8726539a7e06">
+      <active>true</active>
+      <description>VATSIM PTT Voicemeeter auto-duck</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="vJoyInputAction" vJoyId="1" buttonNr="1" buttonCmd="True" Axis="" axisVal="" />
+          <onRelease type="vJoyInputAction" vJoyId="1" buttonNr="1" buttonCmd="False" Axis="" axisVal="" />
         </button>
         <preconditions />
         <configrefs />

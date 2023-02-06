@@ -253,6 +253,20 @@
         </configrefs>
       </settings>
     </config>
+    <config guid="57b62163-7f37-435b-b29d-65bb91e4476c">
+      <active>true</active>
+      <description>Force hide yoke</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_YokeHidden1) 0 == if{ 1 (&gt;L:XMLVAR_YokeHidden1) 1 (&gt;L:XMLVAR_YokeHidden2) }" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
   </outputs>
   <inputs>
     <config guid="2d6e4932-8180-4af3-b720-97a7d233ccf9">
@@ -532,25 +546,6 @@
           <configref active="False" ref="5f86958c-b5b4-433d-ba37-24a5ebfd49ad" placeholder="?" />
           <configref active="False" ref="3d1d6392-d6d7-4800-845f-d189c8cab197" placeholder="!" />
           <configref active="False" ref="e4fa1112-34de-43c2-866d-84e71deb658d" placeholder="#" />
-        </configrefs>
-      </settings>
-    </config>
-    <config guid="ce7ef82a-e3d6-4150-896e-905141e0c169">
-      <active>true</active>
-      <description>De-ice - Pitot</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="De-ice panel/ SN-7b6-294" name="PitotL" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <button>
-          <onPress type="MSFS2020CustomInputAction" command="1 1 (&gt;K:2:PITOT_HEAT_SET) 1 (&gt;L:DEICE_Pitot_1)" />
-          <onRelease type="MSFS2020CustomInputAction" command="1 0 (&gt;K:2:PITOT_HEAT_SET) 0 (&gt;L:DEICE_Pitot_1)" />
-        </button>
-        <preconditions />
-        <configrefs>
-          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
-          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
-          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
-          <configref active="False" ref="27a77cfd-96f4-48c3-8190-49e58e1eef88" placeholder="?" />
-          <configref active="False" ref="e7a8d208-fcd3-4ef7-ae31-e78db19cfd30" placeholder="!" />
-          <configref active="False" ref="6233565b-592c-42b9-bad1-d328d3b33c67" placeholder="#" />
         </configrefs>
       </settings>
     </config>
@@ -927,9 +922,9 @@
       <description>Autopilot - VS inc/dec</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="VS_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
-          <onLeft type="MSFS2020CustomInputAction" command="(A:AUTOPILOT VERTICAL HOLD, Bool) if{ &#xA;  (&gt;K:AP_VS_VAR_DEC) (&gt;H:AP_UP) &#xA;} (A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool) if{ &#xA;  (&gt;K:AP_SPD_VAR_INC) &#xA;} (A:AUTOPILOT PITCH HOLD, Bool) if{ &#xA;  (&gt;K:AP_PITCH_REF_INC_DN) &#xA;}" presetId="6d7c0ae0-2f9e-461d-8536-fe218d9f61c9" />
+          <onLeft type="MSFS2020CustomInputAction" command="(A:AUTOPILOT VERTICAL HOLD, Bool) if{ (&gt;K:AP_VS_VAR_INC) (&gt;H:AP_DN) } (A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool) if{ (&gt;K:AP_SPD_VAR_INC) } (A:AUTOPILOT PITCH HOLD, Bool) if{ (&gt;K:AP_PITCH_REF_INC_UP) }" presetId="bea6d521-d3a5-426a-9b0c-0a09e5a4bc61" />
           <onLeftFast />
-          <onRight type="MSFS2020CustomInputAction" command="(A:AUTOPILOT VERTICAL HOLD, Bool) if{ &#xA;  (&gt;K:AP_VS_VAR_INC) (&gt;H:AP_DN) &#xA;} (A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool) if{ &#xA;  (&gt;K:AP_SPD_VAR_DEC) &#xA;} (A:AUTOPILOT PITCH HOLD, Bool) if{ &#xA;  (&gt;K:AP_PITCH_REF_INC_UP) &#xA;}" presetId="bea6d521-d3a5-426a-9b0c-0a09e5a4bc61" />
+          <onRight type="MSFS2020CustomInputAction" command="(A:AUTOPILOT VERTICAL HOLD, Bool) if{ (&gt;K:AP_VS_VAR_DEC) (&gt;H:AP_UP) } (A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool) if{ (&gt;K:AP_SPD_VAR_DEC) } (A:AUTOPILOT PITCH HOLD, Bool) if{ (&gt;K:AP_PITCH_REF_INC_DN) }" presetId="6d7c0ae0-2f9e-461d-8536-fe218d9f61c9" />
           <onRightFast />
         </encoder>
         <preconditions />
@@ -1337,7 +1332,7 @@
     <config guid="4e9fc222-fa2a-4159-8f2f-400c0167bb25">
       <active>true</active>
       <description>PFD - SK1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000 - 2/ SN-E46224D7D73E3225" name="0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_1)" presetId="8bc40426-4f02-4ef2-9a4f-ed242c706635" />
           <onRelease />
@@ -1349,7 +1344,7 @@
     <config guid="36493102-7214-4da7-88c1-2851d6b86eee">
       <active>true</active>
       <description>PFD - SK2</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000 - 2/ SN-E46224D7D73E3225" name="1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_2)" presetId="ebfd5493-6504-45df-8783-ea04b10a94f6" />
           <onRelease />
@@ -1361,7 +1356,7 @@
     <config guid="5a7be1f4-4f28-461a-a0e0-b3f2df77353a">
       <active>true</active>
       <description>PFD - SK3</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000 - 2/ SN-E46224D7D73E3225" name="2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_3)" presetId="1b65283f-b2f1-4db2-8ffe-1d7b6d549ec7" />
           <onRelease />
@@ -1373,7 +1368,7 @@
     <config guid="44a61478-da9d-4ba6-9aaa-b8c9201a4db1">
       <active>true</active>
       <description>PFD - SK4</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000 - 2/ SN-E46224D7D73E3225" name="3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_4)" presetId="952f663e-5f95-467b-bc52-be694818802c" />
           <onRelease />
@@ -1385,7 +1380,7 @@
     <config guid="b5a293e3-7c99-4d73-9c42-741535231728">
       <active>true</active>
       <description>PFD - SK5</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000 - 2/ SN-E46224D7D73E3225" name="4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_5)" presetId="784d87b9-a499-4f16-8fbb-f556d8a174aa" />
           <onRelease />
@@ -1397,7 +1392,7 @@
     <config guid="3f9967af-57fe-41b5-83f5-cbd9d14a2c14">
       <active>true</active>
       <description>PFD - SK6</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000 - 2/ SN-E46224D7D73E3225" name="5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_6)" presetId="c177c0bf-78d9-47b8-b1f5-906e0126fe85" />
           <onRelease />
@@ -1409,7 +1404,7 @@
     <config guid="3df51d5f-a078-4dc3-9a04-3da78bbc4a75">
       <active>true</active>
       <description>PFD - SK7</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000 - 2/ SN-E46224D7D73E3225" name="6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_7)" presetId="a706b901-fd6d-4a1f-893a-4dc9f5c2ae4c" />
           <onRelease />
@@ -1421,7 +1416,7 @@
     <config guid="7496a92f-287e-4e3d-99ae-2974bf7af900">
       <active>true</active>
       <description>PFD - SK8</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000 - 2/ SN-E46224D7D73E3225" name="7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_8)" presetId="10eb38b1-21eb-4e69-8f7e-3be816ca4403" />
           <onRelease />
@@ -1433,10 +1428,22 @@
     <config guid="23f0df2b-33d2-440a-8ca5-3a7bc122bb81">
       <active>true</active>
       <description>PFD - SK9</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000/ SN-af4-eed" name="8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Collins FMS 3000 - 2/ SN-E46224D7D73E3225" name="8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:AS1000_PFD_SOFTKEYS_9)" presetId="21ffc3fc-5f57-4689-9612-63cc9e7c53c4" />
           <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="04e2bdbc-8ff1-4241-9434-879d9fec8fe3">
+      <active>true</active>
+      <description>VATSIM PTT Voicemeeter auto-duck</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="vJoyInputAction" vJoyId="1" buttonNr="1" buttonCmd="True" Axis="" axisVal="" />
+          <onRelease type="vJoyInputAction" vJoyId="1" buttonNr="1" buttonCmd="False" Axis="" axisVal="" />
         </button>
         <preconditions />
         <configrefs />
