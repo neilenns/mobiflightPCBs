@@ -4426,5 +4426,49 @@
         <configrefs />
       </settings>
     </config>
+    <config guid="1a21d7fc-494f-48a0-8169-9c203bb790f0">
+      <active>true</active>
+      <description>Engine - Throttle 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Axis X" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ 4.0002 / 0 max 16383 min (&gt;K:THROTTLE1_SET)" presetId="-" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="92ff7ff7-a0f9-46a4-bc90-2bc54de63e28">
+      <active>true</active>
+      <description>Engine - Throttle 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Axis RotationZ" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ 4.0002 / 0 max 16383 min (&gt;K:THROTTLE2_SET)" presetId="0" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="48b40e23-bdee-4c12-8d3a-c44ce065b3c7">
+      <active>true</active>
+      <description>Controls - Speed brake</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Axis Y" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ -4.0002 / 16383 + 0 max 16383 min (&gt;K:SPOILERS_SET)" presetId="-" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="73a0402b-c19d-488b-a697-460c3259b169">
+      <active>true</active>
+      <description>Controls - Flaps</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-37f13e00-3607-11eb-8001-444553540000" name="Axis Z" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ -4.0002 / 16383 + 0 max 16383 min (&gt;K:FLAPS_SET)" presetId="0" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
   </inputs>
 </MobiflightConnector>
