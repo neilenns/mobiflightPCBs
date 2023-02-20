@@ -1,6 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MobiflightConnector>
   <outputs>
+    <config guid="b8cf2b16-d4ec-46a6-9a53-cff0c243873d">
+      <active>true</active>
+      <description>Master power</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool)" UUID="b73129b8-7d1f-4497-bd62-7018642a87f1" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
     <config guid="c59e986f-ae2c-4560-916f-093dcd032aa9">
       <active>true</active>
       <description>FMS - Backlight brightness - Pilot</description>
@@ -58,113 +72,6 @@
         <preconditions />
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
-        </configrefs>
-      </settings>
-    </config>
-    <config guid="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6">
-      <active>true</active>
-      <description>Bravo - Left knob position - ALT</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="AltKnobSelected" varExpression="$" />
-        <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
-        <preconditions />
-        <configrefs />
-      </settings>
-    </config>
-    <config guid="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9">
-      <active>true</active>
-      <description>Bravo - Left knob position - VS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="VsKnobSelected" varExpression="$" />
-        <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
-        <preconditions />
-        <configrefs>
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
-      </settings>
-    </config>
-    <config guid="951840f3-afdd-425b-985b-9d070929b8c2">
-      <active>true</active>
-      <description>Bravo - Left knob position - HDG</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="HdgKnobSelected" varExpression="$" />
-        <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
-        <preconditions />
-        <configrefs>
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
-      </settings>
-    </config>
-    <config guid="655fadc5-c85c-4d14-bec7-70329b1551f0">
-      <active>true</active>
-      <description>Bravo - Left knob position - CRS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="CrsKnobSelected" varExpression="$" />
-        <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
-        <preconditions />
-        <configrefs>
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
-      </settings>
-    </config>
-    <config guid="3c28fc60-950c-4dd9-8481-e7cef67d8334">
-      <active>true</active>
-      <description>Bravo - Left knob position - IAS</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="IasKnobSelected" varExpression="$" />
-        <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
-        <preconditions />
-        <configrefs>
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
-        </configrefs>
-      </settings>
-    </config>
-    <config guid="bfdc200d-4f0e-4464-9f5e-44d3003b2a9a">
-      <active>true</active>
-      <description>Bravo - Fast inc/dec</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="Variable" varType="number" varName="FastIncDec" varExpression="$" />
-        <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
-        <preconditions />
-        <configrefs>
-          <configref active="False" ref="3c28fc60-950c-4dd9-8481-e7cef67d8334" placeholder="A" />
-          <configref active="False" ref="655fadc5-c85c-4d14-bec7-70329b1551f0" placeholder="@" />
-          <configref active="False" ref="951840f3-afdd-425b-985b-9d070929b8c2" placeholder="?" />
-          <configref active="False" ref="a0ee9413-7bfd-43a3-9e2a-77b214a69ae9" placeholder="!" />
-          <configref active="False" ref="ab28dceb-4565-48de-9f0d-9b1b59c4a8a6" placeholder="#" />
         </configrefs>
       </settings>
     </config>
@@ -234,20 +141,6 @@
         <configrefs>
           <configref active="True" ref="b8cf2b16-d4ec-46a6-9a53-cff0c243873d" placeholder="M" />
         </configrefs>
-      </settings>
-    </config>
-    <config guid="b8cf2b16-d4ec-46a6-9a53-cff0c243873d">
-      <active>true</active>
-      <description>Master power</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool)" UUID="b73129b8-7d1f-4497-bd62-7018642a87f1" />
-        <modifiers>
-          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
-          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
-        </modifiers>
-        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
-        <preconditions />
-        <configrefs />
       </settings>
     </config>
     <config guid="c34a6666-095c-4b8c-8a63-d152f6576150">
@@ -4417,7 +4310,7 @@
     <config guid="399c2bdc-28a1-41dd-8463-8726539a7e06">
       <active>true</active>
       <description>VATSIM PTT Voicemeeter auto-duck</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Alpha Flight Controls / JS-807865b0-2854-11eb-800c-444553540000" name="Button 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="vJoyInputAction" vJoyId="1" buttonNr="1" buttonCmd="True" Axis="" axisVal="" />
           <onRelease type="vJoyInputAction" vJoyId="1" buttonNr="1" buttonCmd="False" Axis="" axisVal="" />

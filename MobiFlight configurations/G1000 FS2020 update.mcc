@@ -793,6 +793,18 @@
         <configrefs />
       </settings>
     </config>
+    <config guid="a9fe836d-34a4-4f2c-998f-2db989566236">
+      <active>true</active>
+      <description>Autopilot - BC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4 Autopilot/ SN-99b-d21" name="Buttons" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="12">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_BC_HOLD)" presetId="6e29a887-cb7e-423b-b17a-ea7d0c9004e4" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
     <config guid="3df16b35-5a2f-4528-b22b-9ce6bd7df7ea">
       <active>true</active>
       <description>Autopilot - NAV</description>
