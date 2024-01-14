@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>CJ4 Elec</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="STBY_ON" Pin="6" />
+  <Button Name="STBY_TEST" Pin="8" />
+  <Button Name="ELT_ARMED" Pin="9" />
+  <Button Name="ELT_ON" Pin="10" />
+  <Button Name="LGEN_RESET" Pin="5" />
+  <Button Name="AVIONICS_ON" Pin="4" />
+  <Button Name="RGEN_ON" Pin="21" />
+  <Button Name="RGEN_RESET" Pin="20" />
+  <Button Name="BATTERY_ON" Pin="19" />
+  <Button Name="BATTERY_EMER" Pin="18" />
+  <Button Name="LGEN_ON" Pin="13" />
+  <Button Name="AVIONICS_DSPCH" Pin="12" />
+</Config>

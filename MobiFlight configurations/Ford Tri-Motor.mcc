@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="af659816-5ff2-48b1-a747-78f8149a0786">
+      <active>true</active>
+      <description>Engine - Throttle 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-58c949e0-d8aa-11ed-800c-444553540000" name="Axis Y" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ 4.0002 / 0 max 16383 min (&gt;K:THROTTLE1_SET)" presetId="-" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c760cac6-2ffe-4325-a7fd-24871acf40bf">
+      <active>true</active>
+      <description>Engine - Throttle 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-58c949e0-d8aa-11ed-800c-444553540000" name="Axis X" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ 4.0002 / 0 max 16383 min (&gt;K:THROTTLE2_SET)" presetId="-" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="35c83d73-560c-472b-b5ca-eeeef1773ffb">
+      <active>true</active>
+      <description>Engine - Throttle 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-58c949e0-d8aa-11ed-800c-444553540000" name="Axis RotationZ" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ 4.0002 / 0 max 16383 min (&gt;K:THROTTLE3_SET)" presetId="-" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bbdf7ceb-95d2-4bbd-9c06-b1a07b451586">
+      <active>true</active>
+      <description>Engine - Mixture 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-58c949e0-d8aa-11ed-800c-444553540000" name="Axis RotationY" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ 4.0002 / 0 max 16383 min (&gt;K:MIXTURE1_SET)" presetId="-" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="02321e49-62a2-4c9b-a0ec-d5be99de3f5c">
+      <active>true</active>
+      <description>Engine - Mixture 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-58c949e0-d8aa-11ed-800c-444553540000" name="Axis RotationX" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ 4.0002 / 0 max 16383 min (&gt;K:MIXTURE2_SET)" presetId="0" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c73eb019-210d-4a7b-b70b-339ef3a65ca8">
+      <active>true</active>
+      <description>Engine - Mixture 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-58c949e0-d8aa-11ed-800c-444553540000" name="Axis Z" type="AnalogInput" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="@ 4.0002 / 0 max 16383 min (&gt;K:MIXTURE3_SET)" presetId="0" />
+        </analog>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d0675519-c2b3-46eb-8ea1-810e98c29568">
+      <active>true</active>
+      <description>Gear - Parking brake</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.5.0.3, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-58c949e0-d8aa-11ed-800c-444553540000" name="Button 42" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:PARKING_BRAKE_SET)" presetId="bfa5f4f9-0f44-49d0-9382-929b6e96c4ef" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:PARKING_BRAKE_SET)" presetId="3556ab94-09b7-43be-a226-b37ea20d9df1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

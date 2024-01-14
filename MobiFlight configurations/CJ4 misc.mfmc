@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>CJ4 misc</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <AnalogInput Name="PANEL_BRIGHT" Pin="26" Sensitivity="5" />
+  <Button Name="WING_L" Pin="0" />
+  <Button Name="WING_R" Pin="1" />
+  <Button Name="TAIL_L" Pin="2" />
+  <Button Name="TAIL_R" Pin="3" />
+  <Button Name="WING_LT" Pin="4" />
+  <Button Name="BEACON" Pin="5" />
+  <Button Name="ENG_L" Pin="6" />
+  <Button Name="ENG_R" Pin="7" />
+  <Button Name="NAV" Pin="8" />
+  <Button Name="PITOT_1" Pin="9" />
+  <Button Name="STROBE" Pin="10" />
+  <Button Name="PITOT_2" Pin="11" />
+  <Button Name="PASS_BELT" Pin="12" />
+  <Button Name="XFLOW" Pin="13" />
+  <Button Name="PASS_SFTY" Pin="14" />
+  <Button Name="RUN_L" Pin="15" />
+  <Button Name="RUN_R" Pin="16" />
+  <Button Name="TAXI" Pin="17" />
+  <Button Name="LNDG" Pin="18" />
+  <Button Name="LOGO" Pin="19" />
+  <Button Name="PLS_TCAS" Pin="20" />
+  <Button Name="PLS_ON" Pin="21" />
+  <Output Name="LED_BRIGHT" Pin="24" />
+  <ShiftRegister Name="LEDs" LatchPin="25" ClockPin="23" DataPin="22" NumModules="4" />
+</Config>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>CJ4 PFD</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="TAWS_MENU" Pin="0" />
+  <Button Name="RADAR_MENU" Pin="2" />
+  <Button Name="ET" Pin="3" />
+  <Button Name="FRMT" Pin="4" />
+  <Button Name="TERRWX" Pin="5" />
+  <Button Name="AUTO_TILT" Pin="7" />
+  <Button Name="TFC" Pin="11" />
+  <Button Name="CAUTION" Pin="16" />
+  <Button Name="WARNING" Pin="17" />
+  <Button Name="STD_BARO" Pin="18" />
+  <Button Name="REFS_MENU" Pin="19" />
+  <Button Name="CCP_MENU" Pin="20" />
+  <Button Name="NAV" Pin="23" />
+  <Button Name="PFD_MENU" Pin="24" />
+  <Button Name="ESC" Pin="25" />
+  <Button Name="SELECT" Pin="27" />
+  <Encoder Name="DATA_ENC" PinLeft="26" PinRight="1" EncoderType="2" />
+  <Encoder Name="TILT_ENC" PinLeft="6" PinRight="9" EncoderType="2" />
+  <Encoder Name="RANGE_ENC" PinLeft="8" PinRight="10" EncoderType="2" />
+  <Encoder Name="BARO_ENC" PinLeft="22" PinRight="21" EncoderType="1" />
+  <Encoder Name="MENU_ADV_ENC" PinLeft="28" PinRight="29" EncoderType="2" />
+  <ShiftRegister Name="BACKLIGHT_LEDS" LatchPin="14" ClockPin="13" DataPin="12" NumModules="2" />
+  <Output Name="BRIGHTNESS" Pin="15" />
+</Config>

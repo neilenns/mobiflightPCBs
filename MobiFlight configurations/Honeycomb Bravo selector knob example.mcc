@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="b5769929-7a57-4290-b0fd-aa18100e9d85">
+      <active>true</active>
+      <description>Selector position</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Selector" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="2e0b501e-2a06-4d1e-8cca-5e458f439d04">
+      <active>true</active>
+      <description>Selector - ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 21" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Selector" varExpression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f55a4d71-f0af-41ee-af4b-6a2e491462f0">
+      <active>true</active>
+      <description>Selector - VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Selector" varExpression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ed1f1102-aca0-45ae-9d47-af551c7b0fd4">
+      <active>true</active>
+      <description>Selector - HDG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 19" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Selector" varExpression="3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a03b2b77-8155-4504-8a47-96fc10e28307">
+      <active>true</active>
+      <description>Selector - CRS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 18" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Selector" varExpression="4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b4e21dff-b04f-46d4-9709-e896a9212a70">
+      <active>true</active>
+      <description>Selector - IAS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 17" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="Selector" varExpression="5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b0ea8b76-6fae-4ce5-9e3f-c1dc37614ae4">
+      <active>true</active>
+      <description>Right knob - ALT decrement</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions>
+          <precondition type="variable" active="true" ref="Selector" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c6bd7640-d138-4530-a9d2-217844b3b634">
+      <active>true</active>
+      <description>Right knob - ALT increment</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions>
+          <precondition type="variable" active="true" ref="Selector" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2db6b8e7-7ca9-4678-92d8-42c25f2bff5c">
+      <active>true</active>
+      <description>Right knob - VS decrement</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions>
+          <precondition type="variable" active="true" ref="Selector" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5f6aec5c-a681-43aa-b506-91bca3719aa9">
+      <active>true</active>
+      <description>Right knob - VS increment</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions>
+          <precondition type="variable" active="true" ref="Selector" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="08c0d0f0-4291-42f3-a26a-d8676cedc597">
+      <active>true</active>
+      <description>Right knob - HDG decrement</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions>
+          <precondition type="variable" active="true" ref="Selector" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5aa8ad88-f6d4-474c-9ac4-b93370e552fc">
+      <active>true</active>
+      <description>Right knob - HDG increment</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions>
+          <precondition type="variable" active="true" ref="Selector" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4a72571a-5281-4e03-b353-29eef249a041">
+      <active>true</active>
+      <description>Right knob - CRS decrement</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions>
+          <precondition type="variable" active="true" ref="Selector" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9af5ece6-d055-469c-8b73-e7723f66bc7b">
+      <active>true</active>
+      <description>Right knob - CRS increment</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions>
+          <precondition type="variable" active="true" ref="Selector" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2bbd76e5-9041-4937-85bd-59e47a5ac0d6">
+      <active>true</active>
+      <description>Right knob - IAS decrement</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 14" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions>
+          <precondition type="variable" active="true" ref="Selector" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6731381a-3bb2-43fc-9008-75f55cc58d53">
+      <active>true</active>
+      <description>Right knob - IAS increment</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Bravo Throttle Quadrant / JS-47b53820-95fc-11ee-8001-444553540000" name="Button 13" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions>
+          <precondition type="variable" active="true" ref="Selector" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
