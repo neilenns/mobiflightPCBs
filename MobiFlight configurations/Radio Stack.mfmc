@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
   <ModuleName>Radio Stack</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
   <LedModule Name="LedModule" ModelType="0" DinPin="29" ClsPin="25" ClkPin="27" Brightness="15" NumModules="8" />
