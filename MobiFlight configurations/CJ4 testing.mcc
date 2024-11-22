@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs />
+  <inputs>
+    <config guid="9bdb592a-b956-45a8-a16c-4f9a496fd9b1">
+      <active>true</active>
+      <description>BARO set</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 PFD/ SN-E461D0635B2A1724" name="BARO_ENC" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="1 (&gt;B:AUTOPILOT_BARO_1_Dec)" presetId="0" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="1 (&gt;B:AUTOPILOT_BARO_1_Inc)" presetId="0" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
